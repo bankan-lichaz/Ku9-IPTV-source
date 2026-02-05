@@ -68,7 +68,7 @@ CHC家庭影院,http://43.251.226.89:8080/play/94.m3u8
 东南卫视,http://43.251.226.89:8080/play/46.m3u8
 海南卫视,http://43.251.226.89:8080/play/47.m3u8
 海峡卫视,http://43.251.226.89:8080/play/48.m3u8
-中国农林卫视,http://43.251.226.89:8080/play/49.m3u8
+农林卫视,http://43.251.226.89:8080/play/49.m3u8
 兵团卫视,http://43.251.226.89:8080/play/50.m3u8
 宁夏卫视,http://43.251.226.89:8080/play/51.m3u8
 重庆卫视,http://43.251.226.89:8080/play/52.m3u8
@@ -193,7 +193,7 @@ CHC家庭影院,http://43.251.226.89:8080/play/190.m3u8
 东南卫视,http://43.251.226.89:8080/play/142.m3u8
 海南卫视,http://43.251.226.89:8080/play/143.m3u8
 海峡卫视,http://43.251.226.89:8080/play/144.m3u8
-中国农林卫视,http://43.251.226.89:8080/play/145.m3u8
+农林卫视,http://43.251.226.89:8080/play/145.m3u8
 兵团卫视,http://43.251.226.89:8080/play/146.m3u8
 宁夏卫视,http://43.251.226.89:8080/play/147.m3u8
 重庆卫视,http://43.251.226.89:8080/play/148.m3u8
@@ -294,7 +294,7 @@ CHC家庭影院,http://43.251.226.89:8080/play/1067.m3u8
 东南卫视,http://43.251.226.89:8080/play/1019.m3u8
 海南卫视,http://43.251.226.89:8080/play/1020.m3u8
 海峡卫视,http://43.251.226.89:8080/play/1021.m3u8
-中国农林卫视,http://43.251.226.89:8080/play/1022.m3u8
+农林卫视,http://43.251.226.89:8080/play/1022.m3u8
 兵团卫视,http://43.251.226.89:8080/play/1023.m3u8
 宁夏卫视,http://43.251.226.89:8080/play/1024.m3u8
 重庆卫视,http://43.251.226.89:8080/play/1025.m3u8
@@ -341,7 +341,7 @@ CCTV17,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv17
 海南卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=hinws
 青海卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=qhws
 吉林卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=jlws
-黑龙江视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=hljws
+黑龙江卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=hljws
 
 CCTV1,http://m.061899.xyz/mg/cctv1
 CCTV2,http://m.061899.xyz/mg/cctv2
