@@ -20,6 +20,27 @@
 
 
 央卫频道,#genre#
+CCTV1,http://tnvcn.com:8012/rtp/239.3.1.129:8008$北京uni1+
+CCTV2,http://tnvcn.com:8012/rtp/239.3.1.60:8084$北京uni1+
+CCTV3,http://tnvcn.com:8012/rtp/239.3.1.172:8001$北京uni1+
+CCTV4,http://tnvcn.com:8012/rtp/239.3.1.105:8092$北京uni1+
+CCTV5,http://tnvcn.com:8012/rtp/239.3.1.173:8001$北京uni1+
+CCTV5+,http://tnvcn.com:8012/rtp/239.3.1.130:8004$北京uni1+
+CCTV6,http://tnvcn.com:8012/rtp/239.3.1.174:8001$北京uni1+
+CCTV7,http://tnvcn.com:8012/rtp/239.3.1.61:8104$北京uni1+
+CCTV8,http://tnvcn.com:8012/rtp/239.3.1.175:8001$北京uni1+
+CCTV9,http://tnvcn.com:8012/rtp/239.3.1.62:8112$北京uni1+
+CCTV10,http://tnvcn.com:8012/rtp/239.3.1.63:8116$北京uni1+
+CCTV11,http://tnvcn.com:8012/rtp/239.3.1.152:8120$北京uni1+
+CCTV12,http://tnvcn.com:8012/rtp/239.3.1.64:8124$北京uni1+
+CCTV13,http://tnvcn.com:8012/rtp/239.3.1.124:8128$北京uni1+
+CCTV14,http://tnvcn.com:8012/rtp/239.3.1.65:8132$北京uni1+
+CCTV15,http://tnvcn.com:8012/rtp/239.3.1.153:8136$北京uni1+
+CCTV16,http://tnvcn.com:8012/rtp/239.3.1.184:8001$北京uni1+
+CCTV17,http://tnvcn.com:8012/rtp/239.3.1.151:8144$北京uni1+
+
+
+
 CCTV1,http://43.251.226.89:8080/play/1.m3u8
 CCTV2,http://43.251.226.89:8080/play/2.m3u8
 CCTV3,http://43.251.226.89:8080/play/3.m3u8
