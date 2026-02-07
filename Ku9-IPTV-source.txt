@@ -73,7 +73,6 @@ CHC家庭影院,http://43.251.226.89:8080/play/94.m3u8
 重庆卫视,http://43.251.226.89:8080/play/52.m3u8
 三沙卫视,http://43.251.226.89:8080/play/53.m3u8
 
-
 东方卫视,http://69.30.246.194/live/dfws.m3u8
 江苏卫视,http://69.30.246.194/live/jsws.m3u8
 湖南卫视,http://69.30.246.194/live/hnws.m3u8
@@ -487,6 +486,10 @@ CCTV3,http://23.237.228.134/live5/CCTV3.m3u8
 CCTV5+,http://23.237.228.134/live5/CCTV5p.m3u8
 CCTV7,http://23.237.228.134/live5/CCTV7.m3u8
 CCTV9,http://23.237.228.134/live5/CCTV9.m3u8
+
+#抖音缓存
+CCTV2,http://pull-hls-f1.douyincdn.com/media/stream-695106910011261612/playlist.m3u8?arch_hrchy=w1&exp_hrchy=w1&keeptime=00093a80&major_anchor_level=common&t_id=037-20260201084152FCA02A28E82C926FE0D6-TkujMo&wsSecret=85bb061c39ad9227e9c420993c2e56b8&wsTime=697ea150
+
 
 CCTV1,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv1/
 CCTV2,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv2/
