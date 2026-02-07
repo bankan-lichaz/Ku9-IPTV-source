@@ -549,6 +549,7 @@ CCTV16,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv16/
 CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 
 北京频道,#genre#
+北京卫视,http://tnvcn.com:8012/rtp/239.3.1.241:8000$北京uni1+
 北京卡酷少儿,http://tnvcn.com:8012/rtp/239.3.1.189:8000$北京uni1+
 北京体育休闲,http://tnvcn.com:8012/rtp/239.3.1.243:8000$北京uni1+
 北京国际高清,http://tnvcn.com:8012/rtp/239.3.1.235:8000$北京uni1+
