@@ -601,6 +601,16 @@ CCTV17,http://nn.7x9d.cn/xzc2.php?ua=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW4
 湖北卫视,http://nn.7x9d.cn/xzc2.php?ua=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA2LjAuMC4wIFNhZmFyaS81MzcuMzY=&hls=aHR0cDovLzIxOC4yMy4xOTIuMzM6OTk5OS9uZXdsaXZlL2xpdmUvaGxzLzI2L2xpdmUubTN1OA==
 天津卫视,http://nn.7x9d.cn/xzc2.php?ua=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA2LjAuMC4wIFNhZmFyaS81MzcuMzY=&hls=aHR0cDovLzIxOC4yMy4xOTIuMzM6OTk5OS9uZXdsaXZlL2xpdmUvaGxzLzIzL2xpdmUubTN1OA==
 
+CCTV1,http://69.30.246.194/live/cctv1.m3u8
+CCTV4,http://69.30.246.194/live/cctv4.m3u8
+CCTV11,http://69.30.246.194/live/cctv11.m3u8
+CCTV12,http://69.30.246.194/live/cctv12.m3u8
+CCTV13,http://69.30.246.194/live/cctv13.m3u8
+CCTV14,http://69.30.246.194/live/cctv14.m3u8
+CCTV15,http://69.30.246.194/live/cctv15.m3u8
+CCTV16,http://69.30.246.194/live/cctv16.m3u8
+CCTV17,http://69.30.246.194/live/cctv17.m3u8
+
 港澳台频道,#genre#
 凤凰中文,http://r.jdshipin.com/cCCzW
 凤凰资讯,http://r.jdshipin.com/0Rp07
