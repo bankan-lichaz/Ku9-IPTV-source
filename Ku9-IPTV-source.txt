@@ -36,6 +36,7 @@ CCTV12,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv12
 CCTV13,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv13
 CCTV14,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv14
 CCTV15,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv15
+CCTV16,http://116.76.254.170:44330/tsfile/live/1012_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV16,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv16
 CCTV17,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv17
 北京卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=bjws
@@ -190,6 +191,7 @@ CHC家庭影院,http://43.251.226.89:8080/play/94.m3u8
 新疆卫视,http://27.41.245.32:801/hls/57/index.m3u8
 云南卫视,http://38.75.136.137:98/gslb/dsdqpub/ynwshd.m3u8?auth=testpub
 云南卫视,http://go.bkpcp.top/mg/ynws
+海南卫视,http://116.76.254.170:44330/tsfile/live/1004_1.m3u8?key=txiptv&playlive=0&authid=0
 
 CCTV1,http://m.061899.xyz/mg/cctv1
 CCTV2,http://m.061899.xyz/mg/cctv2
@@ -570,6 +572,18 @@ T淘萌宠,http://tnvcn.com:8012/rtp/239.3.1.102:8001$北京uni1+
 T淘电影,http://tnvcn.com:8012/rtp/239.3.1.250:8001$北京uni1+
 金鹰纪实,http://tnvcn.com:8012/rtp/239.3.1.58:8156$北京uni1+
 
+深圳频道,#genre#
+深圳卫视,http://116.76.254.170:44330/tsfile/live/1013_1.m3u8?key=txiptv&playlive=0&authid=0
+深圳都市,http://116.76.254.170:44330/tsfile/live/1014_1.m3u8?key=txiptv&playlive=0&authid=0
+深圳电视剧,http://116.76.254.170:44330/tsfile/live/1015_1.m3u8?key=txiptv&playlive=0&authid=0
+
+广东频道,#genre#
+广东体育,http://116.76.254.170:44330/tsfile/live/1000_1.m3u8?key=txiptv&playlive=0&authid=0
+广东民生,http://116.76.254.170:44330/tsfile/live/1001_1.m3u8?key=txiptv&playlive=0&authid=0
+广东新闻,http://116.76.254.170:44330/tsfile/live/1002_1.m3u8?key=txiptv&playlive=0&authid=0
+大湾区卫视,http://116.76.254.170:44330/tsfile/live/1003_1.m3u8?key=txiptv&playlive=0&authid=0
+重温经典,http://116.76.254.170:44330/tsfile/live/1006_1.m3u8?key=txiptv&playlive=0&authid=0
+
 港澳台频道,#genre#
 凤凰中文,http://r.jdshipin.com/cCCzW
 凤凰资讯,http://r.jdshipin.com/0Rp07
@@ -586,6 +600,11 @@ TVB星河,http://r.jdshipin.com/sXuuD
 华丽翡翠台,http://r.jdshipin.com/thuYX
 ViuTV,http://r.jdshipin.com/vSJvl
 澳视澳门,http://r.jdshipin.com/n2YZI
+
+翡翠台,http://116.76.254.170:44330/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0
+珍珠台,http://116.76.254.170:44330/tsfile/live/1009_1.m3u8?key=txiptv&playlive=0&authid=0
+ChannelV,http://116.76.254.170:44330/tsfile/live/1010_1.m3u8?key=txiptv&playlive=0&authid=0
+星空卫视,http://116.76.254.170:44330/tsfile/live/1016_1.m3u8?key=txiptv&playlive=0&authid=0
 
 常用电台,#genre#
 辽宁之声,http://satellitepull.cnr.cn/live/wxlnzhgb/playlist.m3u8
