@@ -121,7 +121,6 @@ CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 四川卫视,http://23.237.228.134/live6/sichuan.m3u8
 四川卫视,http://39.152.103.17:8089/tsfile/live/1044_1.m3u8
 四川卫视,http://27.41.245.32:801/hls/54/index.m3u8
-贵州卫视,http://23.237.228.134/live6/guizhou.m3u8
 贵州卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=gzws
 贵州卫视,http://m.061899.xyz/mg/gzws
 贵州卫视,http://k.061899.xyz/k.php?id=gzws
