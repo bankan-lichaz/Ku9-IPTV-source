@@ -1,5 +1,4 @@
 辽宁频道,#genre#
-辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws
 辽宁卫视,http://k.061899.xyz/k.php?id=lnws
 辽宁卫视,http://j.s.bkpcp.top/jj/lnws
@@ -8,6 +7,7 @@
 辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/29/live.m3u8
 辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/40/live.m3u8
 辽宁卫视,http://39.106.167.36/migu.php?id=630291707
+辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 
 辽宁卫视,http://39.152.103.17:8089/tsfile/live/1024_1.m3u8
 辽宁都市,http://39.152.103.17:8089/tsfile/live/1025_1.m3u8
