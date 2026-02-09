@@ -693,8 +693,8 @@ CCTV5+,http://hlszymgsplive.miguvideo.com:8080/wd_r2/cctv/cctv5plusnew/2500/01.m
 
 延边卫视,http://srs.iyb983.cn/video/CYS/index.m3u8$Q1
 浙江卫视,http://play-qukan.cztv.com/live/1746687519046362.m3u8$Q1
-湖南卫视http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8$Q1
-内蒙古卫视http://play1-qk.nmtv.cn/3208526general.m3u8$Q1
+湖南卫视,http://hlsal-ldvt.qing.mgtv.com/nn_live/nn_x64/Y2RuZXhfaWQ9YWxfaGxzX2xkdnQmZT02OTE0NjA0JnY9MSZpZD1ITldTWkdTVCZzPTcwN2RiYTc2YzJjNmJmMTQ4MmUyZGYzOWU2NWM3YWFi/HNWSZGST.m3u8$Q1
+内蒙古卫视,http://play1-qk.nmtv.cn/3208526general.m3u8$Q1
 
 
 
