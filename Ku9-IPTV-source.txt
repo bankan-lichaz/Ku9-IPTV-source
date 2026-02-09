@@ -80,10 +80,8 @@ CCTV17,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv17
 CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 
 东方卫视,http://69.30.246.194/live/dfws.m3u8
-湖北卫视,http://23.237.228.134/live6/hubei.m3u8
 江苏卫视,http://69.30.246.194/live/jsws.m3u8
 湖南卫视,http://69.30.246.194/live/hnws.m3u8
-湖南卫视,http://23.237.228.134/live6/hunan.m3u8
 湖南卫视,http://38.75.136.137:98/gslb/dsdqpub/hnwshd.m3u8?auth=testpub
 浙江卫视,https://play-qukan.cztv.com/live/1746687519046362.m3u8
 浙江卫视,http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
@@ -96,7 +94,6 @@ CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 内蒙古卫视,http://39.152.103.17:8089/tsfile/live/1085_1.m3u8
 内蒙古卫视,http://27.41.245.32:801/hls/47/index.m3u8
 内蒙古卫视,http://69.30.246.194/live/nmgws.m3u8
-深圳卫视,http://23.237.228.134/live6/shenzhen.m3u8
 深圳卫视,http://39.152.103.17:8089/tsfile/live/1049_1.m3u8
 深圳卫视,http://27.41.245.32:801/hls/26/index.m3u8
 深圳卫视,http://69.30.246.194/live/szws.m3u8
@@ -131,7 +128,6 @@ CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 贵州卫视,http://j.s.bkpcp.top/jj/gzws
 贵州卫视,http://go.bkpcp.top/mg/gzws
 广西卫视,http://38.75.136.137:98/gslb/dsdqpub/gxwshd.m3u8?auth=testpub
-广西卫视,http://23.237.228.134/live6/guangxi.m3u8
 广西卫视,http://39.152.103.17:8089/tsfile/live/1077_1.m3u8
 广西卫视,http://27.41.245.32:801/hls/34/index.m3u8
 广西卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=gxws
@@ -475,6 +471,17 @@ CCTV3,http://23.237.228.134/live5/CCTV3.m3u8
 CCTV5+,http://23.237.228.134/live5/CCTV5p.m3u8
 CCTV7,http://23.237.228.134/live5/CCTV7.m3u8
 CCTV9,http://23.237.228.134/live5/CCTV9.m3u8
+广东卫视,http://23.237.228.134/live6/guangdong.m3u8
+湖北卫视,http://23.237.228.134/live6/hubei.m3u8
+东南卫视,http://23.237.228.134/live6/dongnan.m3u8
+海南卫视,http://23.237.228.134/live6/hainan.m3u8
+重庆卫视,http://23.237.228.134/live6/chongqing.m3u8
+湖南卫视,http://23.237.228.134/live6/hunan.m3u8
+浙江卫视,http://23.237.228.134/live6/zhejiang.m3u8
+深圳卫视,http://23.237.228.134/live6/shenzhen.m3u8
+四川卫视,http://23.237.228.134/live6/sichuan.m3u8
+贵州卫视,http://23.237.228.134/live6/guizhou.m3u8
+广西卫视,http://23.237.228.134/live6/guangxi.m3u8
 
 CCTV1,http://tnvcn.com:8012/rtp/239.3.1.129:8008$北京uni1+
 CCTV2,http://tnvcn.com:8012/rtp/239.3.1.60:8084$北京uni1+
