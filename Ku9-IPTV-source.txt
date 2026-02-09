@@ -573,6 +573,7 @@ CCTV13,http://60.13.52.236:65500/newlive/live/hls/16/live.m3u8
 江西卫视,http://60.13.52.236:65500/newlive/live/hls/48/live.m3u8
 
 CCTV1,http://39.106.167.36/migu.php?id=608807420
+CCTV2,http://39.106.167.36/migu.php?id=631780532
 CCTV3,http://39.106.167.36/migu.php?id=624878271
 CCTV4,http://39.106.167.36/migu.php?id=631780421
 CCTV6,http://39.106.167.36/migu.php?id=624878396
