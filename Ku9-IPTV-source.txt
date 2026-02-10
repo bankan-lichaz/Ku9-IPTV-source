@@ -1,7 +1,15 @@
 免费勿扫码,#genre#
 黑屏按左右换源,https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist1080p.m3u8$famelack
+黑屏按左右换源,https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist1080p.m3u8$famelack
+黑屏按左右换源,https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist1080p.m3u8$famelack
+卡顿按左右换源,https://amg00793-amg00793c35-lg-us-6412.playouts.now.amagi.tv/playlist.m3u8$LG
+卡顿按左右换源,https://amg00793-amg00793c35-lg-us-6412.playouts.now.amagi.tv/playlist.m3u8$LG
 卡顿按左右换源,https://amg00793-amg00793c35-lg-us-6412.playouts.now.amagi.tv/playlist.m3u8$LG
 弹码按左右换源,https://wildearth-ono.amagi.tv/playlist/amg01290-wildearth-oando/playlist.m3u8$famelack
+弹码按左右换源,https://wildearth-ono.amagi.tv/playlist/amg01290-wildearth-oando/playlist.m3u8$famelack
+弹码按左右换源,https://wildearth-ono.amagi.tv/playlist/amg01290-wildearth-oando/playlist.m3u8$famelack
+按菜单可选线路,https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanpopupcc-rakutenuk/playlist.m3u8
+按菜单可选线路,https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanpopupcc-rakutenuk/playlist.m3u8
 按菜单可选线路,https://amg00627-amg00627c40-rakuten-uk-5725.playouts.now.amagi.tv/playlist/amg00627-banijayfast-mrbeanpopupcc-rakutenuk/playlist.m3u8
 辽宁频道,#genre#
 辽宁卫视,http://101.34.236.223:1117/630291707$FC高清
