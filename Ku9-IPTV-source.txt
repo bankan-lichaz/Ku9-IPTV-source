@@ -65,10 +65,12 @@
 辽宁体育休闲,http://43.251.226.89:8080/play/224.m3u8$潇雨萌萌
 
 央卫频道,#genre#
+CCTV1,http://hls-pull-usmanriaz.speedws.com/live/1f6bd3428e42a6297eccdaf99421523c.flv$临时
 CCTV1,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv1$VPS旧金山1
 CCTV2,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv2$VPS旧金山1
 CCTV3,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv3$VPS旧金山1
 CCTV4,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv4$VPS旧金山1
+CCTV5,http://hls-pull-usmanriaz.speedws.com/live/0a854502abfe1cb175b57e446480789c.flv$临时
 CCTV5,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv5$VPS旧金山1
 CCTV5+,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv5p$VPS旧金山1
 CCTV6,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv6$VPS旧金山1
