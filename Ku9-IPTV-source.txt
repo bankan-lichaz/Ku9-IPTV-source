@@ -884,8 +884,8 @@ T淘电影,http://tnvcn.com:8012/rtp/239.3.1.250:8001$北京uni1+
 凤凰资讯,http://r.jdshipin.com/0Rp07
 凤凰香港,http://r.jdshipin.com/yDoTN
 凤凰香港,http://r.jdshipin.com/NfC0f
-翡翠台,http://r.jdshipin.com/62WM7
-翡翠台,http://r.jdshipin.com/qrfbg
+TVB翡翠台,http://r.jdshipin.com/62WM7
+TVB翡翠台,http://r.jdshipin.com/qrfbg
 无线新闻,http://r.jdshipin.com/CkuBd
 TVB明珠台,http://r.jdshipin.com/ZQ4kN
 TVB Plus,http://r.jdshipin.com/ndGgS
@@ -962,7 +962,6 @@ NOW新闻台,https://cdn.163189.xyz/163189/now
 TVB1,https://6.cdn.loc.cc/163189.php?id=tvb1
 翡翠剧集台,https://6.cdn.loc.cc/163189.php?id=tvbd
 CCTV13,http://cdn3.163189.xyz/163189/cctv13
-海峡卫视,http://cdn3.163189.xyz/163189/hxws
 TVB星河,https://cdn10.163189.xyz/stream/163189/xinghe/
 天映频道(新加坡),https://cdn10.163189.xyz/stream/163189/typd/
 天映经典,https://cdn10.163189.xyz/stream/163189/ccm/
