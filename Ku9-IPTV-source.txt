@@ -13,14 +13,12 @@
 按菜单可选线路,https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist720p.m3u8$publiciptv
 辽宁频道,#genre#
 辽宁卫视,http://101.34.236.223:1117/630291707$FC高清
-辽宁卫视,http://122.159.41.122:7777/rtp/229.58.190.51:5000$黑龙江uni
 辽宁卫视,http://101.34.236.223:1118/630291707$FC标清
 辽宁卫视,http://43.251.226.89:8080/play/37.m3u8$潇雨萌萌香港
 辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws$VPS旧金山1
 辽宁卫视,http://k.061899.xyz/k.php?id=lnws$VPS新加坡
 辽宁卫视,http://j.s.bkpcp.top/jj/lnws$VPS旧金山3
 辽宁卫视,http://go.bkpcp.top/mg/lnws$VPS旧金山4
-辽宁卫视,http://tnvcn.com:8012/rtp/239.3.1.210:8056$北京uni1+
 辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/29/live.m3u8$兰州城关标清uni
 辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/40/live.m3u8$兰州城关标清uni
 辽宁卫视,http://39.106.167.36/migu.php?id=630291707$北京阿里标清
