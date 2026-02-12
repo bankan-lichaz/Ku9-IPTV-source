@@ -613,15 +613,6 @@ CCTV17,http://74.91.26.218:82/live/cctv17hd.m3u8$堪萨斯城高清
 湖南卫视,http://74.91.26.218:82/live/hnwshd.m3u8$堪萨斯城高清
 
 
-CCTV1,http://111.9.163.109:55555/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0$南充顺庆Mobile
-CCTV2,http://111.9.163.109:55555/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1&authid=0$南充顺庆Mobile
-CCTV3,http://111.9.163.109:55555/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1&authid=0$南充顺庆Mobile
-CCTV4,http://111.9.163.109:55555/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1&authid=0$南充顺庆Mobile
-CCTV5,http://111.9.163.109:55555/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0$南充顺庆Mobile
-CCTV6,http://111.9.163.109:55555/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0$南充顺庆Mobile
-江苏卫视,http://111.9.163.109:55555/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1&authid=0$南充顺庆Mobile
-
-
 CCTV1,http://23.237.228.134/live5/CCTV1.m3u8$洛杉矶高清
 CCTV2,http://23.237.228.134/live5/CCTV2.m3u8$洛杉矶高清
 CCTV3,http://23.237.228.134/live5/CCTV3.m3u8$洛杉矶高清
