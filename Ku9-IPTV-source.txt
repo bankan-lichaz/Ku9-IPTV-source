@@ -78,8 +78,10 @@ CCTV9,http://183.220.107.138:4022/rtp/239.11.0.111:5140$四川泸州Mobile
 CCTV10,http://183.220.107.138:4022/rtp/239.11.0.112:5140$四川泸州Mobile
 CCTV11,http://183.220.107.138:4022/rtp/239.11.0.22:5140$四川泸州Mobile
 CCTV12,http://183.220.107.138:4022/rtp/239.11.0.113:5140$四川泸州Mobile
+CCTV13,http://60.13.52.236:65500/newlive/live/hls/13/live.m3u8$兰州城关标清uni
 CCTV14,http://183.220.107.138:4022/rtp/239.11.0.114:5140$四川泸州Mobile
 CCTV15,http://183.220.107.138:4022/rtp/239.11.0.26:5140$四川泸州Mobile
+CCTV16,http://116.76.254.170:44330/tsfile/live/1012_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV17,http://183.220.107.138:4022/rtp/239.11.0.107:5140$四川泸州Mobile
 河北卫视,http://183.220.107.138:4022/rtp/239.11.0.31:5140$四川泸州Mobile
 吉林卫视,http://183.220.107.138:4022/rtp/239.11.0.35:5140$四川泸州Mobile
@@ -120,7 +122,6 @@ CCTV12,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv12$VPS旧金山1
 CCTV13,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv13$VPS旧金山1
 CCTV14,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv14$VPS旧金山1
 CCTV15,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv15$VPS旧金山1
-CCTV16,http://116.76.254.170:44330/tsfile/live/1012_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV16,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv16$VPS旧金山1
 CCTV17,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv17$VPS旧金山1
 北京卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=bjws$VPS旧金山1
