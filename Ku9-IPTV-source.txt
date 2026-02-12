@@ -596,7 +596,6 @@ CCTV17,http://j.s.bkpcp.top/jj/cctv17$VPS旧金山3
 贵州卫视,http://j.s.bkpcp.top/jj/gzws$VPS旧金山3
 四川卫视,http://j.s.bkpcp.top/jj/scws$VPS旧金山3
 
-北京卫视,http://zb.hexuntong.net:8188/rtp/239.3.1.22:8001$北京uni
 河南卫视,http://zb.hexuntong.net:8188/rtp/239.3.1.50:8184$北京uni
 CETV1,http://zb.hexuntong.net:8188/rtp/239.3.1.57:8152$北京uni
 CCTV2,http://zb.hexuntong.net:8188/rtp/239.3.1.60:8084$北京uni
@@ -625,8 +624,6 @@ CCTV5+,http://zb.hexuntong.net:8188/rtp/239.3.1.130:8004$北京uni
 东方卫视,http://zb.hexuntong.net:8188/rtp/239.3.1.136:8032$北京uni
 浙江卫视,http://zb.hexuntong.net:8188/rtp/239.3.1.137:8036$北京uni
 湖北卫视,http://zb.hexuntong.net:8188/rtp/239.3.1.138:8044$北京uni
-北京卫视,http://zb.hexuntong.net:8188/rtp/239.3.1.139:8001$北京uni
-北京卫视,http://zb.hexuntong.net:8188/rtp/239.3.1.140:8001$北京uni
 天津卫视,http://zb.hexuntong.net:8188/rtp/239.3.1.141:1234$北京uni
 广东卫视,http://zb.hexuntong.net:8188/rtp/239.3.1.142:8048$北京uni
 山东卫视,http://zb.hexuntong.net:8188/rtp/239.3.1.144:3005$北京uni
