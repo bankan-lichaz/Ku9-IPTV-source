@@ -979,13 +979,3 @@ CCTV17,http://gslbmgsplive.miguvideo.com/migu/kailu/20200324/cctv17hd/57/index.m
 CCTV17,http://hlszymgsplive.miguvideo.com:8080/migu/kailu/20200324/cctv17hd/57/index.m3u8?msisdn=dcc7b4d153ab7d8ead353b605789fd91&mdspid=&spid=699004&netType=0&sid=5501083631&pid=2028597139&timestamp=20260213105246&Channel_ID=0116_2600037000-99000-200300220100002&ProgramID=673168256&ParentNodeID=-99&assertID=5501083631&client_ip=146.56.248.47&SecurityKey=20260213105246&promotionId=&mvid=5102910396&mcid=500020&playurlVersion=ZQ-A1-9.2.1-RELEASE&userid=124820452&jmhm=dcc7b4d153ab7d8ead353b605789fd91&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&encrypt=92b3e883fb188bc7086025654fec3733$Q2
 CCTV17,http://hlszymgsplive.miguvideo.com:8080/migu/kailu/20200324/cctv17hd/57/01.m3u8?msisdn=dcc7b4d153ab7d8ead353b605789fd91&mdspid=&spid=699004&netType=0&sid=5501083631&pid=2028597139&timestamp=20260213105246&Channel_ID=0116_2600037000-99000-200300220100002&ProgramID=673168256&ParentNodeID=-99&assertID=5501083631&client_ip=146.56.248.47&SecurityKey=20260213105246&promotionId=&mvid=5102910396&mcid=500020&playurlVersion=ZQ-A1-9.2.1-RELEASE&userid=124820452&jmhm=dcc7b4d153ab7d8ead353b605789fd91&videocodec=h264&appCode=miguvideo_android&bean=mgspad&tid=android&conFee=0&mtv_session=92b3e883fb188bc7086025654fec3733&HlsSubType=1&HlsProfileId=1&nphaid=0&encrypt=76d4a791af956ff309ffa149371bc106$Q3
 
-东方卫视,http://hlsbkmgsplive.miguvideo.com/wd_r4/dfl/dongfangwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
-江苏卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/jswshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
-广东卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/gdwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
-辽宁卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
-江西卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/jxwshd/57/20190820/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
-湖北卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/hbwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
-东南卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/dongnanws/57/20230724/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
-海峡卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/haixiaws/57/20230724/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
-中国农林卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/zgnlws/57/20250804/01.m3u8?mtv_session=&HlsSubType=$Q1
-兵团卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/btws/51/20250804/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
