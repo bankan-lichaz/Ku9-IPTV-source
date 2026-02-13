@@ -22,6 +22,9 @@
 辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/29/live.m3u8$兰州城关标清uni
 辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/40/live.m3u8$兰州城关标清uni
 辽宁卫视,http://39.106.167.36/migu.php?id=630291707$北京阿里标清
+辽宁卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
+辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q2
+辽宁卫视,http://36.134.89.155:1234/630291707$Q标清
 
 辽宁都市,http://fuxin.yunjifei.top:999/tsfile/live/1000_1.m3u8?key=txiptv$阜新太平Tele
 辽宁影视剧,http://fuxin.yunjifei.top:999/tsfile/live/1001_1.m3u8?key=txiptv$阜新太平Tele
