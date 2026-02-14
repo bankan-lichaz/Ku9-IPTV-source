@@ -897,22 +897,22 @@ CGTN,http://39.106.167.36/migu.php?id=609017205$北京阿里标清
 CETV2,http://39.106.167.36/migu.php?id=923287211$北京阿里标清
 CETV4,http://39.106.167.36/migu.php?id=923287339$北京阿里标清
 
-CCTV1,https://migu.188766.xyz/?migutoken=1d76d8156ae5f2651de5cb91596408fa&id=CCTV1&type=yy$冰茶标清
-CCTV2,https://migu.188766.xyz/?migutoken=dbc4f851b631f66999d5ab2d9f84bb98&id=CCTV2&type=yy$冰茶标清
-CCTV4,https://migu.188766.xyz/?migutoken=6c0790eabafd0efe43dd0d24cede77d5&id=CCTV4&type=yy$冰茶标清
-CCTV5,https://migu.188766.xyz/?migutoken=1353381b68d5a9d75c8894b7eb33595c&id=CCTV5&type=yy$冰茶标清
-CCTV5+,https://migu.188766.xyz/?migutoken=60d46675f60747566a9b705f88ec85b3&id=CCTV5p&type=yy$冰茶标清
-CCTV6,https://migu.188766.xyz/?migutoken=f925d99ef7426c3f3d9bd9cb25400c31&id=CCTV6&type=yy$冰茶标清
-CCTV8,https://migu.188766.xyz/?migutoken=2dad530913bb273bdf57176e148e886d&id=CCTV8&type=yy$冰茶标清
-CCTV9,https://migu.188766.xyz/?migutoken=ac2675d2e69d8b81d236ca5103390dcc&id=CCTV9&type=yy$冰茶标清
-CCTV10,https://migu.188766.xyz/?migutoken=b996c505d7fc2c6071fb1c6004678c30&id=CCTV10&type=yy$冰茶标清
-CCTV12,https://migu.188766.xyz/?migutoken=a31bf75c5299250d0108b050e226425b&id=CCTV12&type=yy$冰茶标清
-CCTV13,https://migu.188766.xyz/?migutoken=c6e54964097300a1d8a1403bafd80811&id=CCTV13&type=yy$冰茶标清
-CCTV14,https://migu.188766.xyz/?migutoken=13c41d9936ac89f33a35198819842888&id=CCTV14&type=yy$冰茶标清
-CCTV17,https://migu.188766.xyz/?migutoken=2cb662d9e591ab51660b52c965f3f91e&id=CCTV17&type=yy$冰茶标清
-CCTV4欧洲,https://migu.188766.xyz/?migutoken=1b9396f5924163a51ca5c8b384275ed5&id=CCTV4%E6%AC%A7%E6%B4%B2&type=yy$冰茶标清
-CCTV4美洲,https://migu.188766.xyz/?migutoken=b373bab034053cf3d03d88de69c7afe8&id=CCTV4%E7%BE%8E%E6%B4%B2&type=yy$冰茶标清
-辽宁卫视,https://migu.188766.xyz/?migutoken=18f94ac7d4ec45445939132d747a7ebb&id=%E8%BE%BD%E5%AE%81%E5%8D%AB%E8%A7%86&type=yy$冰茶标清
+CCTV1,https://migu.188766.xyz/?migutoken=1d76d8156ae5f2651de5cb91596408fa&id=CCTV1&type=yy$YM标清
+CCTV2,https://migu.188766.xyz/?migutoken=dbc4f851b631f66999d5ab2d9f84bb98&id=CCTV2&type=yy$YM标清
+CCTV4,https://migu.188766.xyz/?migutoken=6c0790eabafd0efe43dd0d24cede77d5&id=CCTV4&type=yy$YM标清
+CCTV5,https://migu.188766.xyz/?migutoken=1353381b68d5a9d75c8894b7eb33595c&id=CCTV5&type=yy$YM标清
+CCTV5+,https://migu.188766.xyz/?migutoken=60d46675f60747566a9b705f88ec85b3&id=CCTV5p&type=yy$YM标清
+CCTV6,https://migu.188766.xyz/?migutoken=f925d99ef7426c3f3d9bd9cb25400c31&id=CCTV6&type=yy$YM标清
+CCTV8,https://migu.188766.xyz/?migutoken=2dad530913bb273bdf57176e148e886d&id=CCTV8&type=yy$YM标清
+CCTV9,https://migu.188766.xyz/?migutoken=ac2675d2e69d8b81d236ca5103390dcc&id=CCTV9&type=yy$YM标清
+CCTV10,https://migu.188766.xyz/?migutoken=b996c505d7fc2c6071fb1c6004678c30&id=CCTV10&type=yy$YM标清
+CCTV12,https://migu.188766.xyz/?migutoken=a31bf75c5299250d0108b050e226425b&id=CCTV12&type=yy$YM标清
+CCTV13,https://migu.188766.xyz/?migutoken=c6e54964097300a1d8a1403bafd80811&id=CCTV13&type=yy$YM标清
+CCTV14,https://migu.188766.xyz/?migutoken=13c41d9936ac89f33a35198819842888&id=CCTV14&type=yy$YM标清
+CCTV17,https://migu.188766.xyz/?migutoken=2cb662d9e591ab51660b52c965f3f91e&id=CCTV17&type=yy$YM标清
+CCTV4欧洲,https://migu.188766.xyz/?migutoken=1b9396f5924163a51ca5c8b384275ed5&id=CCTV4%E6%AC%A7%E6%B4%B2&type=yy$YM标清
+CCTV4美洲,https://migu.188766.xyz/?migutoken=b373bab034053cf3d03d88de69c7afe8&id=CCTV4%E7%BE%8E%E6%B4%B2&type=yy$YM标清
+辽宁卫视,https://migu.188766.xyz/?migutoken=18f94ac7d4ec45445939132d747a7ebb&id=%E8%BE%BD%E5%AE%81%E5%8D%AB%E8%A7%86&type=yy$YM标清
 
 
 东方卫视,http://hlsbkmgsplive.miguvideo.com/wd_r4/dfl/dongfangwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
