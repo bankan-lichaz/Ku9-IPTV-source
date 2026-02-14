@@ -13,6 +13,7 @@
 按菜单可选线路,https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist720p.m3u8$publiciptv
 辽宁频道,#genre#
 辽宁卫视,http://izihao.cn:7123/630291707$四川成都高清
+辽宁卫视,http://39.104.69.92:3566/630291707$北京阿里高清
 辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws$VPS旧金山1
 辽宁卫视,http://k.061899.xyz/k.php?id=lnws$VPS新加坡
 辽宁卫视,http://j.s.bkpcp.top/jj/lnws$VPS旧金山3
@@ -34,11 +35,13 @@
 辽宁经济,http://fuxin.yunjifei.top:999/tsfile/live/1008_1.m3u8?key=txiptv$阜新太平Tele
 辽宁移动电视,http://fuxin.yunjifei.top:999/tsfile/live/1009_1.m3u8?key=txiptv$阜新太平Tele
 
+辽宁公共,http://39.104.69.92:3566/962045223$北京阿里高清
+辽宁生活,http://39.104.69.92:3566/962045226$北京阿里高清
+辽宁影视剧,http://39.104.69.92:3566/962067517$北京阿里高清
+辽宁公共,http://izihao.cn:7123/962045223$四川成都高清
+辽宁生活,http://izihao.cn:7123/962045226$四川成都高清
+辽宁影视剧,http://izihao.cn:7123/962067517$四川成都高清
 
-辽宁生活,http://101.34.236.223:1117/962045226$FC高清
-辽宁公共,http://101.34.236.223:1118/962045223$FC标清
-辽宁生活,http://101.34.236.223:1118/962045226$FC标清
-辽宁影视剧,http://101.34.236.223:1118/962067517$FC标清
 
 辽宁卫视,http://39.152.103.17:8089/tsfile/live/1024_1.m3u8$阜新彰武Mobile
 辽宁都市,http://39.152.103.17:8089/tsfile/live/1025_1.m3u8$阜新彰武Mobile
