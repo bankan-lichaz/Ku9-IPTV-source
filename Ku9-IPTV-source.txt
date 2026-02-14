@@ -313,6 +313,31 @@ CHC影迷电影,http://m.061899.xyz/mg/ymdy$VPS旧金山2
 黑龙江卫视,http://m.061899.xyz/mg/hljws$VPS旧金山2
 三沙卫视,https://stream.iptv-search.com/main.php?id=%E4%B8%89%E6%B2%99%E5%8D%AB%E8%A7%86&t=1755401429&token=7ddfc6d40f1c98da27c8b5e7c59836a3
 
+CCTV1,http://www.731200.xyz:9999/rtp/239.255.40.35:8208$泉州南安uni
+CCTV2,http://www.731200.xyz:9999/rtp/239.255.40.36:8208$泉州南安uni
+CCTV5+,http://www.731200.xyz:9999/rtp/239.255.40.34:8208$泉州南安uni
+CCTV7,http://www.731200.xyz:9999/rtp/239.255.40.37:8208$泉州南安uni
+CCTV9,http://www.731200.xyz:9999/rtp/239.255.40.38:8208$泉州南安uni
+CCTV10,http://www.731200.xyz:9999/rtp/239.255.40.39:8208$泉州南安uni
+CCTV11,http://www.731200.xyz:9999/rtp/239.255.40.2:8208$泉州南安uni
+CCTV12,http://www.731200.xyz:9999/rtp/239.255.40.40:8208$泉州南安uni
+CCTV13,http://www.731200.xyz:9999/rtp/239.255.40.3:8208$泉州南安uni
+CCTV14,http://www.731200.xyz:9999/rtp/239.255.40.41:8208$泉州南安uni
+CCTV15,http://www.731200.xyz:9999/rtp/239.255.40.4:8208$泉州南安uni
+CGTN,http://www.731200.xyz:9999/rtp/239.255.40.5:8208$泉州南安uni
+CCTV17,http://www.731200.xyz:9999/rtp/239.255.40.143:8208$泉州南安uni
+东方卫视,http://www.731200.xyz:9999/rtp/239.255.40.50:8208$泉州南安uni
+湖南卫视,http://www.731200.xyz:9999/rtp/239.255.40.43:8208$泉州南安uni
+江苏卫视,http://www.731200.xyz:9999/rtp/239.255.40.42:8208$泉州南安uni
+黑龙江卫视,http://www.731200.xyz:9999/rtp/239.255.40.44:8208$泉州南安uni
+云南卫视,http://www.731200.xyz:9999/rtp/239.255.40.6:8208$泉州南安uni
+河南卫视,http://www.731200.xyz:9999/rtp/239.255.40.9:8208$泉州南安uni
+海南卫视,http://www.731200.xyz:9999/rtp/239.255.40.23:8208$泉州南安uni
+广西卫视,http://www.731200.xyz:9999/rtp/239.255.40.22:8208$泉州南安uni
+陕西卫视,http://www.731200.xyz:9999/rtp/239.255.40.10:8208$泉州南安uni
+青海卫视,http://www.731200.xyz:9999/rtp/239.255.40.15:8208$泉州南安uni
+
+
 
 CCTV1,http://k.061899.xyz/k.php?id=cctv1$VPS新加坡
 CCTV2,http://k.061899.xyz/k.php?id=cctv2$VPS新加坡
