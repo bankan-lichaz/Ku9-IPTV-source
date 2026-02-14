@@ -14,7 +14,6 @@
 辽宁频道,#genre#
 辽宁卫视,http://101.34.236.223:1117/630291707$FC高清
 辽宁卫视,http://101.34.236.223:1118/630291707$FC标清
-辽宁卫视,http://43.251.226.89:8080/play/37.m3u8$潇雨萌萌香港
 辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws$VPS旧金山1
 辽宁卫视,http://k.061899.xyz/k.php?id=lnws$VPS新加坡
 辽宁卫视,http://j.s.bkpcp.top/jj/lnws$VPS旧金山3
@@ -60,10 +59,6 @@
 辽宁生活,http://39.106.167.36/migu.php?id=962045226$北京阿里标清
 辽宁影视剧,http://39.106.167.36/migu.php?id=962067517$北京阿里标清
 辽宁体育休闲,http://39.106.167.36/migu.php?id=962067526$北京阿里标清
-辽宁公共,http://43.251.226.89:8080/play/84.m3u8$潇雨萌萌
-辽宁生活,http://43.251.226.89:8080/play/85.m3u8$潇雨萌萌
-辽宁影视剧,http://43.251.226.89:8080/play/86.m3u8$潇雨萌萌
-辽宁体育休闲,http://43.251.226.89:8080/play/224.m3u8$潇雨萌萌
 
 央卫频道,#genre#
 CCTV1,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv1$VPS旧金山1
