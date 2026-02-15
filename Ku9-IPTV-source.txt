@@ -967,7 +967,7 @@ CHC家庭影院,http://go.bkpcp.top/mg/jtyy$VPS旧金山4
 湖北卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/hbwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 东南卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/dongnanws/57/20230724/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 海峡卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/haixiaws/57/20230724/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
-中国农林卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/zgnlws/57/20250804/01.m3u8?mtv_session=&HlsSubType=$Q1
+农林卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/zgnlws/57/20250804/01.m3u8?mtv_session=&HlsSubType=$Q1
 兵团卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/btws/51/20250804/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 
 河北卫视,http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8$Q1
