@@ -1262,12 +1262,12 @@ HD音乐,https://lhttp.qingting.fm/live/15318341/64k.mp3
 全球频道,#genre#
 东森新闻Ustv,http://rihou.cc:555/tv/[Us]东森新闻$Q1
 东森财经Ustv,http://rihou.cc:555/tv/[Us]东森财经$Q1
-壹新闻Ustv,http://rihou.cc:555/tv/[Us]壹新闻$Q1
+闽壹新闻Ustv,http://rihou.cc:555/tv/[Us]闽壹新聞$Q1
 中天新聞Ustv,http://rihou.cc:555/tv/[Us]中天新聞$Q1
 寰宇新闻Ustv,http://rihou.cc:555/tv/[Us]寰宇新闻$Q1
 三立新闻Ustv,http://rihou.cc:555/tv/[Us]三立新闻$Q1
 民视新闻Ustv,http://rihou.cc:555/tv/[Us]民视新闻$Q1
-民视新闻Ustv,http://rihou.cc:555/tv/[Us]闽壹新聞$Q1
+闽壹新闻Ustv,http://rihou.cc:555/tv/[Us]闽壹新聞$Q1
 非凡新闻Ustv,http://rihou.cc:555/tv/[Us]非凡新闻$Q1
 BBC新闻Ustv,http://rihou.cc:555/tv/[Us]BBC新闻$Q1
 CNN新闻Ustv,http://rihou.cc:555/tv/[Us]CNN新闻$Q1
