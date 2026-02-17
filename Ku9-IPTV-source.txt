@@ -1099,22 +1099,6 @@ ViuTV,http://hls.168.us.kg/u/99/master.m3u8
 龙华洋片台,http://cdn8.163189.xyz/163189/lhyp
 龙华电影台,http://cdn8.163189.xyz/163189/lhdy
 
-民视闽南,rtmp://f13h.mine.nu/sat/tv051
-中视闽南,rtmp://f13h.mine.nu/sat/tv091
-华视闽南,rtmp://f13h.mine.nu/sat/tv111
-台视闽南,rtmp://f13h.mine.nu/sat/tv071
-非凡新闻,rtmp://f13h.mine.nu/sat/tv581
-东森超视,rtmp://f13h.mine.nu/sat/tv331
-中视HD,rtmp://f13h.mine.nu/sat/tv091
-纬来育乐,rtmp://f13h.mine.nu/sat/tv701
-纬来日本,rtmp://f13h.mine.nu/sat/tv771
-台视,rtmp://f13h.mine.nu/sat/tv071
-华视,rtmp://f13h.mine.nu/sat/tv111
-MoMoTV,rtmp://f13h.mine.nu/sat/tv761
-纬来体育,rtmp://f13h.mine.nu/sat/tv721
-ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731
-ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741
-
 生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/playlist.m3u8
