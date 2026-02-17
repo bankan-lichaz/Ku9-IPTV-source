@@ -1261,6 +1261,7 @@ HD音乐,https://lhttp.qingting.fm/live/15318341/64k.mp3
 
 全球频道,#genre#
 东森新闻Ustv,http://rihou.cc:555/tv/[Us]东森新闻$Q1
+东森财经Ustv,http://rihou.cc:555/tv/[Us]东森财经$Q1
 中天新聞Ustv,http://rihou.cc:555/tv/[Us]中天新聞$Q1
 寰宇新闻Ustv,http://rihou.cc:555/tv/[Us]寰宇新闻$Q1
 三立新闻Ustv,http://rihou.cc:555/tv/[Us]三立新闻$Q1
