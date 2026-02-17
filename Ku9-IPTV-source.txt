@@ -1065,11 +1065,14 @@ CCTV1港澳版,https://php.jdshipin.com:2096/TVOD/iptv.php?id=rthk33
 CH5,http://cdn6.163189.xyz/163189/ch5
 CH8,http://cdn6.163189.xyz/163189/ch8
 CHU,http://cdn6.163189.xyz/163189/chu
-龙华电影,http://cdn8.163189.xyz/163189/lhdy
-龙华经典,http://cdn8.163189.xyz/163189/lhjd
-龙华偶像,http://cdn8.163189.xyz/163189/lhox
-龙华日韩,http://cdn8.163189.xyz/163189/lhrh
-龙华戏剧,http://cdn8.163189.xyz/163189/lhxj
+龙华电影台,http://cdn8.163189.xyz/163189/lhdy
+龙华经典台,http://cdn8.163189.xyz/163189/lhjd
+龙华卡通台,http://cdn8.163189.xyz/163189/lhkt
+龙华偶像台,http://cdn8.163189.xyz/163189/lhox
+龙华日韩台,http://cdn8.163189.xyz/163189/lhrh
+龙华戏剧台,http://cdn8.163189.xyz/163189/lhxj
+龙华洋片台,http://cdn8.163189.xyz/163189/lhyp
+龙华电影台,http://cdn8.163189.xyz/163189/lhdy
 TVB千禧经典台,https://php.jdshipin.com:2096/TVOD/iptv.php?id=tvbc
 Astro AOD,https://php.jdshipin.com:2096/TVOD/iptv.php?id=aod
 华丽翡翠台,https://php.jdshipin.com:2096/TVOD/iptv.php?id=huali2
