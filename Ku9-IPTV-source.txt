@@ -963,6 +963,8 @@ CCTV1,http://rihou.cc:555/tv/[mg]CCTV-01$Q1
 CCTV2,http://rihou.cc:555/tv/[mg]CCTV-02$Q1
 CCTV3,http://rihou.cc:555/tv/[mg]CCTV-03$Q1
 CCTV4,http://rihou.cc:555/tv/[mg]CCTV-04$Q1
+CCTV5,http://rihou.cc:555/tv/[mg]CCTV-05$Q1
+CCTV5+,http://rihou.cc:555/tv/[mg]CCTV-5p$Q1
 CCTV6,http://rihou.cc:555/tv/[mg]CCTV-06$Q1
 CCTV7,http://rihou.cc:555/tv/[mg]CCTV-07$Q1
 CCTV8,http://rihou.cc:555/tv/[mg]CCTV-08$Q1
