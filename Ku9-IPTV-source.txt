@@ -154,6 +154,34 @@ CCTV17,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv17$VPS旧金山1
 
 CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 
+CCTV1,http://rihou.cc:555/tv/[mg]CCTV-01$Q
+CCTV2,http://rihou.cc:555/tv/[mg]CCTV-02$Q
+CCTV3,http://rihou.cc:555/tv/[mg]CCTV-03$Q
+CCTV4,http://rihou.cc:555/tv/[mg]CCTV-04$Q
+CCTV6,http://rihou.cc:555/tv/[mg]CCTV-06$Q
+CCTV7,http://rihou.cc:555/tv/[mg]CCTV-07$Q
+CCTV8,http://rihou.cc:555/tv/[mg]CCTV-08$Q
+CCTV9,http://rihou.cc:555/tv/[mg]CCTV-09$Q
+CCTV10,http://rihou.cc:555/tv/[mg]CCTV-10$Q
+CCTV12,http://rihou.cc:555/tv/[mg]CCTV-12$Q
+CCTV13,http://rihou.cc:555/tv/[mg]CCTV-13$Q
+CCTV14,http://rihou.cc:555/tv/[mg]CCTV-14$Q
+CCTV15,http://rihou.cc:555/tv/[mg]CCTV-15$Q
+CCTV17,http://rihou.cc:555/tv/[mg]CCTV-17$Q
+CCTV4欧洲,http://rihou.cc:555/tv/[mg]cct4欧洲$Q
+CGTN西班牙语,http://rihou.cc:555/tv/[mg]CGTN-西$Q
+CGTN阿拉伯语,http://rihou.cc:555/tv/[mg]CGTN-阿$Q
+CGTN法语,http://rihou.cc:555/tv/[mg]CGTN-法$Q
+睛彩竞技,http://rihou.cc:555/tv/[mg]睛彩竞技$Q
+睛彩竞技,http://rihou.cc:555/tv/[mg]睛彩竞技|$Q
+睛彩篮球,http://rihou.cc:555/tv/[mg]睛彩篮球$Q
+睛彩篮球,http://rihou.cc:555/tv/[mg]睛彩篮球|$Q
+睛彩青少,http://rihou.cc:555/tv/[mg]睛彩青少$Q
+睛彩青少,http://rihou.cc:555/tv/[mg]睛彩青少|$Q
+睛彩广场,http://rihou.cc:555/tv/[mg]睛彩广场$Q
+睛彩广场,http://rihou.cc:555/tv/[mg]睛彩广场|$Q
+
+
 CCTV1,http://izihao.cn:7123/608807420$四川成都高清
 CCTV2,http://izihao.cn:7123/631780532$四川成都高清
 CCTV3,http://izihao.cn:7123/624878271$四川成都高清
