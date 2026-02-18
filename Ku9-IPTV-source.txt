@@ -42,7 +42,7 @@
 抚顺教育,http://116.2.163.195:4010/rtp/232.0.0.254:1234$和平太原街uni
 
 			
-沈阳新闻综合,http://vipcoolufo.com:4022/rtp/232.0.0.227:9276$辽宁uni$大连甘井子uni
+沈阳新闻综合,http://vipcoolufo.com:4022/rtp/232.0.0.227:9276$大连甘井子uni
 辽宁都市,http://vipcoolufo.com:4022/rtp/232.0.0.42:8856$大连甘井子uni
 辽宁体育休闲,http://vipcoolufo.com:4022/rtp/232.0.0.66:8820$大连甘井子uni
 辽宁影视剧,http://vipcoolufo.com:4022/rtp/232.0.0.97:8534$大连甘井子uni
