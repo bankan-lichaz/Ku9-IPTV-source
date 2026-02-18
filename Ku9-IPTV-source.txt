@@ -1379,6 +1379,11 @@ ViuTV,http://hls.168.us.kg/u/99/master.m3u8
 金色剧场,http://t.061899.xyz/tl/tl.php?id=jsjc$旧金山5
 重温经典,http://t.061899.xyz/tl/tl.php?id=cwjd$旧金山5
 
+華藝中文台,http://iptv.4666888.xyz/iptv2A.php?id=37
+邵氏电影,http://iptv.4666888.xyz/iptv2A.php?id=39
+iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21
+凤凰卫视,http://iptv.4666888.xyz/iptv2A.php?id=27
+
 
 常用电台,#genre#
 辽宁之声(综广),http://satellitepull.cnr.cn/live/wxlnzhgb/playlist.m3u8
