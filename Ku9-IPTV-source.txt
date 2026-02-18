@@ -112,7 +112,7 @@ CITY都市剧场,http://116.2.163.195:4010/rtp/232.0.0.149:1234$和平太原街u
 江苏财富天下,http://116.2.163.195:4010/rtp/232.0.0.147:1234$和平太原街uni
 金色学堂,http://116.2.163.195:4010/rtp/232.0.0.133:1234$和平太原街uni
 
-CCTV10健康之路,http://www.vipcoolufo.com:4022/rtp/232.0.0.154:9318$甘井子www 
+CCTV健康之路,http://www.vipcoolufo.com:4022/rtp/232.0.0.154:9318$甘井子www 
 CCTV第一剧场,http://www.vipcoolufo.com:4022/rtp/232.0.0.147:9132$甘井子www
 CCTV怀旧剧场,http://www.vipcoolufo.com:4022/rtp/232.0.0.204:9226$甘井子www
 CCTV风云剧场,http://www.vipcoolufo.com:4022/rtp/232.0.0.52:8610$甘井子www
