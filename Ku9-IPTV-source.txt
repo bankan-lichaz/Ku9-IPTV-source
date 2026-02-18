@@ -1106,8 +1106,8 @@ CCTV17,http://t.061899.xyz/tl/tl.php?id=cctv17$VPS旧金山5
 新疆卫视,http://t.061899.xyz/tl/tl.php?id=xjws$VPS旧金山5
 吉林卫视,http://t.061899.xyz/tl/tl.php?id=jlws$VPS旧金山5
 西藏卫视,http://t.061899.xyz/tl/tl.php?id=xzws$VPS旧金山5
-内蒙古视,http://t.061899.xyz/tl/tl.php?id=nmgws$VPS旧金山5
-黑龙江视,http://t.061899.xyz/tl/tl.php?id=hljws$VPS旧金山5
+内蒙古卫视,http://t.061899.xyz/tl/tl.php?id=nmgws$VPS旧金山5
+黑龙江卫视,http://t.061899.xyz/tl/tl.php?id=hljws$VPS旧金山5
 
 
 CCTV1,http://rihou.cc:555/tv/[mg]CCTV-01$Q1
