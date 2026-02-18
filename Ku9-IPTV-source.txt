@@ -1363,8 +1363,21 @@ ViuTV,http://hls.168.us.kg/u/99/master.m3u8
 金色剧场,http://go.bkpcp.top/mg/jsjc$旧金山4
 重温经典,http://go.bkpcp.top/mg/cwjd$旧金山4
 
-
-
+凤凰中文,http://t.061899.xyz/tl/tl.php?id=fhzw$旧金山5
+凤凰资讯,http://t.061899.xyz/tl/tl.php?id=fhzx$旧金山5
+凤凰香港,http://t.061899.xyz/tl/tl.php?id=fhhk$旧金山5
+北京体育休闲,http://t.061899.xyz/tl/tl.php?id=bjty$旧金山5
+北京新闻,http://t.061899.xyz/tl/tl.php?id=bjxw$旧金山5
+北京财经,http://t.061899.xyz/tl/tl.php?id=bjcj$旧金山5
+北京文艺,http://t.061899.xyz/tl/tl.php?id=bjwy$旧金山5
+北京生活,http://t.061899.xyz/tl/tl.php?id=bjsh$旧金山5
+北京少儿,http://t.061899.xyz/tl/tl.php?id=bjkk$旧金山5
+北京影视,http://t.061899.xyz/tl/tl.php?id=bjys$旧金山5
+北京纪实,http://t.061899.xyz/tl/tl.php?id=bjjs$旧金山5
+东方影视,http://t.061899.xyz/tl/tl.php?id=shys$旧金山5
+东方纪实,http://t.061899.xyz/tl/tl.php?id=xjs$旧金山5
+金色剧场,http://t.061899.xyz/tl/tl.php?id=jsjc$旧金山5
+重温经典,http://t.061899.xyz/tl/tl.php?id=cwjd$旧金山5
 
 
 常用电台,#genre#
