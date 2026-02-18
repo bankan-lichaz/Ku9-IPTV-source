@@ -41,6 +41,7 @@
 抚顺综合,http://116.2.163.195:4010/rtp/232.0.0.253:1234$和平太原街uni
 抚顺教育,http://116.2.163.195:4010/rtp/232.0.0.254:1234$和平太原街uni
 
+
 			
 沈阳新闻综合,http://vipcoolufo.com:4022/rtp/232.0.0.227:9276$大连甘井子uni
 辽宁都市,http://vipcoolufo.com:4022/rtp/232.0.0.42:8856$大连甘井子uni
@@ -52,6 +53,7 @@
 辽宁北方,http://vipcoolufo.com:4022/rtp/232.0.0.211:9240$大连甘井子uni
 辽宁生活,http://vipcoolufo.com:4022/rtp/232.0.0.212:9242$大连甘井子uni
 辽宁教育青少,http://vipcoolufo.com:4022/rtp/232.0.0.230:9356$大连甘井子uni
+辽宁宜家购物,http://vipcoolufo.com:4022/rtp/232.0.0.21:8838$大连甘井子uni
 铁岭新闻综合,http://vipcoolufo.com:4022/rtp/232.0.0.240:9280$大连甘井子uni
 铁岭生活,http://vipcoolufo.com:4022/rtp/232.0.0.241:9282$大连甘井子uni
 朝阳新闻综合,http://vipcoolufo.com:4022/rtp/232.0.0.243:9126$大连甘井子uni
@@ -67,6 +69,11 @@
 葫芦岛新闻综合,http://vipcoolufo.com:4022/rtp/232.0.0.238:9260$大连甘井子uni
 葫芦岛生活,http://vipcoolufo.com:4022/rtp/232.0.0.239:9262$大连甘井子uni
 
+CCTV健康之路,http://116.2.163.195:4010/rtp/232.0.0.148:1234$和平太原街uni
+CCTV开门大吉,http://116.2.163.195:4010/rtp/232.0.0.118:1234$和平太原街uni
+CCTV远方的家,http://116.2.163.195:4010/rtp/232.0.0.197:1234$和平太原街uni
+CCTV5重播1,http://116.2.163.195:4010/rtp/232.0.0.213:1234$和平太原街uni
+CCTV5重播2,http://116.2.163.195:4010/rtp/232.0.0.119:1234$和平太原街uni
 中国天气,http://116.2.163.195:4010/rtp/232.0.0.144:1234$和平太原街uni
 CCTV第一剧场,http://116.2.163.195:4010/rtp/232.0.0.029:1234$和平太原街uni
 CCTV怀旧剧场,http://116.2.163.195:4010/rtp/232.0.0.038:1234$和平太原街uni
@@ -104,6 +111,18 @@ CITY都市剧场,http://116.2.163.195:4010/rtp/232.0.0.149:1234$和平太原街u
 东方财经,http://116.2.163.195:4010/rtp/232.0.0.224:1234$和平太原街uni
 江苏财富天下,http://116.2.163.195:4010/rtp/232.0.0.147:1234$和平太原街uni
 金色学堂,http://116.2.163.195:4010/rtp/232.0.0.133:1234$和平太原街uni
+
+CCTV第一剧场,http://vipcoolufo.com:4022/rtp/232.0.0.147:9132$大连甘井子uni
+CCTV怀旧剧场,http://vipcoolufo.com:4022/rtp/232.0.0.204:9226$大连甘井子uni
+CCTV风云剧场,http://vipcoolufo.com:4022/rtp/232.0.0.52:8610$大连甘井子uni
+CCTV风云音乐,http://vipcoolufo.com:4022/rtp/232.0.0.108:9288$大连甘井子uni
+CCTV女性时尚,http://vipcoolufo.com:4022/rtp/232.0.0.120:8858$大连甘井子uni
+CCTV风云足球,http://vipcoolufo.com:4022/rtp/232.0.0.90:9286$大连甘井子uni
+CCTV央视文化精品,http://vipcoolufo.com:4022/rtp/232.0.0.107:8698$大连甘井子uni
+CCTV兵器科技,http://vipcoolufo.com:4022/rtp/232.0.0.121:8882$大连甘井子uni
+CCTV央视台球,http://vipcoolufo.com:4022/rtp/232.0.0.122:9290$大连甘井子uni
+CCTV世界地理,http://vipcoolufo.com:4022/rtp/232.0.0.123:9292$大连甘井子uni
+
 
 辽宁都市,http://fuxin.yunjifei.top:999/tsfile/live/1000_1.m3u8?key=txiptv$阜新太平Tele
 辽宁影视剧,http://fuxin.yunjifei.top:999/tsfile/live/1001_1.m3u8?key=txiptv$阜新太平Tele
