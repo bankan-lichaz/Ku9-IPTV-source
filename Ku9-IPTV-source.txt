@@ -1216,10 +1216,20 @@ ViuTV,http://hls.168.us.kg/u/99/master.m3u8
 
 
 常用电台,#genre#
-辽宁之声,http://satellitepull.cnr.cn/live/wxlnzhgb/playlist.m3u8
+辽宁之声(综广),http://satellitepull.cnr.cn/live/wxlnzhgb/playlist.m3u8
 辽宁乡村广播,http://satellitepull.cnr.cn/live/wxlnxcgb/playlist.m3u8
 辽宁经济广播,http://satellitepull.cnr.cn/live/wxlnjjtb/playlist.m3u8
 辽宁交通广播,http://satellitepull.cnr.cn/live/wxlnjtgb/playlist.m3u8
+辽宁之声(综广),http://lhttp.qingting.fm/live/1103/64k.mp3
+辽宁乡村广播,http://lhttp.qingting.fm/live/20018/64k.mp3
+辽宁经济广播,http://lhttp.qingting.fm/live/20019/64k.mp3
+辽宁交通广播,http://lhttp.qingting.fm/live/20025/64k.mp3
+辽宁经典音乐广播,http://lhttp.qingting.fm/live/20021/64k.mp3
+沈阳之声,http://lhttp.qingting.fm/live/20024/64k.mp3
+沈阳都市广播921,http://lhttp.qingting.fm/live/1099/64k.mp3
+沈阳交通广播FM98.6,http://lhttp.qingting.fm/live/1101/64k.mp3
+沈阳生活广播,http://lhttp.qingting.fm/live/1102/64k.mp3
+
 中国之声,http://ngcdn001.cnr.cn/live/zgzs/index.m3u8
 经济之声,http://ngcdn002.cnr.cn/live/jjzs/index.m3u8
 环球资讯,http://sk.cri.cn/905.m3u8
