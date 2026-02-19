@@ -24,7 +24,6 @@
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q2
 
-和平太原街,#genre#
 沈阳新闻综合,http://116.2.163.195:4010/rtp/232.0.0.206:1234$和平太原街uni
 辽宁都市,http://116.2.163.195:4010/rtp/232.0.0.154:1234$和平太原街uni
 辽宁生活,http://116.2.163.195:4010/rtp/232.0.0.150:1234$和平太原街uni
