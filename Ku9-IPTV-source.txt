@@ -1050,6 +1050,9 @@ CGTN法语,http://rihou.cc:555/tv/[mg]CGTN-法$Q1
 农林卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/zgnlws/57/20250804/01.m3u8?mtv_session=&HlsSubType=$Q1
 兵团卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/btws/51/20250804/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 CHC家庭影院,http://hlsbkmgsplive.miguvideo.com/wd_r3/cnr/chcjtyy/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
+CHC动作电影,http://hlsbkmgsplive.miguvideo.com/migu/kailu/chcdzdy/57/20250514/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
+CHC影迷电影,http://hlsbkmgsplive.miguvideo.com/migu/kailu/chcymdy/57/20250415/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
+
 
 
 河北卫视,http://event.pull.hebtv.com/jishi/weishi_tingyun.m3u8$Q1
