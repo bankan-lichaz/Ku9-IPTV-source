@@ -1,7 +1,4 @@
-{
-  "辽宁频道": {
-    "genre": "#genre#",
-    "channels": [
+ [
       {
         "name": "辽宁卫视",
         "url": "http://go.bkpcp.top/mg/lnws"
@@ -11,18 +8,3 @@
         "url": "http://39.106.167.36/migu.php?id=962045223"
       }
     ]
-  },
-  "央卫频道": {
-    "genre": "#genre#",
-    "channels": [
-      {
-        "name": "CCTV1",
-        "url": "http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv1"
-      },
-      {
-        "name": "CCTV2",
-        "url": "http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv2"
-      }
-    ]
-  }
-}
