@@ -1,5 +1,5 @@
 function main(item) {
 
-    return { url: "http://39.107.237.139:1234/" + item.id };
+    return { url: "http://39.105.222.179:6700/" + item.id };
 
 }
