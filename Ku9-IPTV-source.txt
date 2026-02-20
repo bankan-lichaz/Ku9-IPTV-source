@@ -1480,6 +1480,7 @@ iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$阿烈
 凤凰中文,http://smt.1678520.xyz/smt3.2.3.php?id=phoenixtv_hd$斯玛特
 
 凤凰电影,http://iot-mqqt.111yao.cn:8080/live/diyp_fhdy.m3u8?hls_ctx=81777711$北京阿里云
+星空卫视,http://iot-mqqt.111yao.cn:8080/live/diyp_xingkong.m3u8$北京阿里云
 
 常用电台,#genre#
 辽宁之声(综广),http://satellitepull.cnr.cn/live/wxlnzhgb/playlist.m3u8
