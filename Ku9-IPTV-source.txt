@@ -69,17 +69,6 @@
 葫芦岛新闻综合,http://www.vipcoolufo.com:4022/rtp/232.0.0.238:9260$甘井子www
 葫芦岛生活,http://www.vipcoolufo.com:4022/rtp/232.0.0.239:9262$甘井子www
 
-CCTV健康之路,http://www.vipcoolufo.com:4022/rtp/232.0.0.154:9318$甘井子www 
-CCTV第一剧场,http://www.vipcoolufo.com:4022/rtp/232.0.0.147:9132$甘井子www
-CCTV怀旧剧场,http://www.vipcoolufo.com:4022/rtp/232.0.0.204:9226$甘井子www
-CCTV风云剧场,http://www.vipcoolufo.com:4022/rtp/232.0.0.52:8610$甘井子www
-CCTV风云音乐,http://www.vipcoolufo.com:4022/rtp/232.0.0.108:9288$甘井子www
-CCTV女性时尚,http://www.vipcoolufo.com:4022/rtp/232.0.0.120:8858$甘井子www
-CCTV风云足球,http://www.vipcoolufo.com:4022/rtp/232.0.0.90:9286$甘井子www
-CCTV央视文化精品,http://www.vipcoolufo.com:4022/rtp/232.0.0.107:8698$甘井子www
-CCTV兵器科技,http://www.vipcoolufo.com:4022/rtp/232.0.0.121:8882$甘井子www
-CCTV央视台球,http://www.vipcoolufo.com:4022/rtp/232.0.0.122:9290$甘井子www
-CCTV世界地理,http://www.vipcoolufo.com:4022/rtp/232.0.0.123:9292$甘井子www
 			
 辽宁都市,http://fuxin.yunjifei.top:999/tsfile/live/1000_1.m3u8?key=txiptv$阜新太平Tele
 辽宁影视剧,http://fuxin.yunjifei.top:999/tsfile/live/1001_1.m3u8?key=txiptv$阜新太平Tele
