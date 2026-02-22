@@ -1,1 +1,2 @@
+朝鲜中央台,https://tv.intchoson.com/kctv/main_stream.m3u8
 朝鲜中央台,https://tv.nknews.org/tvdash/stream.mpd
