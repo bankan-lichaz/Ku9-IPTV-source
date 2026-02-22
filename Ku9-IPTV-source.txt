@@ -1271,6 +1271,9 @@ CCTV1港澳版,https://php.jdshipin.com:2096/TVOD/iptv.php?id=rthk33$jd视频1
 CH5,http://cdn6.163189.xyz/163189/ch5$旧金山
 CH8,http://cdn6.163189.xyz/163189/ch8$旧金山
 CHU,http://cdn6.163189.xyz/163189/chu$旧金山
+凤凰中文,http://cdn6.163189.xyz/163189/fhzw$旧金山
+凤凰资讯,http://cdn6.163189.xyz/163189/fhzx$旧金山
+凤凰香港,http://cdn6.163189.xyz/163189/fhhk$旧金山
 TVB千禧经典台,https://php.jdshipin.com:2096/TVOD/iptv.php?id=tvbc$jd视频1
 Astro AOD,https://php.jdshipin.com:2096/TVOD/iptv.php?id=aod$jd视频1
 华丽翡翠台,https://php.jdshipin.com:2096/TVOD/iptv.php?id=huali2$jd视频1
