@@ -1,5 +1,4 @@
-朝鲜中央台,https://tv.intchoson.com/kctv/main_stream.m3u8
-朝鲜中央台,https://tv.nknews.org/tvdash/stream.mpd
+KCTV,https://tv.intchoson.com/kctv/main_stream.m3u8
 ABN,https://vod2.abn.co.kr/IPHONE/abn.m3u8
 Arirang Radio,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 Arirang TV,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
