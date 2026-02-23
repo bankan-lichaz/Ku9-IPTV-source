@@ -1234,6 +1234,9 @@ CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 中视菁采,http://74.91.26.218:82/live/ctvjc.m3u8$堪薩斯城
 中视经典,http://74.91.26.218:82/live/ctvjd.m3u8$堪薩斯城
 民视新闻,http://74.91.26.218:82/live/ftvnews.m3u8$堪薩斯城
+华视新闻,http://74.91.26.218:82/live/ctsnews.m3u8$堪薩斯城
+台视新闻,http://74.91.26.218:82/live/ttvnews.m3u8$堪薩斯城
+中视新闻,http://74.91.26.218:82/live/ctvnews.m3u8$堪薩斯城
 
 凤凰中文,http://r.jdshipin.com/cCCzW$jd视频
 凤凰资讯,http://r.jdshipin.com/0Rp07$jd视频
