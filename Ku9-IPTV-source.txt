@@ -1240,7 +1240,7 @@ CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 公视台语,http://74.91.26.218:82/live/ptsty.m3u8$堪薩斯城
 民视第一,http://74.91.26.218:82/live/ftvdy.m3u8$堪薩斯城
 小公视,http://74.91.26.218:82/live/ptsse.m3u8$堪薩斯城
-TVB翡翠,http://74.91.26.218:82/live/jade.m3u8$堪薩斯城
+TVB翡翠台,http://74.91.26.218:82/live/jade.m3u8$堪薩斯城
 无线新闻,http://74.91.26.218:82/live/inews.m3u8$堪薩斯城
 TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 
