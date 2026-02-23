@@ -1220,7 +1220,7 @@ CCTV15,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv15/
 CCTV16,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv16/
 CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 
-粤港澳大湾区,#genre#
+粤港澳台,#genre#
 华视CTS,http://74.91.26.218:82/live/cts.m3u8$堪薩斯城
 台视,http://74.91.26.218:82/live/ttv.m3u8$堪薩斯城
 民视,http://74.91.26.218:82/live/ftv.m3u8$堪薩斯城
