@@ -1462,7 +1462,33 @@ iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$阿烈
 
 邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub$洛杉矶
 
-
+国际频道,#genre#
+朝鲜KCTV,https://tv.intchoson.com/kctv/main_stream.m3u8
+韩国Arirang Radio,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
+韩国Arirang TV,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
+韩国Arirang TV,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
+韩国Arirang UN,https://amdlive-ch02-ctnd-com.akamaized.net/arirang_2ch/smil:arirang_2ch.smil/playlist.m3u8
+英国BBC News,https://vs-hls-push-ww-live.akamaized.net/x=4/i=urn:bbc:pips:service:bbc_news_channel_hd/t=3840/v=pv14/b=5070016/main.m3u8
+英国GB News,https://live-gbnews-ssai-test.simplestreamcdn.com/v1/master/82267e84b9e5053b3fd0ade12cb1a146df74169a/gbnews-live-TEST/index.m3u8
+澳大利亚ABN,https://vod2.abn.co.kr/IPHONE/abn.m3u8
+新加坡CNA,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
+美国ABC,https://d4ybyqrhce41r.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-xumo-linear-nbcu-hlsv3/master.m3u8?ads.channelId=99991626
+美国Newsmax2,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
+印度WionNews,https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
+加拿大Trace Sports,https://lightning-tracesport-samsungau.amagi.tv/playlist1080p.m3u8
+俄罗斯RT News（英语国际）,https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
+俄罗斯RT Español（西语）,https://rt-esp.rttv.com/dvr/rtesp/playlist_4500Kb.m3u8
+俄罗斯RT Français（法语）,https://rt-fra.rttv.com/dvr/rtfrance/playlist_4500Kb.m3u8
+俄罗斯RT Arabic（阿语）,https://rt-arb.rttv.com/dvr/rtarab/playlist_4500Kb.m3u8
+俄罗斯RT DE（德语）,https://rt-ger.rttv.com/dvr/rtdeutsch/playlist_4500Kb.m3u8
+俄罗斯RT Balkan （塞尔维亚语）,https://rt-srb.rttv.com/dvr/rtbalkan/playlist_4500Kb.m3u8
+俄罗斯RT Documentary（英语纪录）,https://rt-rtd.rttv.com/dvr/rtdoc/playlist_4500Kb.m3u8
+俄罗斯RT Doc-Русский（俄语纪录）,https://rt-doc.rttv.com/dvr/rtdru/rtdru1080.m3u8
+狂野地球Wild Earth,https://wildearth-plex.amagi.tv/masterR1080p.m3u8
+卡塔尔Al Jazeera,https://dash4.antik.sk/live/test_aljazeera_eng/playlist.m3u8
+阿富汗Afghanistan International,https://hls.afintl.com/hls/stream.m3u8
+法国France 24 Sports,https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_2300.m3u8
+法国France 24 Persian,https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_2300.m3u8
 
 常用电台,#genre#
 辽宁之声(综广),http://satellitepull.cnr.cn/live/wxlnzhgb/playlist.m3u8
