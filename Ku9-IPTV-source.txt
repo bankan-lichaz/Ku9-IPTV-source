@@ -1487,8 +1487,9 @@ iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$阿烈
 狂野地球Wild Earth,https://wildearth-plex.amagi.tv/masterR1080p.m3u8
 卡塔尔Al Jazeera,https://dash4.antik.sk/live/test_aljazeera_eng/playlist.m3u8
 阿富汗Afghanistan International,https://hls.afintl.com/hls/stream.m3u8
-法国France 24 Sports,https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_2300.m3u8
+法国France 24,https://live.france24.com/hls/live/2037179-b/F24_FR_HI_HLS/master_2300.m3u8
 法国France 24 Persian,https://live.france24.com/hls/live/2037222-b/F24_AR_HI_HLS/master_2300.m3u8
+法国Euronews,https://dash4.antik.sk/live/test_euronews/playlist.m3u8
 
 常用电台,#genre#
 辽宁之声(综广),http://satellitepull.cnr.cn/live/wxlnzhgb/playlist.m3u8
