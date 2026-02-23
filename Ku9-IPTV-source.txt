@@ -1457,6 +1457,8 @@ ViuTV,http://hls.168.us.kg/u/99/master.m3u8$旧金山
 邵氏电影,http://iptv.4666888.xyz/iptv2A.php?id=39$阿烈
 iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$阿烈
 華藝中文台,http://iptv.4666888.xyz/iptv2A.php?id=37$阿烈
+非凡新闻,http://iptv.4666888.xyz/iptv2A.php?id=44
+民视影剧,http://iptv.4666888.xyz/iptv2A.php?id=53
 
 邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub$洛杉矶
 
