@@ -1464,7 +1464,6 @@ iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$阿烈
 
 国际频道,#genre#
 朝鲜KCTV,https://tv.intchoson.com/kctv/main_stream.m3u8
-日本NHK World,https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 韩国Arirang Radio,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_3ch/smil:arirang_3ch.smil/playlist.m3u8
 韩国Arirang TV,http://amdlive-ch01.ctnd.com.edgesuite.net/arirang_1ch/smil:arirang_1ch.smil/playlist.m3u8
 韩国Arirang TV,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
