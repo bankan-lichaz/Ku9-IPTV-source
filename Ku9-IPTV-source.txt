@@ -17,6 +17,9 @@
 好好的时光2,https://play.ly166.com:65/videos/20260223/699c557480eee9b955c6d057/1ee51e/index.m3u8$二姨点播
 好好的时光3,https://play.ly166.com:65/videos/20260223/699c54bf5cf6b9c74645ee89/42g3b3/index.m3u8$二姨点播
 好好的时光4,https://play.ly166.com:65/videos/20260223/699c557480eee9b955c6d058/5d0406/index.m3u8$二姨点播
+好好的时光5,https://vip.dytt-cinema.com/20260224/50374_2fc2919f/index.m3u8$二姨点播
+好好的时光6,https://vip.dytt-cinema.com/20260224/50375_33783ac4/index.m3u8$二姨点播
+
 
 辽宁频道,#genre#
 辽宁卫视,http://izihao.cn:7123/630291707$四川成都高清
