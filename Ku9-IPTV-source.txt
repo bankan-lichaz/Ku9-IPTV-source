@@ -1,4 +1,4 @@
-免费勿扫码,#genre#
+免费勿扫,#genre#
 黑屏按左右换源,https://amg00793-amg00793c6-xumo-us-2669.playouts.now.amagi.tv/BBCStudios-BBCEarthA-hls/playlist1080p.m3u8$famelack
 黑屏按左右换源,https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist1080p.m3u8$publiciptv
 黑屏按左右换源,https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist720p.m3u8$publiciptv
