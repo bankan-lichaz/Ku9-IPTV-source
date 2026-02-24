@@ -1477,7 +1477,7 @@ iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$阿烈
 澳大利亚ABN,https://vod2.abn.co.kr/IPHONE/abn.m3u8
 新加坡CNA,https://d2e1asnsl7br7b.cloudfront.net/7782e205e72f43aeb4a48ec97f66ebbe/index_5.m3u8
 美国ABC,https://d4ybyqrhce41r.cloudfront.net/v1/master/3fec3e5cac39a52b2132f9c66c83dae043dc17d4/prod-xumo-linear-nbcu-hlsv3/master.m3u8?ads.channelId=99991626
-美国Newsmax2,http://nmxlive.akamaized.net/hls/live/529965/Live_1/index.m3u8
+美国SNL,https://xumo-xumoent-vc-103-d3uqt.fast.nbcuni.com/live/master.m3u8
 印度WionNews,https://d7x8z4yuq42qn.cloudfront.net/index_7.m3u8
 加拿大Trace Sports,https://lightning-tracesport-samsungau.amagi.tv/playlist1080p.m3u8
 俄罗斯RT News（英语国际）,https://rt-glb.rttv.com/dvr/rtnews/playlist_4500Kb.m3u8
