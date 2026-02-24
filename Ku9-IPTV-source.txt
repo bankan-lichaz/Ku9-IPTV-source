@@ -13,6 +13,11 @@
 按菜单可选线路,https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist720p.m3u8$publiciptv
 
 二姨频道,#genre#
+好好的时光1,https://play.ly166.com:65/videos/20260223/699c54835cf6b9c74645c0de/1b1f59/index.m3u8@@1@@@$二姨点播
+好好的时光2,https://play.ly166.com:65/videos/20260223/699c557480eee9b955c6d057/1ee51e/index.m3u8@@1@@@$二姨点播
+好好的时光3,https://play.ly166.com:65/videos/20260223/699c54bf5cf6b9c74645ee89/42g3b3/index.m3u8@@1@@@$二姨点播
+好好的时光4,https://play.ly166.com:65/videos/20260223/699c557480eee9b955c6d058/5d0406/index.m3u8@@1@@@$二姨点播
+
 好好的时光1,https://vv.jisuzyv.com/play/e5y8Gpqe/index.m3u8$二姨点播
 好好的时光2,https://vv.jisuzyv.com/play/bYE6PAOb/index.m3u8$二姨点播
 好好的时光3,https://vv.jisuzyv.com/play/dJ6Zwg9d/index.m3u8$二姨点播
