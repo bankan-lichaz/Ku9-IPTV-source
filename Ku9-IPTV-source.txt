@@ -197,6 +197,8 @@ CCTV17,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv17$VPS旧金山1
 
 CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 
+CCTV5,http://39.104.69.92:33566/641886683$香港高清
+
 
 CCTV1,http://39.164.164.132:9901/tsfile/live/1000_1.m3u8?key=txiptv$周口郸城mobile
 CCTV2,http://39.164.164.132:9901/tsfile/live/1001_1.m3u8?key=txiptv$周口郸城mobile
