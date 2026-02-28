@@ -23,8 +23,7 @@
 好好的时光8,https://vip.dytt-cinema.com/20260225/50499_8c353766/index.m3u8$二姨点播
 好好的时光9,https://vip.dytt-cinema.com/20260226/50621_28847f39/index.m3u8$二姨点播
 好好的时光10,https://vip.dytt-cinema.com/20260226/50622_69c17c8f/index.m3u8$二姨点播
-
-
+好好的时光11,https://vip.dytt-cinema.com/20260227/50751_c5ecbc9e/index.m3u8$二姨点播
 
 
 辽宁频道,#genre#
