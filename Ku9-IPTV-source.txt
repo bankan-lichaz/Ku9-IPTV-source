@@ -27,7 +27,6 @@
 
 
 辽宁频道,#genre#
-辽宁卫视,http://izihao.cn:7123/630291707$四川成都高清
 辽宁卫视,http://39.104.69.92:3566/630291707$北京阿里高清
 辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws$VPS旧金山1
 辽宁卫视,http://k.061899.xyz/k.php?id=lnws$VPS新加坡
@@ -268,52 +267,6 @@ CCTV17,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv17$VPS旧金山1
 
 CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 
-CCTV1,http://izihao.cn:7123/608807420$四川成都高清
-CCTV2,http://izihao.cn:7123/631780532$四川成都高清
-CCTV3,http://izihao.cn:7123/624878271$四川成都高清
-CCTV4,http://izihao.cn:7123/631780421$四川成都高清
-CCTV5,http://izihao.cn:7123/641886683$四川成都高清
-CCTV5+,http://izihao.cn:7123/641886773$四川成都高清
-CCTV6,http://izihao.cn:7123/624878396$四川成都高清
-CCTV7,http://izihao.cn:7123/673168121$四川成都高清
-CCTV8,http://izihao.cn:7123/624878356$四川成都高清
-CCTV9,http://izihao.cn:7123/673168140$四川成都高清
-CCTV10,http://izihao.cn:7123/624878405$四川成都高清
-CCTV11,http://izihao.cn:7123/667987558$四川成都高清
-CCTV12,http://izihao.cn:7123/673168185$四川成都高清
-CCTV13,http://izihao.cn:7123/608807423$四川成都高清
-CCTV14,http://izihao.cn:7123/624878440$四川成都高清
-CCTV15,http://izihao.cn:7123/673168223$四川成都高清
-CCTV17,http://izihao.cn:7123/673168256$四川成都高清
-CCTV4欧洲,http://izihao.cn:7123/608807419$四川成都高清
-CCTV4美洲,http://izihao.cn:7123/608807416$四川成都高清
-CGTN外语纪录,http://izihao.cn:7123/609006487$四川成都高清
-CGTN阿拉伯语,http://izihao.cn:7123/609154345$四川成都高清
-CGTN西班牙语,http://izihao.cn:7123/609006450$四川成都高清
-CGTN法语,http://izihao.cn:7123/609006476$四川成都高清
-CGTN俄语,http://izihao.cn:7123/609006446$四川成都高清
-CGTN,http://izihao.cn:7123/609017205$四川成都高清
-东方卫视,http://izihao.cn:7123/651632648$四川成都高清
-江苏卫视,http://izihao.cn:7123/623899368$四川成都高清
-广东卫视,http://izihao.cn:7123/608831231$四川成都高清
-北京卫视,http://izihao.cn:7123/630287636$四川成都高清
-辽宁卫视,http://izihao.cn:7123/630291707$四川成都高清
-河北卫视,http://izihao.cn:7123/962042070$四川成都高清
-江西卫视,http://izihao.cn:7123/783847495$四川成都高清
-河南卫视,http://izihao.cn:7123/790187291$四川成都高清
-陕西卫视,http://izihao.cn:7123/738910838$四川成都高清
-大湾区卫视,http://izihao.cn:7123/608917627$四川成都高清
-湖北卫视,http://izihao.cn:7123/947472496$四川成都高清
-吉林卫视,http://izihao.cn:7123/947472500$四川成都高清
-青海卫视,http://izihao.cn:7123/947472506$四川成都高清
-东南卫视,http://izihao.cn:7123/849116810$四川成都高清
-海南卫视,http://izihao.cn:7123/947472502$四川成都高清
-海峡卫视,http://izihao.cn:7123/849119120$四川成都高清
-农林卫视,http://izihao.cn:7123/956904896$四川成都高清
-兵团卫视,http://izihao.cn:7123/956923145$四川成都高清
-宁夏卫视,http://izihao.cn:7123/738910535$四川成都高清
-重庆卫视,http://izihao.cn:7123/738910914$四川成都高清
-三沙卫视,http://izihao.cn:7123/961023778$四川成都高清
 
 CCTV1,http://39.164.164.132:9901/tsfile/live/1000_1.m3u8?key=txiptv$周口郸城mobile
 CCTV2,http://39.164.164.132:9901/tsfile/live/1001_1.m3u8?key=txiptv$周口郸城mobile
