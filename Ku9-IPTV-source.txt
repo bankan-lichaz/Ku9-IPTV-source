@@ -1024,8 +1024,6 @@ CCTV16,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv16/
 CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 
 粤港澳台,#genre#
-镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
-
 华视CTS,http://74.91.26.218:82/live/cts.m3u8$堪薩斯城
 台视,http://74.91.26.218:82/live/ttv.m3u8$堪薩斯城
 民视,http://74.91.26.218:82/live/ftv.m3u8$堪薩斯城
@@ -1274,6 +1272,7 @@ iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$阿烈
 镜新闻,http://rihou.cc:555/tv/[Hk]闽镜新闻$Q1
 八度空间,http://rihou.cc:555/tv/[Pd]八度空间$Q1
 
+镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
 
 国际频道,#genre#
 朝鲜KCTV,https://tv.intchoson.com/kctv/main_stream.m3u8
