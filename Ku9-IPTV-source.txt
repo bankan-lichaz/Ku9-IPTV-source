@@ -15,6 +15,7 @@
 二姨频道,#genre#
 好好的时光11,https://vip.dytt-cinema.com/20260227/50751_c5ecbc9e/index.m3u8$二姨点播
 好好的时光12,https://vip.dytt-cinema.com/20260228/50879_200bf48b/index.m3u8$二姨点播
+好好的时光13,https://vip.dytt-cinema.com/20260301/50994_e59c62a0/index.m3u8$二姨点播
 
 好好的时光1,https://play.ly166.com:65/videos/20260223/699c54835cf6b9c74645c0de/1b1f59/index.m3u8$二姨点播
 好好的时光2,https://play.ly166.com:65/videos/20260223/699c557480eee9b955c6d057/1ee51e/index.m3u8$二姨点播
