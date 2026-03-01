@@ -1279,9 +1279,10 @@ iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$阿烈
 镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
 
 国际频道,#genre#
-朝鲜KCTV,https://streamer.nknews.org/tvhls/stream.m3u8
+朝鲜KCTV,https://tv.intchoson.com/kctv/index.m3u8
 朝鲜KCTV,https://tv.intchoson.com/kctv/main_stream.m3u8
 朝鲜KCTV,https://streamer.nknews.org/tvdash/stream.mpd
+朝鲜KCTV,https://streamer.nknews.org/tvhls/stream.m3u8
 韩国Arirang TV,https://dash3.antik.sk/live/test_arirang/playlist.m3u8
 韩国Arirang TV,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
 韩国BTN,https://btn.nowcdn.co.kr/btn/btnlive2m/playlist.m3u8
