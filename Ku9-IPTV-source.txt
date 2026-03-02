@@ -1080,6 +1080,19 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 广东新闻,http://74.91.26.218:82/live/gdxw.m3u8$堪薩斯城
 大湾区卫视,http://74.91.26.218:82/live/nfws.m3u8$堪萨斯城
 
+民视,rtmp://f13h.mine.nu/sat/tv051$台湾台中
+中视,rtmp://f13h.mine.nu/sat/tv091$台湾台中
+华视,rtmp://f13h.mine.nu/sat/tv111$台湾台中
+台视,rtmp://f13h.mine.nu/sat/tv071$台湾台中
+非凡新闻,rtmp://f13h.mine.nu/sat/tv581$台湾台中
+东森超视,rtmp://f13h.mine.nu/sat/tv331$台湾台中
+纬来育乐,rtmp://f13h.mine.nu/sat/tv701$台湾台中
+公视,rtmp://f13h.mine.nu/sat/tv771$台湾台中
+#MoMoTV,rtmp://f13h.mine.nu/sat/tv761$台湾台中
+纬来体育,rtmp://f13h.mine.nu/sat/tv721$台湾台中
+ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731$台湾台中
+ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
+
 凤凰中文,http://r.jdshipin.com/cCCzW$jd视频
 凤凰资讯,http://r.jdshipin.com/0Rp07$jd视频
 凤凰香港,http://r.jdshipin.com/yDoTN$jd视频
@@ -1307,21 +1320,6 @@ iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$阿烈
 
 优视频道,https://2-fss-2.streamhoster.com/pl_118/200734-1199190-1/playlist.m3u8
 优视频道,https://2-fss-2.streamhoster.com/pl_118/200734-1199190-1/chunklist.m3u8
-
-民视,rtmp://f13h.mine.nu/sat/tv051$台湾台中
-中视,rtmp://f13h.mine.nu/sat/tv091$台湾台中
-华视,rtmp://f13h.mine.nu/sat/tv111$台湾台中
-台视,rtmp://f13h.mine.nu/sat/tv071$台湾台中
-非凡新闻,rtmp://f13h.mine.nu/sat/tv581$台湾台中
-东森超视,rtmp://f13h.mine.nu/sat/tv331$台湾台中
-纬来育乐,rtmp://f13h.mine.nu/sat/tv701$台湾台中
-公视,rtmp://f13h.mine.nu/sat/tv771$台湾台中
-#MoMoTV,rtmp://f13h.mine.nu/sat/tv761$台湾台中
-纬来体育,rtmp://f13h.mine.nu/sat/tv721$台湾台中
-ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731$台湾台中
-ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
-
-
 
 
 
