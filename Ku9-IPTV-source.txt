@@ -105,6 +105,7 @@
 辽宁影视剧,http://39.104.69.92:3566/962067517$北京阿里高清
 
 辽宁卫视,http://36.129.58.53:8008/paiptv/LNWS.m3u8$东塔mobile
+沈阳新闻综合,http://36.129.58.53:8008/paiptv/SYXW.m3u8$东塔mobile
 辽宁生活,http://36.129.58.53:8008/paiptv/LNSH.m3u8$东塔mobile
 辽宁北方,http://36.129.58.53:8008/paiptv/LNBF.m3u8$东塔mobile
 辽宁公共,http://36.129.58.53:8008/paiptv/LNGG.m3u8$东塔mobile
