@@ -126,7 +126,7 @@
 辽宁生活,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.212:9242$铁岭凡河uni
 辽宁教育青少,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.230:9356$铁岭凡河uni
 铁岭新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.240:9280$铁岭凡河uni
-铁岭公共,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.241:9282$铁岭凡河uni
+铁岭生活,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.241:9282$铁岭凡河uni
 朝阳新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.243:9126$铁岭凡河uni
 朝阳教育,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.244:9128$铁岭凡河uni
 本溪综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.157:9324$铁岭凡河uni
@@ -138,7 +138,7 @@
 丹东新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.251:9162$铁岭凡河uni
 丹东生活,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.252:9164$铁岭凡河uni
 葫芦岛新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.238:9260$铁岭凡河uni
-葫芦岛生活服务,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.239:9262$铁岭凡河uni
+葫芦岛生活,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.239:9262$铁岭凡河uni
 
 辽宁卫视,http://39.152.103.17:8089/tsfile/live/1024_1.m3u8$阜新彰武Mobile
 辽宁都市,http://39.152.103.17:8089/tsfile/live/1025_1.m3u8$阜新彰武Mobile
