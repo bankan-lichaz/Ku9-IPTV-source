@@ -134,8 +134,8 @@
 阜新综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.246:9134$铁岭凡河uni
 阜新中华特产,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.247:9136$铁岭凡河uni
 阜新教育,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.248:9138$铁岭凡河uni
-盘锦新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.249:9140$铁岭凡河uni
-盘锦社会生活,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.250:9000$铁岭凡河uni
+辽阳新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.249:9140$铁岭凡河uni
+辽阳社会生活,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.250:9000$铁岭凡河uni
 丹东新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.251:9162$铁岭凡河uni
 丹东生活,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.252:9164$铁岭凡河uni
 葫芦岛新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.238:9260$铁岭凡河uni
