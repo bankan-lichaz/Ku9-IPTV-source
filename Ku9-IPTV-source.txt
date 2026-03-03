@@ -1087,6 +1087,12 @@ CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 海南社会与法,http://nn.7x9d.cn/地方台8563/海南.php?id=ggpd$江苏宿迁
 海南文旅,http://nn.7x9d.cn/地方台8563/海南.php?id=wlpd$江苏宿迁
 海南少儿,http://nn.7x9d.cn/地方台8563/海南.php?id=sepd$江苏宿迁
+深圳卫视,http://nn.7x9d.cn/深圳最新.php?id=szws4k$江苏宿迁
+深圳都市,http://nn.7x9d.cn/深圳最新.php?id=szds$江苏宿迁
+深圳电视剧,http://nn.7x9d.cn/深圳最新.php?id=szdsj$江苏宿迁
+深圳少儿,http://nn.7x9d.cn/深圳最新.php?id=szse$江苏宿迁
+深圳移动,http://nn.7x9d.cn/深圳最新.php?id=szyd$江苏宿迁
+深圳国际,http://nn.7x9d.cn/深圳最新.php?id=szgj$江苏宿迁
 
 华视,http://74.91.26.218:82/live/cts.m3u8$堪薩斯城
 台视,http://74.91.26.218:82/live/ttv.m3u8$堪薩斯城
