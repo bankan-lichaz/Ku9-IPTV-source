@@ -1151,6 +1151,7 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731$台湾台中
 ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
 
+唐人卫视,https://ntd02.akamaized.net/HD-NY/tracks-v3a1/mono.m3u8$NTD
 
 凤凰中文,http://r.jdshipin.com/cCCzW$jd视频
 凤凰资讯,http://r.jdshipin.com/0Rp07$jd视频
