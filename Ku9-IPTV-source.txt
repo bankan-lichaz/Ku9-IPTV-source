@@ -1119,6 +1119,25 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 广东新闻,http://74.91.26.218:82/live/gdxw.m3u8$堪薩斯城
 大湾区卫视,http://74.91.26.218:82/live/nfws.m3u8$堪萨斯城
 
+民视新闻,http://rihou.cc:555/tv/[mn]民视新闻$Q1
+中视新闻,http://rihou.cc:555/tv/[mn]中视新闻$Q1
+华视新闻,http://rihou.cc:555/tv/[mn]华视新闻$Q1
+台视新闻,http://rihou.cc:555/tv/[mn]台视新闻$Q1
+公视,http://rihou.cc:555/tv/[mn]公视$Q1
+民视,http://rihou.cc:555/tv/[mn]民视$Q1
+中视,http://rihou.cc:555/tv/[mn]中视$Q1
+华视,http://rihou.cc:555/tv/[mn]华视$Q1
+台视,http://rihou.cc:555/tv/[mn]台视$Q1
+公视台语,http://rihou.cc:555/tv/[mn]公视闽语$Q1
+公视综合,http://rihou.cc:555/tv/[mn]公视综合$Q1
+民视台语,http://rihou.cc:555/tv/[mn]民视南闽$Q1
+民视第一,http://rihou.cc:555/tv/[mn]民视第一$Q1
+中视经典,http://rihou.cc:555/tv/[mn]中视经典$Q1
+中视菁采,http://rihou.cc:555/tv/[mn]中视菁采$Q1
+华视教育体育文化,http://rihou.cc:555/tv/[mn]华视教育$Q1
+台视综合,http://rihou.cc:555/tv/[mn]台视综合$Q1
+台视财经,http://rihou.cc:555/tv/[mn]台视财经$Q1
+
 民视,rtmp://f13h.mine.nu/sat/tv051$台湾台中
 中视,rtmp://f13h.mine.nu/sat/tv091$台湾台中
 华视,rtmp://f13h.mine.nu/sat/tv111$台湾台中
@@ -1130,6 +1149,7 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 纬来体育,rtmp://f13h.mine.nu/sat/tv721$台湾台中
 ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731$台湾台中
 ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
+
 
 凤凰中文,http://r.jdshipin.com/cCCzW$jd视频
 凤凰资讯,http://r.jdshipin.com/0Rp07$jd视频
