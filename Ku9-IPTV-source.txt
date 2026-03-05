@@ -54,6 +54,16 @@
 辽宁经济,http://fuxin.yunjifei.top:999/tsfile/live/1008_1.m3u8?key=txiptv$阜新太平Tele
 辽宁移动电视,http://fuxin.yunjifei.top:999/tsfile/live/1009_1.m3u8?key=txiptv$阜新太平Tele
 
+辽宁卫视,http://36.129.58.53:8008/paiptv/LNWS.m3u8$东塔mobile
+沈阳新闻综合,http://36.129.58.53:8008/paiptv/SYXW.m3u8$东塔mobile
+辽宁生活,http://36.129.58.53:8008/paiptv/LNSH.m3u8$东塔mobile
+辽宁北方,http://36.129.58.53:8008/paiptv/LNBF.m3u8$东塔mobile
+辽宁公共,http://36.129.58.53:8008/paiptv/LNGG.m3u8$东塔mobile
+辽宁都市,http://36.129.58.53:8008/paiptv/LNDS.m3u8$东塔mobile
+辽宁经济,http://36.129.58.53:8008/paiptv/LNJJ.m3u8$东塔mobile
+辽宁体育休闲,http://36.129.58.53:8008/paiptv/LNTY.m3u8$东塔mobile
+辽宁影视剧,http://36.129.58.53:8008/paiptv/LNYSJ.m3u8$东塔mobile
+
 沈阳新闻综合,http://116.2.174.49:4010/rtp/232.0.0.206:1234$和平太原街uni
 辽宁都市,http://116.2.174.49:4010/rtp/232.0.0.154:1234$和平太原街uni
 辽宁生活,http://116.2.174.49:4010/rtp/232.0.0.150:1234$和平太原街uni
@@ -106,15 +116,6 @@
 辽宁生活,http://39.104.69.92:3566/962045226$北京阿里高清
 辽宁影视剧,http://39.104.69.92:3566/962067517$北京阿里高清
 
-辽宁卫视,http://36.129.58.53:8008/paiptv/LNWS.m3u8$东塔mobile
-沈阳新闻综合,http://36.129.58.53:8008/paiptv/SYXW.m3u8$东塔mobile
-辽宁生活,http://36.129.58.53:8008/paiptv/LNSH.m3u8$东塔mobile
-辽宁北方,http://36.129.58.53:8008/paiptv/LNBF.m3u8$东塔mobile
-辽宁公共,http://36.129.58.53:8008/paiptv/LNGG.m3u8$东塔mobile
-辽宁都市,http://36.129.58.53:8008/paiptv/LNDS.m3u8$东塔mobile
-辽宁经济,http://36.129.58.53:8008/paiptv/LNJJ.m3u8$东塔mobile
-辽宁体育休闲,http://36.129.58.53:8008/paiptv/LNTY.m3u8$东塔mobile
-辽宁影视剧,http://36.129.58.53:8008/paiptv/LNYSJ.m3u8$东塔mobile
 
 沈阳新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.227:9276$铁岭凡河uni
 辽宁都市,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.42:8856$铁岭凡河uni
