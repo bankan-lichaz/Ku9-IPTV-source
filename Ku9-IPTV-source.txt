@@ -1127,7 +1127,7 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 台视新闻,http://rihou.cc:555/tv/[mn]台视新闻$Q1
 公视台语,http://rihou.cc:555/tv/[mn]公视闽语$Q1
 公视综合,http://rihou.cc:555/tv/[mn]公视综合$Q1
-民视台语,http://rihou.cc:555/tv/[mn]民视南闽$Q1
+民视台湾,http://rihou.cc:555/tv/[mn]民视南闽$Q1
 民视第一,http://rihou.cc:555/tv/[mn]民视第一$Q1
 中视经典,http://rihou.cc:555/tv/[mn]中视经典$Q1
 中视菁采,http://rihou.cc:555/tv/[mn]中视菁采$Q1
