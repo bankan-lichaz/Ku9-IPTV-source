@@ -44,6 +44,16 @@
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q2
 
+辽宁都市,http://fuxin.yunjifei.top:999/tsfile/live/1000_1.m3u8?key=txiptv$阜新太平Tele
+辽宁影视剧,http://fuxin.yunjifei.top:999/tsfile/live/1001_1.m3u8?key=txiptv$阜新太平Tele
+辽宁体育休闲,http://fuxin.yunjifei.top:999/tsfile/live/1003_1.m3u8?key=txiptv$阜新太平Tele
+辽宁生活,http://fuxin.yunjifei.top:999/tsfile/live/1004_1.m3u8?key=txiptv$阜新太平Tele
+辽宁教育青少,http://fuxin.yunjifei.top:999/tsfile/live/1005_1.m3u8?key=txiptv$阜新太平Tele
+辽宁北方,http://fuxin.yunjifei.top:999/tsfile/live/1006_1.m3u8?key=txiptv$阜新太平Tele
+辽宁公共,http://fuxin.yunjifei.top:999/tsfile/live/1007_1.m3u8?key=txiptv$阜新太平Tele
+辽宁经济,http://fuxin.yunjifei.top:999/tsfile/live/1008_1.m3u8?key=txiptv$阜新太平Tele
+辽宁移动电视,http://fuxin.yunjifei.top:999/tsfile/live/1009_1.m3u8?key=txiptv$阜新太平Tele
+
 沈阳新闻综合,http://116.2.174.49:4010/rtp/232.0.0.206:1234$和平太原街uni
 辽宁都市,http://116.2.174.49:4010/rtp/232.0.0.154:1234$和平太原街uni
 辽宁生活,http://116.2.174.49:4010/rtp/232.0.0.150:1234$和平太原街uni
@@ -89,17 +99,6 @@
 丹东生活,http://www.vipcoolufo.com:4022/rtp/232.0.0.252:9164$甘井子www
 葫芦岛新闻综合,http://www.vipcoolufo.com:4022/rtp/232.0.0.238:9260$甘井子www
 葫芦岛生活,http://www.vipcoolufo.com:4022/rtp/232.0.0.239:9262$甘井子www
-
-			
-辽宁都市,http://fuxin.yunjifei.top:999/tsfile/live/1000_1.m3u8?key=txiptv$阜新太平Tele
-辽宁影视剧,http://fuxin.yunjifei.top:999/tsfile/live/1001_1.m3u8?key=txiptv$阜新太平Tele
-辽宁体育休闲,http://fuxin.yunjifei.top:999/tsfile/live/1003_1.m3u8?key=txiptv$阜新太平Tele
-辽宁生活,http://fuxin.yunjifei.top:999/tsfile/live/1004_1.m3u8?key=txiptv$阜新太平Tele
-辽宁教育青少,http://fuxin.yunjifei.top:999/tsfile/live/1005_1.m3u8?key=txiptv$阜新太平Tele
-辽宁北方,http://fuxin.yunjifei.top:999/tsfile/live/1006_1.m3u8?key=txiptv$阜新太平Tele
-辽宁公共,http://fuxin.yunjifei.top:999/tsfile/live/1007_1.m3u8?key=txiptv$阜新太平Tele
-辽宁经济,http://fuxin.yunjifei.top:999/tsfile/live/1008_1.m3u8?key=txiptv$阜新太平Tele
-辽宁移动电视,http://fuxin.yunjifei.top:999/tsfile/live/1009_1.m3u8?key=txiptv$阜新太平Tele
 
 
 辽宁体育休闲,http://39.104.69.92:3566/962067526$北京阿里高清
