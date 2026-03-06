@@ -55,11 +55,11 @@
 辽宁经济,http://fuxin.yunjifei.top:999/tsfile/live/1008_1.m3u8?key=txiptv$阜新太平Tele
 辽宁移动电视,http://fuxin.yunjifei.top:999/tsfile/live/1009_1.m3u8?key=txiptv$阜新太平Tele
 
-辽宁影视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys堪萨斯城1
-辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds堪萨斯城1
-辽宁体育休闲,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty堪萨斯城1
-辽宁生活,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnsh堪萨斯城1
-辽宁北方,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnbf堪萨斯城1
+辽宁影视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys$堪萨斯城1
+辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds$堪萨斯城1
+辽宁体育休闲,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty$堪萨斯城1
+辽宁生活,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnsh$堪萨斯城1
+辽宁北方,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnbf$堪萨斯城1
 
 辽宁卫视,http://36.129.58.53:8008/paiptv/LNWS.m3u8$东塔mobile
 沈阳新闻综合,http://36.129.58.53:8008/paiptv/SYXW.m3u8$东塔mobile
