@@ -343,6 +343,56 @@ CHC影迷电影,http://cdn6.bkpcp.top/tl/tuiliu.php?id=ymdy$VPS旧金山1
 黑龙江卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=hljws$VPS旧金山1
 海峡卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=hxws$VPS旧金山1
 
+CCTV1,http://223.95.198.3:8000/hls/1/index.m3u8$宁波章水mobile
+CCTV2 ,http://223.95.198.3:8000/hls/2/index.m3u8$宁波章水mobile
+CCTV3 ,http://223.95.198.3:8000/hls/3/index.m3u8$宁波章水mobile
+CCTV4 ,http://223.95.198.3:8000/hls/4/index.m3u8$宁波章水mobile
+CCTV5 ,http://223.95.198.3:8000/hls/5/index.m3u8$宁波章水mobile
+CCTV6 ,http://223.95.198.3:8000/hls/6/index.m3u8$宁波章水mobile
+CCTV7 ,http://223.95.198.3:8000/hls/7/index.m3u8$宁波章水mobile
+CCTV8 ,http://223.95.198.3:8000/hls/8/index.m3u8$宁波章水mobile
+CCTV9 ,http://223.95.198.3:8000/hls/9/index.m3u8$宁波章水mobile
+CCTV10 ,http://223.95.198.3:8000/hls/10/index.m3u8$宁波章水mobile
+CCTV11 ,http://223.95.198.3:8000/hls/11/index.m3u8$宁波章水mobile
+CCTV12 ,http://223.95.198.3:8000/hls/12/index.m3u8$宁波章水mobile
+CCTV13 ,http://223.95.198.3:8000/hls/13/index.m3u8$宁波章水mobile
+CCTV14 ,http://223.95.198.3:8000/hls/14/index.m3u8$宁波章水mobile
+CCTV15 ,http://223.95.198.3:8000/hls/15/index.m3u8$宁波章水mobile
+CCTV16 ,http://223.95.198.3:8000/hls/16/index.m3u8$宁波章水mobile
+CCTV17 ,http://223.95.198.3:8000/hls/17/index.m3u8$宁波章水mobile
+北京卫视,http://223.95.198.3:8000/hls/21/index.m3u8$宁波章水mobile
+东方卫视,http://223.95.198.3:8000/hls/22/index.m3u8$宁波章水mobile
+深圳卫视,http://223.95.198.3:8000/hls/23/index.m3u8$宁波章水mobile
+浙江卫视,http://223.95.198.3:8000/hls/24/index.m3u8$宁波章水mobile
+湖南卫视,http://223.95.198.3:8000/hls/25/index.m3u8$宁波章水mobile
+天津卫视,http://223.95.198.3:8000/hls/26/index.m3u8$宁波章水mobile
+河北卫视,http://223.95.198.3:8000/hls/27/index.m3u8$宁波章水mobile
+江苏卫视,http://223.95.198.3:8000/hls/28/index.m3u8$宁波章水mobile
+山东卫视,http://223.95.198.3:8000/hls/29/index.m3u8$宁波章水mobile
+安徽卫视,http://223.95.198.3:8000/hls/30/index.m3u8$宁波章水mobile
+河南卫视,http://223.95.198.3:8000/hls/31/index.m3u8$宁波章水mobile
+湖北卫视,http://223.95.198.3:8000/hls/32/index.m3u8$宁波章水mobile
+黑龙江卫视,http://223.95.198.3:8000/hls/33/index.m3u8$宁波章水mobile
+辽宁卫视,http://223.95.198.3:8000/hls/34/index.m3u8$宁波章水mobile
+吉林卫视,http://223.95.198.3:8000/hls/35/index.m3u8$宁波章水mobile
+重庆卫视,http://223.95.198.3:8000/hls/36/index.m3u8$宁波章水mobile
+四川卫视,http://223.95.198.3:8000/hls/37/index.m3u8$宁波章水mobile
+广东卫视,http://223.95.198.3:8000/hls/38/index.m3u8$宁波章水mobile
+广西卫视,http://223.95.198.3:8000/hls/39/index.m3u8$宁波章水mobile
+江西卫视,http://223.95.198.3:8000/hls/40/index.m3u8$宁波章水mobile
+海南卫视,http://223.95.198.3:8000/hls/41/index.m3u8$宁波章水mobile
+甘肃卫视,http://223.95.198.3:8000/hls/42/index.m3u8$宁波章水mobile
+陕西卫视,http://223.95.198.3:8000/hls/43/index.m3u8$宁波章水mobile
+云南卫视,http://223.95.198.3:8000/hls/44/index.m3u8$宁波章水mobile
+云南卫视,http://223.95.198.3:8000/hls/45/index.m3u8$宁波章水mobile
+贵州卫视,http://223.95.198.3:8000/hls/46/index.m3u8$宁波章水mobile
+青海卫视,http://223.95.198.3:8000/hls/47/index.m3u8$宁波章水mobile
+NBTV-1,http://223.95.198.3:8000/hls/48/index.m3u8$宁波章水mobile
+NBTV-2,http://223.95.198.3:8000/hls/49/index.m3u8$宁波章水mobile
+浙江新闻,http://223.95.198.3:8000/hls/50/index.m3u8$宁波章水mobile
+浙江体育,http://223.95.198.3:8000/hls/51/index.m3u8$宁波章水mobile
+浙江少儿,http://223.95.198.3:8000/hls/52/index.m3u8$宁波章水mobile
+CGTN,http://223.95.198.3:8000/hls/19/index.m3u8$宁波章水mobile
 
 CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 
@@ -1151,6 +1201,8 @@ ELEVEN体育1,rtmp://f13h.mine.nu/sat/tv731$台湾台中
 ELEVEN体育2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
 
 唐人卫视,https://ntd02.akamaized.net/HD-NY/tracks-v3a1/mono.m3u8$NTD
+
+凤凰中文,http://223.95.198.3:8000/hls/20/index.m3u8$宁波章水mobile
 
 凤凰中文,http://r.jdshipin.com/cCCzW$jd视频
 凤凰资讯,http://r.jdshipin.com/0Rp07$jd视频
