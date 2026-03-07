@@ -1149,6 +1149,23 @@ CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 深圳少儿,http://nn.7x9d.cn/深圳最新.php?id=szse$江苏宿迁
 深圳移动,http://nn.7x9d.cn/深圳最新.php?id=szyd$江苏宿迁
 深圳国际,http://nn.7x9d.cn/深圳最新.php?id=szgj$江苏宿迁
+山西卫视,http://nn.7x9d.cn/地方台8563/山西.php?id=sxws$江苏宿迁
+山西经济,http://nn.7x9d.cn/地方台8563/山西.php?id=sxjj$江苏宿迁
+山西影视,http://nn.7x9d.cn/地方台8563/山西.php?id=sxys$江苏宿迁
+山西社会与法治,http://nn.7x9d.cn/地方台8563/山西.php?id=sxshfz$江苏宿迁
+山西文体生活,http://nn.7x9d.cn/地方台8563/山西.php?id=sxwtsh$江苏宿迁
+山西黄河,http://nn.7x9d.cn/地方台8563/山西.php?id=sxhh$江苏宿迁
+太原新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=ty1$江苏宿迁
+阳泉新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=yq1$江苏宿迁
+长治新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=cz1$江苏宿迁
+晋城新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=jc1$江苏宿迁
+朔州新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=sz1$江苏宿迁
+晋中综合,http://nn.7x9d.cn/地方台8563/山西.php?id=jz1$江苏宿迁
+运城新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=yc1$江苏宿迁
+沂州综合,http://nn.7x9d.cn/地方台8563/山西.php?id=xz1$江苏宿迁
+临汾新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=lf1$江苏宿迁
+吕梁新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=ll1$江苏宿迁
+
 
 华视,http://74.91.26.218:82/live/cts.m3u8$堪薩斯城
 台视,http://74.91.26.218:82/live/ttv.m3u8$堪薩斯城
