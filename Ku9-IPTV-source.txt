@@ -261,7 +261,7 @@ CCTV17,http://cdn6.bkpcp.top/tl/tuiliu.php?id=cctv17$VPS旧金山1
 青海卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=qhws$VPS旧金山1
 吉林卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=jlws$VPS旧金山1
 黑龙江卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=hljws$VPS旧金山1
-
+海峡卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=hxws$VPS旧金山1
 CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 
 CCTV1,http://39.164.164.132:9901/tsfile/live/1000_1.m3u8?key=txiptv$周口郸城mobile
@@ -471,6 +471,7 @@ CHC影迷电影,http://m.061899.xyz/mg/ymdy$VPS旧金山2
 吉林卫视,http://m.061899.xyz/mg/jlws$VPS旧金山2
 内蒙古卫视,http://m.061899.xyz/mg/nmgws$VPS旧金山2
 黑龙江卫视,http://m.061899.xyz/mg/hljws$VPS旧金山2
+海峡卫视,http://m.061899.xyz/mg/hxws$VPS旧金山2
 三沙卫视,https://stream.iptv-search.com/main.php?id=%E4%B8%89%E6%B2%99%E5%8D%AB%E8%A7%86&t=1755401429&token=7ddfc6d40f1c98da27c8b5e7c59836a3
 
 CCTV1,http://www.lizhinas.top:10086/rtp/239.252.219.200:5140$江西上饶tele
@@ -683,6 +684,7 @@ CCTV17,http://j.s.bkpcp.top/jj/cctv17$VPS旧金山3
 云南卫视,http://j.s.bkpcp.top/jj/ynws$VPS旧金山3
 贵州卫视,http://j.s.bkpcp.top/jj/gzws$VPS旧金山3
 四川卫视,http://j.s.bkpcp.top/jj/scws$VPS旧金山3
+海峡卫视,http://j.s.bkpcp.top/jj/hxws$VPS旧金山3
 
 CCTV1,http://xiaole51.3322.org:7000/rtp/239.253.248.77:8000$烟台芝罘uni
 山东卫视,http://xiaole51.3322.org:7000/rtp/239.253.248.78:8000$烟台芝罘uni
@@ -959,6 +961,7 @@ CCTV17,http://go.bkpcp.top/mg/cctv17$VPS旧金山4
 新疆卫视,http://go.bkpcp.top/mg/xjws$VPS旧金山4
 西藏卫视,http://go.bkpcp.top/mg/xzws$VPS旧金山4
 兵团卫视,http://go.bkpcp.top/mg/btws$VPS旧金山4
+海峡卫视,http://go.bkpcp.top/mg/hxws$VPS旧金山4
 CHC动作电影,http://go.bkpcp.top/mg/dzdy$VPS旧金山4
 CHC影迷电影,http://go.bkpcp.top/mg/ymdy$VPS旧金山4
 CHC家庭影院,http://go.bkpcp.top/mg/jtyy$VPS旧金山4
@@ -1012,6 +1015,7 @@ CCTV17,http://t.061899.xyz/tl/tl.php?id=cctv17$VPS旧金山5
 西藏卫视,http://t.061899.xyz/tl/tl.php?id=xzws$VPS旧金山5
 内蒙古卫视,http://t.061899.xyz/tl/tl.php?id=nmgws$VPS旧金山5
 黑龙江卫视,http://t.061899.xyz/tl/tl.php?id=hljws$VPS旧金山5
+海峡卫视,http://t.061899.xyz/tl/tl.php?id=hxws$VPS旧金山5
 
 CCTV1,http://t.061899.xyz/tl/dq.php?id=cctv1$VPS旧金山6
 CCTV2,http://t.061899.xyz/tl/dq.php?id=cctv2$VPS旧金山6
@@ -1062,7 +1066,7 @@ CCTV17,http://t.061899.xyz/tl/dq.php?id=cctv17$VPS旧金山6
 西藏卫视,http://t.061899.xyz/tl/dq.php?id=xzws$VPS旧金山6
 内蒙古卫视,http://t.061899.xyz/tl/dq.php?id=nmgws$VPS旧金山6
 黑龙江卫视,http://t.061899.xyz/tl/dq.php?id=hljws$VPS旧金山6
-
+海峡卫视,http://t.061899.xyz/tl/dq.php?id=hxws$VPS旧金山6
 
 CCTV1,http://rihou.cc:555/tv/[mg]CCTV-01$Q1
 CCTV2,http://rihou.cc:555/tv/[mg]CCTV-02$Q1
