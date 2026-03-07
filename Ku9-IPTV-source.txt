@@ -1162,7 +1162,7 @@ CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 朔州新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=sz1$江苏宿迁
 晋中综合,http://nn.7x9d.cn/地方台8563/山西.php?id=jz1$江苏宿迁
 运城新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=yc1$江苏宿迁
-沂州综合,http://nn.7x9d.cn/地方台8563/山西.php?id=xz1$江苏宿迁
+忻州综合,http://nn.7x9d.cn/地方台8563/山西.php?id=xz1$江苏宿迁
 临汾新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=lf1$江苏宿迁
 吕梁新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=ll1$江苏宿迁
 
