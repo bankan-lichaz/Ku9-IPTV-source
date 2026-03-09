@@ -1427,16 +1427,6 @@ CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 忻州综合,http://nn.7x9d.cn/地方台8563/山西.php?id=xz1$江苏宿迁
 临汾新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=lf1$江苏宿迁
 吕梁新闻综合,http://nn.7x9d.cn/地方台8563/山西.php?id=ll1$江苏宿迁
-北京卫视,http://nn.7x9d.cn/地方台8563/北京.php?id=bjws$江苏宿迁
-北京体育休闲,http://nn.7x9d.cn/地方台8563/北京.php?id=bjjs$江苏宿迁
-北京文艺,http://nn.7x9d.cn/地方台8563/北京.php?id=btvwy$江苏宿迁
-北京纪实科教,http://nn.7x9d.cn/地方台8563/北京.php?id=btvkj$江苏宿迁
-北京影视,http://nn.7x9d.cn/地方台8563/北京.php?id=btvys$江苏宿迁
-北京财经,http://nn.7x9d.cn/地方台8563/北京.php?id=btvcj$江苏宿迁
-北京生活,http://nn.7x9d.cn/地方台8563/北京.php?id=btvsh$江苏宿迁
-北京青年,http://nn.7x9d.cn/地方台8563/北京.php?id=btvqn$江苏宿迁
-北京新闻,http://nn.7x9d.cn/地方台8563/北京.php?id=btvxw$江苏宿迁
-卡酷少儿,http://nn.7x9d.cn/地方台8563/北京.php?id=kaku$江苏宿迁
 
 
 华视,http://74.91.26.218:82/live/cts.m3u8$堪薩斯城
