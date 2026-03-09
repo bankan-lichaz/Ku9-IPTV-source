@@ -19,6 +19,9 @@
 绿屏换ijk软解码,https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist720p.m3u8$publiciptv
 
 二姨频道,#genre#
+好好的时光21,https://vip.dytt-cinema.com/20260309/51820_9ae82c26/index.m3u8$二姨点播
+好好的时光22,https://vip.dytt-cinema.com/20260309/51821_79dc556c/index.m3u8$二姨点播
+
 好好的时光11,https://vip.dytt-cinema.com/20260227/50751_c5ecbc9e/index.m3u8$二姨点播
 好好的时光12,https://vip.dytt-cinema.com/20260228/50879_200bf48b/index.m3u8$二姨点播
 好好的时光13,https://vip.dytt-cinema.com/20260301/50994_e59c62a0/index.m3u8$二姨点播
