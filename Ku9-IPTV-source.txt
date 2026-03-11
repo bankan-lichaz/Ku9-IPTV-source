@@ -1457,6 +1457,7 @@ TVB翡翠台,http://74.91.26.218:82/live/jade.m3u8$堪薩斯城
 无线新闻,http://74.91.26.218:82/live/inews.m3u8$堪薩斯城
 TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 广东新闻,http://74.91.26.218:82/live/gdxw.m3u8$堪薩斯城
+广东珠江,http://74.91.26.218:82/live/gdzj.m3u8$堪薩斯城
 大湾区卫视,http://74.91.26.218:82/live/nfws.m3u8$堪萨斯城
 
 民视新闻,http://rihou.cc:555/tv/[mn]民视新闻$Q1
