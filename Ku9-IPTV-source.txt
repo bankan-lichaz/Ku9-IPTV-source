@@ -23,6 +23,7 @@
 好好的时光22,https://vip.dytt-cinema.com/20260309/51821_79dc556c/index.m3u8$二姨点播
 好好的时光23,https://vip.dytt-cinema.com/20260310/51915_cb053134/index.m3u8$二姨点播
 好好的时光24,https://vip.dytt-cinema.com/20260310/51916_9a15edfb/index.m3u8$二姨点播
+好好的时光25,https://vip.dytt-cinema.com/20260311/52021_f2d10f70/index.m3u8$二姨点播
 
 好好的时光11,https://vip.dytt-cinema.com/20260227/50751_c5ecbc9e/index.m3u8$二姨点播
 好好的时光12,https://vip.dytt-cinema.com/20260228/50879_200bf48b/index.m3u8$二姨点播
