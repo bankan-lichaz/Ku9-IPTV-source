@@ -1947,7 +1947,7 @@ astro Football,http://8.138.7.223/tv/2026.php?id=17$广州阿里云
 MYTV黄金华剧台,http://8.138.7.223/tv/2026.php?id=22$广州阿里云
 TVB翡翠台,http://8.138.7.223/tv/2026.php?id=23$广州阿里云
 TVB明珠台,http://8.138.7.223/tv/2026.php?id=24$广州阿里云
-跑马台,http://8.138.7.223/tv/2026.php?id=25$广州阿里云
+TVB J1,http://8.138.7.223/tv/2026.php?id=25$广州阿里云
 TVB1,http://8.138.7.223/tv/2026.php?id=26$广州阿里云
 TVB千禧经典台,http://8.138.7.223/tv/2026.php?id=27$广州阿里云
 HOY 77,http://8.138.7.223/tv/2026.php?id=28$广州阿里云
@@ -1984,6 +1984,7 @@ Rock Action,http://8.138.7.223/tv/2026.php?id=50$广州阿里云
 
 TVB千禧经典台,https://smt.1678520.xyz/smt3.2.3.php?id=Tvbclassic$旧金山02
 
+TVB无线赛马,http://tl.061833.xyz/tl/mytvsuper18
 
 国际频道,#genre#
 伊朗Iran International,https://dev-live.livetvstream.co.uk/LS-63503-4/chunklist_b1196000.m3u8
