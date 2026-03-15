@@ -20,8 +20,6 @@
 
 二姨频道,#genre#
 CCTV卫生健康,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=wsjk$堪萨斯城1
-CCTV健康重播,http://116.2.164.201:4010/rtp/232.0.0.148:1234$和平太原街uni
-CCTV健康重播,http://vipcoolufo.com:4022/rtp/232.0.0.154:9318$大连甘井子uni 
 好好的时光21,https://vip.dytt-cinema.com/20260309/51820_9ae82c26/index.m3u8$二姨点播
 好好的时光22,https://vip.dytt-cinema.com/20260309/51821_79dc556c/index.m3u8$二姨点播
 好好的时光23,https://vip.dytt-cinema.com/20260310/51915_cb053134/index.m3u8$二姨点播
