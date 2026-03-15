@@ -1638,6 +1638,47 @@ ViuTV,http://r.jdshipin.com/vSJvl$jd视频
 香港卫视,http://webcast.hkstv.tv/livestream/mutfysrq/playlist.m3u8?hls_ctx=66221r89$阿什本
 
 
+广东卫视,http://8.138.7.223/tv/2026.php?id=7$广州阿里云
+广东珠江,http://8.138.7.223/tv/2026.php?id=8$广州阿里云
+SPOTV1,http://8.138.7.223/tv/2026.php?id=15$广州阿里云
+SPOTV2,http://8.138.7.223/tv/2026.php?id=16$广州阿里云
+astro Football,http://8.138.7.223/tv/2026.php?id=17$广州阿里云
+智林体育台,http://8.138.7.223/tv/2026.php?id=19$广州阿里云
+凤凰卫视,http://8.138.7.223/tv/2026.php?id=21$广州阿里云
+MYTV黄金华剧台,http://8.138.7.223/tv/2026.php?id=22$广州阿里云
+TVB翡翠台,http://8.138.7.223/tv/2026.php?id=23$广州阿里云
+TVB明珠台,http://8.138.7.223/tv/2026.php?id=24$广州阿里云
+跑马台,http://8.138.7.223/tv/2026.php?id=25$广州阿里云
+TVB1,http://8.138.7.223/tv/2026.php?id=26$广州阿里云
+TVB千禧经典台,http://8.138.7.223/tv/2026.php?id=27$广州阿里云
+HOY 77,http://8.138.7.223/tv/2026.php?id=28$广州阿里云
+TVB,http://8.138.7.223/tv/2026.php?id=29$广州阿里云
+RTHK31,http://8.138.7.223/tv/2026.php?id=30$广州阿里云
+TVB娱乐新闻台,http://8.138.7.223/tv/2026.php?id=31$广州阿里云
+MYTV黄金翡翠台,http://8.138.7.223/tv/2026.php?id=32$广州阿里云
+TVB影剧台,http://8.138.7.223/tv/2026.php?id=33$广州阿里云
+澳视澳门,http://8.138.7.223/tv/2026.php?id=34$广州阿里云
+TVBS新闻台,http://8.138.7.223/tv/2026.php?id=35$广州阿里云
+非凡新闻,http://8.138.7.223/tv/2026.php?id=36$广州阿里云
+民视,http://8.138.7.223/tv/2026.php?id=37$广州阿里云
+華藝中文台,http://8.138.7.223/tv/2026.php?id=38$广州阿里云
+iQIYI爱奇艺,http://8.138.7.223/tv/2026.php?id=39$广州阿里云
+靖洋戏剧台,http://8.138.7.223/tv/2026.php?id=40$广州阿里云
+靖天电影台,http://8.138.7.223/tv/2026.php?id=41$广州阿里云
+梦工厂,http://8.138.7.223/tv/2026.php?id=42$广州阿里云
+东森电影台,http://8.138.7.223/tv/2026.php?id=43$广州阿里云
+龙华电影台,http://8.138.7.223/tv/2026.php?id=44$广州阿里云
+民视综艺,http://  8.138.7.223/tv/2026.php?id=45$广州阿里云
+TVBS精采台,http://8.138.7.223/tv/2026.php?id=46$广州阿里云
+儿童积木台,http://8.138.7.223/tv/2026.php?id=47$广州阿里云
+龙华电影台,http://8.138.7.223/tv/2026.php?id=48$广州阿里云
+momo亲子台,http://8.138.7.223/tv/2026.php?id=49$广州阿里云
+Rock Action,http://8.138.7.223/tv/2026.php?id=50$广州阿里云
+八度空间,http://8.138.7.223/tv/2026.php?id=52$广州阿里云
+民视影剧,http://8.138.7.223/tv/2026.php?id=53$广州阿里云
+纬来电影,http://8.138.7.223/tv/2026.php?id=54$广州阿里云
+
+
 凤凰中文,http://pull-vivek.speedws.com/live/aaafhzw.flv$多伦多
 凤凰香港,http://pull-vivek.speedws.com/live/aaafhxg.flv$多伦多
 HOY 76,http://pull-vivek.speedws.com/live/aaahoy76.flv$多伦多
