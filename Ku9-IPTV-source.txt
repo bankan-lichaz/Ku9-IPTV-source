@@ -19,6 +19,8 @@
 绿屏换ijk软解码,https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist720p.m3u8$publiciptv
 
 二姨频道,#genre#
+CCTV卫生健康,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=wsjk$堪萨斯城1
+
 好好的时光21,https://vip.dytt-cinema.com/20260309/51820_9ae82c26/index.m3u8$二姨点播
 好好的时光22,https://vip.dytt-cinema.com/20260309/51821_79dc556c/index.m3u8$二姨点播
 好好的时光23,https://vip.dytt-cinema.com/20260310/51915_cb053134/index.m3u8$二姨点播
