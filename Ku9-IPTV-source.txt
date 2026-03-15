@@ -29,6 +29,7 @@ CCTV卫生健康,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=wsjk$堪萨斯城1
 好好的时光27,https://vip.dytt-cinema.com/20260313/52277_75a505fb/index.m3u8$二姨点播
 好好的时光28,https://vip.dytt-cinema.com/20260313/52276_78da1c5e/index.m3u8$二姨点播
 好好的时光29,https://vip.dytt-cinema.com/20260314/52368_c9e11e0b/index.m3u8$二姨点播
+好好的时光30,https://vip.dytt-cinema.com/20260315/52470_f381b8e2/index.m3u8$二姨点播
 
 好好的时光11,https://vip.dytt-cinema.com/20260227/50751_c5ecbc9e/index.m3u8$二姨点播
 好好的时光12,https://vip.dytt-cinema.com/20260228/50879_200bf48b/index.m3u8$二姨点播
