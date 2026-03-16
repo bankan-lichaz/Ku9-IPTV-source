@@ -1747,6 +1747,7 @@ ViuTV,http://r.jdshipin.com/vSJvl$jd视频
 
 
 凤凰中文,http://pull-vivek.speedws.com/live/aaafhzw.flv$多伦多
+凤凰资讯,http://pull-vivek.speedws.com/live/aaafhzx.flv$多伦多
 凤凰香港,http://pull-vivek.speedws.com/live/aaafhxg.flv$多伦多
 HOY 76,http://pull-vivek.speedws.com/live/aaahoy76.flv$多伦多
 HOY 77,http://pull-vivek.speedws.com/live/aaahoy77.flv$多伦多
@@ -1758,9 +1759,16 @@ PopC,http://pull-vivek.speedws.com/live/aaapopc.flv$多伦多
 MYTV华语剧台,http://pull-vivek.speedws.com/live/aaahyjt.flv$多伦多
 MYTV亚洲剧台,http://pull-vivek.speedws.com/live/aaayzjt.flv$多伦多
 MYTV黄金华剧台,http://pull-vivek.speedws.com/live/aaahjhj.flv$多伦多
-TVB千禧经典台,http://pull-vivek.speedws.com/live/aaamqxjd.flv$多伦多
-MYTVSUPER,http://pull-vivek.speedws.com/live/aaaSUPERFREE.flv$多伦多
+MYTV千禧经典台,http://pull-vivek.speedws.com/live/aaamqxjd.flv$多伦多
+MYTVSUPERFREE,http://pull-vivek.speedws.com/live/aaaSUPERFREE.flv$多伦多
 MYTV黄金翡翠台,http://pull-vivek.speedws.com/live/aaahjfc.flv$多伦多
+MYTV跑马台,http://pull-vivek.speedws.com/live/aaapm18.flv$多伦多
+ROCK综艺娱乐,http://pull-vivek.speedws.com/live/aaarock1.flv$多伦多
+天映经典,http://pull-vivek.speedws.com/live/aaatyjd.flv$多伦多
+天映频道,http://pull-vivek.speedws.com/live/aaatypd.flv$多伦多
+MYTV戏曲台,http://pull-vivek.speedws.com/live/aaaxqt.flv$多伦多
+TVB无线新闻台,http://pull-vivek.speedws.com/live/aaawxxw.flv$多伦多
+TVB翡翠台,http://pull-vivek.speedws.com/live/aaajade.flv$多伦多
 
 台视,http://211.72.174.95:8112/0.ts$台北凯撒饭店
 中视,http://211.72.174.95:8113/0.ts$台北凯撒饭店
