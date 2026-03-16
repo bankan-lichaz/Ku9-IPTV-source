@@ -2245,3 +2245,5 @@ HD音乐,https://lhttp.qingting.fm/live/15318341/64k.mp3
 
 直播轮播,#genre#
 易中天品三国,http://shorturl.jxpan.vip:880/r/baoshi_web/YYlunbo.php?id=1461244449
+商传讲朱元璋,http://shorturl.jxpan.vip:880/r/baoshi_web/YYlunbo.php?id=1354936149
+刘心武说红楼,http://shorturl.jxpan.vip:880/r/baoshi_web/YYlunbo.php?id=1382741639
