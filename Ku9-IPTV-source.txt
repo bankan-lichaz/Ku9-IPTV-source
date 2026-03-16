@@ -2045,6 +2045,24 @@ Kook King,http://iptv.4666888.xyz/iptv2A.php?id=63$风云
 
 环球电视台,http://utv1.hqtvzb.com:9999/hls/world.m3u8
 
+民视新闻,http://rihou.cc:555/tv/[mn]民视新闻$Q1
+中视新闻,http://rihou.cc:555/tv/[mn]中视新闻$Q1
+华视新闻,http://rihou.cc:555/tv/[mn]华视新闻$Q1
+台视新闻,http://rihou.cc:555/tv/[mn]台视新闻$Q1
+公视,http://rihou.cc:555/tv/[mn]公视闽南$Q1
+民视,http://rihou.cc:555/tv/[mn]民视闽南$Q1
+中视,http://rihou.cc:555/tv/[mn]中视闽南$Q1
+华视,http://rihou.cc:555/tv/[mn]华视闽南$Q1
+台视,http://rihou.cc:555/tv/[mn]台视闽南$Q1
+公视台语,http://rihou.cc:555/tv/[mn]公视闽语$Q1
+公视综合,http://rihou.cc:555/tv/[mn]公视综合$Q1
+民视台湾,http://rihou.cc:555/tv/[mn]民视南闽$Q1
+民视第一,http://rihou.cc:555/tv/[mn]民视第一$Q1
+中视经典,http://rihou.cc:555/tv/[mn]中视经典$Q1
+中视菁采,http://rihou.cc:555/tv/[mn]中视菁采$Q1
+华视教育体育文化,http://rihou.cc:555/tv/[mn]华视教育$Q1
+台视综合,http://rihou.cc:555/tv/[mn]台视综合$Q1
+台视财经,http://rihou.cc:555/tv/[mn]台视财经$Q1
 镜新闻,http://rihou.cc:555/tv/[Hk]闽镜新闻$Q1
 八度空间,http://rihou.cc:555/tv/[Pd]八度空间$Q1
 东森新闻,http://rihou.cc:555/tv/[Us]东森新闻$Q1
