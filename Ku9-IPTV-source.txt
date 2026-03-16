@@ -1953,13 +1953,65 @@ ViuTV,http://hls.168.us.kg/u/99/master.m3u8$旧金山
 
 
 
-凤凰中文,http://iptv.4666888.xyz/iptv2A.php?id=27$阿烈
-东森电影,http://iptv.4666888.xyz/iptv2A.php?id=48$阿烈
-邵氏电影,http://iptv.4666888.xyz/iptv2A.php?id=39$阿烈
-iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$阿烈
-華藝中文台,http://iptv.4666888.xyz/iptv2A.php?id=37$阿烈
-非凡新闻,http://iptv.4666888.xyz/iptv2A.php?id=44$阿烈
-民视影剧,http://iptv.4666888.xyz/iptv2A.php?id=53$阿烈
+智林体育台,http://iptv.4666888.xyz/iptv2A.php?id=5$风云
+CCTV1,http://iptv.4666888.xyz/iptv2A.php?id=7$风云
+CCTV2,http://iptv.4666888.xyz/iptv2A.php?id=8$风云
+CCTV3,http://iptv.4666888.xyz/iptv2A.php?id=9$风云
+CCTV4,http://iptv.4666888.xyz/iptv2A.php?id=10$风云
+CCTV13,http://iptv.4666888.xyz/iptv2A.php?id=11$风云
+CCTV14,http://iptv.4666888.xyz/iptv2A.php?id=12$风云
+湖南卫视,http://iptv.4666888.xyz/iptv2A.php?id=13$风云
+浙江卫视,http://iptv.4666888.xyz/iptv2A.php?id=14$风云
+江苏卫视,http://iptv.4666888.xyz/iptv2A.php?id=15$风云
+山西卫视,http://iptv.4666888.xyz/iptv2A.php?id=16$风云
+青海卫视,http://iptv.4666888.xyz/iptv2A.php?id=17$风云
+广东卫视,http://iptv.4666888.xyz/iptv2A.php?id=18$风云
+广东珠江,http://iptv.4666888.xyz/iptv2A.php?id=19$风云
+广东体育,http://iptv.4666888.xyz/iptv2A.php?id=20$风云
+iQIYI爱奇艺,http://iptv.4666888.xyz/iptv2A.php?id=21$风云
+天映频道,http://iptv.4666888.xyz/iptv2A.php?id=22$风云
+RTHK31,http://iptv.4666888.xyz/iptv2A.php?id=23$风云
+MYTVSUPER,http://iptv.4666888.xyz/iptv2A.php?id=24$风云
+TVB1,http://iptv.4666888.xyz/iptv2A.php?id=25$风云
+TVB J1,http://iptv.4666888.xyz/iptv2A.php?id=26$风云
+凤凰中文,http://iptv.4666888.xyz/iptv2A.php?id=27$风云
+TVB翡翠台,http://iptv.4666888.xyz/iptv2A.php?id=28$风云
+TVB明珠台,http://iptv.4666888.xyz/iptv2A.php?id=29$风云
+美亚电影台,http://iptv.4666888.xyz/iptv2A.php?id=30$风云
+HOY 78,http://iptv.4666888.xyz/iptv2A.php?id=31$风云
+MYTV黄金翡翠台,http://iptv.4666888.xyz/iptv2A.php?id=32$风云
+TVB影剧台,http://iptv.4666888.xyz/iptv2A.php?id=33$风云
+TVB翡翠台,http://iptv.4666888.xyz/iptv2A.php?id=34$风云
+HOY 77,http://iptv.4666888.xyz/iptv2A.php?id=35$风云
+TVB娱乐新闻台,http://iptv.4666888.xyz/iptv2A.php?id=36$风云
+華藝中文台,http://iptv.4666888.xyz/iptv2A.php?id=37$风云
+动画台,http://iptv.4666888.xyz/iptv2A.php?id=38$风云
+邵氏电影,http://iptv.4666888.xyz/iptv2A.php?id=39$风云
+邵氏武侠,http://iptv.4666888.xyz/iptv2A.php?id=40$风云
+澳视澳门,http://iptv.4666888.xyz/iptv2A.php?id=41$风云
+靖洋戏剧台,http://iptv.4666888.xyz/iptv2A.php?id=42$风云
+TVBS新闻台,http://iptv.4666888.xyz/iptv2A.php?id=43$风云
+非凡新闻,http://iptv.4666888.xyz/iptv2A.php?id=44$风云
+龙华电影,http://iptv.4666888.xyz/iptv2A.php?id=45$风云
+FTV民视综艺,http://iptv.4666888.xyz/iptv2A.php?id=46$风云
+TVBS精采台,http://iptv.4666888.xyz/iptv2A.php?id=47$风云
+东森电影,http://iptv.4666888.xyz/iptv2A.php?id=48$风云
+momo亲子台,http://iptv.4666888.xyz/iptv2A.php?id=49$风云
+ROCK ACTION,http://iptv.4666888.xyz/iptv2A.php?id=50$风云
+台视综合,http://iptv.4666888.xyz/iptv2A.php?id=51$风云
+八度空间,http://iptv.4666888.xyz/iptv2A.php?id=52$风云
+FTV民视影剧,http://iptv.4666888.xyz/iptv2A.php?id=53$风云
+纬来电影,http://iptv.4666888.xyz/iptv2A.php?id=54$风云
+民视,http://iptv.4666888.xyz/iptv2A.php?id=55$风云
+靖天电影台,http://iptv.4666888.xyz/iptv2A.php?id=56$风云
+TVB,http://iptv.4666888.xyz/iptv2A.php?id=57$风云
+电影台,http://iptv.4666888.xyz/iptv2A.php?id=59$风云
+中国电影频道,http://iptv.4666888.xyz/iptv2A.php?id=61$风云
+tennis+,http://iptv.4666888.xyz/iptv2A.php?id=62$风云
+Kook King,http://iptv.4666888.xyz/iptv2A.php?id=63$风云
+八大综合,http://iptv.4666888.xyz/iptv2A.php?id=64$风云
+台湾逗阵行,http://iptv.4666888.xyz/iptv2A.php?id=65$风云
+
 
 邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub$洛杉矶
 
