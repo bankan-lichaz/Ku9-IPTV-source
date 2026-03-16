@@ -1510,6 +1510,13 @@ CHC影迷电影,http://156.238.248.80:8880/play/57.m3u8$香港
 CHC动作电影,http://156.238.248.80:8880/play/75.m3u8$香港
 CHC家庭影院,http://156.238.248.80:8880/play/76.m3u8$香港
 
+NewTV泰语剧场,http://lvbaiducdnct.inter.ptqy.gitv.tv/tslive/c58_fast_949_1080P_t10/c58_fast_949_1080P_t10.m3u8?d$杭州
+NewTV爱情剧场,http://lvbaiducdnct.inter.ptqy.gitv.tv/tslive/c59_fast_967_1080P_t10/c59_fast_967_1080P_t10.m3u8?d$杭州
+
+晴彩竞技,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011528$新加坡
+晴彩青少,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011525$新加坡
+晴彩篮球,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011529$新加坡
+晴彩广场舞,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011523$新加坡
 
 CCTV1,http://107.150.60.122/live/cctv1hd.m3u8$堪萨斯城2
 CCTV2,http://107.150.60.122/live/cctv2hd.m3u8$堪萨斯城2
