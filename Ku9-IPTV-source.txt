@@ -206,7 +206,7 @@ CCTV13,http://182.207.218.54:999/tsfile/live/0013_1.m3u8?key=txiptv$沈阳
 CCTV14,http://182.207.218.54:999/tsfile/live/0014_1.m3u8?key=txiptv$沈阳
 CCTV15,http://182.207.218.54:999/tsfile/live/0015_1.m3u8?key=txiptv$沈阳
 
-CCTV16,http://221.229.212.86:14926$苏州桐山
+CCTV16,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv16hd$堪萨斯城1
 
 CCTV1,http://39.104.69.92:3566/608807420$北京阿里高清
 CCTV2,http://39.104.69.92:3566/631780532$北京阿里高清
