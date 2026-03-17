@@ -176,6 +176,8 @@ CCTV卫生健康,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=wsjk$堪萨斯城1
 
 辽宁卫视,http://38.75.136.137:98/gslb/dsdqpub/lnwshd.m3u8?auth=testpub$洛杉矶
 
+锦州新闻综合,https://srs.beijihainews.com.cn/video/jinzhou1/index.m3u8$北极海
+锦州教育,https://srs.beijihainews.com.cn/video/jinzhou2/index.m3u8$北极海
 
 央卫频道,#genre#
 CCTV1,http://182.207.218.54:999/tsfile/live/0001_1.m3u8?key=txiptv$沈阳
