@@ -222,7 +222,7 @@ CCTV12,http://39.104.69.92:3566/673168185$北京阿里高清
 CCTV13,http://39.104.69.92:3566/608807423$北京阿里高清
 CCTV14,http://39.104.69.92:3566/624878440$北京阿里高清
 CCTV15,http://39.104.69.92:3566/673168223$北京阿里高清
-CCTV16,http://116.76.254.170:44330/tsfile/live/1012_1.m3u8?key=txiptv&playlive=0&authid=0
+CCTV16,http://116.76.254.170:44330/tsfile/live/1012_1.m3u8?key=txiptv&playlive=0&authid=0$深圳南山
 CCTV17,http://39.104.69.92:3566/673168256$北京阿里高清
 CCTV4欧洲,http://39.104.69.92:3566/608807419$北京阿里高清
 CCTV4美洲,http://39.104.69.92:3566/608807416$北京阿里高清
@@ -350,7 +350,6 @@ CCTV12,http://47.119.24.76:59093/673168185$深圳阿里标清
 CCTV13,http://47.119.24.76:59093/608807423$深圳阿里标清
 CCTV14,http://47.119.24.76:59093/624878440$深圳阿里标清
 CCTV15,http://47.119.24.76:59093/673168223$深圳阿里标清
-CCTV16,http://116.76.254.170:44330/tsfile/live/1012_1.m3u8?key=txiptv&playlive=0&authid=0
 CCTV17,http://47.119.24.76:59093/673168256$深圳阿里标清
 CCTV4欧洲,http://47.119.24.76:59093/608807419$深圳阿里标清
 CCTV4美洲,http://47.119.24.76:59093/608807416$深圳阿里标清
@@ -651,7 +650,7 @@ CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 新疆卫视,http://27.41.245.32:801/hls/57/index.m3u8
 云南卫视,http://38.75.136.137:98/gslb/dsdqpub/ynwshd.m3u8?auth=testpub$洛杉矶test
 云南卫视,http://go.bkpcp.top/mg/ynws
-海南卫视,http://116.76.254.170:44330/tsfile/live/1004_1.m3u8?key=txiptv&playlive=0&authid=0
+海南卫视,http://116.76.254.170:44330/tsfile/live/1004_1.m3u8?key=txiptv&playlive=0&authid=0$深圳南山
 
 CCTV1,http://m.061899.xyz/mg/cctv1$VPS旧金山2
 CCTV2,http://m.061899.xyz/mg/cctv2$VPS旧金山2
