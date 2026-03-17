@@ -1609,6 +1609,9 @@ CHC影迷电影,http://156.238.248.80:8880/play/57.m3u8$香港
 CHC动作电影,http://156.238.248.80:8880/play/75.m3u8$香港
 CHC家庭影院,http://156.238.248.80:8880/play/76.m3u8$香港
 
+NewTV古装剧场,http://lvbaiducdnct.inter.ptqy.gitv.tv/tslive/c58_fast_947_1080P_t10/c58_fast_947_1080P_t10.m3u8?d$杭州
+NewTV家庭剧场,http://lvbaiducdnct.inter.ptqy.gitv.tv/tslive/c59_fast_999_1080P_t10/c59_fast_999_1080P_t10.m3u8?d$杭州
+NewTV大家剧场,http://lvbaiducdnct.inter.ptqy.gitv.tv/tslive/c58_fast_975_1080P_t10/c58_fast_975_1080P_t10.m3u8?d$杭州
 NewTV泰语剧场,http://lvbaiducdnct.inter.ptqy.gitv.tv/tslive/c58_fast_949_1080P_t10/c58_fast_949_1080P_t10.m3u8?d$杭州
 NewTV爱情剧场,http://lvbaiducdnct.inter.ptqy.gitv.tv/tslive/c59_fast_967_1080P_t10/c59_fast_967_1080P_t10.m3u8?d$杭州
 
