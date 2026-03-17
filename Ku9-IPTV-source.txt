@@ -3129,3 +3129,6 @@ HD音乐,https://lhttp.qingting.fm/live/15318341/64k.mp3
 福建音乐,https://lhttp.qingting.fm/live/4585/64k.mp3
 河北音乐,https://lhttp.qingting.fm/live/1649/64k.mp3
 浙江音乐,https://lhttp.qingting.fm/live/4866/64k.mp3
+
+直播轮播,#genre#
+五岁抬头,http://222.186.39.21:35466/douyu/236461
