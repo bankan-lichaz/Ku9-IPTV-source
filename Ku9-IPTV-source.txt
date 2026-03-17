@@ -2518,7 +2518,7 @@ sbn全球财经,https://stream1.freetv.fun/2bf3aa4eb699bd58c4974de5075bb6348d24d
 东森超视,https://stream1.freetv.fun/bf9c66cad412c6594276f125793ff1bf60d1b059f0795f5972b415fa031d4f79.m3u8$旧金山beta1
 东森超视,https://stream1.freetv.fun/2fb134f9ab0310cbcfa16c862a8025afa4f563aa42ec617b38bcb2467d46fb26.m3u8$旧金山beta1
 东森超视,https://stream1.freetv.fun/e633e99f033cfd288478cf08e3082be17ec60cfdf59f0d7f8afe77b627a50d8c.m3u8$旧金山beta1
-东森电影,https://stream1.freetv.fun/45a0f78f58b360078097c8797db3cc4f98fc98a5382df97f74b1674c56d2b8aa.m3u8$旧金山beta1
+民视,https://stream1.freetv.fun/45a0f78f58b360078097c8797db3cc4f98fc98a5382df97f74b1674c56d2b8aa.m3u8$旧金山beta1
 民视,https://stream1.freetv.fun/60a9f375b5ab425ec19fa7c0ed5d870d05bbbb21e04b95b696734bfb1243e083.m3u8$旧金山beta1
 民視新闻,https://stream1.freetv.fun/33ae9aa2523492a0deb1bebba74b646b746cf674d50b753e7c4c06305d3fe40b.m3u8$旧金山beta1
 民视新闻,https://stream1.freetv.fun/a6dd48cff68c1da6ae33d7a2d962ab66d11a3791c0f133b0cd3bbbf99ea8b3c8.m3u8$旧金山beta1
