@@ -2546,6 +2546,10 @@ sbn全球财经,https://stream1.freetv.fun/2bf3aa4eb699bd58c4974de5075bb6348d24d
 龙华经典,https://stream1.freetv.fun/4e122ffecac69bbab2b83c2a0af88a9e65cb34da2eb393b62fe0169ed6157bfa.ctv$旧金山beta1
 龙华电影,https://stream1.freetv.fun/890a2f4d66593bb51749c90826814911941e2ad758c5d4528ceb2785ddf0a37f.ctv$旧金山beta1
 
+生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8$TW彰化
+人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8$TW彰化
+人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/playlist.m3u8$TW彰化
+
 唐人卫视,https://ntd02.akamaized.net/HD-NY/tracks-v3a1/mono.m3u8$NTD
 
 凤凰中文,http://api.kkhk.itv888.vip:8080/streams/vny1wblsnch/index.m3u8$旧金山beta
@@ -2739,15 +2743,12 @@ ViuTV6,http://hls.168.us.kg/u/96/master.m3u8$旧金山
 ViuTV,http://hls.168.us.kg/u/99/master.m3u8$旧金山
 
 #T
-龙华电影台,http://cdn8.163189.xyz/163189/lhdy$旧金山
-龙华经典台,http://cdn8.163189.xyz/163189/lhjd$旧金山
-龙华偶像台,http://cdn8.163189.xyz/163189/lhox$旧金山
-龙华日韩台,http://cdn8.163189.xyz/163189/lhrh$旧金山
-龙华戏剧台,http://cdn8.163189.xyz/163189/lhxj$旧金山
+龙华电影,http://cdn8.163189.xyz/163189/lhdy$旧金山
+龙华经典,http://cdn8.163189.xyz/163189/lhjd$旧金山
+龙华偶像,http://cdn8.163189.xyz/163189/lhox$旧金山
+龙华日韩,http://cdn8.163189.xyz/163189/lhrh$旧金山
+龙华戏剧,http://cdn8.163189.xyz/163189/lhxj$旧金山
 
-生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8$TW彰化
-人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8$TW彰化
-人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/playlist.m3u8$TW彰化
 
 凤凰中文,http://cdn6.bkpcp.top/tl/tuiliu.php?id=fhzw$旧金山1
 凤凰资讯,http://cdn6.bkpcp.top/tl/tuiliu.php?id=fhzx$旧金山1
