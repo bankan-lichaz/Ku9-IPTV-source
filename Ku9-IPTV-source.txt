@@ -175,7 +175,7 @@ CCTV卫生健康,http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub$洛
 辽宁经济,http://39.152.103.17:8089/tsfile/live/1032_1.m3u8$阜新彰武Mobile
 辽宁移动电视,http://39.152.103.17:8089/tsfile/live/1033_1.m3u8$阜新彰武Mobile
 
-辽宁卫视,http://38.75.136.137:98/gslb/dsdqpub/lnwshd.m3u8?auth=testpub$洛杉矶
+辽宁卫视,http://38.75.136.137:98/gslb/dsdqpub/lnwshd.m3u8?auth=testpub$洛杉矶test
 
 锦州新闻综合,https://srs.beijihainews.com.cn/video/jinzhou1/index.m3u8$北极海
 锦州教育,https://srs.beijihainews.com.cn/video/jinzhou2/index.m3u8$北极海
@@ -575,7 +575,7 @@ CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 东方卫视,http://69.30.246.194/live/dfws.m3u8
 江苏卫视,http://69.30.246.194/live/jsws.m3u8
 湖南卫视,http://69.30.246.194/live/hnws.m3u8
-湖南卫视,http://38.75.136.137:98/gslb/dsdqpub/hnwshd.m3u8?auth=testpub
+湖南卫视,http://38.75.136.137:98/gslb/dsdqpub/hnwshd.m3u8?auth=testpub$洛杉矶test
 浙江卫视,https://play-qukan.cztv.com/live/1746687519046362.m3u8
 浙江卫视,http://ali-xwl.cztv.com/live/channel011080Plxw.m3u8
 浙江卫视,http://ali-xwl.cztv.com/live/channel4k2160p.m3u8
@@ -590,8 +590,8 @@ CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 深圳卫视,http://39.152.103.17:8089/tsfile/live/1049_1.m3u8
 深圳卫视,http://27.41.245.32:801/hls/26/index.m3u8
 深圳卫视,http://69.30.246.194/live/szws.m3u8
-深圳卫视,http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub
-天津卫视,http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub
+深圳卫视,http://38.75.136.137:98/gslb/dsdqpub/szwshd.m3u8?auth=testpub$洛杉矶test
+天津卫视,http://38.75.136.137:98/gslb/dsdqpub/tjwshd.m3u8?auth=testpub$洛杉矶test
 天津卫视,http://39.152.103.17:8089/tsfile/live/1035_1.m3u8
 天津卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=tjws
 天津卫视,http://m.061899.xyz/mg/tjws
@@ -599,7 +599,7 @@ CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 天津卫视,http://j.s.bkpcp.top/jj/tjws
 天津卫视,http://go.bkpcp.top/mg/tjws
 天津卫视,http://nn.7x9d.cn/xzc2.php?ua=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA2LjAuMC4wIFNhZmFyaS81MzcuMzY=&hls=aHR0cDovLzIxOC4yMy4xOTIuMzM6OTk5OS9uZXdsaXZlL2xpdmUvaGxzLzIzL2xpdmUubTN1OA==
-安徽卫视,http://38.75.136.137:98/gslb/dsdqpub/ahwshd.m3u8?auth=testpub
+安徽卫视,http://38.75.136.137:98/gslb/dsdqpub/ahwshd.m3u8?auth=testpub$洛杉矶test
 安徽卫视,http://39.152.103.17:8089/tsfile/live/1039_1.m3u8
 安徽卫视,http://m.061899.xyz/mg/ahws
 安徽卫视,http://k.061899.xyz/k.php?id=ahws
@@ -608,9 +608,9 @@ CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 安徽卫视,http://nn.7x9d.cn/xzc2.php?ua=TW96aWxsYS81LjAgKFdpbmRvd3MgTlQgNi4xOyBXaW42NDsgeDY0KSBBcHBsZVdlYktpdC81MzcuMzYgKEtIVE1MLCBsaWtlIEdlY2tvKSBDaHJvbWUvMTA2LjAuMC4wIFNhZmFyaS81MzcuMzY=&hls=aHR0cDovLzIxOC4yMy4xOTIuMzM6OTk5OS9uZXdsaXZlL2xpdmUvaGxzLzE3L2xpdmUubTN1OA==
 安徽卫视,http://120.76.248.139/live/bfgd/4200000096.m3u8
 安徽卫视,http://27.41.245.32:801/hls/29/index.m3u8
-山东卫视,ttp://38.75.136.137:98/gslb/dsdqpub/sdwshd.m3u8?auth=testpub
+山东卫视,ttp://38.75.136.137:98/gslb/dsdqpub/sdwshd.m3u8?auth=testpub$洛杉矶test
 山东卫视,http://27.41.245.32:801/hls/51/index.m3u8
-四川卫视,http://38.75.136.137:98/gslb/dsdqpub/scwshd.m3u8?auth=testpub
+四川卫视,http://38.75.136.137:98/gslb/dsdqpub/scwshd.m3u8?auth=testpub$洛杉矶test
 四川卫视,http://23.237.228.134/live6/sichuan.m3u8
 四川卫视,http://39.152.103.17:8089/tsfile/live/1044_1.m3u8
 四川卫视,http://27.41.245.32:801/hls/54/index.m3u8
@@ -619,16 +619,16 @@ CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 贵州卫视,http://k.061899.xyz/k.php?id=gzws
 贵州卫视,http://j.s.bkpcp.top/jj/gzws
 贵州卫视,http://go.bkpcp.top/mg/gzws
-广西卫视,http://38.75.136.137:98/gslb/dsdqpub/gxwshd.m3u8?auth=testpub
+广西卫视,http://38.75.136.137:98/gslb/dsdqpub/gxwshd.m3u8?auth=testpub$洛杉矶test
 广西卫视,http://39.152.103.17:8089/tsfile/live/1077_1.m3u8
 广西卫视,http://27.41.245.32:801/hls/34/index.m3u8
 广西卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=gxws
 广西卫视,http://m.061899.xyz/mg/gxws
 广西卫视,http://k.061899.xyz/k.php?id=gxws
-黑龙江卫视,http://38.75.136.137:98/gslb/dsdqpub/hljwshd.m3u8?auth=testpub
+黑龙江卫视,http://38.75.136.137:98/gslb/dsdqpub/hljwshd.m3u8?auth=testpub$洛杉矶test
 黑龙江卫视,http://39.152.103.17:8089/tsfile/live/1055_1.m3u8
 黑龙江卫视,http://27.41.245.32:801/hls/39/index.m3u8
-甘肃卫视,http://38.75.136.137:98/gslb/dsdqpub/gswshd.m3u8?auth=testpub
+甘肃卫视,http://38.75.136.137:98/gslb/dsdqpub/gswshd.m3u8?auth=testpub$洛杉矶test
 甘肃卫视,http://39.152.103.17:8089/tsfile/live/1088_1.m3u8
 甘肃卫视,http://27.41.245.32:801/hls/33/index.m3u8
 甘肃卫视,http://k.061899.xyz/k.php?id=gsws
@@ -641,7 +641,7 @@ CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8
 新疆卫视,http://go.bkpcp.top/mg/xjws
 新疆卫视,http://go.bkpcp.top/mg/xjws
 新疆卫视,http://27.41.245.32:801/hls/57/index.m3u8
-云南卫视,http://38.75.136.137:98/gslb/dsdqpub/ynwshd.m3u8?auth=testpub
+云南卫视,http://38.75.136.137:98/gslb/dsdqpub/ynwshd.m3u8?auth=testpub$洛杉矶test
 云南卫视,http://go.bkpcp.top/mg/ynws
 海南卫视,http://116.76.254.170:44330/tsfile/live/1004_1.m3u8?key=txiptv&playlive=0&authid=0
 
@@ -2876,7 +2876,7 @@ Kook King,http://iptv.4666888.xyz/iptv2A.php?id=63$风云
 台湾逗阵行,http://iptv.4666888.xyz/iptv2A.php?id=65$风云
 
 
-邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub$洛杉矶
+邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub$洛杉矶test
 
 环球电视台,http://utv1.hqtvzb.com:9999/hls/world.m3u8
 
