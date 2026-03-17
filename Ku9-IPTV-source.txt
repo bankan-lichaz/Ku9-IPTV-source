@@ -76,6 +76,12 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q2
 
+辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds$堪萨斯城1
+辽宁影视剧,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys$堪萨斯城1
+辽宁体育休闲,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty$堪萨斯城1
+辽宁生活,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnsh$堪萨斯城1
+辽宁北方,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnbf$堪萨斯城1
+
 辽宁都市,http://182.207.218.54:999/tsfile/live/1000_1.m3u8?key=txiptv$沈阳
 辽宁影视剧,http://182.207.218.54:999/tsfile/live/1001_1.m3u8?key=txiptv$沈阳
 辽宁体育休闲,http://182.207.218.54:999/tsfile/live/1003_1.m3u8?key=txiptv$沈阳
@@ -90,12 +96,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 辽宁公共,http://39.104.69.92:3566/962045223$北京阿里高清
 辽宁生活,http://39.104.69.92:3566/962045226$北京阿里高清
 辽宁影视剧,http://39.104.69.92:3566/962067517$北京阿里高清
-
-辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds$堪萨斯城1
-辽宁影视剧,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys$堪萨斯城1
-辽宁体育休闲,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty$堪萨斯城1
-辽宁生活,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnsh$堪萨斯城1
-辽宁北方,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnbf$堪萨斯城1
 
 辽宁都市,http://107.150.60.122/live/lnds.m3u8$堪萨斯城2
 辽宁影视剧,http://107.150.60.122/live/lnys.m3u8$堪萨斯城2
@@ -189,25 +189,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 锦州教育,https://srs.beijihainews.com.cn/video/jinzhou2/index.m3u8$北极海
 
 央卫频道,#genre#
-CCTV1,http://182.207.218.54:999/tsfile/live/0001_1.m3u8?key=txiptv$沈阳
-CCTV2,http://182.207.218.54:999/tsfile/live/0002_1.m3u8?key=txiptv$沈阳
-CCTV3,http://182.207.218.54:999/tsfile/live/0003_1.m3u8?key=txiptv$沈阳
-CCTV4,http://182.207.218.54:999/tsfile/live/0004_1.m3u8?key=txiptv$沈阳
-CCTV5,http://182.207.218.54:999/tsfile/live/0005_1.m3u8?key=txiptv$沈阳
-CCTV5+,http://182.207.218.54:999/tsfile/live/0016_1.m3u8?key=txiptv$沈阳
-CCTV6,http://182.207.218.54:999/tsfile/live/0006_1.m3u8?key=txiptv$沈阳
-CCTV7,http://182.207.218.54:999/tsfile/live/0007_1.m3u8?key=txiptv$沈阳
-CCTV8,http://182.207.218.54:999/tsfile/live/0008_1.m3u8?key=txiptv$沈阳
-CCTV9,http://182.207.218.54:999/tsfile/live/0009_1.m3u8?key=txiptv$沈阳
-CCTV10,http://182.207.218.54:999/tsfile/live/0010_1.m3u8?key=txiptv$沈阳
-CCTV11,http://182.207.218.54:999/tsfile/live/0011_1.m3u8?key=txiptv$沈阳
-CCTV12,http://182.207.218.54:999/tsfile/live/0012_1.m3u8?key=txiptv$沈阳
-CCTV13,http://182.207.218.54:999/tsfile/live/0013_1.m3u8?key=txiptv$沈阳
-CCTV14,http://182.207.218.54:999/tsfile/live/0014_1.m3u8?key=txiptv$沈阳
-CCTV15,http://182.207.218.54:999/tsfile/live/0015_1.m3u8?key=txiptv$沈阳
-
-CCTV16,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv16hd$堪萨斯城1
-
 CCTV1,http://39.104.69.92:3566/608807420$北京阿里高清
 CCTV2,http://39.104.69.92:3566/631780532$北京阿里高清
 CCTV3,http://39.104.69.92:3566/624878271$北京阿里高清
@@ -224,6 +205,7 @@ CCTV12,http://39.104.69.92:3566/673168185$北京阿里高清
 CCTV13,http://39.104.69.92:3566/608807423$北京阿里高清
 CCTV14,http://39.104.69.92:3566/624878440$北京阿里高清
 CCTV15,http://39.104.69.92:3566/673168223$北京阿里高清
+CCTV16,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv16hd$堪萨斯城1
 CCTV17,http://39.104.69.92:3566/673168256$北京阿里高清
 CCTV4欧洲,http://39.104.69.92:3566/608807419$北京阿里高清
 CCTV4美洲,http://39.104.69.92:3566/608807416$北京阿里高清
@@ -262,6 +244,24 @@ CHC家庭影院,http://39.104.69.92:3566/644368373$北京阿里高清
 CETV1,http://39.104.69.92:3566/923287154$北京阿里高清
 CETV2,http://39.104.69.92:3566/923287211$北京阿里高清
 CETV4,http://39.104.69.92:3566/923287339$北京阿里高清
+
+CCTV1,http://182.207.218.54:999/tsfile/live/0001_1.m3u8?key=txiptv$沈阳
+CCTV2,http://182.207.218.54:999/tsfile/live/0002_1.m3u8?key=txiptv$沈阳
+CCTV3,http://182.207.218.54:999/tsfile/live/0003_1.m3u8?key=txiptv$沈阳
+CCTV4,http://182.207.218.54:999/tsfile/live/0004_1.m3u8?key=txiptv$沈阳
+CCTV5,http://182.207.218.54:999/tsfile/live/0005_1.m3u8?key=txiptv$沈阳
+CCTV5+,http://182.207.218.54:999/tsfile/live/0016_1.m3u8?key=txiptv$沈阳
+CCTV6,http://182.207.218.54:999/tsfile/live/0006_1.m3u8?key=txiptv$沈阳
+CCTV7,http://182.207.218.54:999/tsfile/live/0007_1.m3u8?key=txiptv$沈阳
+CCTV8,http://182.207.218.54:999/tsfile/live/0008_1.m3u8?key=txiptv$沈阳
+CCTV9,http://182.207.218.54:999/tsfile/live/0009_1.m3u8?key=txiptv$沈阳
+CCTV10,http://182.207.218.54:999/tsfile/live/0010_1.m3u8?key=txiptv$沈阳
+CCTV11,http://182.207.218.54:999/tsfile/live/0011_1.m3u8?key=txiptv$沈阳
+CCTV12,http://182.207.218.54:999/tsfile/live/0012_1.m3u8?key=txiptv$沈阳
+CCTV13,http://182.207.218.54:999/tsfile/live/0013_1.m3u8?key=txiptv$沈阳
+CCTV14,http://182.207.218.54:999/tsfile/live/0014_1.m3u8?key=txiptv$沈阳
+CCTV15,http://182.207.218.54:999/tsfile/live/0015_1.m3u8?key=txiptv$沈阳
+
 
 CCTV1,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv1hd$堪萨斯城1
 CCTV2,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv2hd$堪萨斯城1
