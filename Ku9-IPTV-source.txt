@@ -2424,6 +2424,11 @@ inbm证券服务频道,https://hlss.gstv.com.cn:443/se0rch/20sv46.m3u8
 新晃综合频道,https://liveplay-srs.voc.com.cn/hls/tv/23_5d556a.m3u8
 中方综合频道,https://liveplay-srs.voc.com.cn/hls/tv/18_3aa230.m3u8
 江苏新闻频道,https://zhibo-hls.jstv.com/litchi/zhibo-jsgg.m3u8
+南京新闻,https://nklive.nbs.cn/hls/d511bc9d-a694-4453-b3a2-4fc842cc97a1/index.m3u8
+南京教科,https://nklive.nbs.cn/hls/75b3c462-b831-4de7-a34b-5d3221db2069/index.m3u8
+南京十八,https://nklive.nbs.cn/hls/1173a815-bfdb-4c3c-9f73-89ec37ae7716/index.m3u8
+南京文旅,https://nklive.nbs.cn/hls/9b2005c4-046c-422f-ba45-e6adc4f4de07/index.m3u8
+南京少儿,https://nklive.nbs.cn/hls/e0981f3f-1a20-4a59-b8d1-17feb83a4610/index.m3u8
 苏州新闻综合频道,https://live-auth.51kandianshi.com/szgd/csztv1.m3u8
 苏州社会经济频道,https://live-auth.51kandianshi.com/szgd/csztv2.m3u8
 苏州文化生活频道,https://live-auth.51kandianshi.com/szgd/csztv3.m3u8
