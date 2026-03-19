@@ -3311,6 +3311,5 @@ HD音乐,https://lhttp.qingting.fm/live/15318341/64k.mp3
 哈利波特全集,http://shorturl.jxpan.vip:880/r/baoshi_web/yy.php?id=yy1382745105
 哈利波特全集,http://shorturl.jxpan.vip:880/r/baoshi_web/yy.php?id=1382745105
 
-[小鸣说],#genre#
-揭秘纳粹洗脑,https://upos-sz-mirrorhw.bilivideo.com/upgcxcode/86/00/36582920086/36582920086-1-192.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&oi=2004320330&trid=720209a1c8d544f5ba59704fb0492cah&mid=0&nbs=1&gen=playurlv3&os=estgcos&platform=html5&deadline=1773888737&uipk=5&og=cos&upsig=5a3b138ef9eb9220c089692dfcc23d0b&uparams=e,oi,trid,mid,nbs,gen,os,platform,deadline,uipk,og&bvc=vod&nettype=0&bw=690081&buvid=&build=0&dl=0&f=h_0_0&agrr=1&orderid=0,1
-四大文明古国真面目,https://upos-sz-mirrorhw.bilivideo.com/upgcxcode/28/02/36579050228/36579050228-1-192.mp4?e=ig8euxZM2rNcNbRV7WdVhwdlhWdBhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&deadline=1773891332&gen=playurlv3&os=estgcos&nbs=1&trid=1d6a89b269d144ed88bf2c067a4ca60h&platform=html5&og=cos&uipk=5&oi=2004320330&mid=0&upsig=4a91fab229026a83d9cf1db015950b12&uparams=e,deadline,gen,os,nbs,trid,platform,og,uipk,oi,mid&bvc=vod&nettype=0&bw=846291&buvid=&build=0&dl=0&f=h_0_0&agrr=1&orderid=0,1
+[BiliBili],#genre#
+
