@@ -1786,15 +1786,6 @@ sbn全球财经,https://stream1.freetv.fun/2bf3aa4eb699bd58c4974de5075bb6348d24d
 华视新闻资讯,https://stream1.freetv.fun/8da1df79136517c2f2ce450806078671ce23ac0dcc104ee8898bcaa43e440598.m3u8$旧金山beta1
 镜新闻,https://stream1.freetv.fun/0a7c84c40ea7b310b9886e6c708068403f8fcd0d550d04c3a2e9e95ae394eaa1.m3u8$旧金山beta1
 
-TVB Plus,https://smt.1678520.xyz/163189/18e96648d4420d9e$旧金山beta2
-纬来电影,https://smt.1678520.xyz/163189/145487bee05856fc$旧金山beta2
-纬来戏剧,https://smt.1678520.xyz/163189/3586bd154f561caa$旧金山beta2
-纬来体育,https://smt.1678520.xyz/163189/286f8eb30448a8e8$旧金山beta2
-龙祥时代,https://smt.1678520.xyz/163189/76e7d8326be4c1bb$旧金山beta2
-东森电影,https://smt.1678520.xyz/163189/a2a1ea789e237e18$旧金山beta2
-东森戏剧,https://smt.1678520.xyz/163189/2824421ea53c4891$旧金山beta2
-东森洋片,https://smt.1678520.xyz/163189/c0e7a31a1ec220fd$旧金山beta2
-
 生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8$TW彰化
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8$TW彰化
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/playlist.m3u8$TW彰化
