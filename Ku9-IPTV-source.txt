@@ -63,7 +63,8 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 好好的时光10,https://vip.dytt-cinema.com/20260226/50622_69c17c8f/index.m3u8$二姨点播
 
 
-
+[小鸣说],#genre#
+揭秘纳粹洗脑,https://upos-sz-mirrorhw.bilivideo.com/upgcxcode/86/00/36582920086/36582920086-1-192.mp4?e=ig8euxZM2rNcNbRVhwdVhwdlhWdVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&oi=2004320330&trid=720209a1c8d544f5ba59704fb0492cah&mid=0&nbs=1&gen=playurlv3&os=estgcos&platform=html5&deadline=1773888737&uipk=5&og=cos&upsig=5a3b138ef9eb9220c089692dfcc23d0b&uparams=e,oi,trid,mid,nbs,gen,os,platform,deadline,uipk,og
 
 辽宁频道,#genre#
 辽宁卫视,http://39.104.69.92:3566/630291707$北京阿里高清
