@@ -1738,7 +1738,7 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 DAZN1,rtmp://f13h.mine.nu/sat/tv731$台湾台中
 DAZN2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
 
-sbn全球财经,https://stream1.freetv.fun/2bf3aa4eb699bd58c4974de5075bb6348d24de7a8fbab9132adad5d1b789a5c6.m3u8$旧金山beta1
+全球财经,https://stream1.freetv.fun/2bf3aa4eb699bd58c4974de5075bb6348d24de7a8fbab9132adad5d1b789a5c6.m3u8$旧金山beta1
 中天亚洲,https://stream1.freetv.fun/92fb65748ae97ad4bb1999faacb7a1e80b94d84687045e4c8149cfe697d7bbf0.m3u8$旧金山beta1
 中天新闻,https://stream1.freetv.fun/ae5d52a5c49891c28f1a39ea6b9fc0d67e3e7f02e100b9bf1ff1dc7cc5fa4662.m3u8$旧金山beta1
 中天综合,https://stream1.freetv.fun/97118dd02715df336925a5d8f9d5e24eb83b3502c38ce0bc2d23a8cf6adc4860.m3u8$旧金山beta1
