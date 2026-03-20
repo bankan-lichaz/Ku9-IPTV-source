@@ -1702,6 +1702,11 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 广东珠江,http://74.91.26.218:82/live/gdzj.m3u8$堪薩斯城
 大湾区卫视,http://74.91.26.218:82/live/nfws.m3u8$堪萨斯城
 
+华视,http://rihou.cc:555/tv/[mn]华视闽南$Q1
+民视,http://rihou.cc:555/tv/[mn]民视闽南$Q1
+台视,http://rihou.cc:555/tv/[mn]台视闽南$Q1
+公视,http://rihou.cc:555/tv/[mn]公视闽南$Q1
+中视,http://rihou.cc:555/tv/[mn]中视闽南$Q1
 民视新闻,http://rihou.cc:555/tv/[mn]民视新闻$Q1
 中视新闻,http://rihou.cc:555/tv/[mn]中视新闻$Q1
 华视新闻,http://rihou.cc:555/tv/[mn]华视新闻$Q1
