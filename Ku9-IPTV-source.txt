@@ -109,15 +109,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 辽宁生活,http://107.150.60.122/live/lnsh.m3u8$堪萨斯城2
 辽宁北方,http://107.150.60.122/live/lnbf.m3u8$堪萨斯城2
 
-沈阳新闻综合,http://36.129.58.53:8008/paiptv/SYXW.m3u8$东塔mobile
-辽宁卫视,http://36.129.58.53:8008/paiptv/LNWS.m3u8$东塔mobile
-辽宁生活,http://36.129.58.53:8008/paiptv/LNSH.m3u8$东塔mobile
-辽宁北方,http://36.129.58.53:8008/paiptv/LNBF.m3u8$东塔mobile
-辽宁公共,http://36.129.58.53:8008/paiptv/LNGG.m3u8$东塔mobile
-辽宁都市,http://36.129.58.53:8008/paiptv/LNDS.m3u8$东塔mobile
-辽宁经济,http://36.129.58.53:8008/paiptv/LNJJ.m3u8$东塔mobile
-辽宁体育休闲,http://36.129.58.53:8008/paiptv/LNTY.m3u8$东塔mobile
-辽宁影视剧,http://36.129.58.53:8008/paiptv/LNYSJ.m3u8$东塔mobile
 
 沈阳新闻综合,http://116.2.160.239:4010/rtp/232.0.0.206:1234$和平太原街uni
 辽宁都市,http://116.2.160.239:4010/rtp/232.0.0.154:1234$和平太原街uni
@@ -137,31 +128,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 抚顺综合,http://116.2.160.239:4010/rtp/232.0.0.253:1234$和平太原街uni
 抚顺教育,http://116.2.160.239:4010/rtp/232.0.0.254:1234$和平太原街uni
 
-沈阳新闻综合,http://www.vipcoolufo.com:4022/rtp/232.0.0.227:9276$甘井子www
-辽宁都市,http://www.vipcoolufo.com:4022/rtp/232.0.0.42:8856$甘井子www
-辽宁体育休闲,http://www.vipcoolufo.com:4022/rtp/232.0.0.66:8820$甘井子www
-辽宁影视剧,http://www.vipcoolufo.com:4022/rtp/232.0.0.97:8534$甘井子www
-辽宁经济,http://www.vipcoolufo.com:4022/rtp/232.0.0.155:9320$甘井子www
-辽宁公共,http://www.vipcoolufo.com:4022/rtp/232.0.0.156:9322$甘井子www
-辽宁移动电视,http://www.vipcoolufo.com:4022/rtp/232.0.0.167:9338$甘井子www
-辽宁北方,http://www.vipcoolufo.com:4022/rtp/232.0.0.211:9240$甘井子www
-辽宁生活,http://www.vipcoolufo.com:4022/rtp/232.0.0.212:9242$甘井子www
-辽宁教育青少,http://www.vipcoolufo.com:4022/rtp/232.0.0.230:9356$甘井子www
-辽宁宜家购物,http://www.vipcoolufo.com:4022/rtp/232.0.0.21:8838$甘井子www
-铁岭新闻综合,http://www.vipcoolufo.com:4022/rtp/232.0.0.240:9280$甘井子www
-铁岭生活,http://www.vipcoolufo.com:4022/rtp/232.0.0.241:9282$甘井子www
-朝阳新闻综合,http://www.vipcoolufo.com:4022/rtp/232.0.0.243:9126$甘井子www
-朝阳教育,http://www.vipcoolufo.com:4022/rtp/232.0.0.244:9128$甘井子www
-本溪综合,http://www.vipcoolufo.com:4022/rtp/232.0.0.157:9324$甘井子www
-阜新综合,http://www.vipcoolufo.com:4022/rtp/232.0.0.246:9134$甘井子www
-阜新中华特产,http://www.vipcoolufo.com:4022/rtp/232.0.0.247:9136$甘井子www
-阜新教育,http://www.vipcoolufo.com:4022/rtp/232.0.0.248:9138$甘井子www
-辽阳新闻综合,http://www.vipcoolufo.com:4022/rtp/232.0.0.249:9140$甘井子www
-辽阳社会生活,http://www.vipcoolufo.com:4022/rtp/232.0.0.250:9000$甘井子www
-丹东新闻综合,http://www.vipcoolufo.com:4022/rtp/232.0.0.251:9162$甘井子www
-丹东生活,http://www.vipcoolufo.com:4022/rtp/232.0.0.252:9164$甘井子www
-葫芦岛新闻综合,http://www.vipcoolufo.com:4022/rtp/232.0.0.238:9260$甘井子www
-葫芦岛生活,http://www.vipcoolufo.com:4022/rtp/232.0.0.239:9262$甘井子www
 
 辽宁都市,http://fuxin.yunjifei.top:999/tsfile/live/1000_1.m3u8?key=txiptv$阜新太平Tele
 辽宁影视剧,http://fuxin.yunjifei.top:999/tsfile/live/1001_1.m3u8?key=txiptv$阜新太平Tele
