@@ -307,7 +307,7 @@ CCTV13,http://106.115.27.244:9901/tsfile/live/1037_1.m3u8?key=txiptv&playlive=1&
 CCTV14,http://106.115.27.244:9901/tsfile/live/faacts/1038_1.m3u8?key=txiptv&playlive=1&authid=0$邯郸魏县tele
 CCTV15,http://106.115.27.244:9901/tsfile/live/faacts/1039_1.m3u8?key=txiptv&playlive=1&authid=0$邯郸魏县tele
 CCTV17,http://106.115.27.244:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0$邯郸魏县tele
-第一剧场,http://106.115.27.244:9901/tsfile/live/1054_1.m3u8?key=txiptv&playlive=1&authid=0$邯郸魏县tele
+CCTV第一剧场,http://106.115.27.244:9901/tsfile/live/1054_1.m3u8?key=txiptv&playlive=1&authid=0$邯郸魏县tele
 广西卫视,http://106.115.27.244:9901/tsfile/live/0113_1.m3u8?key=txiptv&playlive=1&authid=0$邯郸魏县tele
 河北卫视,http://106.115.27.244:9901/tsfile/live/1040_1.m3u8?key=txiptv&playlive=1&authid=0$邯郸魏县tele
 河南卫视,http://106.115.27.244:9901/tsfile/live/1026_1.m3u8?key=txiptv&playlive=1&authid=0$邯郸魏县tele
