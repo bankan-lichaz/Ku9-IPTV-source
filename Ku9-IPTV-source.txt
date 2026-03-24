@@ -160,6 +160,8 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 锦州新闻综合,https://srs.beijihainews.com.cn/video/jinzhou1/index.m3u8$北极海
 锦州教育,https://srs.beijihainews.com.cn/video/jinzhou2/index.m3u8$北极海
 
+铁岭新闻综合,https://live-play-tlrb.newaircloud.com/tlrb/3dc36395-a7a3-4855-9bd6-8d223cf9ac30.m3u8
+
 央卫频道,#genre#
 CCTV1,http://39.104.69.92:3566/608807420$北京阿里高清
 CCTV2,http://39.104.69.92:3566/631780532$北京阿里高清
