@@ -69,8 +69,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 好好的时光10,https://vip.dytt-cinema.com/20260226/50622_69c17c8f/index.m3u8$二姨点播
 
 辽宁频道,#genre#
-辽宁卫视,http://39.104.69.92:3566/630291707$北京阿里高清
-辽宁卫视,http://182.207.218.54:999/tsfile/live/121_1.m3u8?key=txiptv$沈阳
 辽宁卫视,http://47.119.24.76:59093/630291707$深圳阿里标清
 辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws$VPS旧金山1
 辽宁卫视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnwshd$堪萨斯城1
