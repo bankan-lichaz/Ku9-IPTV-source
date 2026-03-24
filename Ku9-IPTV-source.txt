@@ -1512,8 +1512,8 @@ CGTN法语,http://rihou.cc:555/tv/[mg]CGTN-法$Q1
 睛彩篮球,http://rihou.cc:555/tv/[mg]睛彩篮球|$Q1
 睛彩青少,http://rihou.cc:555/tv/[mg]睛彩青少$Q1
 睛彩青少,http://rihou.cc:555/tv/[mg]睛彩青少|$Q1
-睛彩广场,http://rihou.cc:555/tv/[mg]睛彩广场$Q1
-睛彩广场,http://rihou.cc:555/tv/[mg]睛彩广场|$Q1
+睛彩广场舞,http://rihou.cc:555/tv/[mg]睛彩广场$Q1
+睛彩广场舞,http://rihou.cc:555/tv/[mg]睛彩广场|$Q1
 
 东方卫视,http://hlsbkmgsplive.miguvideo.com/wd_r4/dfl/dongfangwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 江苏卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/jswshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
@@ -1596,10 +1596,10 @@ NewTV大家剧场,http://lvbaiducdnct.inter.ptqy.gitv.tv/tslive/c58_fast_975_108
 NewTV泰语剧场,http://lvbaiducdnct.inter.ptqy.gitv.tv/tslive/c58_fast_949_1080P_t10/c58_fast_949_1080P_t10.m3u8?d$杭州
 NewTV爱情剧场,http://lvbaiducdnct.inter.ptqy.gitv.tv/tslive/c59_fast_967_1080P_t10/c59_fast_967_1080P_t10.m3u8?d$杭州
 
-晴彩竞技,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011528$新加坡
-晴彩青少,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011525$新加坡
-晴彩篮球,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011529$新加坡
-晴彩广场舞,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011523$新加坡
+睛彩竞技,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011528$新加坡
+睛彩青少,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011525$新加坡
+睛彩篮球,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011529$新加坡
+睛彩广场舞,http://anfeind1.kmdns.net:19999/migunohosts.php?channel-id=FifastbLive&Contentid=3000000020000011523$新加坡
 
 
 CCTV1,http://107.150.60.122/live/cctv1hd.m3u8$堪萨斯城2
