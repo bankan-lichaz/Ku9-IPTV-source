@@ -1702,7 +1702,7 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 非凡新闻,rtmp://f13h.mine.nu/sat/tv581$台湾台中
 东森超视,rtmp://f13h.mine.nu/sat/tv331$台湾台中
 纬来育乐,rtmp://f13h.mine.nu/sat/tv701$台湾台中
-公视,rtmp://f13h.mine.nu/sat/tv771$台湾台中
+纬来日本,rtmp://f13h.mine.nu/sat/tv771$台湾台中
 纬来体育,rtmp://f13h.mine.nu/sat/tv721$台湾台中
 DAZN1,rtmp://f13h.mine.nu/sat/tv731$台湾台中
 DAZN2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
