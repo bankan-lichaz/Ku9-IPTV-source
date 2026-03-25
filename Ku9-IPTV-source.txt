@@ -4651,7 +4651,7 @@ MS Crime HD,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZF
 ТНТ +2 (Нефтекамск),http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/15485/index.m3u8
 Первый канал +2 (Белорецк),http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/15486/index.m3u8
 Дождь HD,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/20083/index.m3u8
-Новостные,#genre#
+俄语新闻,#genre#
 РБК HD 50,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/10029/index.m3u8
 Экоспаскоми (Коми),http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/17018/index.m3u8
 РБК HD,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/16075/index.m3u8
