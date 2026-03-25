@@ -70,6 +70,8 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 好好的时光10,https://vip.dytt-cinema.com/20260226/50622_69c17c8f/index.m3u8$二姨点播
 
 辽宁频道,#genre#
+辽宁卫视,http://103.45.128.46:2001/jmb/IPTV.php?id=辽宁卫视$呼和浩特
+辽宁卫视,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnda$洛杉矶ln
 辽宁卫视,http://47.119.24.76:59093/630291707$深圳阿里标清
 辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws$VPS旧金山1
 辽宁卫视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnwshd$堪萨斯城1
@@ -80,6 +82,12 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/40/live.m3u8$兰州城关标清uni
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q2
+
+辽宁都市,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnds$洛杉矶ln
+辽宁影视剧,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnys$洛杉矶ln
+辽宁体育休闲,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnty$洛杉矶ln
+辽宁生活,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnsh$洛杉矶ln
+辽宁北方,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnbf$洛杉矶ln
 
 辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds$堪萨斯城1
 辽宁影视剧,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys$堪萨斯城1
@@ -290,6 +298,26 @@ CCTV17,http://103.45.128.46:2001/jmb/IPTV.php?id=CCTV17$呼和浩特
 内蒙古卫视,http://103.45.128.46:2001/jmb/IPTV.php?id=内蒙古卫视$呼和浩特
 新疆卫视,http://103.45.128.46:2001/jmb/IPTV.php?id=新疆卫视$呼和浩特
 西藏卫视,http://103.45.128.46:2001/jmb/IPTV.php?id=西藏卫视$呼和浩特
+CCTV卫生健康,http://223.111.150.99:6673/tv/mg1.php?id=CCTV卫生健康$江苏盐城
+CCTV风云剧场,http://223.111.150.99:6673/tv/mg1.php?id=CCTV风云剧场$江苏盐城
+CCTV风云足球,http://223.111.150.99:6673/tv/mg1.php?id=CCTV风云足球$江苏盐城
+CCTV第一剧场,http://223.111.150.99:6673/tv/mg1.php?id=CCTV第一剧场$江苏盐城
+CCTV怀旧剧场,http://223.111.150.99:6673/tv/mg1.php?id=CCTV怀旧剧场$江苏盐城
+CCTV风云音乐,http://223.111.150.99:6673/tv/mg1.php?id=CCTV风云音乐$江苏盐城
+CCTV高尔夫网球,http://223.111.150.99:6673/tv/mg1.php?id=CCTV高尔夫网球$江苏盐城
+CCTV央视台球,http://223.111.150.99:6673/tv/mg1.php?id=CCTV央视台球$江苏盐城
+CCTV电视指南,http://223.111.150.99:6673/tv/mg1.php?id=CCTV电视指南$江苏盐城
+CCTV兵器科技,http://223.111.150.99:6673/tv/mg1.php?id=CCTV兵器科技$江苏盐城
+CCTV世界地理,http://223.111.150.99:6673/tv/mg1.php?id=CCTV世界地理$江苏盐城
+CCTV女性时尚,http://223.111.150.99:6673/tv/mg1.php?id=CCTV女性时尚$江苏盐城
+CCTV央视文化精品,http://223.111.150.99:6673/tv/mg1.php?id=CCTV文化精品$江苏盐城
+重温经典,http://8.138.7.223/tv/cwjd.php$广州阿里云
+CHC动作电影,http://223.111.150.99:6673/tv/mg4.php?id=CHC动作电影$江苏盐城
+CHC影迷电影,http://223.111.150.99:6673/tv/mg4.php?id=CHC影迷电影$江苏盐城
+CHC家庭影院,http://223.111.150.99:6673/tv/mg4.php?id=CHC家庭影院$江苏盐城
+CCTV4K,http://223.111.150.99:6673/tv/mg1.php?id=CCTV4K超高清$江苏盐城
+CCTV8K,http://223.111.150.99:6673/tv/mg1.php?id=CCTV8K超高清$江苏盐城
+
 
 CCTV1,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv1hd$堪萨斯城1
 CCTV2,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv2hd$堪萨斯城1
