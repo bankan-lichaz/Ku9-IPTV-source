@@ -2663,6 +2663,4 @@ Sport Live Plus,http://tv123.vvvv.ee/live.php/?ch=85709c11108$旧金山beta2
 Home Drama Channel,http://tv123.vvvv.ee/live.php/?ch=883309ef109$旧金山beta2
 Channel Ginga,http://tv123.vvvv.ee/live.php/?ch=4914cc8b110$旧金山beta2
 Tabi Channel,http://tv123.vvvv.ee/live.php/?ch=b61eefc4111$旧金山beta2
-Pigoo (NSFW),http://tv123.vvvv.ee/live.php/?ch=0569e4bc112$旧金山beta2
-V Paradise (NSFW),http://tv123.vvvv.ee/live.php/?ch=eb987857113$旧金山beta2
 
