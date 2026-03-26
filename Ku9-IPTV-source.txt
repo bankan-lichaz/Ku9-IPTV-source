@@ -2090,6 +2090,40 @@ TVBS新闻,http://tv123.vvvv.ee/live.php/?ch=5d1cd772822$旧金山beta2
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8$TW彰化
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/playlist.m3u8$TW彰化
 
+民视影剧,https://cdn12.178.indevs.in/163189/73d93f1c22fa91d7$旧金山03
+公视戏剧,https://cdn12.178.indevs.in/163189/2973b910e7719c08$旧金山03
+采昌影剧台,https://cdn12.178.indevs.in/163189/0a6204ed0261460c$旧金山03
+靖天映画,https://cdn12.178.indevs.in/163189/bd4752bd7828b2bf$旧金山03
+靖天戏剧台,https://cdn12.178.indevs.in/163189/177d541552f78003$旧金山03
+靖天电影台,https://cdn12.178.indevs.in/163189/ed33509e03e78c7a$旧金山03
+靖洋戏剧台,https://cdn12.178.indevs.in/163189/25084ef5a2662aad$旧金山03
+FGM Gold,https://cdn12.178.indevs.in/163189/a643783ec587540e$旧金山03
+amc电影台,https://cdn12.178.indevs.in/163189/0bcf9bb8c452e56a$旧金山03
+CinemaWorld,https://cdn12.178.indevs.in/163189/6086cfe7a9756110$旧金山03
+My Cinema Europe,https://cdn12.178.indevs.in/163189/5bda99f1c049edef$旧金山03
+经典电影,https://cdn12.178.indevs.in/163189/61b8ea35ffce4630$旧金山03
+CMusic,https://cdn12.178.indevs.in/163189/d396cb84b6c89889$旧金山03
+梦工厂,https://cdn12.178.indevs.in/163189/10395eb942c5a9b9$旧金山03
+精选动漫台,https://cdn12.178.indevs.in/163189/e1d66f74bd2d4894$旧金山03
+金光布袋戏,https://cdn12.178.indevs.in/163189/5479c245d9d580b5$旧金山03
+
+台视,http://211.72.174.95:8112/0.ts$台北凯撒饭店
+中视,http://211.72.174.95:8113/0.ts$台北凯撒饭店
+华视,http://211.72.174.95:8114/0.ts$台北凯撒饭店
+公视,http://211.72.174.95:8116/0.ts$台北凯撒饭店
+民视,http://211.72.174.95:8115/0.ts$台北凯撒饭店
+民视新闻,http://211.72.174.95:8117/0.ts$台北凯撒饭店
+
+
+纬来电影,https://smt.1678520.xyz/163189/145487bee05856fc$旧金山02
+纬来戏剧,https://smt.1678520.xyz/163189/3586bd154f561caa$旧金山02
+纬来体育,https://smt.1678520.xyz/163189/286f8eb30448a8e8$旧金山02
+龙祥时代,https://smt.1678520.xyz/163189/76e7d8326be4c1bb$旧金山02
+东森电影,https://smt.1678520.xyz/163189/a2a1ea789e237e18$旧金山02
+东森戏剧,https://smt.1678520.xyz/163189/2824421ea53c4891$旧金山02
+东森洋片,https://smt.1678520.xyz/163189/c0e7a31a1ec220fd$旧金山02
+TVB千禧经典台,https://smt.1678520.xyz/smt3.2.3.php?id=Tvbclassic$旧金山02
+
 唐人卫视,https://ntd02.akamaized.net/HD-NY/tracks-v3a1/mono.m3u8$NTD
 
 凤凰中文,http://api.kkhk.itv888.vip:8080/streams/vny1wblsnch/index.m3u8$旧金山beta
@@ -2125,8 +2159,7 @@ iQIYI爱奇艺,https://o11.163189.xyz/stream/live/iqiyi/$旧金山01
 TVB千禧经典台,https://o11.163189.xyz/stream/live/tvbc/$旧金山01
 TVB翡翠台,https://o11.163189.xyz/stream/tvb/fct/$旧金山01
 TVB翡翠台,https://o11.163189.xyz/stream/live/jade/$旧金山01
-
-
+金光布袋戏,http://o11.163189.xyz/stream/live/jgbdx/$旧金山01
 
 凤凰中文,http://223.95.198.3:8000/hls/20/index.m3u8$宁波章水mobile
 
@@ -2176,13 +2209,6 @@ ROCK综艺娱乐,http://pull-vivek.speedws.com/live/aaarock1.flv$多伦多
 MYTV戏曲台,http://pull-vivek.speedws.com/live/aaaxqt.flv$多伦多
 TVB无线新闻台,http://pull-vivek.speedws.com/live/aaawxxw.flv$多伦多
 TVB翡翠台,http://pull-vivek.speedws.com/live/aaajade.flv$多伦多
-
-台视,http://211.72.174.95:8112/0.ts$台北凯撒饭店
-中视,http://211.72.174.95:8113/0.ts$台北凯撒饭店
-华视,http://211.72.174.95:8114/0.ts$台北凯撒饭店
-公视,http://211.72.174.95:8116/0.ts$台北凯撒饭店
-民视,http://211.72.174.95:8115/0.ts$台北凯撒饭店
-民视新闻,http://211.72.174.95:8117/0.ts$台北凯撒饭店
 
 TVB翡翠台,http://116.76.254.170:44330/tsfile/live/1008_1.m3u8?key=txiptv&playlive=0&authid=0$深圳南山
 TVB明珠台,http://116.76.254.170:44330/tsfile/live/1009_1.m3u8?key=txiptv&playlive=0&authid=0$深圳南山
@@ -2528,7 +2554,6 @@ TVB J1,http://119.91.7.169:2026/tv/mg2.php?id=J1$广州腾讯云
 优视频道,https://2-fss-2.streamhoster.com/pl_118/200734-1199190-1/playlist.m3u8
 优视频道,https://2-fss-2.streamhoster.com/pl_118/200734-1199190-1/chunklist.m3u8
 
-TVB千禧经典台,https://smt.1678520.xyz/smt3.2.3.php?id=Tvbclassic$旧金山02
 
 TVB无线赛马,http://tl.061833.xyz/tl/mytvsuper18
 
