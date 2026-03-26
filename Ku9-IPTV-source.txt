@@ -1835,6 +1835,15 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 DAZN1,rtmp://f13h.mine.nu/sat/tv731$台湾台中
 DAZN2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
 
+寰宇新闻,http://165.154.226.214:50007/of-litv-longturn14/index.m3u8?proxy=true$台湾台北
+寰宇财经,http://165.154.226.214:50007/of-4gtv-4gtv158/index.m3u8?proxy=true$台湾台北
+寰宇新闻台湾,http://165.154.226.214:50007/of-4gtv-4gtv156/index.m3u8?proxy=true$台湾台北
+中天新闻,http://165.154.226.214:50007/of-4gtv-4gtv009/index.m3u8?proxy=true$台湾台北
+中视,http://165.154.226.214:50007/of-4gtv-4gtv040/index.m3u8?proxy=true$台湾台北
+
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8$台湾台北1
+
 纬来电影,http://tv123.vvvv.ee/live.php/?ch=50d8a38d185$旧金山beta2
 纬来电影,http://tv123.vvvv.ee/live.php/?ch=bf937ea1568$旧金山beta2
 纬来电影,http://tv123.vvvv.ee/live.php/?ch=0f1a1fb5586$旧金山beta2
@@ -2381,12 +2390,6 @@ Kook King,http://iptv.4666888.xyz/iptv2A.php?id=63$风云
 台湾逗阵行,http://iptv.4666888.xyz/iptv2A.php?id=65$风云
 
 环球电视台,http://utv1.hqtvzb.com:9999/hls/world.m3u8
-
-寰宇新闻,http://165.154.226.214:50007/of-litv-longturn14/index.m3u8?proxy=true$台湾台北
-寰宇财经,http://165.154.226.214:50007/of-4gtv-4gtv158/index.m3u8?proxy=true$台湾台北
-寰宇新闻台湾,http://165.154.226.214:50007/of-4gtv-4gtv156/index.m3u8?proxy=true$台湾台北
-中天新闻,http://165.154.226.214:50007/of-4gtv-4gtv009/index.m3u8?proxy=true$台湾台北
-中视,http://165.154.226.214:50007/of-4gtv-4gtv040/index.m3u8?proxy=true$台湾台北
 
 广东卫视,http://8.138.7.223/tv/2026.php?id=7$广州阿里云
 广东珠江,http://8.138.7.223/tv/2026.php?id=8$广州阿里云
