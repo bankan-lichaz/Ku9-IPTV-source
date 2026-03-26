@@ -2083,7 +2083,7 @@ TVBS新闻,http://tv123.vvvv.ee/live.php/?ch=5d1cd772822$旧金山beta2
 华视,https://stream1.freetv.fun/60c715f5b961e2226107f69b2bab88a391c92f9f2444b64574cf6c450eb88b9e.m3u8$旧金山beta1
 华视,https://stream1.freetv.fun/637ceff2dfb72b24ad6929da061ccf235af38b9469ba999c577b1c3d1ee25740.ctv$旧金山beta1
 华视教育体育文化,https://stream1.freetv.fun/f7d8e1fcfd7eb512251b6da18e67187760ac602c400781e48ce3976e1dbd62c1.m3u8$旧金山beta1
-华视新闻资讯,https://stream1.freetv.fun/8da1df79136517c2f2ce450806078671ce23ac0dcc104ee8898bcaa43e440598.m3u8$旧金山beta1
+华视新闻,https://stream1.freetv.fun/8da1df79136517c2f2ce450806078671ce23ac0dcc104ee8898bcaa43e440598.m3u8$旧金山beta1
 镜新闻,https://stream1.freetv.fun/0a7c84c40ea7b310b9886e6c708068403f8fcd0d550d04c3a2e9e95ae394eaa1.m3u8$旧金山beta1
 
 生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8$TW彰化
