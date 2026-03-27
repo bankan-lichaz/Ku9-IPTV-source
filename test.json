@@ -1,64 +1,54 @@
 {
   "lives": [
     {
-      "name": "电信线路",
-      "groups": [
+      "group": "电信-央视频道",
+      "channels": [
         {
-          "group": "央视频道",
-          "channels": [
-            {
-              "name": "CCTV1",
-              "url": "http://dx.example.com/cctv1.m3u8"
-            },
-            {
-              "name": "CCTV2",
-              "url": "http://dx.example.com/cctv2.m3u8"
-            }
-          ]
+          "name": "CCTV1",
+          "urls": ["http://dx.example.com/cctv1.m3u8"]
         },
         {
-          "group": "地方台",
-          "channels": [
-            {
-              "name": "江苏卫视",
-              "url": "http://dx.example.com/jsws.m3u8"
-            },
-            {
-              "name": "浙江卫视",
-              "url": "http://dx.example.com/zjws.m3u8"
-            }
-          ]
+          "name": "CCTV2",
+          "urls": ["http://dx.example.com/cctv2.m3u8"]
         }
       ]
     },
     {
-      "name": "移动线路",
-      "groups": [
+      "group": "电信-地方台",
+      "channels": [
         {
-          "group": "央视频道",
-          "channels": [
-            {
-              "name": "CCTV1",
-              "url": "http://yd.example.com/cctv1.m3u8"
-            },
-            {
-              "name": "CCTV2",
-              "url": "http://yd.example.com/cctv2.m3u8"
-            }
-          ]
+          "name": "江苏卫视",
+          "urls": ["http://dx.example.com/jsws.m3u8"]
         },
         {
-          "group": "地方台",
-          "channels": [
-            {
-              "name": "湖南卫视",
-              "url": "http://yd.example.com/hnws.m3u8"
-            },
-            {
-              "name": "东方卫视",
-              "url": "http://yd.example.com/dfws.m3u8"
-            }
-          ]
+          "name": "浙江卫视",
+          "urls": ["http://dx.example.com/zjws.m3u8"]
+        }
+      ]
+    },
+    {
+      "group": "移动-央视频道",
+      "channels": [
+        {
+          "name": "CCTV1",
+          "urls": ["http://yd.example.com/cctv1.m3u8"]
+        },
+        {
+          "name": "CCTV2",
+          "urls": ["http://yd.example.com/cctv2.m3u8"]
+        }
+      ]
+    },
+    {
+      "group": "移动-地方台",
+      "channels": [
+        {
+          "name": "湖南卫视",
+          "urls": ["http://yd.example.com/hnws.m3u8"]
+        },
+        {
+          "name": "东方卫视",
+          "urls": ["http://yd.example.com/dfws.m3u8"]
         }
       ]
     }
