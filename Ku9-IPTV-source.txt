@@ -1935,7 +1935,7 @@ DAZN2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
 亚洲旅游台,http://165.154.226.214:50007/of-4gtv-4gtv076/index.m3u8?proxy=true$台湾台北
 华视新闻,http://165.154.226.214:50007/of-4gtv-4gtv052/index.m3u8?proxy=true$台湾台北
 寰宇新闻,http://165.154.226.214:50007/of-litv-longturn14/index.m3u8?proxy=true$台湾台北
-寰宇台湾,http://165.154.226.214:50007/of-4gtv-4gtv156/index.m3u8?proxy=true$台湾台北
+寰宇新闻台湾,http://165.154.226.214:50007/of-4gtv-4gtv156/index.m3u8?proxy=true$台湾台北
 寰宇财经,http://165.154.226.214:50007/of-4gtv-4gtv158/index.m3u8?proxy=true$台湾台北
 第一商业,http://165.154.226.214:50007/4gtv-4gtv104/index.m3u8?proxy=true$台湾台北
 
@@ -2054,8 +2054,8 @@ TVBS新闻,http://tv123.vvvv.ee/live.php/?ch=a0701266725$旧金山beta2
 台视,https://stream1.freetv.fun/b56616ca791b5b2b499c15067c91ada89782e642978a957edec7038d5b5cd248.m3u8$旧金山beta1
 台视新闻,https://stream1.freetv.fun/6d45c852234adf9247cfc6eb9b1682de0defb8f84183c6dcf6a39bb24c07af32.m3u8$旧金山beta1
 台视新闻,https://stream1.freetv.fun/41157664acf190bce85c72f310a742879b275e1912726bc43f323ff6ae321e09.m3u8$旧金山beta1
-国会 2,https://stream1.freetv.fun/63206fe434afcb684f00ac9f6fb1275b50f575403290e1e904bc182c4d3c7af3.m3u8$旧金山beta1
-好消息,https://stream1.freetv.fun/274443f7003a9bd081748dc125c5e6dfcb4a8b148c40e997c30bc1482e2fcb53.m3u8$旧金山beta1
+国会2,https://stream1.freetv.fun/63206fe434afcb684f00ac9f6fb1275b50f575403290e1e904bc182c4d3c7af3.m3u8$旧金山beta1
+好消息1,https://stream1.freetv.fun/274443f7003a9bd081748dc125c5e6dfcb4a8b148c40e997c30bc1482e2fcb53.m3u8$旧金山beta1
 好消息2,https://stream1.freetv.fun/d13c90f2ead30623f0bc7b17562018f57fc29c7e171a85c546e9ac0e6325cf1b.m3u8$旧金山beta1
 好消息2,https://stream1.freetv.fun/90a32c9a78fc2e20774ece8485711988aec55e5f5af1969cae6effb290d3608a.m3u8$旧金山beta1
 寰宇新闻,https://stream1.freetv.fun/7fcd19485260298737eeb56138cc149f0be0cc175bf93721e4074bfb2b63fbe0.m3u8$旧金山beta1
