@@ -2667,8 +2667,7 @@ HD音乐,https://lhttp.qingting.fm/live/15318341/64k.mp3
 哈利波特全集,http://shorturl.jxpan.vip:880/r/baoshi_web/yy.php?id=yy1382745105
 哈利波特全集,http://shorturl.jxpan.vip:880/r/baoshi_web/yy.php?id=1382745105
 
-国际频道,#group#
-国际频道,#genre#
+国际频道,#group#,国际频道,#genre#
 伊朗Iran International,https://dev-live.livetvstream.co.uk/LS-63503-4/chunklist_b1196000.m3u8
 朝鲜KCTV,https://tv.intchoson.com/kctv/index.m3u8
 朝鲜KCTV,https://tv.intchoson.com/kctv/main_stream.m3u8
@@ -2716,8 +2715,7 @@ HD音乐,https://lhttp.qingting.fm/live/15318341/64k.mp3
 法国Euronews,https://dash4.antik.sk/live/test_euronews/playlist.m3u8
 土耳其TRT World,https://tv-trtworld.medya.trt.com.tr/master.m3u8
 
-国际频道,#group#
-韩国频道,#genre#
+国际频道,#group#,韩国频道,#genre#
 YTN,http://tv123.vvvv.ee/live.php/?ch=4a2e6d35579$旧金山beta2
 YTN2,http://tv123.vvvv.ee/live.php/?ch=8ee0ee89580$旧金山beta2
 YTN사이언스,http://tv123.vvvv.ee/live.php/?ch=1d81c9b2581$旧金山beta2
