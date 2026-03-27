@@ -2716,6 +2716,7 @@ HD音乐,https://lhttp.qingting.fm/live/15318341/64k.mp3
 法国Euronews,https://dash4.antik.sk/live/test_euronews/playlist.m3u8
 土耳其TRT World,https://tv-trtworld.medya.trt.com.tr/master.m3u8
 
+国际频道,#group#
 韩国频道,#genre#
 YTN,http://tv123.vvvv.ee/live.php/?ch=4a2e6d35579$旧金山beta2
 YTN2,http://tv123.vvvv.ee/live.php/?ch=8ee0ee89580$旧金山beta2
@@ -2786,7 +2787,7 @@ EBS English,http://tv123.vvvv.ee/live.php/?ch=3b271ee0641$旧金山beta2
 한국영화2,http://tv123.vvvv.ee/live.php/?ch=e9feaa48643$旧金山beta2
 한국영화3,http://tv123.vvvv.ee/live.php/?ch=2a020b31644$旧金山beta2
 
-
+国际频道,#group#
 日本频道,#genre#
 NHK G,http://tv123.vvvv.ee/live.php/?ch=261d8da61$旧金山beta2
 NHK E,http://tv123.vvvv.ee/live.php/?ch=73361b612$旧金山beta2
