@@ -2000,10 +2000,6 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 DAZN1,rtmp://59.124.75.138:1935/sat/tv731$台湾台北01
 DAZN2,rtmp://59.124.75.138:1935/sat/tv741$台湾台北01
 
-好消息1,https://live.streamingfast.net/osmflivech1.m3u8$台湾台北01
-好消息2,https://live.streamingfast.net/osmflivech2.m3u8$台湾台北01
-人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8$台湾台北01
-
 民视,rtmp://f13h.mine.nu/sat/tv051$台湾台中
 中视,rtmp://f13h.mine.nu/sat/tv091$台湾台中
 华视,rtmp://f13h.mine.nu/sat/tv111$台湾台中
@@ -2180,6 +2176,7 @@ DAZN2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
 镜新闻,https://stream1.freetv.fun/0a7c84c40ea7b310b9886e6c708068403f8fcd0d550d04c3a2e9e95ae394eaa1.m3u8$旧金山beta1
 
 生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8$TW彰化
+人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8$台湾台南
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/chunklist_w1266569526.m3u8$TW彰化
 人间卫视,http://61.216.67.119:1935/bltvhd/bltv1/playlist.m3u8$TW彰化
 
