@@ -19,8 +19,6 @@
 绿屏换ijk软解码,https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist720p.m3u8$publiciptv
 
 二姨频道,#genre#
-CCTV卫生健康,http://107.150.39.250:82/live/wsjk.m3u8?jsbt=1774604671&jsbk=e93b8f6f667f87604cd46d8c02345d0e$洛杉矶test
-CCTV卫生健康,http://223.111.150.99:6673/tv/mg1.php?id=CCTV卫生健康$江苏盐城
 CCTV卫生健康,http://tonyk.56301232.xyz:3477/rtp/239.37.0.229:5540$长春南关福祉
 CCTV卫生健康,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=wsjk$堪萨斯城1
 CCTV卫生健康,http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub$洛杉矶test
