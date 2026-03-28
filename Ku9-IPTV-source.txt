@@ -2000,9 +2000,9 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 DAZN1,rtmp://59.124.75.138:1935/sat/tv731$台湾台北01
 DAZN2,rtmp://59.124.75.138:1935/sat/tv741$台湾台北01
 
-好消息1,https://live.streamingfast.net/osmflivech1.m3u8
-好消息2,https://live.streamingfast.net/osmflivech2.m3u8
-人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8
+好消息1,https://live.streamingfast.net/osmflivech1.m3u8$台湾台北01
+好消息2,https://live.streamingfast.net/osmflivech2.m3u8$台湾台北01
+人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8$台湾台北01
 
 民视,rtmp://f13h.mine.nu/sat/tv051$台湾台中
 中视,rtmp://f13h.mine.nu/sat/tv091$台湾台中
