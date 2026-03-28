@@ -1999,6 +1999,7 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 纬来体育,rtmp://59.124.75.138:1935/sat/tv721$台湾台北01
 DAZN1,rtmp://59.124.75.138:1935/sat/tv731$台湾台北01
 DAZN2,rtmp://59.124.75.138:1935/sat/tv741$台湾台北01
+ELTA2,rtmp://59.124.75.138:1935/sat/md011$台湾台北01
 
 民视,rtmp://59.124.75.138/sat/tv051$台湾台北02
 台视,rtmp://59.124.75.138/sat/tv071$台湾台北02
@@ -2011,6 +2012,7 @@ DAZN2,rtmp://59.124.75.138:1935/sat/tv741$台湾台北01
 纬来日本,rtmp://59.124.75.138/sat/tv771$台湾台北02
 DAZN1,rtmp://59.124.75.138/sat/tv731$台湾台北02
 DAZN2,rtmp://59.124.75.138/sat/tv741$台湾台北02
+ELTA2,rtmp://59.124.75.138/sat/md011$台湾台北02
 
 民视,rtmp://f13h.mine.nu/sat/tv051$台湾台中
 中视,rtmp://f13h.mine.nu/sat/tv091$台湾台中
@@ -2023,6 +2025,7 @@ DAZN2,rtmp://59.124.75.138/sat/tv741$台湾台北02
 纬来体育,rtmp://f13h.mine.nu/sat/tv721$台湾台中
 DAZN1,rtmp://f13h.mine.nu/sat/tv731$台湾台中
 DAZN2,rtmp://f13h.mine.nu/sat/tv741$台湾台中
+ELTA2,rtmp://f13h.mine.nu/sat/md011$台湾台中
 
 国会1,http://165.154.226.214:50007/of-4gtv-4gtv084/index.m3u8?proxy=true$台湾台北
 国会2,http://165.154.226.214:50007/of-4gtv-4gtv085/index.m3u8?proxy=true$台湾台北
