@@ -254,21 +254,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 
 铁岭新闻综合,https://live-play-tlrb.newaircloud.com/tlrb/3dc36395-a7a3-4855-9bd6-8d223cf9ac30.m3u8
 
-辽宁卫视,http://113.233.129.43:3178/tsfile/live/1025_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-辽宁都市,http://113.233.129.43:3178/tsfile/live/1021_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-辽宁影视,http://113.233.129.43:3178/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-辽宁体育休闲,http://113.233.129.43:3178/tsfile/live/1023_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-辽宁教育青少,http://113.233.129.43:3178/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-辽宁公共,http://113.233.129.43:3178/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-辽宁生活,http://113.233.129.43:3178/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-辽宁北方,http://113.233.129.43:3178/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-辽宁经济,http://113.233.129.43:3178/tsfile/live/0137_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-北方导视,http://113.233.129.43:3178/tsfile/live/1059_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-沈阳新闻综合,http://113.233.129.43:3178/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-沈阳新闻综合,http://113.233.129.43:3178/tsfile/live/1019_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-沈阳新闻综合,http://113.233.129.43:3178/tsfile/live/1043_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-沈阳新闻综合,http://113.233.129.43:3178/tsfile/live/1092_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
-沈阳新闻综合,http://113.233.129.43:3178/tsfile/live/1093_1.m3u8?key=txiptv&playlive=1&authid=0$和平太原街1
 
 央卫频道,#genre#
 CCTV1,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv1hd$堪萨斯城1
