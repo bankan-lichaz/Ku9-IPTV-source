@@ -1849,7 +1849,7 @@ ELTA2,rtmp://f13h.mine.nu/sat/md011$台湾台中
 好消息1,http://165.154.226.214:50007/of-litv-ftv16/index.m3u8?proxy=true$台湾台北
 好消息2,http://165.154.226.214:50007/of-litv-ftv17/index.m3u8?proxy=true$台湾台北
 亚洲旅游台,http://165.154.226.214:50007/of-4gtv-4gtv076/index.m3u8?proxy=true$台湾台北
-华视新闻,http://165.154.226.214:50007/of-4gtv-4gtv052/index.m3u8?proxy=true$台湾台北
+# 华视新闻http://165.154.226.214:50007/of-4gtv-4gtv052/index.m3u8?proxy=true$台湾台北
 寰宇新闻,http://165.154.226.214:50007/of-litv-longturn14/index.m3u8?proxy=true$台湾台北
 寰宇新闻台湾,http://165.154.226.214:50007/of-4gtv-4gtv156/index.m3u8?proxy=true$台湾台北
 寰宇财经,http://165.154.226.214:50007/of-4gtv-4gtv158/index.m3u8?proxy=true$台湾台北
@@ -1872,6 +1872,21 @@ ELTA2,rtmp://f13h.mine.nu/sat/md011$台湾台中
 倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8?14$台湾台北1
 倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8?15$台湾台北1
 华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?1$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?2$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?3$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?4$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?5$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?6$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?7$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?8$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?9$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?10$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?11$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?12$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?13$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?14$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?15$台湾台北1
 
 生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8$TW彰化
 人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8$台湾台南
@@ -2417,7 +2432,7 @@ TVB无线赛马,http://tl.061833.xyz/tl/mytvsuper18
 中视菁采,http://74.91.26.218:82/live/ctvjc.m3u8$堪薩斯城
 中视经典,http://74.91.26.218:82/live/ctvjd.m3u8$堪薩斯城
 民视新闻,http://74.91.26.218:82/live/ftvnews.m3u8$堪薩斯城
-华视新闻,http://74.91.26.218:82/live/ctsnews.m3u8$堪薩斯城
+# 华视新闻http://74.91.26.218:82/live/ctsnews.m3u8$堪薩斯城
 台视新闻,http://74.91.26.218:82/live/ttvnews.m3u8$堪薩斯城
 中视新闻,http://74.91.26.218:82/live/ctvnews.m3u8$堪薩斯城
 公视台语,http://74.91.26.218:82/live/ptsty.m3u8$堪薩斯城
@@ -2437,7 +2452,7 @@ TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
 中视,http://rihou.cc:555/tv/[mn]中视闽南$Q1
 民视新闻,http://rihou.cc:555/tv/[mn]民视新闻$Q1
 中视新闻,http://rihou.cc:555/tv/[mn]中视新闻$Q1
-华视新闻,http://rihou.cc:555/tv/[mn]华视新闻$Q1
+# 华视新闻http://rihou.cc:555/tv/[mn]华视新闻$Q1
 台视新闻,http://rihou.cc:555/tv/[mn]台视新闻$Q1
 公视台语,http://rihou.cc:555/tv/[mn]公视闽语$Q1
 小公视,http://rihou.cc:555/tv/[mn]公视综合$Q1
