@@ -1750,6 +1750,24 @@ CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 粤港澳台,#genre#
 镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
 
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&1$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&2$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&3$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&4$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&5$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&6$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&7$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&8$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&9$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&10$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&11$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&12$台湾台北1
+倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8&13$台湾台北1
+华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8$台湾台北1
+
+
+
 年代新闻,http://8.218.84.3:8885/live/LxWcScuQ6WphaELY4DhkKm8SIv7_ZgNIJtNvFurqphvyqxUIU84OjKVCwFxMq9iUaB2MBpZJIecyktt2dzKZQvzDmsGPRsuRU2uKtozBIbVuj3nQ76zeQNSfvlqaCO74L1hE9YA3539hcp4FLk3RsP67gciU6sMI9_Ho3bTvoNl5lAWH0RAIF53EiwGIB1btqj1CJWfr7pdC0PMT5nku57JdhxBU8vjD_Be8N6lFdkCGP61-QcU2SJ38Xv_HOGSnGTLVAVAzlWXdVwjiDGte9w.m3u8?u=1756878715&proxy=true$香港阿里标清
 年代新闻,http://8.218.84.3:8885/live/LxWcScuQ6WphaELY4DhkKm8SIv7_ZgNIJtNvFurqphvyqxUIU84OjKVCwFxMq9iUaB2MBpZJIecyktt2dzKZQvzDmsGPRsuRU2uKtozBIbVuj3nQ76zeQNSfvlqaCO74L1hE9YA3539hcp4FLk3RsP67gciU6sMI9_Ho3bTvoNl5lAWH0RAIF53EiwGIB1btqj1CJWfr7pdC0PMT5nku57JdhxBU8vjD_Be8N6lFdkCGP61-QcU2SJ38Xv_HOGSnGTLVAVAzlWXdVwjiDGte9w.m3u8?u=1756878715$香港阿里标清
 年代新闻,http://8.218.84.3:8885/live/LxWcScuQ6WphaELY4DhkKm8SIv7_ZgNIJtNvFurqphvyqxUIU84OjKVCwFxMq9iUaB2MBpZJIecyktt2dzKZQvzDmsGPRsuRU2uKtozBIbVuj3nQ76zeQNSfvlqaCO74L1hE9YA3539hcp4FLk3RsP67gciU6sMI9_Ho3bTvoNl5lAWH0RAIF53EiwGIB1btqj1CJWfr7pdC0PMT5nku57JdhxBU8vjD_Be8N6lFdkCGP61-QcU2SJ38Xv_HOGSnGTLVAVAzlWXdVwjiDGte9w.m3u8?u=1756878715&2$香港阿里标清
@@ -1855,8 +1873,6 @@ ELTA2,rtmp://f13h.mine.nu/sat/md011$台湾台中
 寰宇财经,http://165.154.226.214:50007/of-4gtv-4gtv158/index.m3u8?proxy=true$台湾台北
 第一商业,http://165.154.226.214:50007/4gtv-4gtv104/index.m3u8?proxy=true$台湾台北
 
-倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8$台湾台北1
 
 生命电视,http://61.216.67.119:1935/lifetv/lifetv.stream/manifest.m3u8$TW彰化
 人间卫视,https://5ddce30eb4b55.streamlock.net/bltvhd/bltv1/playlist.m3u8$台湾台南
