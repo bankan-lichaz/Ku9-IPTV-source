@@ -1759,8 +1759,7 @@ CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 /*
 东森新闻,http://rihou.cc:555/tv/[Us]东森新闻$Q1
 东森财经,http://rihou.cc:555/tv/[Us]东森财经$Q1
-壹新闻,http://rihou.cc:555/tv/[Us]闽壹新聞$Q1
-*/
+壹新闻,http://rihou.cc:555/tv/[Us]闽壹新聞$Q1 */
 
 民视,rtmp://59.124.75.138:1935/sat/tv051$台湾台北01
 台视,rtmp://59.124.75.138:1935/sat/tv071$台湾台北01
