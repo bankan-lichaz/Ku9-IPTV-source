@@ -1791,7 +1791,7 @@ CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 东森购物1台,http://85.237.207.150:50007/of-4gtv-4gtv102/index.m3u8?proxy=true$台湾台北1
 东森购物2台,http://85.237.207.150:50007/of-4gtv-4gtv103/index.m3u8?proxy=true$台湾台北1
 中天新闻,http://85.237.207.150:50007/of-4gtv-4gtv009/index.m3u8?proxy=true$台湾台北1
-中天新闻,http://85.237.207.150:50007/of-4gtv-4gtv074/index.m3u8?proxy=true$台湾台北1
+中视新闻,http://85.237.207.150:50007/of-4gtv-4gtv074/index.m3u8?proxy=true$台湾台北1
 好消息1,http://85.237.207.150:50007/of-litv-ftv16/index.m3u8?proxy=true$台湾台北1
 好消息2,http://85.237.207.150:50007/of-litv-ftv17/index.m3u8?proxy=true$台湾台北1
 亚洲旅游台,http://85.237.207.150:50007/of-4gtv-4gtv076/index.m3u8?proxy=true$台湾台北1
@@ -1896,11 +1896,11 @@ ELTA2,rtmp://f13h.mine.nu/sat/md011$台湾台中
 东森购物1台,http://165.154.226.214:50007/of-4gtv-4gtv102/index.m3u8?proxy=true$台湾台北
 东森购物2台,http://165.154.226.214:50007/of-4gtv-4gtv103/index.m3u8?proxy=true$台湾台北
 中天新闻,http://165.154.226.214:50007/of-4gtv-4gtv009/index.m3u8?proxy=true$台湾台北
-中天新闻,http://165.154.226.214:50007/of-4gtv-4gtv074/index.m3u8?proxy=true$台湾台北
+中视新闻,http://165.154.226.214:50007/of-4gtv-4gtv074/index.m3u8?proxy=true$台湾台北
 好消息1,http://165.154.226.214:50007/of-litv-ftv16/index.m3u8?proxy=true$台湾台北
 好消息2,http://165.154.226.214:50007/of-litv-ftv17/index.m3u8?proxy=true$台湾台北
 亚洲旅游台,http://165.154.226.214:50007/of-4gtv-4gtv076/index.m3u8?proxy=true$台湾台北
-# 华视新闻http://165.154.226.214:50007/of-4gtv-4gtv052/index.m3u8?proxy=true$台湾台北
+华视新闻http://165.154.226.214:50007/of-4gtv-4gtv052/index.m3u8?proxy=true$台湾台北
 寰宇新闻,http://165.154.226.214:50007/of-litv-longturn14/index.m3u8?proxy=true$台湾台北
 寰宇新闻台湾,http://165.154.226.214:50007/of-4gtv-4gtv156/index.m3u8?proxy=true$台湾台北
 寰宇财经,http://165.154.226.214:50007/of-4gtv-4gtv158/index.m3u8?proxy=true$台湾台北
