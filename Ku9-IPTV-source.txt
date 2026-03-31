@@ -1887,18 +1887,6 @@ CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
 
 
 华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&1$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&2$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&3$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&4$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&5$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&6$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&7$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&8$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&9$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&10$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&11$台湾台北1
-华视新闻,http://85.237.207.150:50007/of-4gtv-4gtv052/index.m3u8?proxy=true&12$台湾台北1
 
 国会1,http://85.237.207.150:50007/of-4gtv-4gtv084/index.m3u8?proxy=true$台湾台北1
 国会2,http://85.237.207.150:50007/of-4gtv-4gtv085/index.m3u8?proxy=true$台湾台北1
