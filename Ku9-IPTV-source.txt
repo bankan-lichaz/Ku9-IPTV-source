@@ -208,6 +208,7 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 辽宁经济,http://113.233.134.66:3178/tsfile/live/0137_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 辽宁宜佳购物,http://113.233.134.66:3178/tsfile/live/1060_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 沈阳新闻综合,http://113.233.134.66:3178/tsfile/live/1019_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
+北方导视,http://113.233.134.66:3178/tsfile/live/1059_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 
 锦州新闻综合,https://srs.beijihainews.com.cn/video/jinzhou1/index.m3u8$北极海
 锦州教育,https://srs.beijihainews.com.cn/video/jinzhou2/index.m3u8$北极海
@@ -1402,18 +1403,18 @@ CETV4,http://111.56.90.5/000000000000/1000000005000025333/1.m3u8$鄂尔多斯mob
 安多卫视,http://111.56.90.5/000000000000/1000000005000266001/1.m3u8$鄂尔多斯mob
 康巴卫视,http://111.56.90.5/000000000000/1000000005000266002/1.m3u8$鄂尔多斯mob
 大湾区卫视,http://111.56.90.5/000000000000/1000000002000011619/1.m3u8$鄂尔多斯mob
-CITY游戏风云,http://111.56.90.5/000000000000/5000000011000031114/1.m3u8$鄂尔多斯mob
-CITY生活时尚,http://111.56.90.5/000000000000/5000000002000019634/1.m3u8$鄂尔多斯mob
-CITY七彩戏剧,http://111.56.90.5/000000000000/5000000011000031116/1.m3u8$鄂尔多斯mob
-CITY魅力足球,http://111.56.90.5/000000000000/5000000011000031207/1.m3u8$鄂尔多斯mob
-CITY劲爆体育,http://111.56.90.5/000000000000/5000000002000029972/1.m3u8$鄂尔多斯mob
-CITY金色学堂,http://111.56.90.5/000000000000/5000000010000026105/1.m3u8$鄂尔多斯mob
-CITY欢笑剧场,http://111.56.90.5/000000000000/5000000002000009455/1.m3u8$鄂尔多斯mob
-CITY法治天地,http://111.56.90.5/000000000000/9001547084732463424/1.m3u8$鄂尔多斯mob
-CITY都市剧场,http://111.56.90.5/000000000000/5000000011000031111/1.m3u8$鄂尔多斯mob
-CITY动漫秀场,http://111.56.90.5/000000000000/5000000011000031113/1.m3u8$鄂尔多斯mob
-CITY乐游频道,http://111.56.90.5/000000000000/5000000011000031112/1.m3u8$鄂尔多斯mob
-CITY欢笑剧场,http://111.56.90.5/000000000000/5000000007000010001/1.m3u8$鄂尔多斯mob
+SiTV游戏风云,http://111.56.90.5/000000000000/5000000011000031114/1.m3u8$鄂尔多斯mob
+SiTV生活时尚,http://111.56.90.5/000000000000/5000000002000019634/1.m3u8$鄂尔多斯mob
+SiTV七彩戏剧,http://111.56.90.5/000000000000/5000000011000031116/1.m3u8$鄂尔多斯mob
+SiTV魅力足球,http://111.56.90.5/000000000000/5000000011000031207/1.m3u8$鄂尔多斯mob
+SiTV劲爆体育,http://111.56.90.5/000000000000/5000000002000029972/1.m3u8$鄂尔多斯mob
+SiTV金色学堂,http://111.56.90.5/000000000000/5000000010000026105/1.m3u8$鄂尔多斯mob
+SiTV欢笑剧场,http://111.56.90.5/000000000000/5000000002000009455/1.m3u8$鄂尔多斯mob
+SiTV法治天地,http://111.56.90.5/000000000000/9001547084732463424/1.m3u8$鄂尔多斯mob
+SiTV都市剧场,http://111.56.90.5/000000000000/5000000011000031111/1.m3u8$鄂尔多斯mob
+SiTV动漫秀场,http://111.56.90.5/000000000000/5000000011000031113/1.m3u8$鄂尔多斯mob
+SiTV乐游频道,http://111.56.90.5/000000000000/5000000011000031112/1.m3u8$鄂尔多斯mob
+SiTV欢笑剧场,http://111.56.90.5/000000000000/5000000007000010001/1.m3u8$鄂尔多斯mob
 
 
 CCTV1,http://t.061899.xyz/tl/tl.php?id=cctv1$VPS旧金山5
@@ -1863,21 +1864,21 @@ BRTV纪实科教,http://113.233.134.66:3178/tsfile/live/1091_1.m3u8?key=txiptv&p
 时尚购物,http://113.233.134.66:3178/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 证券服务,http://113.233.134.66:3178/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 财富天下,http://113.233.134.66:3178/tsfile/live/1013_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
-环球旅游,http://113.233.134.66:3178/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 汽摩,http://113.233.134.66:3178/tsfile/live/1015_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 茶,http://113.233.134.66:3178/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 优购物,http://113.233.134.66:3178/tsfile/live/1036_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
-都市剧场,http://113.233.134.66:3178/tsfile/live/1038_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 快乐购物,http://113.233.134.66:3178/tsfile/live/1041_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
-乐游,http://113.233.134.66:3178/tsfile/live/1042_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
-法制天地,http://113.233.134.66:3178/tsfile/live/1043_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 中华特产,http://113.233.134.66:3178/tsfile/live/1044_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 生态环境,http://113.233.134.66:3178/tsfile/live/1046_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 收藏天下,http://113.233.134.66:3178/tsfile/live/1047_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 家家购物,http://113.233.134.66:3178/tsfile/live/1048_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
-生活时尚,http://113.233.134.66:3178/tsfile/live/1049_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
-动漫秀场,http://113.233.134.66:3178/tsfile/live/1050_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
-游戏风云,http://113.233.134.66:3178/tsfile/live/1051_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
+环球旅游,http://113.233.134.66:3178/tsfile/live/1014_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
+SiTV生活时尚,http://113.233.134.66:3178/tsfile/live/1049_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
+SiTV动漫秀场,http://113.233.134.66:3178/tsfile/live/1050_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
+SiTV游戏风云,http://113.233.134.66:3178/tsfile/live/1051_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
+SiTV都市剧场,http://113.233.134.66:3178/tsfile/live/1038_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
+SiTV乐游频道,http://113.233.134.66:3178/tsfile/live/1042_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
+SiTV法制天地,http://113.233.134.66:3178/tsfile/live/1043_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 北方导视,http://113.233.134.66:3178/tsfile/live/1059_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 
 CCTV1,http://107.150.60.122/live/cctv1hd.m3u8$堪萨斯城2
