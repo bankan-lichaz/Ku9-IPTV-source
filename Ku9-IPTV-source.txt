@@ -2858,7 +2858,6 @@ KBS뉴스,https://news24.gscdn.kbs.co.kr/news24-02/news24-02_hd.m3u8?Policy=eyJT
 KFN,http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8
 김창옥 쇼2,https://d27qq4sc9v1h7c.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-dxfwub7u3zl2a-ssai-prd/328d5389_0716_4717_979f_372036a0d322/hls/playlist.m3u8?
 K Stories,https://tistory1.daumcdn.net/tistory/2864485/skin/images/CATV_265_C8B3D838.m3u8
-KTV,https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
 LOTTE1,https://onetvhlslive.lotteimall.com/lotteonetvlive/lotteonetvlive.mp4.m3u8
 MBC,https://tistory1.daumcdn.net/tistory/2864485/skin/images/Public_6_2758F434.m3u8
 MBC,https://ns1.tjmbc.co.kr/live/myStream.sdp/playlist.m3u8
