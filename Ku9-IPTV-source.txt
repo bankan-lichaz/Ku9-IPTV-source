@@ -1795,6 +1795,7 @@ CCTV15,http://113.233.134.66:3178/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1$
 CCTV17,http://113.233.134.66:3178/tsfile/live/1012_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 CGTN,http://113.233.134.66:3178/tsfile/live/1080_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 重温经典,http://113.233.134.66:3178/tsfile/live/1052_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
+CCTV女性时尚,http://113.233.134.66:3178/tsfile/live/1045_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 CCTV央视精品,http://113.233.134.66:3178/tsfile/live/1053_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 CCTV世界地理,http://113.233.134.66:3178/tsfile/live/1054_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 CCTV风云剧场,http://113.233.134.66:3178/tsfile/live/1055_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
@@ -1871,7 +1872,6 @@ BRTV纪实科教,http://113.233.134.66:3178/tsfile/live/1091_1.m3u8?key=txiptv&p
 乐游,http://113.233.134.66:3178/tsfile/live/1042_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 法制天地,http://113.233.134.66:3178/tsfile/live/1043_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 中华特产,http://113.233.134.66:3178/tsfile/live/1044_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
-女性时尚,http://113.233.134.66:3178/tsfile/live/1045_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 生态环境,http://113.233.134.66:3178/tsfile/live/1046_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 收藏天下,http://113.233.134.66:3178/tsfile/live/1047_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 家家购物,http://113.233.134.66:3178/tsfile/live/1048_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
@@ -1879,7 +1879,6 @@ BRTV纪实科教,http://113.233.134.66:3178/tsfile/live/1091_1.m3u8?key=txiptv&p
 动漫秀场,http://113.233.134.66:3178/tsfile/live/1050_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 游戏风云,http://113.233.134.66:3178/tsfile/live/1051_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
 北方导视,http://113.233.134.66:3178/tsfile/live/1059_1.m3u8?key=txiptv&playlive=1$浑南满堂uni
-
 
 CCTV1,http://107.150.60.122/live/cctv1hd.m3u8$堪萨斯城2
 CCTV2,http://107.150.60.122/live/cctv2hd.m3u8$堪萨斯城2
