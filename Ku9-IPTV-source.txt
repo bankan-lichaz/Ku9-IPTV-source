@@ -2805,11 +2805,15 @@ HD音乐,https://lhttp.qingting.fm/live/15318341/64k.mp3
 
 韩国频道,#genre#
 ABN,https://tistory1.daumcdn.net/tistory/2864485/skin/images/CATV_412.m3u8
+ABN,https://vod2.abn.co.kr/IPHONE/abn.m3u8
 아리랑TV,https://epg.pw/stream/f71b00bffdc25476502479870351e7f801879a9b7bbce6bc77332b7f8b0dbd7a.m3u8
+BTN,https://btn.nowcdn.co.kr/btn/btnlive2m/playlist.m3u8
 방송대학TV,https://live.knou.ac.kr/knou1/live1/playlist.m3u8
 블루스TV,https://tistory1.daumcdn.net/tistory/2864485/skin/images/CATV_65_86F58A1B.m3u8
 벌거벗은 세계사,https://d2jgaw7uttn3h3.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-f49y0pr4caw7w-ssai-prd/b1e01036_7c37_48b3_9137_7ecc71b50661/hls/playlist.m3u8?&ads.device_did=%7BPSID%7D&ads.device_dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.service_id=KRBC3200021ZA
 CH NOW,http://119.66.83.26:9981/stream/channelid/94?ticket=A7594C401E194BC9F3078E5EBFFD663E81C57572
+CJONSTYLE,https://live-ch1.cjonstyle.net/cjmalllive/stream2/playlist.m3u8
+CJONSTYLE+,https://live-ch2.cjonstyle.net/cjosplus/live2/playlist.m3u8
 CMC TV,http://119.66.83.26:9981/stream/channelid/98?ticket=31AF92239AC72928A87BC4F964B0CA15E54E0C35
 CNTV,http://119.66.83.26:9981/stream/channelid/73?ticket=23D4F8F3B58ACD48B504260E8EFE6F28191A67B6
 채널CHING,http://119.66.83.26:9981/stream/channelid/71?ticket=043EFCC4A4807E627DBDD33711E7135F9D804F2A
@@ -2829,10 +2833,15 @@ EDGE TV,http://119.66.83.26:9981/stream/channelid/104?ticket=E4461855C336CC01644
 ENA드라마,http://119.66.83.26:9981/stream/channelid/24?ticket=40318328B005A9AE0381AA60E208773373CC4F3C
 ENA스토리,http://119.66.83.26:9981/stream/channelid/100?ticket=5F5AD9E29AA85F32020DFF64334CFBA2966E9FF2
 FUN TV,http://119.66.83.26:9981/stream/channelid/58?ticket=5332022EEB58E54CF7AC7A367802A7B35AE5A122
+GCN24,http://liveko24-manminglobal3.ktcdn.co.kr/liveko24/gcnko_1300k.stream/playlist.m3u8
 국악방송,http://mgugaklive.nowcdn.co.kr/gugakvideo/gugakvideo.stream/playlist.m3u8
 국회방송,https://m.webcast.go.kr/live/_definst_/smil:natv_720p.smil/playlist.m3u8
 국민방송,https://mlive.ktv.go.kr/live/klive_m.stream/playlist.m3u8
 GTV,http://119.66.83.26:9981/stream/channelid/103?ticket=8A104021AC0DA8307FE61B9F6E8E89BEED8754CF
+Gonyon,https://etv.publichs.com/live5.stream/playlist.m3u8
+GOODTV,http://mobliestream.c3tv.com:1935/live/goodtv.sdp/playlist.m3u8
+GS MY SHOP,https://gstv-myshop.gsshop.com/myshop_hd/myshop_hd.stream/playlist.m3u8
+GS SHOP,https://gstv-gsshop.gsshop.com/gsshop_hd/gsshop_hd.stream/playlist.m3u8
 하이라이트TV,http://119.66.83.26:9981/stream/channelid/87?ticket=780B63A378DDABA623F57A6A95B9BB70285F4002
 한국영화2,https://stream.ads.ottera.tv/playlist.m3u8?network_id=743
 한식대첩2,https://d2zyqoz1zsj2mq.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-i9yul1lyegl6e-ssai-prd/6d07fe2a_003a_4879_acfc_44e3c3c10f03/hls/playlist.m3u8?
@@ -2849,8 +2858,11 @@ KBS뉴스,https://news24.gscdn.kbs.co.kr/news24-02/news24-02_hd.m3u8?Policy=eyJT
 KFN,http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8
 김창옥 쇼2,https://d27qq4sc9v1h7c.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-dxfwub7u3zl2a-ssai-prd/328d5389_0716_4717_979f_372036a0d322/hls/playlist.m3u8?
 K Stories,https://tistory1.daumcdn.net/tistory/2864485/skin/images/CATV_265_C8B3D838.m3u8
+KTV,https://hlive.ktv.go.kr/live/klive_h.stream/playlist.m3u8
+LOTTE1,https://onetvhlslive.lotteimall.com/lotteonetvlive/lotteonetvlive.mp4.m3u8
 MBC,https://tistory1.daumcdn.net/tistory/2864485/skin/images/Public_6_2758F434.m3u8
 MBC,https://ns1.tjmbc.co.kr/live/myStream.sdp/playlist.m3u8
+MBC Gangwon,http://123.254.93.7:1935/tvlive/livestream2/playlist.m3u8
 Mnet,http://119.66.83.26:9981/stream/channelid/29?ticket=D92DD117DA19C8B4F283E10FE0D0EE45E43D4B67
 Mplex,http://119.66.83.26:9981/stream/channelid/65?ticket=AA3703827C31F9BB764608C6DB9F11F89DEBD9A6
 나는 자연인이다,https://tistory1.daumcdn.net/tistory/2864485/skin/images/CATV_262_03C4258B.m3u8
@@ -2858,6 +2870,7 @@ NBS,https://media.joycorp.co.kr:4443/live/live_360p/playlist.m3u8
 놀라운 토요일,https://d21dxaer0ypwk1.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-a6m2cy2rylsvo-ssai-prd/54ac8e25_eb5a_4f10_ba20_ffb254f0a16c/hls/playlist.m3u8?
 농협TV,http://nonghyup.flive.skcdn.com/nonghyup/_definst_/nhlive/playlist.m3u8
 NEW K MOVIES,https://tistory1.daumcdn.net/tistory/2864485/skin/images/CATV_266_F00DF600.m3u8
+OBS,https://vod.obs.co.kr:444/live/obsstream1/tv.stream/playlist.m3u8
 어쩌다 사장2,https://d18izuz3xw10qm.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-7d2zn3pthct37-ssai-prd/68bf80a2_aec4_494d_b2ef_63779ed40809/hls/playlist.m3u8?
 RNA,http://5ddfc48289114.streamlock.net/CHsoom/LIVE/playist.m3u8
 삼시세끼 고창,https://dmnsygceaez9z.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-kugwkm0rtsyfv-ssai-prd/89a2b732_7d4e_4098_9b82_f8e829ab07f0/hls/playlist.m3u8?
@@ -2869,11 +2882,13 @@ SBS funE,http://119.66.83.26:9981/stream/channelid/88?ticket=9ADBC66F2A7D98E7932
 스마일TV,http://119.66.83.26:9981/stream/channelid/102?ticket=2021D51DA6EB821079FAFFC1BBCC64E95A8E56FA
 TBSTV,http://cdntv.tbs.seoul.kr/tbs/_definst_/tbs_tv_web_720.smil/playlist.m3u8
 TBSTV,https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
+TBS Seoul,https://cdntv.tbs.seoul.kr/tbs/tbs_tv_web.smil/playlist.m3u8
 TV CHOSUN,http://onair.cdn.tvchosun.com/origin1/_definst_/tvchosun_s1/playlist.m3u8
 TV CHOSUN2,http://onair2.cdn.tvchosun.com/origin2/_definst_/tvchosun_s3/playlist.m3u8
 tvN BOXING,https://d3pr3fr9fwt060.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-ozm53ooqj3t93-ssai-prd/b42dfffd_735f_48f1_ba35_7e87a13dc15a/hls/playlist.m3u8?&ads.device_did=%7BPSID%7D&ads.device_dnt=%7BTARGETOPT%7D&ads.app_domain=%7BAPP_DOMAIN%7D&ads.app_name=%7BAPP_NAME%7D&ads.service_id=KRBC800015MH
 tvN DRAMA,https://c4c11e7fe6e1498387f3e8389ef9409d.mediatailor.ap-northeast-2.amazonaws.com/v1/manifest/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-jg1y2uft53fob/2474e9fd-8f38-40d0-aca5-cfcfec684660/0.m3u8
 tvN스토리,http://119.66.83.26:9981/stream/channelid/12?ticket=90D7D41CADD31DF1C79F73AA14AEEA28A8D12DEA
+W Shopping,https://liveout.catenoid.net/live-05-wshopping/wshopping_1500k/playlist.m3u8
 YTN,https://tistory1.daumcdn.net/tistory/2864485/skin/images/CATV_215_6B2BDBDE.m3u8
 YTN2,http://119.66.83.26:9981/stream/channelid/59?ticket=3B9C49777E66885C66D8D2AE987CD65AF8DB47D2
 YTN2,https://ytn2live.ytn.co.kr/ytn2/_definst_/20211118_ytn2/medialist_9171188557012390620_hls.m3u8
