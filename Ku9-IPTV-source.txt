@@ -1917,25 +1917,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 发现之旅,http://107.150.60.122/live/fxzl.m3u8$堪萨斯城2
 老故事,http://107.150.60.122/live/lgs.m3u8$堪萨斯城2
 
-CCTV1,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv1/
-CCTV2,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv2/
-CCTV3,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv3/
-CCTV4,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv4/
-CCTV5,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv5/
-CCTV5+,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv5plus/
-CCTV6,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv6/
-CCTV7,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv7/
-CCTV8,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv8/
-CCTV9,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv9/
-CCTV10,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv10/
-CCTV11,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv11/
-CCTV12,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv12/
-CCTV13,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv13/
-CCTV14,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv14/
-CCTV15,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv15/
-CCTV16,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv16/
-CCTV17,webview://https://big5.cctv.com/gate/big5/tv.cctv.com/live/cctv17/
-
 
 粤港澳台,#genre#
 镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
