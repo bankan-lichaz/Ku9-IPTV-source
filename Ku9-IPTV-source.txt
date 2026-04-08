@@ -1748,6 +1748,17 @@ CCTV1,http://60.10.139.113:8801/hls/46/index.m3u8$香河uni
 老故事,http://60.10.139.113:8801/hls/74/index.m3u8$香河uni
 环球奇观,http://60.10.139.113:8801/hls/75/index.m3u8$香河uni
 国学频道,http://60.10.139.113:8801/hls/77/index.m3u8$香河uni
+汽摩,http://60.10.139.113:8801/hls/90/index.m3u8$香河uni
+CETV2,http://60.10.139.113:8801/hls/91/index.m3u8$香河uni
+CETV4,http://60.10.139.113:8801/hls/92/index.m3u8$香河uni
+香河综合,http://60.10.139.113:8801/hls/94/index.m3u8$香河uni
+CCTV11,http://60.10.139.113:8801/hls/96/index.m3u8$香河uni
+CCTV15,http://60.10.139.113:8801/hls/97/index.m3u8$香河uni
+CCTV17,http://60.10.139.113:8801/hls/98/index.m3u8$香河uni
+安徽卫视,http://60.10.139.113:8801/hls/99/index.m3u8$香河uni
+优购物,http://60.10.139.113:8801/hls/100/index.m3u8$香河uni
+家有购物,http://60.10.139.113:8801/hls/102/index.m3u8$香河uni
+聚鲨环球精选,http://60.10.139.113:8801/hls/103/index.m3u8$香河uni
 
 CCTV1,http://107.150.60.122/live/cctv1hd.m3u8$堪萨斯城2
 CCTV2,http://107.150.60.122/live/cctv2hd.m3u8$堪萨斯城2
