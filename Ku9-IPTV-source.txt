@@ -130,12 +130,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 沈阳新闻综合,http://39.134.52.215/PLTV/88888888/224/3221226924/index.m3u8$太原街移动
 家庭理财,http://39.134.52.215/PLTV/88888888/224/3221226538/index.m3u8$太原街移动
 
-辽宁都市,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnds$洛杉矶ln
-辽宁影视剧,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnys$洛杉矶ln
-辽宁体育休闲,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnty$洛杉矶ln
-辽宁生活,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnsh$洛杉矶ln
-辽宁北方,http://216.75.129.13:5236/ytds.php?l=0&type=play&id=lnbf$洛杉矶ln
-
 辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds$堪萨斯城1
 辽宁影视剧,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys$堪萨斯城1
 辽宁体育休闲,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty$堪萨斯城1
