@@ -1948,6 +1948,18 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 发现之旅,http://107.150.60.122/live/fxzl.m3u8$堪萨斯城2
 老故事,http://107.150.60.122/live/lgs.m3u8$堪萨斯城2
 
+CCTV1,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv1hd&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+CCTV5,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv5hd&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+CCTV6,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv6hd&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+CCTV13,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv13hd&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+CCTV风云足球,http://38.75.136.137:82/live1/jsb.m3u8?id=fyzq&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+CETV1,http://38.75.136.137:82/live1/jsb.m3u8?id=cetv1hd&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+CETV早期教育,http://38.75.136.137:82/live1/jsb.m3u8?id=zqjy&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+CHC动作电影,http://38.75.136.137:82/live1/jsb.m3u8?id=chcdz&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+CHC影迷电影,http://38.75.136.137:82/live1/jsb.m3u8?id=chchd&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+CHC家庭影院,http://38.75.136.137:82/live1/jsb.m3u8?id=chcjt&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+三沙卫视,http://38.75.136.137:82/live1/jsb.m3u8?id=ssws&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
+
 CCTV1,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv1hd&ip=whus19&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶13
 CCTV5,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv5hd&ip=whus19&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶13
 CCTV11,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv11hd&ip=whus19&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶13
