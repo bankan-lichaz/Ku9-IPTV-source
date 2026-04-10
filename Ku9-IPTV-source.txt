@@ -1956,7 +1956,7 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 
 CCTV1,http://38.75.136.137:82/live1/dsdq.m3u8?id=cctv1hd&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶2
 CCTV2,http://38.75.136.137:82/live1/dsdq.m3u8?id=cctv2hd&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶2
-CCTV3HD,http://38.75.136.137:82/live1/dsdq.m3u8?id=cctv3hd&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶2
+CCTV3,http://38.75.136.137:82/live1/dsdq.m3u8?id=cctv3hd&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶2
 CCTV4,http://38.75.136.137:82/live1/dsdq.m3u8?id=cctv4hd&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶2
 CCTV5,http://38.75.136.137:82/live1/dsdq.m3u8?id=cctv5hd&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶2
 CCTV6,http://38.75.136.137:82/live1/dsdq.m3u8?id=cctv6hd&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶2
