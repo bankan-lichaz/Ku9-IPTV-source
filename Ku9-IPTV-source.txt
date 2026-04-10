@@ -705,7 +705,7 @@ NBTV-2,http://223.95.198.3:8000/hls/49/index.m3u8$宁波章水mobile
 浙江新闻,http://223.95.198.3:8000/hls/50/index.m3u8$宁波章水mobile
 浙江体育,http://223.95.198.3:8000/hls/51/index.m3u8$宁波章水mobile
 浙江少儿,http://223.95.198.3:8000/hls/52/index.m3u8$宁波章水mobile
-CGTN,http://223.95.198.3:8000/hls/19/index.m3u8$宁波章水mobile
+CGTN外语纪录,http://223.95.198.3:8000/hls/19/index.m3u8$宁波章水mobile
 
 CCTV16,http://39.152.103.17:8089/tsfile/live/1015_1.m3u8$阜新彰武Mobile
 
