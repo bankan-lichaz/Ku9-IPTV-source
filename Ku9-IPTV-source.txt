@@ -1948,6 +1948,17 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 发现之旅,http://107.150.60.122/live/fxzl.m3u8$堪萨斯城2
 老故事,http://107.150.60.122/live/lgs.m3u8$堪萨斯城2
 
+CCTV1,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv1hd&ip=whus22&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶10
+CCTV2,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv2hd&ip=whus22&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶10
+CCTV7,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv7hd&ip=whus22&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶10
+CCTV8,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv8hd&ip=whus22&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶10
+CCTV9,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv9hd&ip=whus22&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶10
+CCTV第一剧场,http://38.75.136.137:82/live1/jsb.m3u8?id=dyjc&ip=whus22&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶10
+CCTV风云剧场,http://38.75.136.137:82/live1/jsb.m3u8?id=fyjc&ip=whus22&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶10
+河北卫视,http://38.75.136.137:82/live1/jsb.m3u8?id=hewshd&ip=whus22&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶10
+江西卫视,http://38.75.136.137:82/live1/jsb.m3u8?id=jxwshd&ip=whus22&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶10
+河南卫视,http://38.75.136.137:82/live1/jsb.m3u8?id=hawshd&ip=whus22&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶10
+
 CCTV1,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv1hd&ip=whus06&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶9
 CCTV3,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv3hd&ip=whus06&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶9
 CCTV4,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv4hd&ip=whus06&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶9
