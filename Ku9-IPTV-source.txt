@@ -1948,6 +1948,17 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 发现之旅,http://107.150.60.122/live/fxzl.m3u8$堪萨斯城2
 老故事,http://107.150.60.122/live/lgs.m3u8$堪萨斯城2
 
+CCTV1,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv1hd&ip=whus08&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶4
+CCTV3,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv3hd&ip=whus08&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶4
+CCTV4,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv4hd&ip=whus08&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶4
+CCTV5,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv5hd&ip=whus08&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶4
+CCTV6,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv6hd&ip=whus08&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶4
+CCTV8,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv8hd&ip=whus08&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶4
+CCTV13,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv13hd&ip=whus08&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶4
+成龙电影,http://38.75.136.137:82/live1/jsb.m3u8?id=lbcl&ip=whus08&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶4
+周润发电影,http://38.75.136.137:82/live1/jsb.m3u8?id=lbzrf&ip=whus08&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶4
+周星驰电影,http://38.75.136.137:82/live1/jsb.m3u8?id=lbzxc&ip=whus08&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶4
+
 CCTV1,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv1hd&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶3
 CCTV2,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv2hd&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶3
 CCTV3,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv3hd&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶3
