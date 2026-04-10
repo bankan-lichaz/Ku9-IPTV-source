@@ -1948,6 +1948,13 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 发现之旅,http://107.150.60.122/live/fxzl.m3u8$堪萨斯城2
 老故事,http://107.150.60.122/live/lgs.m3u8$堪萨斯城2
 
+CCTV1,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv1hd&ip=whus25&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶15
+CCTV5,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv5hd&ip=whus25&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶15
+CCTV8,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv8hd&ip=whus25&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶15
+北京纪实科教,http://38.75.136.137:82/live1/jsb.m3u8?id=btv3&ip=whus25&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶15
+天元围棋,http://38.75.136.137:82/live1/jsb.m3u8?id=gztywq&ip=whus25&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶15
+国学频道,http://38.75.136.137:82/live1/jsb.m3u8?id=gxpd&ip=whus25&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶15
+
 CCTV1,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv1hd&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
 CCTV5,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv5hd&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
 CCTV6,http://38.75.136.137:82/live1/jsb.m3u8?id=cctv6hd&ip=whus20&usign=0LcHwF1xE9sIhhW0InrW3A$洛杉矶14
