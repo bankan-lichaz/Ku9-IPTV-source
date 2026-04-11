@@ -315,13 +315,13 @@ CGTN俄语,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/ey_20
 广东卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/gdwsH265_4000.m3u8$石家庄电信
 深圳卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/szwsH265_4000.m3u8$石家庄电信
 广西卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/gxws_4000.m3u8$石家庄电信
-云南卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/ynwsH265_4000.m3u8$石家庄电信
+云南卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/ynws_4000.m3u8$石家庄电信
 贵州卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/gzwsH265_4000.m3u8$石家庄电信
 四川卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/scwsH265_4000.m3u8$石家庄电信
-康巴卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/kbwsH265_4000.m3u8$石家庄电信
-新疆卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/xjwsH265_4000.m3u8$石家庄电信
-兵团卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/btwsH265_4000.m3u8$石家庄电信
-西藏卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/xzwsH265_4000.m3u8$石家庄电信
+康巴卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/kbwsH264_2000.m3u8$石家庄电信
+新疆卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/xjws_4000.m3u8$石家庄电信
+兵团卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/btws_4000.m3u8$石家庄电信
+西藏卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/xzwsH264_2000.m3u8$石家庄电信
 海南卫视,http://124.236.93.22:2380/hw1live.rxip.sc96655.com.huan.tv/live/hnws_4000.m3u8$石家庄电信
 
 CCTV1,http://aylzsu.cn:9999/rtp/225.1.2.47:10276$河南安阳林州
