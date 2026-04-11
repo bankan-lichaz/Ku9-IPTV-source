@@ -623,6 +623,27 @@ CGTN阿拉伯语,https://0472.org/hls/cgtna.m3u8$呼和浩特IJK硬解
 兵团卫视,http://103.45.128.46:2001/jmb/IPTV.php?id=兵团卫视$呼和浩特IJK硬解
 大湾区卫视,http://103.45.128.46:2001/jmb/IPTV.php?id=大湾区卫视$呼和浩特IJK硬解
 重温经典,http://8.138.7.223/tv/cwjd.php$广州阿里云
+CCTV卫生健康,http://223.111.150.99:6673/tv/mg1.php?id=CCTV卫生健康$江苏盐城
+CCTV风云剧场,http://223.111.150.99:6673/tv/mg1.php?id=CCTV风云剧场$江苏盐城
+CCTV风云足球,http://223.111.150.99:6673/tv/mg1.php?id=CCTV风云足球$江苏盐城
+CCTV第一剧场,http://223.111.150.99:6673/tv/mg1.php?id=CCTV第一剧场$江苏盐城
+CCTV怀旧剧场,http://223.111.150.99:6673/tv/mg1.php?id=CCTV怀旧剧场$江苏盐城
+CCTV风云音乐,http://223.111.150.99:6673/tv/mg1.php?id=CCTV风云音乐$江苏盐城
+CCTV高尔夫网球,http://223.111.150.99:6673/tv/mg1.php?id=CCTV高尔夫网球$江苏盐城
+CCTV央视台球,http://223.111.150.99:6673/tv/mg1.php?id=CCTV央视台球$江苏盐城
+CCTV电视指南,http://223.111.150.99:6673/tv/mg1.php?id=CCTV电视指南$江苏盐城
+CCTV兵器科技,http://223.111.150.99:6673/tv/mg1.php?id=CCTV兵器科技$江苏盐城
+CCTV世界地理,http://223.111.150.99:6673/tv/mg1.php?id=CCTV世界地理$江苏盐城
+CCTV女性时尚,http://223.111.150.99:6673/tv/mg1.php?id=CCTV女性时尚$江苏盐城
+CCTV文化精品,http://223.111.150.99:6673/tv/mg1.php?id=CCTV文化精品$江苏盐城
+CHC动作电影,http://223.111.150.99:6673/tv/mg4.php?id=CHC动作电影$江苏盐城
+CHC影迷电影,http://223.111.150.99:6673/tv/mg4.php?id=CHC影迷电影$江苏盐城
+CHC家庭影院,http://223.111.150.99:6673/tv/mg4.php?id=CHC家庭影院$江苏盐城
+CCTV4K,http://223.111.150.99:6673/tv/mg1.php?id=CCTV4K超高清$江苏盐城
+CCTV8K,http://223.111.150.99:6673/tv/mg1.php?id=CCTV8K超高清$江苏盐城
+
+
+
 
 CCTV1,http://119.91.7.169:2026/dszb/IPTV.php?id=CCTV1$广州腾讯IJK硬解
 CCTV2,http://119.91.7.169:2026/dszb/IPTV.php?id=CCTV2$广州腾讯IJK硬解
@@ -3148,10 +3169,10 @@ TVB无线新闻,http://8.218.84.3:8885/live/LxWcScuQ6WphaELY4DhkKm8SIv7_ZgNIJtNv
 纬来体育,http://8.218.84.3:8885/live/LxWcScuQ6WphaELY4DhkKm8SIv7_ZgNIJtNvFurqphvyqxUIU84OjKVCwFxMq9iUHWMHCytb2VBItbRCwo0LyovE6oGaC1PKnrjeaNxE0NJWRPjFClfaMW4SEVeYtCQbLhiB3WPPepMATAHfUOZlkgWW0vAwIwy5bOIXv7889x_3qi3OgGQuH6k8OeAX6HrFQ7vZhBVtcJo_VATmB9RIaebmQ4oLRHlUr70aUtC19_XJC64D_Vpx6ZcuklPt-WNukf0zYr47g_wBBsnqqxlE6w.m3u8?u=1756878715$香港阿里系统软解
 
 
-Now新闻台,http://119.91.7.169:2026/tv/mg2.php?id=now新闻1$广州腾讯云
-有线跑马18台,http://119.91.7.169:2026/tv/mg2.php?id=有线18跑马$广州腾讯云
-TVB千禧经典台,http://119.91.7.169:2026/tv/mg2.php?id=TVB千禧经典台$广州腾讯云
-TVB J1,http://119.91.7.169:2026/tv/mg2.php?id=J1$广州腾讯云
+Now新闻台,http://119.91.7.169:2026/tv/mg2.php?id=now新闻1$广州腾讯IJK硬解
+有线跑马18台,http://119.91.7.169:2026/tv/mg2.php?id=有线18跑马$广州腾讯IJK硬解
+TVB千禧经典台,http://119.91.7.169:2026/tv/mg2.php?id=TVB千禧经典台$广州腾讯IJK硬解
+TVB J1,http://119.91.7.169:2026/tv/mg2.php?id=J1$广州腾讯IJK硬解
 
 
 优视频道,https://2-fss-2.streamhoster.com/pl_118/200734-1199190-1/playlist.m3u8
