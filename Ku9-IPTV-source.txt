@@ -2764,7 +2764,7 @@ CETV1,http://43.156.8.127:5050/ysp?id=2022823801&pid=600171827&q=fhd$央视频
 兵团卫视,http://43.156.8.127:5050/ysp?id=2025990501&pid=600193252&q=fhd$央视频
 国学频道,http://43.156.8.127:5050/ysp?id=2029360403&pid=600213139&q=fhd$央视频
 
-师大附中,#genre#
+北师附中,#genre#
 袁sir-1,https://vip1.lz-cdn6.com/20221126/32807_874f58ab/index.m3u8$ikanbot
 袁sir-2,https://vip1.lz-cdn6.com/20221126/32806_c29ad4b0/index.m3u8$ikanbot
 袁sir-3,https://vip1.lz-cdn6.com/20221126/32809_fd8004bd/index.m3u8$ikanbot
