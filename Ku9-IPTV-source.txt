@@ -3034,14 +3034,22 @@ CETV1,http://43.156.8.127:5050/ysp?id=2022823801&pid=600171827&q=fhd$央视频
 30. 高宗禅位,https://vip.dytt-live.com/20250603/8326_19e21d13/index.m3u8$dytt
 
 哈利波特,#genre#
-1.魔法石,https://c1.rrcdnbf2.com/video/haliboteyumofashi/HD国语/index.m3u8
-2.密室,https://vip.ffzy-play6.com/20221017/4_0e19d1a9/index.m3u8
-3.阿兹卡班的囚徒,https://mv1.zxchy.com/api/v2/vip/normal/300663/index.m3u8
-4.火焰杯,https://c1.rrcdnbf2.com/video/haliboteyuhuoyanbei/HD国语/index.m3u8
-5.凤凰社,https://c1.rrcdnbf2.com/video/haliboteyufenghuangshe/HD国语/index.m3u8
-6.混血王子,https://c1.rrcdnbf2.com/video/haliboteyuhunxuewangzi/HD国语/index.m3u8
-7.死亡圣器上,https://hn.bfvvs.com/play/yb8K72av/index.m3u8
-7.死亡圣器下,https://vip.ffzy-play6.com/20221019/155_4173f041/index.m3u8
+1.魔法石-国语,https://c1.rrcdnbf2.com/video/haliboteyumofashi/HD国语/index.m3u8
+2.密室-国语,https://vip.ffzy-play6.com/20221017/4_0e19d1a9/index.m3u8
+3.阿兹卡班的囚徒-国语,https://mv1.zxchy.com/api/v2/vip/normal/300663/index.m3u8
+4.火焰杯-国语,https://vip.ffzy-play6.com/20221017/8_1d16ea01/index.m3u8
+5.凤凰社-国语,https://c1.rrcdnbf2.com/video/haliboteyufenghuangshe/HD国语/index.m3u8
+6.混血王子-国语,https://c1.rrcdnbf2.com/video/haliboteyuhunxuewangzi/HD国语/index.m3u8
+7.死亡圣器上-国语,https://hn.bfvvs.com/play/yb8K72av/index.m3u8
+7.死亡圣器下-国语,https://vip.ffzy-play6.com/20221019/155_4173f041/index.m3u8
+1.魔法石-英语,https://vip.ffzy-play6.com/20221126/8430_512a9273/index.m3u8
+2.密室-英语,https://vip.ffzy-play6.com/20221017/3_07e483ef/index.m3u8
+3.阿兹卡班的囚徒-英语,https://mv1.zxchy.com/api/v2/dsdy/dsdy_z5xxiBBMCYfwF7ZXpHE95KrRG2sKQH2aObovikklifk/index.m3u8
+4.火焰杯-英语,https://vip.ffzy-play6.com/20221017/7_585834fc/index.m3u8
+5.凤凰社-英语,https://vip.ffzy-play6.com/20221126/8435_83c99549/index.m3u8
+6.混血王子-英语,https://vip.ffzy-play6.com/20221126/8437_6089bc80/index.m3u8
+7.死亡圣器上-英语,https://c1.rrcdnbf2.com/video/haliboteyusiwangshengqishang/HD中字/index.m3u8
+7.死亡圣器下-英语,https://p.bvvvvvvvvv1f.com/video/haliboteyusiwangshengqixiayuansheng/HD中字/index.m3u8
 
 粤港澳台,#genre#
 镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
