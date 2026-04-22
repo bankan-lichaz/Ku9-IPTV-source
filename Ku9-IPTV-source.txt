@@ -2999,6 +2999,38 @@ CETV1,http://43.156.8.127:5050/ysp?id=2022823801&pid=600171827&q=fhd$央视频
 51.历史回眸-百年孤独,https://vodcnd11.oag7h.com/20250724/A8vywjFH/index.m3u8$百度
 52.历史回眸-千古风流,https://vodcnd11.oag7h.com/20250724/qyhIwuT7/index.m3u8$百度
 
+两宋风云,#genre#
+1. 徽宗即位,https://vip.dytt-live.com/20250603/8297_a98a009d/index.m3u8$dytt
+2. 奸相辅政,https://vip.dytt-live.com/20250603/8298_f7b6bc88/index.m3u8$dytt
+3. 宦官掌兵,https://vip.dytt-live.com/20250603/8299_acef5cc0/index.m3u8$dytt
+4. 风流天子,https://vip.dytt-live.com/20250603/8300_9b40aee7/index.m3u8$dytt
+5. 靖康之耻,https://vip.dytt-live.com/20250603/8301_1e795968/index.m3u8$dytt
+6. 康王赵构,https://vip.dytt-live.com/20250603/8302_c1bb2ec7/index.m3u8$dytt
+7. 赵构继统,https://vip.dytt-live.com/20250603/8303_b0c2b4c9/index.m3u8$dytt
+8. 书生抗金,https://vip.dytt-live.com/20250603/8304_2f014b91/index.m3u8$dytt
+9. 逃跑皇帝,https://vip.dytt-live.com/20250603/8305_d7488039/index.m3u8$dytt
+10. 苗刘兵变,https://vip.dytt-live.com/20250603/8306_7fc9fd4c/index.m3u8$dytt
+11. 韩五破金,https://vip.dytt-live.com/20250603/8307_680f0fc3/index.m3u8$dytt
+12. 将帅失和,https://vip.dytt-live.com/20250603/8308_79e3eb7e/index.m3u8$dytt
+13. 吴玠守蜀,https://vip.dytt-live.com/20250603/8309_1aa7a877/index.m3u8$dytt
+14. 精忠岳飞,https://vip.dytt-live.com/20250603/8310_85ef8e89/index.m3u8$dytt
+15. 傀儡刘豫,https://vip.dytt-live.com/20250603/8311_1f5f6ad9/index.m3u8$dytt
+16. 伪齐灭亡,https://vip.dytt-live.com/20250603/8312_e046ede6/index.m3u8$dytt
+17. 中兴四将,https://vip.dytt-live.com/20250603/8313_bf2fe658/index.m3u8$dytt
+18. 君臣反目,https://vip.dytt-live.com/20250603/8314_7a951116/index.m3u8$dytt
+19. 淮西兵变,https://vip.dytt-live.com/20250603/8315_68881d22/index.m3u8$dytt
+20. 宋金谈判,https://vip.dytt-live.com/20250603/8316_cf011ff8/index.m3u8$dytt
+21. 战端再起,https://vip.dytt-live.com/20250603/8317_47a7f2c0/index.m3u8$dytt
+22. 顺昌大捷,https://vip.dytt-live.com/20250603/8318_3fe23034/index.m3u8$dytt
+23. 功亏一篑,https://vip.dytt-live.com/20250603/8319_3941c435/index.m3u8$dytt
+24. 死里逃生,https://vip.dytt-live.com/20250603/8320_690f44c8/index.m3u8$dytt
+25. 岳飞之死,https://vip.dytt-live.com/20250603/8321_d428d070/index.m3u8$dytt
+26. 宋金议和,https://vip.dytt-live.com/20250603/8322_71969a80/index.m3u8$dytt
+27. 奸相秦桧,https://vip.dytt-live.com/20250603/8323_d882050b/index.m3u8$dytt
+28. 金国易主,https://vip.dytt-live.com/20250603/8324_e5fc3b8d/index.m3u8$dytt
+29. 宋金再战,https://vip.dytt-live.com/20250603/8325_4be49c79/index.m3u8$dytt
+30. 高宗禅位,https://vip.dytt-live.com/20250603/8326_19e21d13/index.m3u8$dytt
+
 哈利波特,#genre#
 1.魔法石,https://c1.rrcdnbf2.com/video/haliboteyumofashi/HD国语/index.m3u8
 2.密室,https://vip.ffzy-play6.com/20221017/4_0e19d1a9/index.m3u8
