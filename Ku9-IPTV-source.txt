@@ -38,6 +38,22 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 
 辽宁频道,#genre#
 辽宁卫视,http://47.119.24.76:59093/630291707$深圳阿里标清
+辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws$VPS旧金山1
+辽宁卫视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnwshd$堪萨斯城1
+辽宁卫视,http://k.061899.xyz/k.php?id=lnws$VPS新加坡
+辽宁卫视,http://j.s.bkpcp.top/jj/lnws$VPS旧金山3
+辽宁卫视,http://go.bkpcp.top/mg/lnws$VPS旧金山4
+辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/29/live.m3u8$兰州城关标清uni
+辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/40/live.m3u8$兰州城关标清uni
+辽宁卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
+辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q2
+
+辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds$堪萨斯城1
+辽宁影视剧,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys$堪萨斯城1
+辽宁体育休闲,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty$堪萨斯城1
+辽宁生活,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnsh$堪萨斯城1
+辽宁北方,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnbf$堪萨斯城1
+
 沈阳新闻综合,http://116.2.168.186:4010/rtp/232.0.0.206:1234$和平太原街uni
 辽宁都市,http://116.2.168.186:4010/rtp/232.0.0.154:1234$和平太原街uni
 辽宁生活,http://116.2.168.186:4010/rtp/232.0.0.150:1234$和平太原街uni
@@ -55,24 +71,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 盘锦都市,http://116.2.168.186:4010/rtp/232.0.0.183:1234$和平太原街uni
 抚顺综合,http://116.2.168.186:4010/rtp/232.0.0.253:1234$和平太原街uni
 抚顺教育,http://116.2.168.186:4010/rtp/232.0.0.254:1234$和平太原街uni
-
-辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds$堪萨斯城1
-辽宁影视剧,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys$堪萨斯城1
-辽宁体育休闲,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty$堪萨斯城1
-辽宁生活,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnsh$堪萨斯城1
-辽宁北方,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnbf$堪萨斯城1
-
-辽宁卫视,http://47.119.24.76:59093/630291707$深圳阿里标清
-辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws$VPS旧金山1
-辽宁卫视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnwshd$堪萨斯城1
-辽宁卫视,http://k.061899.xyz/k.php?id=lnws$VPS新加坡
-辽宁卫视,http://j.s.bkpcp.top/jj/lnws$VPS旧金山3
-辽宁卫视,http://go.bkpcp.top/mg/lnws$VPS旧金山4
-辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/29/live.m3u8$兰州城关标清uni
-辽宁卫视,http://60.13.52.236:65500/newlive/live/hls/40/live.m3u8$兰州城关标清uni
-辽宁卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
-辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q2
-
 
 辽宁都市,http://107.150.60.122/live/lnds.m3u8$堪萨斯城2
 辽宁影视剧,http://107.150.60.122/live/lnys.m3u8$堪萨斯城2
