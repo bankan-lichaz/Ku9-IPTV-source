@@ -84,10 +84,10 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 辽宁影视剧,http://47.119.24.76:59093/962067517$深圳阿里标清
 
 辽宁卫视,http://113.233.143.253:3178/tsfile/live/1025_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁-都市,http://113.233.143.253:3178/tsfile/live/1021_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁影视,http://113.233.143.253:3178/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁体育,http://113.233.143.253:3178/tsfile/live/1023_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁教育,http://113.233.143.253:3178/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0$香港
+辽宁都市,http://113.233.143.253:3178/tsfile/live/1021_1.m3u8?key=txiptv&playlive=1&authid=0$香港
+辽宁影视剧,http://113.233.143.253:3178/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0$香港
+辽宁体育休闲,http://113.233.143.253:3178/tsfile/live/1023_1.m3u8?key=txiptv&playlive=1&authid=0$香港
+辽宁教育青少,http://113.233.143.253:3178/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0$香港
 辽宁公共,http://113.233.143.253:3178/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0$香港
 辽宁生活,http://113.233.143.253:3178/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0$香港
 辽宁北方,http://113.233.143.253:3178/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0$香港
