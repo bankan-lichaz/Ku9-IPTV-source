@@ -83,22 +83,16 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 辽宁生活,http://47.119.24.76:59093/962045226$深圳阿里标清
 辽宁影视剧,http://47.119.24.76:59093/962067517$深圳阿里标清
 
-辽宁卫视,http://113.233.143.253:3178/tsfile/live/1025_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁都市,http://113.233.143.253:3178/tsfile/live/1021_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁影视剧,http://113.233.143.253:3178/tsfile/live/1024_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁体育休闲,http://113.233.143.253:3178/tsfile/live/1023_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁教育青少,http://113.233.143.253:3178/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁公共,http://113.233.143.253:3178/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁生活,http://113.233.143.253:3178/tsfile/live/1022_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁北方,http://113.233.143.253:3178/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-辽宁经济,http://113.233.143.253:3178/tsfile/live/0137_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-北方导视,http://113.233.143.253:3178/tsfile/live/1059_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-沈阳新闻综合,http://113.233.143.253:3178/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-沈阳新闻综合,http://113.233.143.253:3178/tsfile/live/1019_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-沈阳新闻综合,http://113.233.143.253:3178/tsfile/live/1043_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-沈阳新闻综合,http://113.233.143.253:3178/tsfile/live/1086_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-沈阳新闻综合,http://113.233.143.253:3178/tsfile/live/1092_1.m3u8?key=txiptv&playlive=1&authid=0$香港
-沈阳新闻综合,http://113.233.143.253:3178/tsfile/live/1093_1.m3u8?key=txiptv&playlive=1&authid=0$香港
+辽宁卫视,http://175.170.45.85:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁都市,http://175.170.45.85:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁影视剧,http://175.170.45.85:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁教育青少,http://175.170.45.85:9901/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁生活,http://175.170.45.85:9901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁公共,http://175.170.45.85:9901/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁北方,http://175.170.45.85:9901/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁经济,http://175.170.45.85:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁体育休闲,http://175.170.45.85:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁移动电视,http://175.170.45.85:9901/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
 
 沈阳新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.227:9276$铁岭凡河uni
 辽宁都市,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.42:8856$铁岭凡河uni
