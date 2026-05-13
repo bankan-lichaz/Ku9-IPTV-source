@@ -1922,31 +1922,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 粤港澳台,#genre#
 镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
 
-华视,http://74.91.26.218:82/live/cts.m3u8$堪薩斯城
-台视,http://74.91.26.218:82/live/ttv.m3u8$堪薩斯城
-民视,http://74.91.26.218:82/live/ftv.m3u8$堪薩斯城
-民视,http://74.91.26.218:82/live/ftv.m3u8$堪薩斯城
-公视,http://74.91.26.218:82/live/pts.m3u8$堪薩斯城
-中视,http://74.91.26.218:82/live/ctv.m3u8$堪薩斯城
-华视教育体育文化,http://74.91.26.218:82/live/ctsjy.m3u8$堪薩斯城
-民视台湾,http://74.91.26.218:82/live/ftvtw.m3u8?$堪薩斯城
-台视综合,http://74.91.26.218:82/live/ttvzh.m3u8?$堪薩斯城
-台视财经,http://74.91.26.218:82/live/ttvcj.m3u8$堪薩斯城
-中视菁采,http://74.91.26.218:82/live/ctvjc.m3u8$堪薩斯城
-中视经典,http://74.91.26.218:82/live/ctvjd.m3u8$堪薩斯城
-民视新闻,http://74.91.26.218:82/live/ftvnews.m3u8$堪薩斯城
-华视新闻,http://74.91.26.218:82/live/ctsnews.m3u8$堪薩斯城
-台视新闻,http://74.91.26.218:82/live/ttvnews.m3u8$堪薩斯城
-中视新闻,http://74.91.26.218:82/live/ctvnews.m3u8$堪薩斯城
-公视台语,http://74.91.26.218:82/live/ptsty.m3u8$堪薩斯城
-民视第一,http://74.91.26.218:82/live/ftvdy.m3u8$堪薩斯城
-小公视,http://74.91.26.218:82/live/ptsse.m3u8$堪薩斯城
-TVB翡翠台,http://74.91.26.218:82/live/jade.m3u8$堪薩斯城
-TVB无线新闻台,http://74.91.26.218:82/live/inews.m3u8$堪薩斯城
-TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
-广东新闻,http://74.91.26.218:82/live/gdxw.m3u8$堪薩斯城
-广东珠江,http://74.91.26.218:82/live/gdzj.m3u8$堪薩斯城
-大湾区卫视,http://74.91.26.218:82/live/nfws.m3u8$堪萨斯城
 
 倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8?proxy=true$台湾台北1
 倪珍播新闻,http://85.237.207.150:50007/nnews-zh/index.m3u8?proxy=true&1$台湾台北1
@@ -2713,6 +2688,32 @@ TVB J1,http://119.91.7.169:2026/tv/mg2.php?id=J1$广州腾讯IJK硬解
 优视频道,https://2-fss-2.streamhoster.com/pl_118/200734-1199190-1/chunklist.m3u8
 
 TVB无线赛马,http://tl.061833.xyz/tl/mytvsuper18
+
+华视,http://74.91.26.218:82/live/cts.m3u8$堪薩斯城
+台视,http://74.91.26.218:82/live/ttv.m3u8$堪薩斯城
+民视,http://74.91.26.218:82/live/ftv.m3u8$堪薩斯城
+民视,http://74.91.26.218:82/live/ftv.m3u8$堪薩斯城
+公视,http://74.91.26.218:82/live/pts.m3u8$堪薩斯城
+中视,http://74.91.26.218:82/live/ctv.m3u8$堪薩斯城
+华视教育体育文化,http://74.91.26.218:82/live/ctsjy.m3u8$堪薩斯城
+民视台湾,http://74.91.26.218:82/live/ftvtw.m3u8?$堪薩斯城
+台视综合,http://74.91.26.218:82/live/ttvzh.m3u8?$堪薩斯城
+台视财经,http://74.91.26.218:82/live/ttvcj.m3u8$堪薩斯城
+中视菁采,http://74.91.26.218:82/live/ctvjc.m3u8$堪薩斯城
+中视经典,http://74.91.26.218:82/live/ctvjd.m3u8$堪薩斯城
+民视新闻,http://74.91.26.218:82/live/ftvnews.m3u8$堪薩斯城
+华视新闻,http://74.91.26.218:82/live/ctsnews.m3u8$堪薩斯城
+台视新闻,http://74.91.26.218:82/live/ttvnews.m3u8$堪薩斯城
+中视新闻,http://74.91.26.218:82/live/ctvnews.m3u8$堪薩斯城
+公视台语,http://74.91.26.218:82/live/ptsty.m3u8$堪薩斯城
+民视第一,http://74.91.26.218:82/live/ftvdy.m3u8$堪薩斯城
+小公视,http://74.91.26.218:82/live/ptsse.m3u8$堪薩斯城
+TVB翡翠台,http://74.91.26.218:82/live/jade.m3u8$堪薩斯城
+TVB无线新闻台,http://74.91.26.218:82/live/inews.m3u8$堪薩斯城
+TVB Plus,http://74.91.26.218:82/live/j2.m3u8$堪薩斯城
+广东新闻,http://74.91.26.218:82/live/gdxw.m3u8$堪薩斯城
+广东珠江,http://74.91.26.218:82/live/gdzj.m3u8$堪薩斯城
+大湾区卫视,http://74.91.26.218:82/live/nfws.m3u8$堪萨斯城
 
 华视,http://rihou.cc:555/tv/[mn]华视闽南$Q1
 民视,http://rihou.cc:555/tv/[mn]民视闽南$Q1
