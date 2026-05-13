@@ -87,6 +87,16 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 盘锦都市,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227659/index.m3u8$DLITV
 盘锦新闻综合,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227751/index.m3u8$DLITV
 
+辽宁北方,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=lnbf&auth=307f889625f24f54a3c29ae310bd3317$XCDS
+辽宁都市,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=lnds&auth=307f889625f24f54a3c29ae310bd3317$XCDS
+辽宁生活,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=lnsh&auth=307f889625f24f54a3c29ae310bd3317$XCDS
+辽宁体育休闲,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=lnty&auth=307f889625f24f54a3c29ae310bd3317$XCDS
+锦州教育,http://47.97.252.137:8086/daili/lnjztv2.m3u8?line=2$XCDS
+大连新闻综合,http://47.97.252.137:8086/daili/lndltv1.m3u8?line=0$XCDS
+大连新闻综合,http://47.97.252.137:8086/daili/lndltv1.m3u8?line=1$XCDS
+锦州新闻综合,http://47.97.252.137:8086/daili/lnjztv1.m3u8?line=2$XCDS
+大连生活,http://47.97.252.137:8086/daili/lndltv2.m3u8?line=0$XCDS
+
 沈阳新闻综合,http://116.2.172.91:4010/rtp/232.0.0.206:1234$和平太原街uni
 辽宁都市,http://116.2.172.91:4010/rtp/232.0.0.154:1234$和平太原街uni
 辽宁生活,http://116.2.172.91:4010/rtp/232.0.0.150:1234$和平太原街uni
