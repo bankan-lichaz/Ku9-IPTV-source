@@ -111,11 +111,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 辽宁生活,http://107.150.60.122/live/lnsh.m3u8$堪萨斯城2
 辽宁北方,http://107.150.60.122/live/lnbf.m3u8$堪萨斯城2
 
-辽宁体育休闲,http://115.191.33.31:19531/962067526$深圳阿里标清
-辽宁公共,http://115.191.33.31:19531/962045223$深圳阿里标清
-辽宁生活,http://115.191.33.31:19531/962045226$深圳阿里标清
-辽宁影视剧,http://115.191.33.31:19531/962067517$深圳阿里标清
-
 辽宁卫视,http://119.112.197.6:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
 辽宁都市,http://119.112.197.6:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
 辽宁影视剧,http://119.112.197.6:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
