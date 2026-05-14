@@ -31,6 +31,7 @@
 
 二姨频道,#genre#
 CCTV卫生健康,http://tonyk.56301232.xyz:3477/rtp/239.37.0.229:5540$长春南关福祉
+CCTV卫生健康,http://47.97.252.137:8086/daili/wsjk.m3u8?line=0$XCDS
 CCTV卫生健康,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=wsjk$堪萨斯城1
 CCTV卫生健康,http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub$洛杉矶test
 CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
@@ -87,6 +88,7 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 盘锦都市,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227659/index.m3u8$DLITV
 盘锦新闻综合,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227751/index.m3u8$DLITV
 
+辽宁卫视,http://47.97.252.137:8086/daili/lnwshd.m3u8?line=0$XCDS
 辽宁北方,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=lnbf&auth=307f889625f24f54a3c29ae310bd3317$XCDS
 辽宁都市,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=lnds&auth=307f889625f24f54a3c29ae310bd3317$XCDS
 辽宁生活,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=lnsh&auth=307f889625f24f54a3c29ae310bd3317$XCDS
@@ -285,6 +287,58 @@ CCTV卫生健康,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=wsjk$堪萨斯城1
 老故事,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lgs$堪萨斯城1
 
 CCTV2,http://liangxu.lilys.top/CCTV2.php$东京腾讯云
+
+CCTV1,http://47.97.252.137:8086/apptv/cctv1.m3u8$XCDS
+CCTV2,http://47.97.252.137:8086/apptv/cctv2.m3u8$XCDS
+CCTV3,http://47.97.252.137:8086/apptv/cctv3.m3u8$XCDS
+CCTV4,http://47.97.252.137:8086/apptv/cctv4.m3u8$XCDS
+CCTV5,http://47.97.252.137:8086/apptv/cctv5.m3u8$XCDS
+CCTV5+,http://47.97.252.137:8086/apptv/cctv5p.m3u8$XCDS
+CCTV6,http://47.97.252.137:8086/apptv/cctv6.m3u8$XCDS
+CCTV7,http://47.97.252.137:8086/apptv/cctv7.m3u8$XCDS
+CCTV8,http://47.97.252.137:8086/apptv/cctv8.m3u8$XCDS
+CCTV9,http://47.97.252.137:8086/apptv/cctv9.m3u8$XCDS
+CCTV10,http://47.97.252.137:8086/apptv/cctv10.m3u8$XCDS
+CCTV11,http://47.97.252.137:8086/apptv/cctv11.m3u8$XCDS
+CCTV12,http://47.97.252.137:8086/apptv/cctv12.m3u8$XCDS
+CCTV13,http://47.97.252.137:8086/apptv/cctv13.m3u8$XCDS
+CCTV14,http://47.97.252.137:8086/apptv/cctv14.m3u8$XCDS
+CCTV15,http://47.97.252.137:8086/apptv/cctv15.m3u8$XCDS
+CCTV16,http://47.97.252.137:8086/apptv/cctv16.m3u8$XCDS
+CCTV17,http://47.97.252.137:8086/apptv/cctv17.m3u8$XCDS
+CCTV4K,http://47.97.252.137:8086/daili/cctv4k.m3u8?line=0$XCDS
+CCTV8K,http://47.97.252.137:8086/tvlive/cctv8k.m3u8?node=4$XCDS
+CCTV兵器科技,http://47.97.252.137:8086/daili/gfjs.m3u8?line=0$XCDS
+CCTV卫生健康,http://47.97.252.137:8086/daili/wsjk.m3u8?line=0$XCDS
+CCTV央视台球,http://47.97.252.137:8086/daili/ystq.m3u8?line=0$XCDS
+CCTV第一剧场,http://47.97.252.137:8086/daili/dyjc.m3u8?line=0$XCDS
+CCTV电视指南,http://47.97.252.137:8086/daili/dszn.m3u8?line=0$XCDS
+CCTV风云剧场,http://47.97.252.137:8086/daili/fyjc.m3u8?line=0$XCDS
+CCTV风云音乐,http://47.97.252.137:8086/daili/fyyy.m3u8?line=0$XCDS
+CCTV风云足球,http://47.97.252.137:8086/daili/fyzq.m3u8?line=0$XCDS
+CCTV怀旧剧场,http://47.97.252.137:8086/daili/hjjc.m3u8?line=0$XCDS
+CCTV女性时尚,http://47.97.252.137:8086/daili/nxss.m3u8?line=0$XCDS
+CCTV世界地理,http://47.97.252.137:8086/daili/sjdl.m3u8?line=0$XCDS
+CCTV文化精品,http://47.97.252.137:8086/daili/ysjp.m3u8?line=0$XCDS
+CHC动作电影,http://47.97.252.137:8086/daili/chcdz.m3u8?line=0$XCDS
+CHC家庭影院,http://47.97.252.137:8086/daili/chcjt.m3u8?line=0$XCDS
+CHC影迷电影,http://47.97.252.137:8086/daili/chchd.m3u8?line=0$XCDS
+重温经典,http://47.97.252.137:8086/daili/cwjd.m3u8?line=0$XCDS
+CGTN,http://47.97.252.137:8086/daili/cctvnews.m3u8?line=0$XCDS
+CGTN阿拉伯语,http://47.97.252.137:8086/daili/cctva.m3u8?line=0$XCDS
+CGTN法语,http://47.97.252.137:8086/daili/cctvf.m3u8?line=0$XCDS
+CGTN西班牙语,http://47.97.252.137:8086/daili/cctve.m3u8?line=0$XCDS
+CGTN俄语,http://47.97.252.137:8086/daili/cctvr.m3u8?line=0$XCDS
+老故事,http://47.97.252.137:8086/daili/lgs.m3u8?line=0$XCDS
+中学生,http://47.97.252.137:8086/daili/fxzl.m3u8?line=0$XCDS
+CETV1,http://47.97.252.137:8086/daili/cetv1.m3u8?line=1$XCDS
+CETV2,http://47.97.252.137:8086/daili/cetv2.m3u8?line=0$XCDS
+CETV3,http://47.97.252.137:8086/daili/cetv3.m3u8?line=0$XCDS
+CETV4,http://47.97.252.137:8086/daili/cetv4.m3u8?line=0$XCDS
+CETV早期教育,http://47.97.252.137:8086/daili/zqjy.m3u8?line=0$XCDS
+辽宁卫视,http://47.97.252.137:8086/daili/lnwshd.m3u8?line=0$XCDS
+江苏卫视,http://47.97.252.137:8086/apptv/jsws.m3u8?line=0$XCDS
+浙江卫视,http://47.97.252.137:8086/daili/zjwshd.m3u8?line=0$XCDS
 
 CCTV1,http://aylzsu.cn:9999/rtp/225.1.2.47:10276$河南安阳林州
 CCTV2,http://aylzsu.cn:9999/rtp/225.1.2.78:10462$河南安阳林州
