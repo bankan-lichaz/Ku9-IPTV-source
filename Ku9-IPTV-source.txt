@@ -96,8 +96,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 大连新闻综合,http://47.97.252.137:8086/daili/lndltv1.m3u8?line=0$XCDS
 大连新闻综合,http://47.97.252.137:8086/daili/lndltv1.m3u8?line=1$XCDS
 大连生活,http://47.97.252.137:8086/daili/lndltv2.m3u8?line=0$XCDS
-锦州新闻综合,http://47.97.252.137:8086/daili/lnjztv1.m3u8?line=2$XCDS
-锦州教育,http://47.97.252.137:8086/daili/lnjztv2.m3u8?line=2$XCDS
 
 沈阳新闻综合,http://116.2.163.54:4010/rtp/232.0.0.206:1234$和平太原街uni
 辽宁都市,http://116.2.163.54:4010/rtp/232.0.0.154:1234$和平太原街uni
