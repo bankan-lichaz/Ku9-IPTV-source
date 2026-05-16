@@ -149,7 +149,7 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 朝阳教育,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.244:9128$铁岭凡河uni
 本溪综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.157:9324$铁岭凡河uni
 阜新综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.246:9134$铁岭凡河uni
-阜新中华特产,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.247:9136$铁岭凡河uni
+中华特产,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.247:9136$铁岭凡河uni
 阜新教育,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.248:9138$铁岭凡河uni
 辽阳新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.249:9140$铁岭凡河uni
 辽阳社会生活,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.250:9000$铁岭凡河uni
