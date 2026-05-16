@@ -2046,7 +2046,7 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 粤港澳台,#genre#
 镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
 
-凤凰卫视,http://pulltx-live.genshuixue.com/live/fhwszwtiVjdacIFnLKHUrRr.flv$XCDS
+凤凰中文,http://pulltx-live.genshuixue.com/live/fhwszwtiVjdacIFnLKHUrRr.flv$XCDS
 凤凰资讯,http://pulltx-live.genshuixue.com/live/fhwszxtiVjdacIFnLKHUrRr.flv$XCDS
 凤凰香港,http://pulltx-live.genshuixue.com/live/fhwsxgtiVjdacIFnLKHUrRr.flv$XCDS
 TVB Plus,http://pulltx-live.genshuixue.com/live/TVBplusiVjdacIFnLKHUrRr.flv$XCDS
