@@ -84,7 +84,7 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 沈阳新闻综合,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227563/index.m3u8$DLITV
 沈阳新闻综合,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227584/index.m3u8$DLITV
 阜新教育,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227662/index.m3u8$DLITV
-阜新新闻综合,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227717/index.m3u8$DLITV
+阜新综合,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227717/index.m3u8$DLITV
 盘锦都市,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227659/index.m3u8$DLITV
 盘锦新闻综合,http://hwottcdn1.ln.chinamobile.com/PLTV/11/224/3221227751/index.m3u8$DLITV
 
