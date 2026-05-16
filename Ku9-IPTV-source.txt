@@ -23,7 +23,11 @@
 
 
 二姨夫台,#genre#
-象棋微学堂,https://live.iill.top/bilibili/1861371474$哔哩哔哩
+重温经典,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=cwjd&auth=307f889625f24f54a3c29ae310bd3317$XCDS
+重温经典,http://8.138.7.223/tv/cwjd.php$广州阿里云
+重温经典,http://116.76.254.170:44330/tsfile/live/1006_1.m3u8?key=txiptv&playlive=0&authid=0$深圳南山
+
+#象棋微学堂https://live.iill.top/bilibili/1861371474$哔哩哔哩
 #大神象棋http://live.nctv.top/douyu1.php?id=1227260
 #大神象棋https://goodiptv.club/douyu/1227260
 #大神象棋https://live.iill.top/douyu/1227260
