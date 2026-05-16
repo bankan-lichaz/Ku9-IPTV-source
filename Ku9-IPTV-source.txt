@@ -2053,6 +2053,7 @@ TVB Plus,http://pulltx-live.genshuixue.com/live/TVBplusiVjdacIFnLKHUrRr.flv$XCDS
 TVB无线新闻台,http://pulltx-live.genshuixue.com/live/wxxwtiVjdacIFnLKHUrRr.flv$XCDS
 TVB翡翠台,http://pulltx-live.genshuixue.com/live/fcttiVjdacIFnLKHUrRr.flv$XCDS
 TVB明珠台,http://pulltx-live.genshuixue.com/live/mztiVjdacIFnLKHUrRr.flv$XCDS
+东森新闻,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-dsxw.flv$XCDS
 东森财经,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-dscjxw.flv$XCDS
 中视新闻,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-zsxwt.flv$XCDS
 华视,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-hs.flv$XCDS
