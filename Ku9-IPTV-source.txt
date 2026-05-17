@@ -126,16 +126,16 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 辽宁生活,http://107.150.60.122/live/lnsh.m3u8$堪萨斯城2
 辽宁北方,http://107.150.60.122/live/lnbf.m3u8$堪萨斯城2
 
-辽宁卫视,http://119.112.197.6:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
-辽宁都市,http://119.112.197.6:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
-辽宁影视剧,http://119.112.197.6:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
-辽宁教育青少,http://119.112.197.6:9901/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
-辽宁生活,http://119.112.197.6:9901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
-辽宁公共,http://119.112.197.6:9901/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
-辽宁北方,http://119.112.197.6:9901/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
-辽宁经济,http://119.112.197.6:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
-辽宁体育休闲,http://119.112.197.6:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
-辽宁移动电视,http://119.112.197.6:9901/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁卫视,http://119.112.207.240:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁都市,http://119.112.207.240:9901/tsfile/live/1000_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁影视剧,http://119.112.207.240:9901/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁教育青少,http://119.112.207.240:9901/tsfile/live/1003_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁生活,http://119.112.207.240:9901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁公共,http://119.112.207.240:9901/tsfile/live/1005_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁北方,http://119.112.207.240:9901/tsfile/live/1006_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁经济,http://119.112.207.240:9901/tsfile/live/1007_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁体育休闲,http://119.112.207.240:9901/tsfile/live/1008_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
+辽宁移动电视,http://119.112.207.240:9901/tsfile/live/1009_1.m3u8?key=txiptv&playlive=1&authid=0$DLZB
 
 沈阳新闻综合,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.227:9276$铁岭凡河uni
 辽宁都市,http://xiaoya.ayemovie.top:5555/rtp/232.0.0.42:8856$铁岭凡河uni
