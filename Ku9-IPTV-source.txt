@@ -2131,15 +2131,9 @@ CMusic,https://cdn12.178.indevs.in/163189/d396cb84b6c89889$旧金山03
 凤凰资讯,http://api.kkhk.itv888.vip:8080/streams/wzt3qbit80m/index.m3u8$旧金山beta
 凤凰香港,http://api.kkhk.itv888.vip:8080/streams/mty4v56ud39/index.m3u8$旧金山beta
 TVB翡翠台,http://api.kkhk.itv888.vip:8080/streams/91wc8xdtj8/index.m3u8$旧金山beta
-四川峨眉电影4K,http://api.kkhk.itv888.vip:8080/streams/0558bdb0324/index.m3u8$旧金山beta
-北京淘电影,http://api.kkhk.itv888.vip:8080/streams/6403327f992/index.m3u8$旧金山beta
-北京重温经典,http://api.kkhk.itv888.vip:8080/streams/50f74c763e0/index.m3u8$旧金山beta
-重温经典,http://api.kkhk.itv888.vip:8080/streams/214856d804c/index.m3u8$旧金山beta
 CHC家庭影院,http://api.kkhk.itv888.vip:8080/streams/qja633ty8n/index.m3u8$旧金山beta
 CHC动作电影,http://api.kkhk.itv888.vip:8080/streams/tbqrnwqrilg/index.m3u8$旧金山beta
 CHC影迷电影,http://api.kkhk.itv888.vip:8080/streams/narc71xn3d/index.m3u8$旧金山beta
-
-凤凰中文,http://223.95.198.3:8000/hls/20/index.m3u8$宁波章水mobile
 
 凤凰中文,http://r.jdshipin.com/cCCzW$jd视频
 凤凰资讯,http://r.jdshipin.com/0Rp07$jd视频
@@ -2318,18 +2312,8 @@ Kook King,http://iptv.4666888.xyz/iptv2A.php?id=63$风云
 
 环球电视台,http://utv1.hqtvzb.com:9999/hls/world.m3u8
 
-
-Now新闻台,http://119.91.7.169:2026/tv/mg2.php?id=now新闻1$广州腾讯IJK硬解
-有线跑马18台,http://119.91.7.169:2026/tv/mg2.php?id=有线18跑马$广州腾讯IJK硬解
-TVB千禧经典台,http://119.91.7.169:2026/tv/mg2.php?id=TVB千禧经典台$广州腾讯IJK硬解
-TVB J1,http://119.91.7.169:2026/tv/mg2.php?id=J1$广州腾讯IJK硬解
-
-
 优视频道,https://2-fss-2.streamhoster.com/pl_118/200734-1199190-1/playlist.m3u8
 优视频道,https://2-fss-2.streamhoster.com/pl_118/200734-1199190-1/chunklist.m3u8
-
-TVB无线赛马,http://tl.061833.xyz/tl/mytvsuper18
-
 
 国际频道,#genre#
 伊朗Iran International,https://dev-live.livetvstream.co.uk/LS-63503-4/chunklist_b1196000.m3u8
