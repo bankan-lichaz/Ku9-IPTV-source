@@ -2050,6 +2050,10 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 粤港澳台,#genre#
 镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
 
+非凡新闻,http://bili-pull.cloudvdn.com/live/mQRsAQ2XirO2TjlOQbPmgwbdL1yQtRKQNzseg7A179VgMYF7dn.flv$XCDS44
+华艺中文,http://bili-pull.cloudvdn.com/live/live/JNFujWQCFcYCBU2iOu2XAyb3mbuNNIi6maHJRuFYfN3ccgIZrS.flv$XCDS37
+东森电影,http://pull-wsu.liveonlinetest.com/live/bCfUAGCL9ukBOGb6dOi9TZAGME9yKesDJWcvlAgBMV6uv722A6.flv$XCDS48
+FGMGold,http://pull-wsu.liveonlinetest.com/live/GRA0oy09ZNbt9XTOkbGvHsWyJkyqVHFKr7SVaavWIumfKWEUeC.flv$XCDS54
 凤凰中文,http://pulltx-live.genshuixue.com/live/fhwszwtiVjdacIFnLKHUrRr.flv$XCDS
 凤凰资讯,http://pulltx-live.genshuixue.com/live/fhwszxtiVjdacIFnLKHUrRr.flv$XCDS
 凤凰香港,http://pulltx-live.genshuixue.com/live/fhwsxgtiVjdacIFnLKHUrRr.flv$XCDS
@@ -2057,8 +2061,6 @@ TVB Plus,http://pulltx-live.genshuixue.com/live/TVBplusiVjdacIFnLKHUrRr.flv$XCDS
 TVB无线新闻台,http://pulltx-live.genshuixue.com/live/wxxwtiVjdacIFnLKHUrRr.flv$XCDS
 TVB翡翠台,http://pulltx-live.genshuixue.com/live/fcttiVjdacIFnLKHUrRr.flv$XCDS
 TVB明珠台,http://pulltx-live.genshuixue.com/live/mztiVjdacIFnLKHUrRr.flv$XCDS
-东森新闻,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-dsxw.flv$XCDS
-东森财经,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-dscjxw.flv$XCDS
 中视新闻,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-zsxwt.flv$XCDS
 华视,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-hs.flv$XCDS
 TVBS,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-TVBS.flv$XCDS
