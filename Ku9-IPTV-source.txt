@@ -291,12 +291,31 @@ CCTV卫生健康,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=wsjk$堪萨斯城1
 
 CCTV2,http://liangxu.lilys.top/CCTV2.php$东京腾讯云
 
+CCTV1,http://47.97.252.137:8088/apptv/cctv1.m3u8$XCDS
+CCTV2,http://47.97.252.137:8088/apptv/cctv2.m3u8$XCDS
+CCTV3,http://47.97.252.137:8088/apptv/cctv3.m3u8$XCDS
+CCTV4,http://47.97.252.137:8088/apptv/cctv4.m3u8$XCDS
+CCTV5,http://47.97.252.137:8088/apptv/cctv5.m3u8$XCDS
+CCTV5+,http://47.97.252.137:8088/apptv/cctv5p.m3u8$XCDS
+CCTV6,http://47.97.252.137:8088/apptv/cctv6.m3u8$XCDS
+CCTV7,http://47.97.252.137:8088/apptv/cctv7.m3u8$XCDS
+CCTV8,http://47.97.252.137:8088/apptv/cctv8.m3u8$XCDS
+CCTV9,http://47.97.252.137:8088/apptv/cctv9.m3u8$XCDS
+CCTV10,http://47.97.252.137:8088/apptv/cctv10.m3u8$XCDS
+CCTV11,http://47.97.252.137:8088/apptv/cctv11.m3u8$XCDS
+CCTV12,http://47.97.252.137:8088/apptv/cctv12.m3u8$XCDS
+CCTV13,http://47.97.252.137:8088/apptv/cctv13.m3u8$XCDS
+CCTV14,http://47.97.252.137:8088/apptv/cctv14.m3u8$XCDS
+CCTV15,http://47.97.252.137:8088/apptv/cctv15.m3u8$XCDS
+CCTV16,http://47.97.252.137:8088/apptv/cctv16.m3u8$XCDS
+CCTV17,http://47.97.252.137:8088/apptv/cctv17.m3u8$XCDS
+
 CCTV1,http://61.164.252.66:17959/live8/ysptv.php?id=cctv1$XCDS
 CCTV2,http://61.164.252.66:17959/live8/ysptv.php?id=cctv2$XCDS
 CCTV3,http://61.164.252.66:17959/live8/ysptv.php?id=cctv3$XCDS
 CCTV4,http://61.164.252.66:17959/live8/ysptv.php?id=cctv4$XCDS
 CCTV5,http://61.164.252.66:17959/live8/ysptv.php?id=cctv5$XCDS
-CCTV5+,http://61.164.252.66:17959/live8/ysptv.php?id=cctv5p$XCDS
+CCTV5+,http://61.164.252.66:17959/live8/ysptv.php?id=cctv5+$XCDS
 CCTV6,http://61.164.252.66:17959/live8/ysptv.php?id=cctv6$XCDS
 CCTV7,http://61.164.252.66:17959/live8/ysptv.php?id=cctv7$XCDS
 CCTV8,http://61.164.252.66:17959/live8/ysptv.php?id=cctv8$XCDS
@@ -309,6 +328,9 @@ CCTV14,http://61.164.252.66:17959/live8/ysptv.php?id=cctv14$XCDS
 CCTV15,http://61.164.252.66:17959/live8/ysptv.php?id=cctv15$XCDS
 CCTV16,http://61.164.252.66:17959/live8/ysptv.php?id=cctv16$XCDS
 CCTV17,http://61.164.252.66:17959/live8/ysptv.php?id=cctv17$XCDS
+
+CCTV5+,http://36.110.54.118:866/hls/13/index.m3u8$XCDS
+
 CCTV4K,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=cctv4k&auth=307f889625f24f54a3c29ae310bd3317$XCDS
 CCTV8K,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=cctv8k&auth=307f889625f24f54a3c29ae310bd3317$XCDS
 CCTV卫生健康,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=wsjk&auth=307f889625f24f54a3c29ae310bd3317$XCDS
