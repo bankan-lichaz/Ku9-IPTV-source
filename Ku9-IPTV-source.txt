@@ -1304,11 +1304,6 @@ TVB Plus,http://pulltx-live.genshuixue.com/live/TVBplusiVjdacIFnLKHUrRr.flv$XCDS
 TVB无线新闻台,http://pulltx-live.genshuixue.com/live/wxxwtiVjdacIFnLKHUrRr.flv$XCDS
 TVB翡翠台,http://pulltx-live.genshuixue.com/live/fcttiVjdacIFnLKHUrRr.flv$XCDS
 TVB明珠台,http://pulltx-live.genshuixue.com/live/mztiVjdacIFnLKHUrRr.flv$XCDS
-中视新闻,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-zsxwt.flv$XCDS
-华视新闻,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-hs.flv$XCDS
-TVBS,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-TVBS.flv$XCDS
-民视,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-ms.flv$XCDS
-TVBS新闻,http://pulltx-live.genshuixue.com/live/iVjdacIFnLKHUrRr-TVBSxwt.flv$XCDS
 
 民视,rtmp://f13h.mine.nu/sat/tv051$台湾台中
 中视,rtmp://f13h.mine.nu/sat/tv091$台湾台中
