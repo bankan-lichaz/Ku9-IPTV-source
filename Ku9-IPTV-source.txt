@@ -215,6 +215,8 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 
 铁岭新闻综合,https://live-play-tlrb.newaircloud.com/tlrb/3dc36395-a7a3-4855-9bd6-8d223cf9ac30.m3u8
 
+辽宁都市,http://121.199.48.54/live1/jsbtv2.m3u8?id=lnds&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779195619&sign=e1e2c987c18faf1fcd1b534c56e3e7a8&ev=20260214$JD
+
 
 央卫频道,#genre#
 CCTV1,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv1hd$堪萨斯城1
