@@ -53,6 +53,8 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q2
 
+辽宁都市,http://121.199.48.54/live1/jsbtv2.m3u8?id=lnds&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779195619&sign=e1e2c987c18faf1fcd1b534c56e3e7a8&ev=20260214$JD
+
 辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds$堪萨斯城1
 辽宁影视剧,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys$堪萨斯城1
 辽宁体育休闲,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty$堪萨斯城1
@@ -214,22 +216,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 锦州教育,https://srs.beijihainews.com.cn/video/jinzhou2/index.m3u8$北极海
 
 铁岭新闻综合,https://live-play-tlrb.newaircloud.com/tlrb/3dc36395-a7a3-4855-9bd6-8d223cf9ac30.m3u8
-
-辽宁都市,http://121.199.48.54/live1/jsbtv2.m3u8?id=lnds&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779195619&sign=e1e2c987c18faf1fcd1b534c56e3e7a8&ev=20260214
-昌图综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lntlct1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779196649&sign=03870ad3b068bc575513858b441df608&ev=20260214
-法库新闻,http://121.199.48.54/live1/lnbdy.m3u8?id=lnsyfk1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779196708&sign=d1e91b3c14cf2cdc40aaabd06e68ddf7&ev=20260214
-新民时政,http://121.199.48.54/live1/lnbdy.m3u8?id=lnsyxm1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779196751&sign=b81ba46adcb63a98bced919b9129e651&ev=20260214
-兴城综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lnhldxc1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779196795&sign=1cc1c39e17e2a1b6dd60243178ba54cc&ev=20260214
-彰武综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lnfxzw1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779196842&sign=10d341b463af0ca91ccc5c7286014dad&ev=20260214
-开源综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lntlky1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779196898&sign=c33838dcd84568ddc35b5872302370ee&ev=20260214
-大连金普新闻,http://121.199.48.54/live1/ady.m3u8?id=lndljp1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779197019&sign=2e92272fdd5dcd23a04a713cac771463&ev=20260214
-大连金普生活,http://121.199.48.54/live1/ady.m3u8?id=lndljp2&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779197071&sign=ba9a52a7deb0858b39f5dbfd9d9280ec&ev=20260214
-大连瓦房店,http://121.199.48.54/live1/lnbdy.m3u8?id=lndlwfd1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779197136&sign=413f64dfe02785c342909d84a5eb3217&ev=20260214
-北票新闻综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lncybp1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779197188&sign=4c93ee45e44a554ed88cfdbe1b7a34fd&ev=20260214
-朝阳县综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lncycy1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779197283&sign=bea3b10aac8da4f03d508aee74706866&ev=20260214
-丹东东港,http://121.199.48.54/live1/lnbdy.m3u8?id=lndddg2&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779197328&sign=d8ac0fbb7228dcd68743d62fac68aaf7&ev=20260214
-宽甸综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lnddkd1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779197374&sign=2080f2b3f48a215473cb5e84be298ad1&ev=20260214
-
 
 央卫频道,#genre#
 CCTV1,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=cctv1hd$堪萨斯城1
