@@ -1321,7 +1321,7 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 东森新闻,http://pulltx-live.genshuixue.com/live/lgCsR0O7TNF4l1D1N8QZrDC8Uka25r-dsxw.flv$XCDS
 东森财经,http://pulltx-live.genshuixue.com/live/lgCsR0O7TNF4l1D1N8QZrDC8Uka25r-dscjxw.flv$XCDS
 寰宇新闻,http://pulltx-live.genshuixue.com/live/lgCsR0O7TNF4l1D1N8QZrDC8Uka25r-hyxw.flv$XCDS
-寰宇台湾,http://pulltx-live.genshuixue.com/live/lgCsR0O7TNF4l1D1N8QZrDC8Uka25r-hyxwtwt.flv$XCDS
+寰宇新闻台湾,http://pulltx-live.genshuixue.com/live/lgCsR0O7TNF4l1D1N8QZrDC8Uka25r-hyxwtwt.flv$XCDS
 中视新闻,http://pulltx-live.genshuixue.com/live/lgCsR0O7TNF4l1D1N8QZrDC8Uka25r-zsxwt.flv$XCDS
 华视,http://pulltx-live.genshuixue.com/live/lgCsR0O7TNF4l1D1N8QZrDC8Uka25r-hs.flv$XCDS
 华视新闻,http://pulltx-live.genshuixue.com/live/lgCsR0O7TNF4l1D1N8QZrDC8Uka25r-hsxwt.flv$XCDS
