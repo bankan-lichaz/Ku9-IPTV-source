@@ -857,7 +857,6 @@ CETV1,http://60.10.139.113:8801/hls/35/index.m3u8$香河uni
 河北少儿科教,http://60.10.139.113:8801/hls/43/index.m3u8$香河uni
 河北文旅公共,http://60.10.139.113:8801/hls/44/index.m3u8$香河uni
 河北三农,http://60.10.139.113:8801/hls/45/index.m3u8$香河uni
-CCTV1,http://60.10.139.113:8801/hls/46/index.m3u8$香河uni
 河北三佳购物,http://60.10.139.113:8801/hls/47/index.m3u8$香河uni
 廊坊新闻综合,http://60.10.139.113:8801/hls/48/index.m3u8$香河uni
 廊坊生活,http://60.10.139.113:8801/hls/49/index.m3u8$香河uni
