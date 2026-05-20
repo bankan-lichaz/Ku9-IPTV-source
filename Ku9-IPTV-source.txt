@@ -429,12 +429,7 @@ CETV1,http://39.165.39.49:19901/tsfile/live/1090_1.m3u8?key=txiptv&playlive=0&au
 深圳卫视,http://39.165.39.49:19901/tsfile/live/1141_1.m3u8?key=txiptv&playlive=0&authid=0$wy1
 湖北卫视,http://39.165.39.49:19901/tsfile/live/1143_1.m3u8?key=txiptv&playlive=0&authid=0$wy1
 东南卫视,http://39.165.39.49:19901/tsfile/live/1149_1.m3u8?key=txiptv&playlive=0&authid=0$wy1
-金鹰卡通,http://39.165.39.49:19901/tsfile/live/1156_1.m3u8?key=txiptv&playlive=0&authid=0$wy1
-嘉佳卡通,http://39.165.39.49:19901/tsfile/live/1157_1.m3u8?key=txiptv&playlive=0&authid=0$wy1
-卡酷动画,http://39.165.39.49:19901/tsfile/live/1158_1.m3u8?key=txiptv&playlive=0&authid=0$wy1
-炫动卡通,http://39.165.39.49:19901/tsfile/live/1159_1.m3u8?key=txiptv&playlive=0&authid=0$wy1
-优漫卡通,http://39.165.39.49:19901/tsfile/live/1092_1.m3u8?key=txiptv&playlive=0&authid=0$wy1
-文体旅游,http://39.165.39.49:19901/tsfile/live/1094_1.m3u8?key=txiptv&playlive=0&authid=0$wy1
+
 
 CCTV1,http://aylzsu.cn:9999/rtp/225.1.2.47:10276$河南安阳林州
 CCTV2,http://aylzsu.cn:9999/rtp/225.1.2.78:10462$河南安阳林州
