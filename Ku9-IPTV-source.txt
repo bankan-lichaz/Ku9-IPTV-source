@@ -1558,6 +1558,19 @@ ViuTV,http://hls.168.us.kg/u/99/master.m3u8$旧金山
 龙华日韩,http://cdn8.163189.xyz/163189/lhrh$旧金山
 龙华戏剧,http://cdn8.163189.xyz/163189/lhxj$旧金山
 
+TVB翡翠台4K,https://o11.163189.xyz/stream/tvb/fct4k/$旧金山01
+TVB PLUS,https://o11.163189.xyz/stream/tvb/tvbp/$旧金山01
+TVB明珠台,https://o11.163189.xyz/stream/tvb/mzt/$旧金山01
+TVB华丽翡翠台,https://o11.163189.xyz/stream/live/hlt/$旧金山01
+华丽翡翠台(新加坡),https://o11.163189.xyz/stream/live/jade/$旧金山01
+Astro AOD,https://o11.163189.xyz/stream/live/aod/$旧金山01
+Astro AEC,https://o11.163189.xyz/stream/live/aec/$旧金山01
+TVB星河,https://o11.163189.xyz/stream/live/tvbxh/$旧金山01
+iQIYI爱奇艺,https://o11.163189.xyz/stream/live/iqiyi/$旧金山01
+TVB千禧经典台,https://o11.163189.xyz/stream/live/tvbc/$旧金山01
+TVB翡翠台,https://o11.163189.xyz/stream/tvb/fct/$旧金山01
+TVB翡翠台,https://o11.163189.xyz/stream/live/jade/$旧金山01
+
 邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub$洛杉矶test
 邵氏武侠,http://38.75.136.137:98/gslb/dsdqpub/lbsswx.m3u8?auth=testpubb$洛杉矶test
 邵氏动作,http://38.75.136.137:98/gslb/dsdqpub/lbssdz.m3u8?auth=testpubb$洛杉矶test
