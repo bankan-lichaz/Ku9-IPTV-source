@@ -1316,6 +1316,13 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 7.死亡圣器下-英语,https://p.bvvvvvvvvv1f.com/video/haliboteyusiwangshengqixiayuansheng/HD中字/index.m3u8
 
 粤港澳台,#genre#
+凤凰中文,http://bili-pull.cloudvdn.com/live/ec74bd6596afec05ab03931293779530.flv$XCLY
+凤凰资讯,http://bili-pull.cloudvdn.com/live/ae08aa133d01f824c603ac8963e5801e.flv$XCLY
+凤凰电影,http://bili-pull.cloudvdn.com/live/240dce38b724ddfc984d96d74622e63b.flv$XCLY
+TVB生活台,http://bili-pull.cloudvdn.com/live/320d31d7c6a2248e82f85eb0c3ae0d16.flv$XCLY
+TVB星河,http://bili-pull.cloudvdn.com/live/03eed695630235c3becb60d4fae23393.flv$XCLY
+美亚电影台,http://bili-pull.cloudvdn.com/live/a5efa08045c1f5c8fcaa006532d0d10e.flv$XCLY
+
 镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
 
 东森新闻,http://pulltx-live.genshuixue.com/live/lgCsR0O7TNF4l1D1N8QZrDC8Uka25r-dsxw.flv$XCDS
