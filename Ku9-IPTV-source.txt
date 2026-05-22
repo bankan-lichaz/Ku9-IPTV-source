@@ -1070,6 +1070,20 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 发现之旅,http://107.150.60.122/live/fxzl.m3u8$堪萨斯城2
 老故事,http://107.150.60.122/live/lgs.m3u8$堪萨斯城2
 
+史记吕后,#genre#
+1.吕后出嫁,https://vodcnd11.oag7h.com/20250819/stPT79On/index.m3u8
+2.一桩疑案,https://vodcnd11.oag7h.com/20250819/pST7C6FG/index.m3u8
+3.初露峥嵘,https://vodcnd11.oag7h.com/20250819/JBU4L2hn/index.m3u8
+4.废立之争,https://vodcnd11.oag7h.com/20250819/gxhGEtkK/index.m3u8
+5.废立之祸,https://vodcnd11.oag7h.com/20250819/GRvpMSFf/index.m3u8
+6.女主称制,https://vodcnd11.oag7h.com/20250819/But8fIor/index.m3u8
+7.皇子命运,https://vodcnd11.oag7h.com/20250819/XDJvEKvy/index.m3u8
+8.大封诸吕,https://vodcnd11.oag7h.com/20250819/fo0Fioh3/index.m3u8
+9.和亲匈奴,https://vodcnd11.oag7h.com/20250819/vn6n1WOh/index.m3u8
+10.荡平诸吕,https://vodcnd11.oag7h.com/20250819/Xqgdvlrz/index.m3u8
+11.功过是非,https://vodcnd11.oag7h.com/20250819/ZemiPZiv/index.m3u8
+
+
 史记汉武,#genre#
 01 史家绝唱,https://vodcnd11.oag7h.com/20250829/2lDiBlVp/index.m3u8
 02 宫闱角逐,https://vodcnd11.oag7h.com/20250829/NTQyha3r/index.m3u8
