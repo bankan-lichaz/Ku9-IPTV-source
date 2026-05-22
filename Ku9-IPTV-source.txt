@@ -1355,14 +1355,23 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 民视新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/民視新聞.php?id=301$XCDS
 寰宇新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/寰宇新聞.php?id=301$XCDS
 寰宇新闻台湾,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/寰宇新聞台灣台.php?id=30$XCDS
-
-凤凰中文,http://bili-pull.cloudvdn.com/live/fhwszwtiVjdacIFnLKHUrRr.flv$XCDS
-凤凰资讯,http://bili-pull.cloudvdn.com/live/fhwszxtiVjdacIFnLKHUrRr.flv$XCDS
-凤凰香港,http://bili-pull.cloudvdn.com/live/fhwsxgtiVjdacIFnLKHUrRr.flv$XCDS
-TVB Plus,http://bili-pull.cloudvdn.com/live/TVBplusiVjdacIFnLKHUrRr.flv$XCDS
-TVB无线新闻台,http://bili-pull.cloudvdn.com/live/wxxwtiVjdacIFnLKHUrRr.flv$XCDS
-TVB翡翠台,http://bili-pull.cloudvdn.com/live/fcttiVjdacIFnLKHUrRr.flv$XCDS
-TVB明珠台,http://bili-pull.cloudvdn.com/live/mztiVjdacIFnLKHUrRr.flv$XCDS
+中天新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/中天新聞台.php?id=301$XCDS
+中视新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/中視新聞台.php?id=301$XCDS
+TVBS,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/TVBS.php?id=30$XCDS
+TVBS新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/TVBS新聞台.php?id=301$XCDS
+民视,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/民視.php?id=301$XCDS
+民视新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/民視新聞.php?id=301$XCDS
+华视,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/華視.php?id=301$XCDS
+华视新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/華視新聞台.php?id=301$XCDS
+台视,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/台視.php?id=301$XCDS
+台视新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/台視新聞台.php?id=301$XCDS
+凤凰中文,http://mg.hmysapp.cn:177/港澳台/香港港hk/凤凰卫视中文台.php?id=301$XCDS
+凤凰资讯,http://mg.hmysapp.cn:177/港澳台/香港港hk/凤凰卫视资讯台.php?id=301$XCDS
+凤凰香港,http://mg.hmysapp.cn:177/港澳台/香港港hk/凤凰卫视香港台.php?id=301$XCDS
+TVB Plus,http://mg.hmysapp.cn:177/港澳台/香港港hk/TVBplus.php?id=301$XCDS
+TVB无线新闻台,http://mg.hmysapp.cn:177/港澳台/香港港hk/无线新闻台.php?id=301$XCDS
+TVB翡翠台,http://mg.hmysapp.cn:177/港澳台/香港港hk/翡翠台.php?id=301$XCDS
+TVB明珠台,http://mg.hmysapp.cn:177/港澳台/香港港hk/明珠台.php?id=301$XCDS
 
 民视,rtmp://f13h.mine.nu/sat/tv051$台湾台中
 中视,rtmp://f13h.mine.nu/sat/tv091$台湾台中
