@@ -1070,7 +1070,7 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 发现之旅,http://107.150.60.122/live/fxzl.m3u8$堪萨斯城2
 老故事,http://107.150.60.122/live/lgs.m3u8$堪萨斯城2
 
-王立群读宋史,#genre#
+群读宋史,#genre#
 1.陈桥兵变,https://vodcnd11.oag7h.com/20250823/8zD6HIpZ/index.m3u8
 2.皇业肇基,https://vodcnd11.oag7h.com/20250823/2Nmm7BoU/index.m3u8
 3.关键先生,https://vodcnd11.oag7h.com/20250823/IBzXNIPI/index.m3u8
