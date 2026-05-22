@@ -1070,6 +1070,46 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 发现之旅,http://107.150.60.122/live/fxzl.m3u8$堪萨斯城2
 老故事,http://107.150.60.122/live/lgs.m3u8$堪萨斯城2
 
+群读汉武,#genre#
+01 史家绝唱,https://vodcnd11.oag7h.com/20250829/2lDiBlVp/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+02 宫闱角逐,https://vodcnd11.oag7h.com/20250829/NTQyha3r/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+03 立储风波,https://vodcnd11.oag7h.com/20250829/EAv8B8w1/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+04 储君之争,https://vodcnd11.oag7h.com/20250829/cPENpa4g/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+05 继位太子,https://vodcnd11.oag7h.com/20250829/QGGRjhTo/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+06 景帝清障,https://vodcnd11.oag7h.com/20250829/DfLyMW3A/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+07 平安太子,https://vodcnd11.oag7h.com/20250829/LpzD0Yt9/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+08 董生对策,https://vodcnd11.oag7h.com/20250829/0zEW3o9R/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+09 窦婴为相,https://vodcnd11.oag7h.com/20250829/3FKX1IMz/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+10 太后干政,https://vodcnd11.oag7h.com/20250829/OpBWvUy4/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+11 田窦交恶,https://vodcnd11.oag7h.com/20250829/cDIfZBQY/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+12 窦婴之死,https://vodcnd11.oag7h.com/20250829/eqatIFzh/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+13 汉匈交兵,https://vodcnd11.oag7h.com/20250829/JaWWhWPr/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+14 马邑之谋,https://vodcnd11.oag7h.com/20250829/5elzuTWG/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+15 阿娇失势,https://vodcnd11.oag7h.com/20250829/L7Vmipbo/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+16 初露锋芒,https://vodcnd11.oag7h.com/20250829/tfBDoCad/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+17 李广难封,https://vodcnd11.oag7h.com/20250829/0S0xrWwF/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+18 公孙丞相,https://vodcnd11.oag7h.com/20250829/wKX4KyrQ/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+19 煽风点火,https://vodcnd11.oag7h.com/20250829/SYKUuoqT/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+20 借刀杀人,https://vodcnd11.oag7h.com/20250829/zIKdOPBs/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+21 琴挑文君,https://vodcnd11.oag7h.com/20250829/X2APTM31/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+22 情变之谜,https://vodcnd11.oag7h.com/20250829/A2NPOMbV/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+23 以死杀人,https://vodcnd11.oag7h.com/20250829/lQ2ezPLG/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+24 童言无忌,https://vodcnd11.oag7h.com/20250829/HGQKKegk/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+25 淮南大案,https://vodcnd11.oag7h.com/20250829/2OvXcGcx/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+26 皇室恩怨,https://vodcnd11.oag7h.com/20250829/aOADmvPZ/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+27 一错再错,https://vodcnd11.oag7h.com/20250829/ZrnNxmie/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+28 另类奇才,https://vodcnd11.oag7h.com/20250829/3sEZV2Ws/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+29 庐山真面,https://vodcnd11.oag7h.com/20250829/WZIbNUfP/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+30 一代将星,https://vodcnd11.oag7h.com/20250829/Ok0Ic627/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+31 万石之家,https://vodcnd11.oag7h.com/20250829/0xgPHw6n/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+32 宠信江充,https://vodcnd11.oag7h.com/20250829/vLlcfWvz/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+33 太子失宠,https://vodcnd11.oag7h.com/20250829/rZE1qUB7/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+34 巫蛊之祸,https://vodcnd11.oag7h.com/20250829/ELuDvFOL/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+35 临终托孤,https://vodcnd11.oag7h.com/20250829/P8exqtu4/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+36 千秋功过,https://vodcnd11.oag7h.com/20250829/Hl5Z7mWk/index.m3u8*qiao*qiaoji*okhttp/3.14.9
+
+
+
 八王之乱,#genre#
 1,https://play.xluuss.com/play/PdyODJ7a/index.m3u8
 2,https://play.xluuss.com/play/qaQq2ALa/index.m3u8
