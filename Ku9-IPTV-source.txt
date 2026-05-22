@@ -1070,6 +1070,14 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 发现之旅,http://107.150.60.122/live/fxzl.m3u8$堪萨斯城2
 老故事,http://107.150.60.122/live/lgs.m3u8$堪萨斯城2
 
+八王之乱,#genre#
+1,https://play.xluuss.com/play/PdyODJ7a/index.m3u8
+2,https://play.xluuss.com/play/qaQq2ALa/index.m3u8
+3,https://play.xluuss.com/play/9aA728Pd/index.m3u8
+4,https://play.xluuss.com/play/lejVkORe/index.m3u8
+5,https://play.xluuss.com/play/Xe0ymXva/index.m3u8
+6,https://play.xluuss.com/play/nelVmvrb/index.m3u8
+
 群读宋史,#genre#
 1.陈桥兵变,https://vodcnd11.oag7h.com/20250823/8zD6HIpZ/index.m3u8
 2.皇业肇基,https://vodcnd11.oag7h.com/20250823/2Nmm7BoU/index.m3u8
