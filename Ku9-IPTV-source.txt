@@ -33,25 +33,6 @@
 #大神象棋https://live.iill.top/douyu/1227260
 #大神象棋http://222.186.39.21:35466/douyu/1227260
 
-辽阳新闻综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lnlytv1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779416393&sign=2424cfaedac0ea56baab8c02afbd29c4&ev=20260214$XCDS
-辽阳社会生活,http://121.199.48.54/live1/lnbdy.m3u8?id=lnlytv2&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779416399&sign=7452ee1fe48b62186a0fc071f073ac46&ev=20260214$XCDS
-抚顺教育,http://198.204.233.138:82/live/lnty.m3u8?jsbt=1779414994&jsbk=47b8971ee5f7dc2bf685c6824d922e09&from=jsbtv2&app=com.jdiptv.tvhd&version=1.4.5&ev=20260214$XCDS
-营口新闻综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lnyktv1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415372&sign=1b194b490a9f3ad850c4d32ac8728cb0&ev=20260214$XCDS
-沈阳法库新闻综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lnsyfk1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415448&sign=1b44df43282772b15469304b83d0d062&ev=20260214$XCDS
-沈阳新民时政,http://121.199.48.54/live1/lnbdy.m3u8?id=lnsyxm1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415512&sign=b26b9d3efdce1a09eed075b0fcbad073&ev=20260214$XCDS
-葫芦岛兴城综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lnhldxc1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415550&sign=c761bd0e50d80338306e57e6da562554&ev=20260214$XCDS
-阜新彰武综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lnfxzw1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415583&sign=dd986bc025f2d52aad4e849138be28d9&ev=20260214$XCDS
-铁岭昌图综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lntlct1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415711&sign=f1420533c9ba8292b8dd2b89fe27dc08&ev=20260214$XCDS
-铁岭开原综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lntlky1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415770&sign=560a01bf7e7244815d5fec09972ea7a5&ev=20260214$XCDS
-大连金普新闻综合,http://121.199.48.54/live1/ady.m3u8?id=lndljp1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415815&sign=9293b60b30f695a228052fcba2f09512&ev=20260214$XCDS
-大连金普文化生活,http://121.199.48.54/live1/ady.m3u8?id=lndljp2&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415868&sign=2ce888634f9879d95380a02aced6559f&ev=20260214$XCDS
-大连瓦房店新闻综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lndlwfd1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415907&sign=61f3c28d7166691a9c97c46c71ef7601&ev=20260214$XCDS
-朝阳北票新闻综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lncybp1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415941&sign=1837304b8e987d712dbb23dc6fa471b6&ev=20260214$XCDS
-朝阳市朝阳县综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lncycy1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779415992&sign=bebd552c73ae79d9a4fb96e65c97c5fa&ev=20260214$XCDS
-丹东东港综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lndddg2&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779416051&sign=70beb6697ddff5dc0864c3d330ce99bb&ev=20260214$XCDS
-丹东宽甸综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lnddkd1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779416085&sign=d19c1a5c6775135681aa280774064151&ev=20260214$XCDS
-抚顺清原综合,http://121.199.48.54/live1/lnbdy.m3u8?id=lnfsqy1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779416114&sign=27a443cd53ce25d77c4df5224b7d7db2&ev=20260214$XCDS
-
 二姨频道,#genre#
 CCTV卫生健康,http://tonyk.56301232.xyz:3477/rtp/239.37.0.229:5540$长春南关福祉
 CCTV卫生健康,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=wsjk&auth=307f889625f24f54a3c29ae310bd3317$XCDS
