@@ -1350,15 +1350,9 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
 
 东森财经,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/東森財經新聞.php?id=301$XCDS
-中视新闻,http://mg.hmysapp.cn:177/港澳台/台4G湾/中視新聞台.php?id=301$XCDS
 东森新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/東森新聞.php?id=301$XCDS
-华视,http://mg.hmysapp.cn:177/港澳台/台4G湾/華視.php?id=301$XCDS
 华视新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/華視新聞台.php?id=301$XCDS
-台视,http://mg.hmysapp.cn:177/港澳台/台4G湾/台視.php?id=301$XCDS
 民视新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/民視新聞.php?id=301$XCDS
-TVBS,http://mg.hmysapp.cn:177/港澳台/台4G湾/TVBS.php?id=301$XCDS
-民视,http://mg.hmysapp.cn:177/港澳台/台4G湾/民視.php?id=301$XCDS
-TVBS新闻,http://mg.hmysapp.cn:177/港澳台/台4G湾/TVBS新聞台.php?id=301$XCDS
 寰宇新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/寰宇新聞.php?id=301$XCDS
 寰宇新闻台湾,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/寰宇新聞台灣台.php?id=30$XCDS
 
