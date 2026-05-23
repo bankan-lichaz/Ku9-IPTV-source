@@ -1070,6 +1070,17 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 发现之旅,http://107.150.60.122/live/fxzl.m3u8$堪萨斯城2
 老故事,http://107.150.60.122/live/lgs.m3u8$堪萨斯城2
 
+群读项羽,#genre#
+1.霸王出世,https://vodcnd11.oag7h.com/20250820/zgwhVQ3a/index.m3u8
+2.项羽入关,https://vodcnd11.oag7h.com/20250820/NHxbsIX1/index.m3u8
+3.鸿门宴,https://vodcnd11.oag7h.com/20250820/06URs4fS/index.m3u8
+4.西楚霸王,https://vodcnd11.oag7h.com/20250820/D2646qKt/index.m3u8
+5.生死决战,https://vodcnd11.oag7h.com/20250820/qXJ1wIv2/index.m3u8
+6.荥阳会战,https://vodcnd11.oag7h.com/20250820/P4dDaF0c/index.m3u8
+7.自毁长城,https://vodcnd11.oag7h.com/20250820/ko3YVN7O/index.m3u8
+8.霸王别姬,https://vodcnd11.oag7h.com/20250820/QgPcTslX/index.m3u8
+9.四面楚歌,https://vodcnd11.oag7h.com/20250820/k7KbPmQS/index.m3u8
+
 史记吕后,#genre#
 1.吕后出嫁,https://vodcnd11.oag7h.com/20250819/stPT79On/index.m3u8
 2.一桩疑案,https://vodcnd11.oag7h.com/20250819/pST7C6FG/index.m3u8
