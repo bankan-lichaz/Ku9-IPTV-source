@@ -1237,7 +1237,7 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 30. 高宗禅位,https://vip.dytt-live.com/20250603/8326_19e21d13/index.m3u8$dytt
 
 梅毅明史,#genre#
-216,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第216集/index.m3u8
+216,https://c1.rrcdnbf6.com/video/meiyishuozhongguoshimingshipian/第106集/index.m3u8
 1.艰难苦恨青少年,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第01集/index.m3u8
 2.佛门也有未了缘,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第02集/index.m3u8
 3.元朝顺帝成乱世,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第03集/index.m3u8
