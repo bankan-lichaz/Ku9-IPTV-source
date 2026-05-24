@@ -1237,7 +1237,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 30. 高宗禅位,https://vip.dytt-live.com/20250603/8326_19e21d13/index.m3u8$dytt
 
 梅毅明史,#genre#
-216,https://c1.rrcdnbf6.com/video/meiyishuozhongguoshimingshipian/第106集/index.m3u8
 1.艰难苦恨青少年,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第01集/index.m3u8
 2.佛门也有未了缘,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第02集/index.m3u8
 3.元朝顺帝成乱世,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第03集/index.m3u8
@@ -1333,16 +1332,17 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 93.阻抑言路乱杀人,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第93集/index.m3u8
 94.嫉妒吃错遭贬废,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第94集/index.m3u8
 95.拂逆帝意就是死,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第95集/index.m3u8
-96.立功不赏反烧杀,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第96集/index.m3u8
-97.严嵩和他的时代,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第97集/index.m3u8
-98.迎合嘉靖帝敬崇生父,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第98集/index.m3u8
-99.严嵩入登阁入相也多事,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第99集/index.m3u8
-100.严嵩秉政时期的贪横误国,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第100集/index.m3u8
-101.杀伐任意惹众怒,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第101集/index.m3u8
-102.田野乞讨的严相爷,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第102集/index.m3u8
-103.嘉靖年代的最后亮点,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第103集/index.m3u8
-104.盗据澳门的“佛郎机”,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第104集/index.m3u8
-105.气急败坏成巨盗,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第105集/index.m3u8
+96.立功不赏反烧杀,https://c1.rrcdnbf6.com/video/meiyishuozhongguoshimingshipian/第96集/index.m3u8
+97.严嵩和他的时代,https://c1.rrcdnbf6.com/video/meiyishuozhongguoshimingshipian/第97集/index.m3u8
+98.迎合嘉靖帝敬崇生父,https://c1.rrcdnbf6.com/video/meiyishuozhongguoshimingshipian/第98集/index.m3u8
+99.严嵩入登阁入相也多事,https://c1.rrcdnbf6.com/video/meiyishuozhongguoshimingshipian/第99集/index.m3u8
+100.严嵩秉政时期的贪横误国,https://c1.rrcdnbf6.com/video/meiyishuozhongguoshimingshipian/第100集/index.m3u8
+101.杀伐任意惹众怒,https://c1.rrcdnbf5.com/video/meiyishuozhongguoshimingshipian/第101集/index.m3u8
+102.田野乞讨的严相爷,https://c1.rrcdnbf6.com/video/meiyishuozhongguoshimingshipian/第102集/index.m3u8
+103.嘉靖年代的最后亮点,https://c1.rrcdnbf6.com/video/meiyishuozhongguoshimingshipian/第103集/index.m3u8
+104.盗据澳门的“佛郎机”,https://c1.rrcdnbf5.com/video/meiyishuozhongguoshimingshipian/第104集/index.m3u8
+105.气急败坏成巨盗,https://c1.rrcdnbf6.com/video/meiyishuozhongguoshimingshipian/第105集/index.m3u8
+
 
 北师附中,#genre#
 袁sir-1,https://vip1.lz-cdn6.com/20221126/32807_874f58ab/index.m3u8$ikanbot
