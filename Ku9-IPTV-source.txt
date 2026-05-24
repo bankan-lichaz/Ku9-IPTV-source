@@ -1133,6 +1133,60 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 35 临终托孤,https://vodcnd11.oag7h.com/20250829/P8exqtu4/index.m3u8
 36 千秋功过,https://vodcnd11.oag7h.com/20250829/Hl5Z7mWk/index.m3u8
 
+易品三国,#genre#
+1.魏武挥鞭-大江东去,https://vodcnd11.oag7h.com/20250724/QMzlvU7c/index.m3u8$百度
+2.魏武挥鞭-真假曹操,https://vodcnd11.oag7h.com/20250724/5cXF7ems/index.m3u8$百度
+3.魏武挥鞭-奸雄之谜,https://vodcnd11.oag7h.com/20250724/4jhL2l4p/index.m3u8$百度
+4.魏武挥鞭-能臣之路,https://vodcnd11.oag7h.com/20250724/voVLBMeg/index.m3u8$百度
+5.魏武挥鞭-何去何从,https://vodcnd11.oag7h.com/20250724/PChIGMMP/index.m3u8$百度
+6.魏武挥鞭-一错再错,https://vodcnd11.oag7h.com/20250724/cv0MRxCh/index.m3u8$百度
+7.魏武挥鞭-深谋远虑,https://vodcnd11.oag7h.com/20250724/vGVygHxj/index.m3u8$百度
+8.魏武挥鞭-鬼使神差,https://vodcnd11.oag7h.com/20250724/MWWnsYzx/index.m3u8$百度
+9.魏武挥鞭-一决雌雄,https://vodcnd11.oag7h.com/20250724/9VQtGOy9/index.m3u8$百度
+10.魏武挥鞭-胜败有凭,https://vodcnd11.oag7h.com/20250724/uOlz4A71/index.m3u8$百度
+11.魏武挥鞭-海纳百川,https://vodcnd11.oag7h.com/20250724/KqcERgcH/index.m3u8$百度
+12.魏武挥鞭-天下归心,https://vodcnd11.oag7h.com/20250724/c7MtivRw/index.m3u8$百度
+13.孙刘联盟-青梅煮酒,https://vodcnd11.oag7h.com/20250724/l0ePH0c8/index.m3u8$百度
+14.孙刘联盟-天生奇才,https://vodcnd11.oag7h.com/20250724/VLltP1bi/index.m3u8$百度
+15.孙刘联盟-慧眼所见,https://vodcnd11.oag7h.com/20250724/XQN5ko6V/index.m3u8$百度
+16.孙刘联盟-三顾茅庐,https://vodcnd11.oag7h.com/20250724/N5sMfuAE/index.m3u8$百度
+17.孙刘联盟-隆中对策,https://vodcnd11.oag7h.com/20250724/p65CRvAr/index.m3u8$百度
+18.孙刘联盟-江东基业,https://vodcnd11.oag7h.com/20250724/7D73vmVS/index.m3u8$百度
+19.孙刘联盟-必争之地,https://vodcnd11.oag7h.com/20250724/NccAKAql/index.m3u8$百度
+20.孙刘联盟-兵临城下,https://vodcnd11.oag7h.com/20250724/zcNw7Rrf/index.m3u8$百度
+21.孙刘联盟-临危受命,https://vodcnd11.oag7h.com/20250724/MAzBNhbj/index.m3u8$百度
+22.孙刘联盟-力挽狂澜,https://vodcnd11.oag7h.com/20250724/nOqULXd0/index.m3u8$百度
+23.孙刘联盟-中流砥柱,https://vodcnd11.oag7h.com/20250724/PAO2d1LO/index.m3u8$百度
+24.孙刘联盟-赤壁疑云,https://vodcnd11.oag7h.com/20250724/IptmpMaN/index.m3u8$百度
+25.三足鼎立-半途而废,https://vodcnd11.oag7h.com/20250724/9hvezSUT/index.m3u8$百度
+26.三足鼎立-得寸进尺,https://vodcnd11.oag7h.com/20250724/YR3GmJNB/index.m3u8$百度
+27.三足鼎立-进退失据,https://vodcnd11.oag7h.com/20250724/1edhTHHU/index.m3u8$百度
+28.三足鼎立-借刀杀人,https://vodcnd11.oag7h.com/20250724/T6G07l6j/index.m3u8$百度
+29.三足鼎立-命案真相,https://vodcnd11.oag7h.com/20250724/mxDcquam/index.m3u8$百度
+30.三足鼎立-夺嫡之争,https://vodcnd11.oag7h.com/20250724/k1R3OQ0c/index.m3u8$百度
+31.三足鼎立-趁虚而入,https://vodcnd11.oag7h.com/20250724/hHWKIrE5/index.m3u8$百度
+32.三足鼎立-蜜月阴谋,https://vodcnd11.oag7h.com/20250724/Ff3ZT7Hw/index.m3u8$百度
+33.三足鼎立-白衣渡江,https://vodcnd11.oag7h.com/20250724/O3msKCnF/index.m3u8$百度
+34.三足鼎立-败走麦城,https://vodcnd11.oag7h.com/20250724/eYRLmSBS/index.m3u8$百度
+35.三足鼎立-夷陵之战,https://vodcnd11.oag7h.com/20250724/ivkp3pgc/index.m3u8$百度
+36.三足鼎立-永安托孤,https://vodcnd11.oag7h.com/20250724/3aPFfZg5/index.m3u8$百度
+37.重归一统-非常君臣,https://vodcnd11.oag7h.com/20250724/DbJCwRZd/index.m3u8$百度
+38.重归一统-水火难容,https://vodcnd11.oag7h.com/20250724/OpK1hTPe/index.m3u8$百度
+39.重归一统-痛失臂膀,https://vodcnd11.oag7h.com/20250724/vmoYQI8Z/index.m3u8$百度
+40.重归一统-祸起萧墙,https://vodcnd11.oag7h.com/20250724/tQsH0JNc/index.m3u8$百度
+41.重归一统-以攻为守,https://vodcnd11.oag7h.com/20250724/MqsY3k0x/index.m3u8$百度
+42.重归一统-无力回天,https://vodcnd11.oag7h.com/20250724/gAfgxEj0/index.m3u8$百度
+43.重归一统-风云际会,https://vodcnd11.oag7h.com/20250724/fkhQ3kGC/index.m3u8$百度
+44.重归一统-坐断东南,https://vodcnd11.oag7h.com/20250724/4N7VH8ma/index.m3u8$百度
+45.重归一统-情天恨海,https://vodcnd11.oag7h.com/20250724/DBGAYWBc/index.m3u8$百度
+46.重归一统-冷暖人生,https://vodcnd11.oag7h.com/20250724/yZwq9gZk/index.m3u8$百度
+47.重归一统-逆流而上,https://vodcnd11.oag7h.com/20250724/7Xhx6EGf/index.m3u8$百度
+48.重归一统-殊途同归,https://vodcnd11.oag7h.com/20250724/JeuUiFd4/index.m3u8$百度
+49.历史回眸-天下大势,https://vodcnd11.oag7h.com/20250724/16GJswAC/index.m3u8$百度
+50.历史回眸-历史插曲,https://vodcnd11.oag7h.com/20250724/PAEDi2KT/index.m3u8$百度
+51.历史回眸-百年孤独,https://vodcnd11.oag7h.com/20250724/A8vywjFH/index.m3u8$百度
+52.历史回眸-千古风流,https://vodcnd11.oag7h.com/20250724/qyhIwuT7/index.m3u8$百度
+
 八王之乱,#genre#
 1,https://play.xluuss.com/play/PdyODJ7a/index.m3u8
 2,https://play.xluuss.com/play/qaQq2ALa/index.m3u8
@@ -1182,6 +1236,146 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 38.双面胶皇帝,https://vodcnd11.oag7h.com/20250823/Wy3VdX3d/index.m3u8
 39.千里送京娘,https://vodcnd11.oag7h.com/20250823/1jlz2GZy/index.m3u8
 40.任人评说,https://vodcnd11.oag7h.com/20250823/j2tj3I8b/index.m3u8
+
+两宋风云,#genre#
+1. 徽宗即位,https://vip.dytt-live.com/20250603/8297_a98a009d/index.m3u8$dytt
+2. 奸相辅政,https://vip.dytt-live.com/20250603/8298_f7b6bc88/index.m3u8$dytt
+3. 宦官掌兵,https://vip.dytt-live.com/20250603/8299_acef5cc0/index.m3u8$dytt
+4. 风流天子,https://vip.dytt-live.com/20250603/8300_9b40aee7/index.m3u8$dytt
+5. 靖康之耻,https://vip.dytt-live.com/20250603/8301_1e795968/index.m3u8$dytt
+6. 康王赵构,https://vip.dytt-live.com/20250603/8302_c1bb2ec7/index.m3u8$dytt
+7. 赵构继统,https://vip.dytt-live.com/20250603/8303_b0c2b4c9/index.m3u8$dytt
+8. 书生抗金,https://vip.dytt-live.com/20250603/8304_2f014b91/index.m3u8$dytt
+9. 逃跑皇帝,https://vip.dytt-live.com/20250603/8305_d7488039/index.m3u8$dytt
+10. 苗刘兵变,https://vip.dytt-live.com/20250603/8306_7fc9fd4c/index.m3u8$dytt
+11. 韩五破金,https://vip.dytt-live.com/20250603/8307_680f0fc3/index.m3u8$dytt
+12. 将帅失和,https://vip.dytt-live.com/20250603/8308_79e3eb7e/index.m3u8$dytt
+13. 吴玠守蜀,https://vip.dytt-live.com/20250603/8309_1aa7a877/index.m3u8$dytt
+14. 精忠岳飞,https://vip.dytt-live.com/20250603/8310_85ef8e89/index.m3u8$dytt
+15. 傀儡刘豫,https://vip.dytt-live.com/20250603/8311_1f5f6ad9/index.m3u8$dytt
+16. 伪齐灭亡,https://vip.dytt-live.com/20250603/8312_e046ede6/index.m3u8$dytt
+17. 中兴四将,https://vip.dytt-live.com/20250603/8313_bf2fe658/index.m3u8$dytt
+18. 君臣反目,https://vip.dytt-live.com/20250603/8314_7a951116/index.m3u8$dytt
+19. 淮西兵变,https://vip.dytt-live.com/20250603/8315_68881d22/index.m3u8$dytt
+20. 宋金谈判,https://vip.dytt-live.com/20250603/8316_cf011ff8/index.m3u8$dytt
+21. 战端再起,https://vip.dytt-live.com/20250603/8317_47a7f2c0/index.m3u8$dytt
+22. 顺昌大捷,https://vip.dytt-live.com/20250603/8318_3fe23034/index.m3u8$dytt
+23. 功亏一篑,https://vip.dytt-live.com/20250603/8319_3941c435/index.m3u8$dytt
+24. 死里逃生,https://vip.dytt-live.com/20250603/8320_690f44c8/index.m3u8$dytt
+25. 岳飞之死,https://vip.dytt-live.com/20250603/8321_d428d070/index.m3u8$dytt
+26. 宋金议和,https://vip.dytt-live.com/20250603/8322_71969a80/index.m3u8$dytt
+27. 奸相秦桧,https://vip.dytt-live.com/20250603/8323_d882050b/index.m3u8$dytt
+28. 金国易主,https://vip.dytt-live.com/20250603/8324_e5fc3b8d/index.m3u8$dytt
+29. 宋金再战,https://vip.dytt-live.com/20250603/8325_4be49c79/index.m3u8$dytt
+30. 高宗禅位,https://vip.dytt-live.com/20250603/8326_19e21d13/index.m3u8$dytt
+
+梅毅明史,#genre#
+1,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第01集/index.m3u8
+2,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第02集/index.m3u8
+3,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第03集/index.m3u8
+4,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第04集/index.m3u8
+5,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第05集/index.m3u8
+6,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第06集/index.m3u8
+7,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第07集/index.m3u8
+8,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第08集/index.m3u8
+9,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第09集/index.m3u8
+10,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第10集/index.m3u8
+11,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第11集/index.m3u8
+12,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第12集/index.m3u8
+13,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第13集/index.m3u8
+14,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第14集/index.m3u8
+15,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第15集/index.m3u8
+16,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第16集/index.m3u8
+17,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第17集/index.m3u8
+18,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第18集/index.m3u8
+19,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第19集/index.m3u8
+20,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第20集/index.m3u8
+21,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第21集/index.m3u8
+22,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第22集/index.m3u8
+23,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第23集/index.m3u8
+24,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第24集/index.m3u8
+25,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第25集/index.m3u8
+26,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第26集/index.m3u8
+27,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第27集/index.m3u8
+28,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第28集/index.m3u8
+29,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第29集/index.m3u8
+30,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第30集/index.m3u8
+31,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第31集/index.m3u8
+32,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第32集/index.m3u8
+33,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第33集/index.m3u8
+34,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第34集/index.m3u8
+35,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第35集/index.m3u8
+36,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第36集/index.m3u8
+37,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第37集/index.m3u8
+38,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第38集/index.m3u8
+39,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第39集/index.m3u8
+40,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第40集/index.m3u8
+41,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第41集/index.m3u8
+42,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第42集/index.m3u8
+43,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第43集/index.m3u8
+44,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第44集/index.m3u8
+45,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第45集/index.m3u8
+46,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第46集/index.m3u8
+47,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第47集/index.m3u8
+48,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第48集/index.m3u8
+49,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第49集/index.m3u8
+50,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第50集/index.m3u8
+51,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第51集/index.m3u8
+52,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第52集/index.m3u8
+53,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第53集/index.m3u8
+54,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第54集/index.m3u8
+55,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第55集/index.m3u8
+56,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第56集/index.m3u8
+57,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第57集/index.m3u8
+58,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第58集/index.m3u8
+59,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第59集/index.m3u8
+60,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第60集/index.m3u8
+61,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第61集/index.m3u8
+62,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第62集/index.m3u8
+63,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第63集/index.m3u8
+64,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第64集/index.m3u8
+65,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第65集/index.m3u8
+66,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第66集/index.m3u8
+67,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第67集/index.m3u8
+68,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第68集/index.m3u8
+69,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第69集/index.m3u8
+70,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第70集/index.m3u8
+71,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第71集/index.m3u8
+72,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第72集/index.m3u8
+73,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第73集/index.m3u8
+74,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第74集/index.m3u8
+75,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第75集/index.m3u8
+76,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第76集/index.m3u8
+77,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第77集/index.m3u8
+78,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第78集/index.m3u8
+79,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第79集/index.m3u8
+80,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第80集/index.m3u8
+81,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第81集/index.m3u8
+82,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第82集/index.m3u8
+83,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第83集/index.m3u8
+84,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第84集/index.m3u8
+85,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第85集/index.m3u8
+86,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第86集/index.m3u8
+87,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第87集/index.m3u8
+88,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第88集/index.m3u8
+89,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第89集/index.m3u8
+90,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第90集/index.m3u8
+91,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第91集/index.m3u8
+92,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第92集/index.m3u8
+93,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第93集/index.m3u8
+94,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第94集/index.m3u8
+95,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第95集/index.m3u8
+96,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第96集/index.m3u8
+97,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第97集/index.m3u8
+98,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第98集/index.m3u8
+99,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第99集/index.m3u8
+100,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第100集/index.m3u8
+101,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第101集/index.m3u8
+102,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第102集/index.m3u8
+103,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第103集/index.m3u8
+104,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第104集/index.m3u8
+105,https://p.bvvvvvvvvv1f.com/video/meiyishuozhongguoshimingshipian/第105集/index.m3u8
+
 
 北师附中,#genre#
 袁sir-1,https://vip1.lz-cdn6.com/20221126/32807_874f58ab/index.m3u8$ikanbot
@@ -1363,92 +1557,6 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 袁sir-177,https://vip1.lz-cdn6.com/20221126/32983_b0486e79/index.m3u8$ikanbot
 袁sir-178,https://vip1.lz-cdn6.com/20221126/32982_e969a25f/index.m3u8$ikanbot
 袁sir-179,https://vip1.lz-cdn6.com/20221126/32984_d7ac45d7/index.m3u8$ikanbot
-
-易品三国,#genre#
-1.魏武挥鞭-大江东去,https://vodcnd11.oag7h.com/20250724/QMzlvU7c/index.m3u8$百度
-2.魏武挥鞭-真假曹操,https://vodcnd11.oag7h.com/20250724/5cXF7ems/index.m3u8$百度
-3.魏武挥鞭-奸雄之谜,https://vodcnd11.oag7h.com/20250724/4jhL2l4p/index.m3u8$百度
-4.魏武挥鞭-能臣之路,https://vodcnd11.oag7h.com/20250724/voVLBMeg/index.m3u8$百度
-5.魏武挥鞭-何去何从,https://vodcnd11.oag7h.com/20250724/PChIGMMP/index.m3u8$百度
-6.魏武挥鞭-一错再错,https://vodcnd11.oag7h.com/20250724/cv0MRxCh/index.m3u8$百度
-7.魏武挥鞭-深谋远虑,https://vodcnd11.oag7h.com/20250724/vGVygHxj/index.m3u8$百度
-8.魏武挥鞭-鬼使神差,https://vodcnd11.oag7h.com/20250724/MWWnsYzx/index.m3u8$百度
-9.魏武挥鞭-一决雌雄,https://vodcnd11.oag7h.com/20250724/9VQtGOy9/index.m3u8$百度
-10.魏武挥鞭-胜败有凭,https://vodcnd11.oag7h.com/20250724/uOlz4A71/index.m3u8$百度
-11.魏武挥鞭-海纳百川,https://vodcnd11.oag7h.com/20250724/KqcERgcH/index.m3u8$百度
-12.魏武挥鞭-天下归心,https://vodcnd11.oag7h.com/20250724/c7MtivRw/index.m3u8$百度
-13.孙刘联盟-青梅煮酒,https://vodcnd11.oag7h.com/20250724/l0ePH0c8/index.m3u8$百度
-14.孙刘联盟-天生奇才,https://vodcnd11.oag7h.com/20250724/VLltP1bi/index.m3u8$百度
-15.孙刘联盟-慧眼所见,https://vodcnd11.oag7h.com/20250724/XQN5ko6V/index.m3u8$百度
-16.孙刘联盟-三顾茅庐,https://vodcnd11.oag7h.com/20250724/N5sMfuAE/index.m3u8$百度
-17.孙刘联盟-隆中对策,https://vodcnd11.oag7h.com/20250724/p65CRvAr/index.m3u8$百度
-18.孙刘联盟-江东基业,https://vodcnd11.oag7h.com/20250724/7D73vmVS/index.m3u8$百度
-19.孙刘联盟-必争之地,https://vodcnd11.oag7h.com/20250724/NccAKAql/index.m3u8$百度
-20.孙刘联盟-兵临城下,https://vodcnd11.oag7h.com/20250724/zcNw7Rrf/index.m3u8$百度
-21.孙刘联盟-临危受命,https://vodcnd11.oag7h.com/20250724/MAzBNhbj/index.m3u8$百度
-22.孙刘联盟-力挽狂澜,https://vodcnd11.oag7h.com/20250724/nOqULXd0/index.m3u8$百度
-23.孙刘联盟-中流砥柱,https://vodcnd11.oag7h.com/20250724/PAO2d1LO/index.m3u8$百度
-24.孙刘联盟-赤壁疑云,https://vodcnd11.oag7h.com/20250724/IptmpMaN/index.m3u8$百度
-25.三足鼎立-半途而废,https://vodcnd11.oag7h.com/20250724/9hvezSUT/index.m3u8$百度
-26.三足鼎立-得寸进尺,https://vodcnd11.oag7h.com/20250724/YR3GmJNB/index.m3u8$百度
-27.三足鼎立-进退失据,https://vodcnd11.oag7h.com/20250724/1edhTHHU/index.m3u8$百度
-28.三足鼎立-借刀杀人,https://vodcnd11.oag7h.com/20250724/T6G07l6j/index.m3u8$百度
-29.三足鼎立-命案真相,https://vodcnd11.oag7h.com/20250724/mxDcquam/index.m3u8$百度
-30.三足鼎立-夺嫡之争,https://vodcnd11.oag7h.com/20250724/k1R3OQ0c/index.m3u8$百度
-31.三足鼎立-趁虚而入,https://vodcnd11.oag7h.com/20250724/hHWKIrE5/index.m3u8$百度
-32.三足鼎立-蜜月阴谋,https://vodcnd11.oag7h.com/20250724/Ff3ZT7Hw/index.m3u8$百度
-33.三足鼎立-白衣渡江,https://vodcnd11.oag7h.com/20250724/O3msKCnF/index.m3u8$百度
-34.三足鼎立-败走麦城,https://vodcnd11.oag7h.com/20250724/eYRLmSBS/index.m3u8$百度
-35.三足鼎立-夷陵之战,https://vodcnd11.oag7h.com/20250724/ivkp3pgc/index.m3u8$百度
-36.三足鼎立-永安托孤,https://vodcnd11.oag7h.com/20250724/3aPFfZg5/index.m3u8$百度
-37.重归一统-非常君臣,https://vodcnd11.oag7h.com/20250724/DbJCwRZd/index.m3u8$百度
-38.重归一统-水火难容,https://vodcnd11.oag7h.com/20250724/OpK1hTPe/index.m3u8$百度
-39.重归一统-痛失臂膀,https://vodcnd11.oag7h.com/20250724/vmoYQI8Z/index.m3u8$百度
-40.重归一统-祸起萧墙,https://vodcnd11.oag7h.com/20250724/tQsH0JNc/index.m3u8$百度
-41.重归一统-以攻为守,https://vodcnd11.oag7h.com/20250724/MqsY3k0x/index.m3u8$百度
-42.重归一统-无力回天,https://vodcnd11.oag7h.com/20250724/gAfgxEj0/index.m3u8$百度
-43.重归一统-风云际会,https://vodcnd11.oag7h.com/20250724/fkhQ3kGC/index.m3u8$百度
-44.重归一统-坐断东南,https://vodcnd11.oag7h.com/20250724/4N7VH8ma/index.m3u8$百度
-45.重归一统-情天恨海,https://vodcnd11.oag7h.com/20250724/DBGAYWBc/index.m3u8$百度
-46.重归一统-冷暖人生,https://vodcnd11.oag7h.com/20250724/yZwq9gZk/index.m3u8$百度
-47.重归一统-逆流而上,https://vodcnd11.oag7h.com/20250724/7Xhx6EGf/index.m3u8$百度
-48.重归一统-殊途同归,https://vodcnd11.oag7h.com/20250724/JeuUiFd4/index.m3u8$百度
-49.历史回眸-天下大势,https://vodcnd11.oag7h.com/20250724/16GJswAC/index.m3u8$百度
-50.历史回眸-历史插曲,https://vodcnd11.oag7h.com/20250724/PAEDi2KT/index.m3u8$百度
-51.历史回眸-百年孤独,https://vodcnd11.oag7h.com/20250724/A8vywjFH/index.m3u8$百度
-52.历史回眸-千古风流,https://vodcnd11.oag7h.com/20250724/qyhIwuT7/index.m3u8$百度
-
-两宋风云,#genre#
-1. 徽宗即位,https://vip.dytt-live.com/20250603/8297_a98a009d/index.m3u8$dytt
-2. 奸相辅政,https://vip.dytt-live.com/20250603/8298_f7b6bc88/index.m3u8$dytt
-3. 宦官掌兵,https://vip.dytt-live.com/20250603/8299_acef5cc0/index.m3u8$dytt
-4. 风流天子,https://vip.dytt-live.com/20250603/8300_9b40aee7/index.m3u8$dytt
-5. 靖康之耻,https://vip.dytt-live.com/20250603/8301_1e795968/index.m3u8$dytt
-6. 康王赵构,https://vip.dytt-live.com/20250603/8302_c1bb2ec7/index.m3u8$dytt
-7. 赵构继统,https://vip.dytt-live.com/20250603/8303_b0c2b4c9/index.m3u8$dytt
-8. 书生抗金,https://vip.dytt-live.com/20250603/8304_2f014b91/index.m3u8$dytt
-9. 逃跑皇帝,https://vip.dytt-live.com/20250603/8305_d7488039/index.m3u8$dytt
-10. 苗刘兵变,https://vip.dytt-live.com/20250603/8306_7fc9fd4c/index.m3u8$dytt
-11. 韩五破金,https://vip.dytt-live.com/20250603/8307_680f0fc3/index.m3u8$dytt
-12. 将帅失和,https://vip.dytt-live.com/20250603/8308_79e3eb7e/index.m3u8$dytt
-13. 吴玠守蜀,https://vip.dytt-live.com/20250603/8309_1aa7a877/index.m3u8$dytt
-14. 精忠岳飞,https://vip.dytt-live.com/20250603/8310_85ef8e89/index.m3u8$dytt
-15. 傀儡刘豫,https://vip.dytt-live.com/20250603/8311_1f5f6ad9/index.m3u8$dytt
-16. 伪齐灭亡,https://vip.dytt-live.com/20250603/8312_e046ede6/index.m3u8$dytt
-17. 中兴四将,https://vip.dytt-live.com/20250603/8313_bf2fe658/index.m3u8$dytt
-18. 君臣反目,https://vip.dytt-live.com/20250603/8314_7a951116/index.m3u8$dytt
-19. 淮西兵变,https://vip.dytt-live.com/20250603/8315_68881d22/index.m3u8$dytt
-20. 宋金谈判,https://vip.dytt-live.com/20250603/8316_cf011ff8/index.m3u8$dytt
-21. 战端再起,https://vip.dytt-live.com/20250603/8317_47a7f2c0/index.m3u8$dytt
-22. 顺昌大捷,https://vip.dytt-live.com/20250603/8318_3fe23034/index.m3u8$dytt
-23. 功亏一篑,https://vip.dytt-live.com/20250603/8319_3941c435/index.m3u8$dytt
-24. 死里逃生,https://vip.dytt-live.com/20250603/8320_690f44c8/index.m3u8$dytt
-25. 岳飞之死,https://vip.dytt-live.com/20250603/8321_d428d070/index.m3u8$dytt
-26. 宋金议和,https://vip.dytt-live.com/20250603/8322_71969a80/index.m3u8$dytt
-27. 奸相秦桧,https://vip.dytt-live.com/20250603/8323_d882050b/index.m3u8$dytt
-28. 金国易主,https://vip.dytt-live.com/20250603/8324_e5fc3b8d/index.m3u8$dytt
-29. 宋金再战,https://vip.dytt-live.com/20250603/8325_4be49c79/index.m3u8$dytt
-30. 高宗禅位,https://vip.dytt-live.com/20250603/8326_19e21d13/index.m3u8$dytt
 
 哈利波特,#genre#
 1.魔法石-国语,https://c1.rrcdnbf2.com/video/haliboteyumofashi/HD国语/index.m3u8
