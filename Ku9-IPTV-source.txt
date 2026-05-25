@@ -33,11 +33,6 @@
 #大神象棋https://live.iill.top/douyu/1227260
 #大神象棋http://222.186.39.21:35466/douyu/1227260
 
-新民,http://121.199.48.54/live1/lnbdy.m3u8?id=lnsyxm1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779678390&sign=8851f14109bb3e166fcc53d5441473c2&ev=20260214
-兴城,http://121.199.48.54/live1/lnbdy.m3u8?id=lnhldxc1&app=com.jdiptv.tvhd&version=1.4.5&mac=l1:1l:l1:1l:l1:1l&nwtime=1779678485&sign=113620002c05f7dff1dd8718bb40428b&ev=20260214
-
-
-
 二姨频道,#genre#
 CCTV卫生健康,http://tonyk.56301232.xyz:3477/rtp/239.37.0.229:5540$长春南关福祉
 CCTV卫生健康,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=wsjk&auth=307f889625f24f54a3c29ae310bd3317$XCDS
