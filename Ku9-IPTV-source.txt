@@ -1704,6 +1704,11 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 粤港澳台,#genre#
 镜新闻,https://d36dgdk71xuzzg.cloudfront.net/v1/manifest/3a2ac8e6b6c76471996ebf627393d9c9417a60b6/linetv-6-627778910172-MediaTailor-production/c9b2313d-efdd-4777-9fae-573be8a86755/0.m3u8
 
+年代新闻,p3p://focus169.org:25271/69086ad8000616a922d0822a6a6429cd%Q1
+闽壹新闻,p3p://focus169.org:25271/68b0691100058590cb0be6b71cba1cda%Q1
+东森新闻,p3p://focus169.org:25271/69453268000bccfe103ac2e212d83e91%Q1
+东森财经,p3p://focus169.org:25271/68ce7f8300076be94092dd9d3b315bc5%Q1
+
 东森财经,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/東森財經新聞.php?id=301$XCDS
 东森新闻,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/東森新聞.php?id=301$XCDS
 华视,http://mg.hmysapp.cn:177/港澳台/台湾湾4G/華視.php?id=301$XCDS
