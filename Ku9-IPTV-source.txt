@@ -178,7 +178,7 @@ CCTV卫生健康,http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub$洛
 朝阳教育,http://op.ayemovie.top:5555/rtp/232.0.0.244:9128$铁岭凡河op
 本溪综合,http://op.ayemovie.top:5555/rtp/232.0.0.157:9324$铁岭凡河op
 阜新综合,http://op.ayemovie.top:5555/rtp/232.0.0.246:9134$铁岭凡河op
-阜新中华特产,http://op.ayemovie.top:5555/rtp/232.0.0.247:9136$铁岭凡河op
+中华特产,http://op.ayemovie.top:5555/rtp/232.0.0.247:9136$铁岭凡河op
 阜新教育,http://op.ayemovie.top:5555/rtp/232.0.0.248:9138$铁岭凡河op
 辽阳新闻综合,http://op.ayemovie.top:5555/rtp/232.0.0.249:9140$铁岭凡河op
 辽阳社会生活,http://op.ayemovie.top:5555/rtp/232.0.0.250:9000$铁岭凡河op
