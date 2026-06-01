@@ -925,16 +925,6 @@ CCTV-5,http://yjj888.f3322.net:9901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=
 河南民生,http://yjj888.f3322.net:9901/tsfile/live/1043_1.m3u8?key=txiptv&playlive=1$DLSD
 河南公共,http://yjj888.f3322.net:9901/tsfile/live/1044_1.m3u8?key=txiptv&playlive=1$DLSD
 
-CCTV1,http://63.141.224.162:82/live/cctv1md.m3u8$ZBLT
-CCTV2,http://63.141.224.162:82/live/cctv2md.m3u8$ZBLT
-CCTV3,http://63.141.224.162:82/live/cctv3md.m3u8$ZBLT
-CCTV5,http://63.141.224.162:82/live/cctv5md.m3u8$ZBLT
-CCTV6,http://63.141.224.162:82/live/cctv6md.m3u8$ZBLT
-CCTV8,http://63.141.224.162:82/live/cctv8md.m3u8$ZBLT
-CCTV12,http://63.141.224.162:82/live/cctv12md.m3u8$ZBLT
-CCTV14,http://63.141.224.162:82/live/cctv14md.m3u8$ZBLT
-CCTV15,http://63.141.224.162:82/live/cctv15md.m3u8$ZBLT
-
 CCTV1,http://107.150.60.122/live/cctv1hd.m3u8$堪萨斯城2
 CCTV2,http://107.150.60.122/live/cctv2hd.m3u8$堪萨斯城2
 CCTV3,http://107.150.60.122/live/cctv3hd.m3u8$堪萨斯城2
