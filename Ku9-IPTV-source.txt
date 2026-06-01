@@ -1012,6 +1012,25 @@ CCTV12,http://63.141.224.162:82/live/cctv12md.m3u8$ZBLT
 CCTV14,http://63.141.224.162:82/live/cctv14md.m3u8$ZBLT
 CCTV15,http://63.141.224.162:82/live/cctv15md.m3u8$ZBLT
 
+CCTV1,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv1$KL32JD
+CCTV2,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv2$KL32JD
+CCTV3,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv3$KL32JD
+CCTV4,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv4$KL32JD
+CCTV5,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv5$KL32JD
+CCTV5+,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv5p$KL32JD
+CCTV6,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv6$KL32JD
+CCTV7,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv7$KL32JD
+CCTV8,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv8$KL32JD
+CCTV9,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv9$KL32JD
+CCTV10,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv10$KL32JD
+CCTV11,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv11$KL32JD
+CCTV12,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv12$KL32JD
+CCTV13,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv13$KL32JD
+CCTV14,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv14$KL32JD
+CCTV15,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv15$KL32JD
+CCTV16,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv16$KL32JD
+CCTV17,https://php.jdshipin.com:2096/TVOD/iptv.php?id=cctv17$KL32JD
+
 CCTV1,http://207.56.13.146:81/cdnlive/cctv1.m3u8$KL32
 CCTV2,http://207.56.13.146:81/cdnlive/cctv2.m3u8$KL32
 CCTV3,http://207.56.13.146:81/cdnlive/cctv3.m3u8$KL32
