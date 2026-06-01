@@ -234,7 +234,6 @@ CCTV14,http://yjj888.f3322.net:9901/tsfile/live/0014_1.m3u8?key=txiptv&playlive=
 CCTV15,http://yjj888.f3322.net:9901/tsfile/live/0015_1.m3u8?key=txiptv&playlive=1$DLSD
 CCTV17,http://yjj888.f3322.net:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=1$DLSD
 河南卫视,http://yjj888.f3322.net:9901/tsfile/live/0139_1.m3u8?key=txiptv&playlive=1$DLSD
-安阳科教频道,http://yjj888.f3322.net:9901/tsfile/live/1017_1.m3u8?key=txiptv&playlive=1$DLSD
 浙江卫视,http://yjj888.f3322.net:9901/tsfile/live/0124_1.m3u8?key=txiptv&playlive=1$DLSD
 东方卫视,http://yjj888.f3322.net:9901/tsfile/live/0107_1.m3u8?key=txiptv&playlive=1$DLSD
 江苏卫视,http://yjj888.f3322.net:9901/tsfile/live/0127_1.m3u8?key=txiptv&playlive=1$DLSD
