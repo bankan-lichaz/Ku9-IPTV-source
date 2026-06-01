@@ -55,6 +55,12 @@ CCTV卫生健康,http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub$洛
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/migu/kailu/lnwshd265/55/20200407/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q1
 辽宁卫视,http://hlsbkmgsplive.miguvideo.com/wd_r2/ocn/liaoningwshd/3000/01.m3u8?mtv_session=&HlsSubType=1&encrypt=$Q2
 
+辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds$堪萨斯城1
+辽宁影视剧,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys$堪萨斯城1
+辽宁体育休闲,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty$堪萨斯城1
+辽宁生活,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnsh$堪萨斯城1
+辽宁北方,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnbf$堪萨斯城1
+
 辽宁卫视,http://dassby.qqff.top:99/live/辽宁卫视高清/index.m3u8$FYLN
 辽宁都市,http://dassby.qqff.top:99/live/辽宁都市/index.m3u8$FYLN
 辽宁影视剧,http://dassby.qqff.top:99/live/辽宁影视剧/index.m3u8$FYLN
@@ -89,12 +95,6 @@ CCTV卫生健康,http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub$洛
 丹东生活,http://www.lihetl.com:9527/rtp/232.0.0.252:9164$FYLZ
 葫芦岛新闻综合,http://www.lihetl.com:9527/rtp/232.0.0.238:9260$FYLZ
 葫芦岛生活,http://www.lihetl.com:9527/rtp/232.0.0.239:9262$FYLZ
-
-辽宁都市,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnds$堪萨斯城1
-辽宁影视剧,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnys$堪萨斯城1
-辽宁体育休闲,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnty$堪萨斯城1
-辽宁生活,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnsh$堪萨斯城1
-辽宁北方,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnbf$堪萨斯城1
 
 大连新闻综合,https://livepull.dlrm.cn/dlrm/2e80d3a1-b700-48de-8186-5f704308709f.m3u8$XCDS
 大连生活,https://livepull.dlrm.cn/dlrm/e647ce9f-cb70-4ae4-ac95-40ed9bb27999.m3u8$XCDS
