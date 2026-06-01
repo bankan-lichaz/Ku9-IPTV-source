@@ -2155,6 +2155,22 @@ YTN2,https://ytn2live.ytn.co.kr/ytn2/_definst_/20211118_ytn2/medialist_917118855
 YTN사이언스,http://119.66.83.26:9981/stream/channelid/96?ticket=1E68B66EEA095F29CBD71D902C82DC87CFA1AEAC
 YTN사이언스,https://sciencelive.ytn.co.kr/science/_definst_/20211118_science/medialist_9171188557012390620_hls.m3u8
 
+GCN24 Korean (720p),http://liveko24-manminglobal3.ktcdn.co.kr/liveko24/gcnko_1300k.stream/playlist.m3u8
+GoodTV (1080p),http://mobliestream.c3tv.com:1935/live/goodtv.sdp/playlist.m3u8
+Gugbang TV (1080p) [Not 24/7],http://mediaworks.dema.mil.kr:1935/live_edge/cudo.sdp/playlist.m3u8
+MBC Chuncheon (춘천 MBC) (480p) [Not 24/7],https://stream.chmbc.co.kr/TV/myStream/playlist.m3u8
+MBC Mokpo (목포 MBC) (720p) [Not 24/7],http://vod.mpmbc.co.kr:1935/live/encoder-tv/playlist.m3u8
+MBC Yeosu (여수 MBC)[Not 24/7],https://5c3639aa99149.streamlock.net/live_TV/tv/playlist.m3u8
+SBS JTV (406p) [Not 24/7],http://61.85.197.53:1935/jtv_live/myStream/playlist.m3u8
+tvchosun2,http://onair2.cdn.tvchosun.com/origin2/_definst_/tvchosun_s3/playlist.m3u8
+tvchosun,http://onair.cdn.tvchosun.com/origin1/_definst_/tvchosun_s1/playlist.m3u8
+EBS1,http://ebsonairios.ebs.co.kr/groundwavefamilypc/familypc1m/playlist.m3u8
+EBSe,http://ebsonairios.ebs.co.kr/plus3familypc/familypc1m/playlist.m3u8
+EBS1,http://ebsonairios.ebs.co.kr/ebsutablet500k/tablet500k/playlist.m3u8
+EBS2,http://ebsonairios.ebs.co.kr/ebs2tablet500k/tablet500k/ebs2tablet500k.index.m3u8
+EBS1,http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/playlist.m3u8
+JTV,http://61.85.197.53:1935/jtv_live/myStream/chunklist_w1542137203.m3u8
+
 日本频道,#genre#
 NHK-G (Tokyo) HD,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd01
 NHK-G (Tokyo),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd01
@@ -2230,6 +2246,39 @@ Fishing Vision,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?ci
 CNNj,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs16
 BBC News Japan,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs15
 TBS News,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs11
+
+越南频道,#genre#
+VTV5_TN,https://liveh12.vtvprime.vn/hls/VTV5_TN/03.m3u8
+VTV5_TNB,https://liveh12.vtvprime.vn/hls/VTV5_TNB/01.m3u8
+HTV2,https://liveh12.vtvprime.vn/hls/HTV2/03.m3u8
+HTV3,https://liveh12.vtvprime.vn/hls/HTV3/03.m3u8
+HTVKey,https://liveh12.vtvprime.vn/hls/HTVKey/03.m3u8
+HTV7,https://liveh12.vtvprime.vn/hls/HTV7HD/03.m3u8
+HTVCCANHAC,https://liveh12.vtvprime.vn/hls/HTVCCANHAC/04.m3u8
+HTVCDLCS,https://liveh12.vtvprime.vn/hls/HTVCDLCS/03.m3u8
+SCTV1,https://liveh12.vtvprime.vn/hls/SCTV1/03.m3u8
+SCTV2,https://liveh12.vtvprime.vn/hls/SCTV2/03.m3u8
+SCTV4,https://liveh12.vtvprime.vn/hls/SCTV4/03.m3u8
+SCTV10,https://liveh34.vtvprime.vn/hls/SCTV10/01.m3u8
+SCTVPHIM,https://liveh12.vtvprime.vn/hls/SCTVPHIM/03.m3u8
+ANGIANGTV,https://liveh34.vtvprime.vn/hls/ANGIANGTV/03.m3u8
+HANOI1TV,https://liveh34.vtvprime.vn/hls/HANOI1TV/03.m3u8
+HAIDUONGTV,https://liveh34.vtvprime.vn/hls/HAIDUONGTV/03.m3u8
+BACGIANGTV,https://liveh34.vtvprime.vn/hls/BACGIANGTV/03.m3u8
+DONGTHAPTV,https://liveh34.vtvprime.vn/hls/DONGTHAPTV/03.m3u8
+KHANHHOATV,https://liveh12.vtvprime.vn/hls/KHANHHOATV/03.m3u8
+QUANGNINHTV,https://liveh12.vtvprime.vn/hls/QUANGNINHTV/03.m3u8
+QUANGNINH3,https://liveh34.vtvprime.vn/hls/QUANGNINH3/03.m3u8
+THAINGUYENTV,https://liveh34.vtvprime.vn/hls/THAINGUYENTV/03.m3u8
+TAYNINHTV,https://liveh34.vtvprime.vn/hls/TAYNINHTV/03.m3u8
+HUE,https://liveh12.vtvprime.vn/hls/HUE/03.m3u8
+HUNGYENTV,https://liveh12.vtvprime.vn/hls/HUNGYENTV/03.m3u8
+HATINH,https://liveh34.vtvprime.vn/hls/HATINH/03.m3u8
+NINHBINHTV,https://liveh34.vtvprime.vn/hls/NINHBINHTV/03.m3u8
+NGHEANTV,https://liveh12.vtvprime.vn/hls/NGHEANTV/03.m3u8
+PHUTHOTV,https://liveh34.vtvprime.vn/hls/PHUTHOTV/03.m3u8
+DANANGTV,https://liveh12.vtvprime.vn/hls/DANANGTV/03.m3u8
+DANANG2,https://liveh34.vtvprime.vn/hls/DANANG2/04.m3u8
 
 欧洲频道,#genre#
 beIN Movies Action 2 HD TR,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/6134/index.m3u8
@@ -2387,6 +2436,16 @@ BBC Two HD UK,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QR
 BBC Alba UK,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/19179/index.m3u8
 BBC First HD UK,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/19181/index.m3u8
 BBC Scotland HD UK,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/19183/index.m3u8
+
+BBC One UK,http://fr3d0m.tebasya.work:8080/JVanmci423/dncSExXxmS/1155
+BBC Four UK,http://fr3d0m.tebasya.work:8080/JVanmci423/dncSExXxmS/1158
+ITV1 UK,http://fr3d0m.tebasya.work:8080/JVanmci423/dncSExXxmS/1173
+ITV2 UK,http://fr3d0m.tebasya.work:8080/JVanmci423/dncSExXxmS/1174
+ITV3 UK,http://fr3d0m.tebasya.work:8080/JVanmci423/dncSExXxmS/1176
+ITV4 UK,http://fr3d0m.tebasya.work:8080/JVanmci423/dncSExXxmS/1175
+Channel 4 UK,http://epicboss.live/bjune@teksavvy.com/5193594414/9442
+Channel 5 UK,http://epicboss.live/bjune@teksavvy.com/5193594414/9441
+E4 UK,http://epicboss.live/bjune@teksavvy.com/5193594414/9437
 
 德国频道,#genre#
 Sky Sport Mix HD DE,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/5039/index.m3u8
