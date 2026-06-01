@@ -39,7 +39,6 @@ CCTV卫生健康,http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub$洛
 
 
 辽宁频道,#genre#
-辽宁卫视,http://173.208.212.130:8181/1080p/lnws.m3u8$KL35
 辽宁卫视,http://115.191.33.31:19531/630291707$深圳阿里标清
 辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws$VPS旧金山1
 辽宁卫视,http://63.141.230.178:82/gslb/zbdq5.m3u8?id=lnwshd$堪萨斯城1
