@@ -44,6 +44,16 @@ CCTV卫生健康,http://107.150.60.122/live/wsjk.m3u8$堪萨斯城2
 
 
 辽宁频道,#genre#
+辽宁卫视,http://dassby.qqff.top:99/live/辽宁卫视高清/index.m3u8FYLN
+辽宁都市,http://dassby.qqff.top:99/live/辽宁都市/index.m3u8FYLN
+辽宁影视剧,http://dassby.qqff.top:99/live/辽宁影视剧/index.m3u8FYLN
+辽宁体育休闲,http://dassby.qqff.top:99/live/辽宁体育/index.m3u8FYLN
+辽宁教育青少,http://dassby.qqff.top:99/live/辽宁教育青少/index.m3u8FYLN
+辽宁北方,http://dassby.qqff.top:99/live/辽宁北方/index.m3u8FYLN
+辽宁生活,http://dassby.qqff.top:99/live/辽宁生活/index.m3u8FYLN
+辽宁经济,http://dassby.qqff.top:99/live/辽宁经济/index.m3u8FYLN
+辽宁公共,http://dassby.qqff.top:99/live/辽宁公共/index.m3u8FYLN
+
 辽宁卫视,http://173.208.212.130:8181/1080p/lnws.m3u8$KL35
 辽宁卫视,http://115.191.33.31:19531/630291707$深圳阿里标清
 辽宁卫视,http://cdn6.bkpcp.top/tl/tuiliu.php?id=lnws$VPS旧金山1
