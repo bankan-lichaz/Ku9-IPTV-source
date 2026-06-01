@@ -220,7 +220,8 @@ CCTV1,http://yjj888.f3322.net:9901/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1
 CCTV2,http://yjj888.f3322.net:9901/tsfile/live/0002_1.m3u8?key=txiptv&playlive=1$DLSD
 CCTV3,http://yjj888.f3322.net:9901/tsfile/live/0003_1.m3u8?key=txiptv&playlive=1$DLSD
 CCTV4,http://yjj888.f3322.net:9901/tsfile/live/0004_1.m3u8?key=txiptv&playlive=1$DLSD
-CCTV5,http://yjj888.f3322.net:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1$DLSD
+CCTV5,http://yjj888.f3322.net:9901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1$DLSD
+CCTV5+,http://yjj888.f3322.net:9901/tsfile/live/0005_1.m3u8?key=txiptv&playlive=1$DLSD
 CCTV6,http://yjj888.f3322.net:9901/tsfile/live/0006_1.m3u8?key=txiptv&playlive=1$DLSD
 CCTV7,http://yjj888.f3322.net:9901/tsfile/live/0007_1.m3u8?key=txiptv&playlive=1$DLSD
 CCTV8,http://yjj888.f3322.net:9901/tsfile/live/0008_1.m3u8?key=txiptv&playlive=1$DLSD
@@ -265,8 +266,6 @@ CCTV17,http://yjj888.f3322.net:9901/tsfile/live/0019_1.m3u8?key=txiptv&playlive=
 青海卫视,http://yjj888.f3322.net:9901/tsfile/live/0140_1.m3u8?key=txiptv&playlive=1$DLSD
 西藏卫视,http://yjj888.f3322.net:9901/tsfile/live/0111_1.m3u8?key=txiptv&playlive=1$DLSD
 新疆卫视,http://yjj888.f3322.net:9901/tsfile/live/0110_1.m3u8?key=txiptv&playlive=1$DLSD
-CCTV5,http://yjj888.f3322.net:9901/tsfile/live/1004_1.m3u8?key=txiptv&playlive=1$DLSD
-
 
 CCTV1,http://hunhhyd.sohu.blog:9999/tsfile/live/0001_1.m3u8?key=txiptv&playlive=1&authid=0$DLSDHuN
 CCTV2,http://hunhhyd.sohu.blog:9999/tsfile/live/1002_1.m3u8?key=txiptv&playlive=1&authid=0$DLSDHuN
