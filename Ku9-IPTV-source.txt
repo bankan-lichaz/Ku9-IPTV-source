@@ -2383,7 +2383,7 @@ EBS1,http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/playlist.m3u8
 JTV,http://61.85.197.53:1935/jtv_live/myStream/chunklist_w1542137203.m3u8
 
 日本频道,#genre#
-//Tokyo#genre#
+Tokyogenre
 NHK G,https://akariko.netgenx.site/stream/jp/nhk_g/stream-output.m3u8?mode=hls
 NHK E,https://akariko.netgenx.site/stream/jp/nhk_e/stream-output.m3u8?mode=hls
 NTV,https://akariko.netgenx.site/stream/jp/ntv/stream-output.m3u8?mode=hls
@@ -2409,7 +2409,7 @@ Fuji TV (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3
 TV Asahi (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd06&isp=1-15
 TV Tokyo (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd07&isp=1-15
 Tokyo MX1 (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gd08&isp=1-15
-//BS#genre#
+BSgenre
 NHK BS,https://akariko.netgenx.site/stream/jp/nhk_bs/stream-output.m3u8?mode=hls
 BS NTV,https://akariko.netgenx.site/stream/jp/bs_ntv/stream-output.m3u8?mode=hls
 BS Asahi,https://akariko.netgenx.site/stream/jp/bs_asahi/stream-output.m3u8?mode=hls
@@ -2455,7 +2455,7 @@ Nihon Eiga Senmon (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/p
 Fishing Vision (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs25&isp=1-15
 Disney Channel (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs24&isp=1-15
 Jcom BS (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs31&isp=1-15
-//CS#genre#
+CSgenre
 Sky A,https://akariko.netgenx.site/stream/jp/sky_a/stream-output.m3u8?mode=hls
 GAORA,https://akariko.netgenx.site/stream/jp/gaora_sports/stream-output.m3u8?mode=hls
 AT-X,https://akariko.netgenx.site/stream/jp/at-x/stream-output.m3u8?mode=hls
