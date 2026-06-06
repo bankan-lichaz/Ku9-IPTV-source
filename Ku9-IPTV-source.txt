@@ -2578,6 +2578,7 @@ JSport 2 (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m
 Golf Network (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs03&isp=1-15
 Space Shower TV (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs26&isp=1-15
 Cartoon Network (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs25&isp=1-15
+NHK World-Japan HD [Geo-blocked],https://nhk.lls.pbs.org/index.m3u8
 
 越南频道,#genre#
 VTV5_TN,https://liveh12.vtvprime.vn/hls/VTV5_TN/03.m3u8
