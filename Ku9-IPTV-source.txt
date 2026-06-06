@@ -2552,32 +2552,6 @@ EBS1,http://ebsonairios.ebs.co.kr/groundwavetablet500k/tablet500k/playlist.m3u8
 JTV,http://61.85.197.53:1935/jtv_live/myStream/chunklist_w1542137203.m3u8
 
 日本频道,#genre#
-NHK G Osaka,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx06
-MBS,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx01
-ABC,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx02
-Kansai TV,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx03
-ytv,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx04
-TV Osaka,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx05
-SUN,http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=gx07
-NHK BS4K (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs01&isp=1-15
-JSport 4 (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs22&isp=1-15
-Disney Channel (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs24&isp=1-15
-Mnet,https://akariko.netgenx.site/stream/jp/mnet/stream-output.m3u8?mode=hls
-Eisei Gekijo (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs22&isp=1-15
-Tabi Channel (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs12&isp=1-15
-Sky A (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs01&isp=1-15
-TV Tokyo HD (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=hdgd07&isp=1-15
-BS NTV,https://akariko.netgenx.site/stream/jp/bs_ntv/stream-output.m3u8?mode=hls
-Disney Channel,https://akariko.netgenx.site/stream/jp/disney_channel/stream-output.m3u8?mode=hls
-BS TBS (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs04&isp=1-15
-BS TV Tokyo (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs05&isp=1-15
-BS Fuji (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs06&isp=1-15
-NHK BS4K (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs01&isp=1-15
-WOWOW Live (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs20&isp=1-15
-JSport 2 (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs19&isp=1-15
-Golf Network (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs03&isp=1-15
-Space Shower TV (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=bs26&isp=1-15
-Cartoon Network (Primehome),http://cdns.jp-primehome.com:8000/zhongying/live/playlist.m3u8?cid=cs25&isp=1-15
 NHK World-Japan HD [Geo-blocked],https://nhk.lls.pbs.org/index.m3u8
 
 越南频道,#genre#
