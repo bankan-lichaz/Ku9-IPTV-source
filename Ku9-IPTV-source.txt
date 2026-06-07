@@ -2554,39 +2554,6 @@ JTV,http://61.85.197.53:1935/jtv_live/myStream/chunklist_w1542137203.m3u8
 日本频道,#genre#
 NHK World-Japan HD [Geo-blocked],https://nhk.lls.pbs.org/index.m3u8
 
-越南频道,#genre#
-VTV5_TN,https://liveh12.vtvprime.vn/hls/VTV5_TN/03.m3u8
-VTV5_TNB,https://liveh12.vtvprime.vn/hls/VTV5_TNB/01.m3u8
-HTV2,https://liveh12.vtvprime.vn/hls/HTV2/03.m3u8
-HTV3,https://liveh12.vtvprime.vn/hls/HTV3/03.m3u8
-HTVKey,https://liveh12.vtvprime.vn/hls/HTVKey/03.m3u8
-HTV7,https://liveh12.vtvprime.vn/hls/HTV7HD/03.m3u8
-HTVCCANHAC,https://liveh12.vtvprime.vn/hls/HTVCCANHAC/04.m3u8
-HTVCDLCS,https://liveh12.vtvprime.vn/hls/HTVCDLCS/03.m3u8
-SCTV1,https://liveh12.vtvprime.vn/hls/SCTV1/03.m3u8
-SCTV2,https://liveh12.vtvprime.vn/hls/SCTV2/03.m3u8
-SCTV4,https://liveh12.vtvprime.vn/hls/SCTV4/03.m3u8
-SCTV10,https://liveh34.vtvprime.vn/hls/SCTV10/01.m3u8
-SCTVPHIM,https://liveh12.vtvprime.vn/hls/SCTVPHIM/03.m3u8
-ANGIANGTV,https://liveh34.vtvprime.vn/hls/ANGIANGTV/03.m3u8
-HANOI1TV,https://liveh34.vtvprime.vn/hls/HANOI1TV/03.m3u8
-HAIDUONGTV,https://liveh34.vtvprime.vn/hls/HAIDUONGTV/03.m3u8
-BACGIANGTV,https://liveh34.vtvprime.vn/hls/BACGIANGTV/03.m3u8
-DONGTHAPTV,https://liveh34.vtvprime.vn/hls/DONGTHAPTV/03.m3u8
-KHANHHOATV,https://liveh12.vtvprime.vn/hls/KHANHHOATV/03.m3u8
-QUANGNINHTV,https://liveh12.vtvprime.vn/hls/QUANGNINHTV/03.m3u8
-QUANGNINH3,https://liveh34.vtvprime.vn/hls/QUANGNINH3/03.m3u8
-THAINGUYENTV,https://liveh34.vtvprime.vn/hls/THAINGUYENTV/03.m3u8
-TAYNINHTV,https://liveh34.vtvprime.vn/hls/TAYNINHTV/03.m3u8
-HUE,https://liveh12.vtvprime.vn/hls/HUE/03.m3u8
-HUNGYENTV,https://liveh12.vtvprime.vn/hls/HUNGYENTV/03.m3u8
-HATINH,https://liveh34.vtvprime.vn/hls/HATINH/03.m3u8
-NINHBINHTV,https://liveh34.vtvprime.vn/hls/NINHBINHTV/03.m3u8
-NGHEANTV,https://liveh12.vtvprime.vn/hls/NGHEANTV/03.m3u8
-PHUTHOTV,https://liveh34.vtvprime.vn/hls/PHUTHOTV/03.m3u8
-DANANGTV,https://liveh12.vtvprime.vn/hls/DANANGTV/03.m3u8
-DANANG2,https://liveh34.vtvprime.vn/hls/DANANG2/04.m3u8
-
 欧洲频道,#genre#
 beIN Movies Action 2 HD TR,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/6134/index.m3u8
 BBC World News UK,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/545/index.m3u8
