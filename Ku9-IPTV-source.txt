@@ -2553,7 +2553,7 @@ JTV,http://61.85.197.53:1935/jtv_live/myStream/chunklist_w1542137203.m3u8
 日本频道,#genre#
 CGNTV,https://d2p4mrcwl6ly4.cloudfront.net/out/v1/8d50f69fdbbf411a8d302743e4263716/CGNWebLiveJP_4.m3u8
 Weather,https://rch01e-alive-hls.akamaized.net/38fb45b25cdb05a1/out/v1/4e907bfabc684a1dae10df8431a84d21/index_6_0.m3u8
-NHKWorld,https://media-tyo.hls.nhkworld.jp/hls/w/live/1/sig/adf91c708efb3b30eacf210931d7409748ff75677c7f7a0b3ba611626a456c3b/s1.m3u8
+NHKWorld,https://masterpl.hls.nhkworld.jp/hls/w/live/smarttv.m3u8
 Shop,https://stream3.shopch.jp/httporiginlivech1/ch1.stream_160p/chunklist.m3u8
 
 欧洲频道,#genre#
