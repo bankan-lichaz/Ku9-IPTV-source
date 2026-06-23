@@ -70,9 +70,6 @@ CCTV卫生健康,http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub$洛
 辽宁都市,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=lnds&auth=307f889625f24f54a3c29ae310bd3317$XCDS
 辽宁生活,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=lnsh&auth=307f889625f24f54a3c29ae310bd3317$XCDS
 辽宁体育休闲,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=lnty&auth=307f889625f24f54a3c29ae310bd3317$XCDS
-大连金普新闻,https://33684-live.hlsplay.aodianyun.com/tv_radio_33684/tv_channel_1066.m3u8?auth_key=1782267266-0-0-d113b3b786dda290789f5f084b98ace7$XCDS
-大连金普生活,https://33684-live.hlsplay.aodianyun.com/tv_radio_33684/tv_channel_2598.m3u8?auth_key=1782267912-0-0-70ed4935c092f85960915ae3e1e2a41a$XCDS
-
 
 沈阳新闻综合,http://116.2.162.41:4010/rtp/232.0.0.206:1234$和平太原街uni
 辽宁都市,http://116.2.162.41:4010/rtp/232.0.0.154:1234$和平太原街uni
