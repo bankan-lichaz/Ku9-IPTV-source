@@ -2535,7 +2535,7 @@ S,http://58.82.168.138:5002/bs26.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 スカイA,http://58.82.168.138:5002/cs01.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 0テレジータス,http://58.82.168.138:5002/cs02.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Golf Network,http://58.82.168.138:5002/cs03.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-日本映画専門チャンネル2,http://58.82.168.138:5002/cs04.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+日本映画専門チャンネル広告,http://58.82.168.138:5002/cs04.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 ホームドラム　チャンネル,http://58.82.168.138:5002/cs05.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Music Japan,http://58.82.168.138:5002/cs06.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Kids Station,http://58.82.168.138:5002/cs07.m3u8?token=guoziyun&gid=gx01&channel=zhongying
