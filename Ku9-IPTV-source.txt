@@ -2528,7 +2528,7 @@ Jsports2,http://58.82.168.138:5002/bs19.m3u8?token=guoziyun&gid=gx01&channel=zho
 WOWOWライフ,http://58.82.168.138:5002/bs20.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Jsports3,http://58.82.168.138:5002/bs21.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Jsports4,http://58.82.168.138:5002/bs22.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-日本映画専門Channel,http://58.82.168.138:5002/bs23.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+日本映画専門チャンネル,http://58.82.168.138:5002/bs23.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Disney Channel,http://58.82.168.138:5002/bs24.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 釣り,http://58.82.168.138:5002/bs25.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 S,http://58.82.168.138:5002/bs26.m3u8?token=guoziyun&gid=gx01&channel=zhongying
@@ -2544,7 +2544,7 @@ History,http://58.82.168.138:5002/cs09.m3u8?token=guoziyun&gid=gx01&channel=zhon
 National Geographic,http://58.82.168.138:5002/cs10.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 TBS News,http://58.82.168.138:5002/cs11.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 旅TABI Channel,http://58.82.168.138:5002/cs12.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-歌,http://58.82.168.138:5002/cs13.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+歌謠ポップス チャンネル,http://58.82.168.138:5002/cs13.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 mムービープラス,http://58.82.168.138:5002/cs14.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 BBC News,http://58.82.168.138:5002/cs15.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 CNN,http://58.82.168.138:5002/cs16.m3u8?token=guoziyun&gid=gx01&channel=zhongying
