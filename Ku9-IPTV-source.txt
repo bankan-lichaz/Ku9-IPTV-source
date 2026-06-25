@@ -2528,7 +2528,7 @@ Jsports2,http://58.82.168.138:5002/bs19.m3u8?token=guoziyun&gid=gx01&channel=zho
 WOWOWライフ,http://58.82.168.138:5002/bs20.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Jsports3,http://58.82.168.138:5002/bs21.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Jsports4,http://58.82.168.138:5002/bs22.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-BS23,http://58.82.168.138:5002/bs23.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+日本映画専門Channel,http://58.82.168.138:5002/bs23.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Disney Channel,http://58.82.168.138:5002/bs24.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 釣り,http://58.82.168.138:5002/bs25.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 S,http://58.82.168.138:5002/bs26.m3u8?token=guoziyun&gid=gx01&channel=zhongying
