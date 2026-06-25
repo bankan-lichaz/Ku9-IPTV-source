@@ -2505,7 +2505,7 @@ CGNTV,https://d2p4mrcwl6ly4.cloudfront.net/out/v1/8d50f69fdbbf411a8d302743e42637
 テレ東系,https://ssai-variants.streaks.jp/v5/tver-simul-tx/035622a82bcb46bc8e41ca5351f95a00/3887c96991ce4ae1bec43ea19f24c4d5/manifest/13df2e5de86b5ff0c5c3522d82e73a5fbf55aac1/pro-mt-177-8159/0f5f5883-a6c1-4cd1-a4c6-0f0a14c9e49b/0.m3u8?pdt=-11501&session=0f5f5883-a6c1-4cd1-a4c6-0f0a14c9e49b&vt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlZGdlIjoidHgtbGl2ZS1jZG4udHZlci5qcCIsIm9mZnNldCI6OSwicGR0IjoiLTExNTAxIn0.ENL1yqihdtixoLM2vqtt9oZ3caukXFFuLBwGeXXwUH0
 フジテレビ系,https://ssai-variants.streaks.jp/v5/tver-simul-cx/a78ebf1910144ba287907ec691bdc863/4817bf371f214463a3609e17a365f098/manifest/13df2e5de86b5ff0c5c3522d82e73a5fbf55aac1/pro-mt-178-7884/2d0e62ec-afcb-4689-a1f0-d17fb79b5562/0.m3u8?pdt=-6627&session=2d0e62ec-afcb-4689-a1f0-d17fb79b5562&vt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlZGdlIjoiY3gtbGl2ZS1jZG4udHZlci5qcCIsIm9mZnNldCI6OSwicGR0IjoiLTY2MjcifQ.rGchZoAv-VWLdrkowF0VYMb-geWaK_ZcFhYhXb5HolM
 GX01,http://58.82.168.138:5002/gx01.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-GX02,http://58.82.168.138:5002/gx02.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+ANN News,http://58.82.168.138:5002/gx02.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 GX03,http://58.82.168.138:5002/gx03.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 ytv,http://58.82.168.138:5002/gx04.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 7TVO,http://58.82.168.138:5002/gx05.m3u8?token=guoziyun&gid=gx01&channel=zhongying
@@ -2515,54 +2515,49 @@ NHK BSP4K,http://58.82.168.138:5002/bs01.m3u8?token=guoziyun&gid=gx01&channel=zh
 BS0テレ,http://58.82.168.138:5002/bs02.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 SHOP Channel,http://58.82.168.138:5002/bs03.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 BS-TBS,http://58.82.168.138:5002/bs04.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-BS05,http://58.82.168.138:5002/bs05.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+Shop Japan,http://58.82.168.138:5002/bs05.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 BSフジ,http://58.82.168.138:5002/bs06.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 WOWOWシネマ,http://58.82.168.138:5002/bs07.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 BS10 PREMIUM,http://58.82.168.138:5002/bs08.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-BS09,http://58.82.168.138:5002/bs09.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-BS10,http://58.82.168.138:5002/bs10.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 NHK BS,http://58.82.168.138:5002/bs11.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 WOWOWプライム,http://58.82.168.138:5002/bs12.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-BS13,http://58.82.168.138:5002/bs13.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Green Channel,http://58.82.168.138:5002/bs14.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 ANIMAX,http://58.82.168.138:5002/bs15.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-BS16,http://58.82.168.138:5002/bs16.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-BS17,http://58.82.168.138:5002/bs17.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Jsports1,http://58.82.168.138:5002/bs18.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Jsports2,http://58.82.168.138:5002/bs19.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 WOWOWライフ,http://58.82.168.138:5002/bs20.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Jsports3,http://58.82.168.138:5002/bs21.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Jsports4,http://58.82.168.138:5002/bs22.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 BS23,http://58.82.168.138:5002/bs23.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-BS24,http://58.82.168.138:5002/bs24.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-BS25,http://58.82.168.138:5002/bs25.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+Disney Channel,http://58.82.168.138:5002/bs24.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+釣り,http://58.82.168.138:5002/bs25.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 S,http://58.82.168.138:5002/bs26.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 スカイA,http://58.82.168.138:5002/cs01.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 0テレジータス,http://58.82.168.138:5002/cs02.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Golf Network,http://58.82.168.138:5002/cs03.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-CS04,http://58.82.168.138:5002/cs04.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+東映CS初,http://58.82.168.138:5002/cs04.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 ホームドラム　チャンネル,http://58.82.168.138:5002/cs05.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-CS06,http://58.82.168.138:5002/cs06.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+Music Japan,http://58.82.168.138:5002/cs06.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Kids Station,http://58.82.168.138:5002/cs07.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 Discovery,http://58.82.168.138:5002/cs08.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-CS09,http://58.82.168.138:5002/cs09.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+History,http://58.82.168.138:5002/cs09.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 National Geographic,http://58.82.168.138:5002/cs10.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 TBS News,http://58.82.168.138:5002/cs11.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-CS12,http://58.82.168.138:5002/cs12.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+旅TABI Channel,http://58.82.168.138:5002/cs12.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 歌,http://58.82.168.138:5002/cs13.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-CS14,http://58.82.168.138:5002/cs14.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-CS15,http://58.82.168.138:5002/cs15.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+mムービープラス,http://58.82.168.138:5002/cs14.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+BBC News,http://58.82.168.138:5002/cs15.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 CNN,http://58.82.168.138:5002/cs16.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 GAORA Sports,http://58.82.168.138:5002/cs17.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 MTV,http://58.82.168.138:5002/cs18.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 lala TV,http://58.82.168.138:5002/cs19.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 ファミリー劇場,http://58.82.168.138:5002/cs20.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-CS21,http://58.82.168.138:5002/cs21.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+MondoTV,http://58.82.168.138:5002/cs21.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 衛星劇場,http://58.82.168.138:5002/cs22.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-CS23,http://58.82.168.138:5002/cs23.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+DisneyJr.,http://58.82.168.138:5002/cs23.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 animal planet,http://58.82.168.138:5002/cs24.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 CN,http://58.82.168.138:5002/cs25.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-CS26,http://58.82.168.138:5002/cs26.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+フジテレビ,http://58.82.168.138:5002/cs26.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 
 欧洲频道,#genre#
 beIN Movies Action 2 HD TR,http://sewv654wfcsdwfi87fwvgbngh.siauliairsavlt.pw/iptv/SHQHNV72QRZFCT/6134/index.m3u8
