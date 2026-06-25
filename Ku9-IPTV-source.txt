@@ -34,7 +34,7 @@
 #大神象棋http://222.186.39.21:35466/douyu/1227260
 
 二姨频道,#genre#
-CCTV卫生健康,http://139.214.182.167:9901/tsfile/live/1036_1.m3u8?key=txiptv&playlive=1$FC1
+CCTV卫生健康,http://139.214.182.186:9901/tsfile/live/1036_1.m3u8?key=txiptv&playlive=1$FC1
 CCTV卫生健康,http://207.56.13.146:81/cdnlive/wsjk.m3u8$KL32
 CCTV卫生健康,http://192.151.150.154/live/wsjk.m3u8$KL33
 CCTV卫生健康,http://38.75.136.137:82/live1/jsbtv2.m3u8?id=wsjk&auth=307f889625f24f54a3c29ae310bd3317$XCDS
