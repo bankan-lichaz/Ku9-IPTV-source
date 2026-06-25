@@ -88,7 +88,12 @@ CCTV卫生健康,http://38.75.136.137:98/gslb/dsdqpub/wsjk.m3u8?auth=testpub$洛
 盘锦都市,http://itv.ghwxhouse.com:8089/rtp/232.0.0.183:1234$SJT
 抚顺综合,http://itv.ghwxhouse.com:8089/rtp/232.0.0.253:1234$SJT
 抚顺教育,http://itv.ghwxhouse.com:8089/rtp/232.0.0.254:1234$SJT
-大洼综合,http://itv.ghwxhouse.com:8089/rtp/232.0.0.146:1234$SJT
+大洼综合,http://itv.ghwxhouse.com:8089/rtp/232.0.0.152:1234$SJT
+大洼综合,http://itv.ghwxhouse.com:8089/rtp/232.0.0.145:1234$SJT
+大洼综合,http://itv.ghwxhouse.com:8089/rtp/232.0.0.158:1234$SJT
+大洼综合,http://itv.ghwxhouse.com:8089/rtp/232.0.0.163:1234$SJT
+大洼综合,http://itv.ghwxhouse.com:8089/rtp/232.0.0.166:1234$SJT
+
 
 沈阳新闻综合,http://116.2.173.150:4010/rtp/232.0.0.206:1234$和平太原街uni
 辽宁都市,http://116.2.173.150:4010/rtp/232.0.0.154:1234$和平太原街uni
