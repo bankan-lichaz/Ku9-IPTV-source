@@ -2515,7 +2515,7 @@ NHK BSP4K,http://58.82.168.138:5002/bs01.m3u8?token=guoziyun&gid=gx01&channel=zh
 BS0テレ,http://58.82.168.138:5002/bs02.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 ABS朝日,http://58.82.168.138:5002/bs03.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 BS-TBS,http://58.82.168.138:5002/bs04.m3u8?token=guoziyun&gid=gx01&channel=zhongying
-THE仕事人,http://58.82.168.138:5002/bs05.m3u8?token=guoziyun&gid=gx01&channel=zhongying
+BSテレ東,http://58.82.168.138:5002/bs05.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 BSフジ,http://58.82.168.138:5002/bs06.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 WOWOWシネマ,http://58.82.168.138:5002/bs07.m3u8?token=guoziyun&gid=gx01&channel=zhongying
 BS10 PREMIUM,http://58.82.168.138:5002/bs08.m3u8?token=guoziyun&gid=gx01&channel=zhongying
