@@ -2221,6 +2221,8 @@ iQIYI爱奇艺,https://o11.163189.xyz/stream/live/iqiyi/$旧金山01
 TVB千禧经典台,https://o11.163189.xyz/stream/live/tvbc/$旧金山01
 TVB翡翠台,https://o11.163189.xyz/stream/tvb/fct/$旧金山01
 TVB翡翠台,https://o11.163189.xyz/stream/live/jade/$旧金山01
+天映经典,https://o11.163189.xyz/stream/live/ccm/$旧金山01
+
 
 邵氏电影,http://38.75.136.137:98/gslb/dsdqpub/lbssdy.m3u8?auth=testpub$洛杉矶test
 邵氏武侠,http://38.75.136.137:98/gslb/dsdqpub/lbsswx.m3u8?auth=testpubb$洛杉矶test
