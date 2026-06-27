@@ -2245,7 +2245,7 @@ CHC家庭影院,http://38.75.136.137:98/gslb/dsdqpub/chcjt.m3u8?auth=testpub$洛
 
 国际频道,#genre#
 伊朗Iran International,https://dev-live.livetvstream.co.uk/LS-63503-4/chunklist_b1196000.m3u8
-朝鲜中央电视台,https://kctv.koryofront.org/stream/index.m3u8$famelack
+朝鲜KCTV,https://kctv.koryofront.org/stream/index.m3u8$famelack
 韩国Arirang TV,https://dash3.antik.sk/live/test_arirang/playlist.m3u8
 韩国Arirang TV,https://amdlive-ch01-ctnd-com.akamaized.net/arirang_1ch/smil:arirang_1ch.smil/chunklist_b3256000_sleng.m3u8
 韩国BTN,https://btn.nowcdn.co.kr/btn/btnlive2m/playlist.m3u8
