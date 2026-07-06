@@ -1,0 +1,26 @@
+name: Update fwc.m3u
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"   # 每 12 小时执行一次
+  workflow_dispatch:         # 允许手动执行
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Download fwc.m3u
+        run: |
+          curl -L http://82.156.243.185:33389/fwc.m3u -o fwc.m3u
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add fwc.m3u
+          git commit -m "Auto update fwc.m3u"
+          git push
