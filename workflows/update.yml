@@ -2,7 +2,7 @@ name: Update fwc.m3u
 
 on:
   schedule:
-    - cron: "0 */12 * * *"   # 每 12 小时执行一次
+    - cron: "0 */12 * * *"   # 每 12 小时执行一次 *意为：分钟：0；小时：每 12 小时；每天；每月；每周
   workflow_dispatch:         # 允许手动执行
 
 jobs:
