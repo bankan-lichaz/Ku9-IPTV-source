@@ -1,0 +1,10 @@
+CCTV-4欧洲,url1
+CCTV-4欧洲,url2
+CCTV4欧洲HD,url3
+CCTV-4欧洲,url4
+CCTV-4中文国际欧洲,url5
+CCTV4中文欧洲,url1
+CCTV4欧洲HD,url1
+cctv4欧洲HD,url1
+CCTV-4欧洲HD,url1
+cctv-4欧洲H,Durl1
