@@ -18,10 +18,12 @@ jobs:
           curl -L http://82.156.243.185:33389/fwc.m3u -o fwc.m3u
           curl -L http://izihao.cn:7123/ -o template.m3u
 
-      - name: Generate mg files
+      - name: Generate merged mg.m3u
         run: |
+          > mg.m3u   # 清空或创建文件
           for id in mg001 mg002 mg003 mg004; do
-            sed "s/izihao.cn:7123/$id/g" template.m3u > "$id.m3u"
+            sed "s/izihao.cn:7123/$id/g" template.m3u >> mg.m3u
+            echo "" >> mg.m3u   # 每段之间加一个空行（可选）
           done
 
       - name: Commit and push
