@@ -21,6 +21,7 @@ jobs:
           # 直接把模板转换成 mg000（不会保留原始内容）
           sed -i "s/izihao.cn:7123/mg000/g" template.m3u
           
+      - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
