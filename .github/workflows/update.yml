@@ -17,7 +17,11 @@ jobs:
         run: |
           curl -L http://82.156.243.185:33389/fwc.m3u -o fwc.m3u
           curl -L http://izihao.cn:7123/ -o template.m3u
-          sed -i "s/82.156.243.185:34567/fwc000/g" fwc.m3u
+
+          # ⭐ 自动替换所有 域名/IP + 可选端口 → fwc000
+          sed -i -E 's#([A-Za-z0-9.-]+\.[A-Za-z]{2,}|[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+)(:[0-9]+)?#fwc000#g' fwc.m3u
+
+          # ⭐ 模板替换成 mg000
           sed -i "s/izihao.cn:7123/mg000/g" template.m3u
 
       - name: Commit and push
