@@ -17,7 +17,7 @@ jobs:
         run: |
           curl -L http://82.156.243.185:33389/fwc.m3u -o fwc.m3u
           curl -L http://izihao.cn:7123/ -o template.m3u
-
+          sed -i "s/82.156.243.185:34567/fwc000/g" fwc.m3u
           sed -i "s/izihao.cn:7123/mg000/g" template.m3u
 
       - name: Commit and push
