@@ -16,6 +16,7 @@ jobs:
       - name: Download fwc.m3u
         run: |
           curl -L http://82.156.243.185:33389/fwc.m3u -o fwc.m3u
+          curl -L http://izihao.cn:7123/ -o mglist.m3u
 
       - name: Commit and push
         run: |
