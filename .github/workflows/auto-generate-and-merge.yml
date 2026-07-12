@@ -71,7 +71,7 @@ jobs:
 
           cd target_repo
 
-          declare -A province_map
+          rm -f ../tmp_merge.txt
 
           while IFS= read -r file; do
             province=$(echo "$file" | sed 's/组播_//; s/电信.txt//; s/联通.txt//; s/移动.txt//')
@@ -85,7 +85,7 @@ jobs:
           done < ../filtered.txt
 
           for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
-            echo "# $p" >> ../merged_province.txt
+            echo "${p}频道,#genre#" >> ../merged_province.txt
             grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url carrier; do
               echo "${url}\$${carrier}" >> ../merged_province.txt
             done
@@ -98,5 +98,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add table.txt merged_province.txt
-          git commit -m "Auto generate table.txt & merge IPTV by province"
+          git commit -m "Auto generate table.txt & merge IPTV by province (single genre format)"
           git push
