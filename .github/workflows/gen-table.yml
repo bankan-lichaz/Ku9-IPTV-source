@@ -1,8 +1,8 @@
-name: Generate table.txt from iptvz repo
+name: Generate table.txt (stable version)
 
 on:
   schedule:
-    - cron: "0 18 * * *"   # 每天北京时间 02:00 自动执行
+    - cron: "0 18 * * *"   # 每天北京时间 02:00
   workflow_dispatch:
 
 jobs:
@@ -13,34 +13,28 @@ jobs:
       - name: Checkout this repo
         uses: actions/checkout@v4
 
-      - name: Install jq
-        run: sudo apt-get update && sudo apt-get install -y jq
-
-      - name: Fetch file list from target repo
+      - name: Clone target repo
         run: |
-          echo "获取目标仓库文件列表..."
-          curl -s https://api.github.com/repos/q1017673817/iptvz/contents > repo.json
+          git clone https://github.com/q1017673817/iptvz target_repo
 
       - name: Generate table.txt
         run: |
           echo "生成 table.txt..."
-
           rm -f table.txt
           touch table.txt
 
-          jq -r '.[] | select(.name | endswith(".txt")) | .name' repo.json > files.txt
+          cd target_repo
 
-          while IFS= read -r file; do
+          # 遍历所有 txt 文件
+          for file in *.txt; do
             echo "处理 $file"
 
-            updated=$(curl -s \
-              "https://api.github.com/repos/q1017673817/iptvz/commits?path=$file&per_page=1" \
-              | jq -r '.[0].commit.author.date')
+            # 获取最后修改时间（秒）
+            ts=$(git log -1 --format=%ct -- "$file")
+            now=$(date +%s)
+            diff=$(( (now - ts) / 86400 ))
 
-            now=$(date -u +"%s")
-            file_time=$(date -u -d "$updated" +"%s")
-            diff=$(( (now - file_time) / 86400 ))
-
+            # 转换为人类可读格式
             if [ "$diff" -lt 1 ]; then
               human="yesterday"
             elif [ "$diff" -lt 2 ]; then
@@ -53,12 +47,12 @@ jobs:
               human="${diff} days ago"
             fi
 
-            echo "$file" >> table.txt
-            echo "更新组播源" >> table.txt
-            echo "$human" >> table.txt
-            echo "" >> table.txt
-
-          done < files.txt
+            # 写入 table.txt（3 行一组）
+            echo "$file" >> ../table.txt
+            echo "更新组播源" >> ../table.txt
+            echo "$human" >> ../table.txt
+            echo "" >> ../table.txt
+          done
 
       - name: Commit & Push
         run: |
@@ -66,5 +60,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add table.txt
-          git commit -m "Auto update table.txt from iptvz"
+          git commit -m "Auto update table.txt (stable version)"
           git push
