@@ -1,8 +1,8 @@
-name: Generate table.txt and Final IPTV Output
+name: Generate table.txt and Merge IPTV by Province
 
 on:
   schedule:
-    - cron: "0 18 * * *"
+    - cron: "0 18 * * *"   # 每天北京时间 02:00
   workflow_dispatch:
 
 jobs:
@@ -63,67 +63,32 @@ jobs:
             }
           ' table.txt > filtered.txt
 
-      - name: Merge IPTV (Worker-style final output)
+      - name: Merge IPTV by Province
         run: |
-          echo "生成最终 IPTV 输出..."
-          rm -f merged_province.txt tmp_merge.txt
+          echo "生成按省分类的 merged_province.txt..."
+          rm -f merged_province.txt
           touch merged_province.txt
 
           cd target_repo
 
+          rm -f ../tmp_merge.txt
+
           while IFS= read -r file; do
             province=$(echo "$file" | sed 's/组播_//; s/电信.txt//; s/联通.txt//; s/移动.txt//')
+            carrier=$(echo "$file" | sed 's/.*电信.*/电信/; s/.*联通.*/联通/; s/.*移动.*/移动/')
 
-            current_tag=""
-
-            while IFS= read -r raw; do
-              line=$(echo "$raw" | tr -d '\r' | sed 's/^[ \t]*//;s/[ \t]*$//')
-              [ -z "$line" ] && continue
-
-              # 去掉旧的 $运营商
-              if echo "$line" | grep -q "\$"; then
-                line=$(echo "$line" | cut -d'$' -f1)
-              fi
-
-              # 匹配标签行：必须包含 -组播号,#genre#
-              if echo "$line" | grep -q "\-组播[0-9]\+,#genre#"; then
-                current_tag=$(echo "$line" | sed 's/,#genre#//')
-                echo "${province}|${line}" >> ../tmp_merge.txt
-                continue
-              fi
-
-              # 匹配普通 genre 行（例如 北京频道,#genre#）
-              if echo "$line" | grep -q ",#genre#$"; then
-                echo "${province}|${line}" >> ../tmp_merge.txt
-                continue
-              fi
-
-              # 匹配频道名 + URL 行
-              if echo "$line" | grep -q ","; then
-                name=$(echo "$line" | cut -d',' -f1)
-                url=$(echo "$line" | cut -d',' -f2)
-
-                if echo "$url" | grep -q "^http"; then
-                  if [ -n "$current_tag" ]; then
-                    echo "${province}|${name},${url}\$${current_tag}" >> ../tmp_merge.txt
-                  else
-                    echo "${province}|${name},${url}" >> ../tmp_merge.txt
-                  fi
-                fi
-              fi
-
+            while IFS= read -r url; do
+              [ -z "$url" ] && continue
+              echo "$province|$url|$carrier" >> ../tmp_merge.txt
             done < "$file"
 
           done < ../filtered.txt
 
-          # 按省输出最终文件
           for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
             echo "${p}频道,#genre#" >> ../merged_province.txt
-
-            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov line; do
-              echo "$line" >> ../merged_province.txt
+            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url carrier; do
+              echo "${url}\$${carrier}" >> ../merged_province.txt
             done
-
             echo "" >> ../merged_province.txt
           done
 
@@ -133,5 +98,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add table.txt merged_province.txt
-          git commit -m "Auto generate final IPTV output (Worker-style)"
+          git commit -m "Auto generate table.txt & merge IPTV by province (single genre format)"
           git push
