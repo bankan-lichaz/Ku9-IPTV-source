@@ -2,7 +2,7 @@ name: Generate table.txt and Merge IPTV by Province
 
 on:
   schedule:
-    - cron: "0 18 * * *"   # 每天北京时间 02:00 自动运行
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 jobs:
@@ -17,12 +17,10 @@ jobs:
         run: |
           git clone https://github.com/q1017673817/iptvz target_repo
 
-      - name: Generate table.txt (only 组播 files)
+      - name: Generate table.txt
         run: |
-          echo "生成 table.txt..."
           rm -f table.txt
           touch table.txt
-
           cd target_repo
 
           for file in 组播*.txt; do
@@ -30,16 +28,11 @@ jobs:
             now=$(date +%s)
             diff=$(( (now - ts) / 86400 ))
 
-            if [ "$diff" -lt 1 ]; then
-              human="yesterday"
-            elif [ "$diff" -lt 2 ]; then
-              human="2 days ago"
-            elif [ "$diff" -lt 3 ]; then
-              human="3 days ago"
-            elif [ "$diff" -lt 4 ]; then
-              human="4 days ago"
-            else
-              human="${diff} days ago"
+            if [ "$diff" -lt 1 ]; then human="yesterday"
+            elif [ "$diff" -lt 2 ]; then human="2 days ago"
+            elif [ "$diff" -lt 3 ]; then human="3 days ago"
+            elif [ "$diff" -lt 4 ]; then human="4 days ago"
+            else human="${diff} days ago"
             fi
 
             echo "$file" >> ../table.txt
@@ -57,20 +50,16 @@ jobs:
             NR%4==1 {name=$0}
             NR%4==3 {
               time=$0
-              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4) {
+              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4)
                 print name
-              }
             }
           ' table.txt > filtered.txt
 
-      - name: Merge IPTV by Province (smart genre parsing)
+      - name: Merge IPTV by Province
         run: |
-          echo "生成按省分类的 merged_province.txt..."
-          rm -f merged_province.txt
+          rm -f merged_province.txt tmp_merge.txt
           touch merged_province.txt
-
           cd target_repo
-          rm -f ../tmp_merge.txt
 
           while IFS= read -r file; do
             current_tag=""
@@ -78,17 +67,14 @@ jobs:
 
             while IFS= read -r line; do
 
-              # 遇到 genre 行：提取标签
-              if echo "$line" | grep -q ",#genre#"; then
-                current_tag=$(echo "$line" | cut -d',' -f1)
-
-                # 提取省名（标签开头的中文部分）
+              # 匹配 genre 行（你的真实格式）
+              if echo "$line" | grep -q "#genre#"; then
+                current_tag=$(echo "$line" | sed 's/,#genre#//')
                 current_province=$(echo "$current_tag" | sed -E 's/(电信|联通|移动).*//')
-
                 continue
               fi
 
-              # 遇到 URL 行：写入临时文件
+              # 匹配 URL 行
               if echo "$line" | grep -q "^rtp://"; then
                 echo "$current_province|$line|$current_tag" >> ../tmp_merge.txt
               fi
@@ -97,7 +83,7 @@ jobs:
 
           done < ../filtered.txt
 
-          # 按省输出最终文件
+          # 输出按省分类
           for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
             echo "${p}频道,#genre#" >> ../merged_province.txt
 
@@ -114,5 +100,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add table.txt merged_province.txt
-          git commit -m "Auto generate table.txt & merge IPTV by province (smart genre parsing)"
+          git commit -m "Auto update merged_province.txt"
           git push
