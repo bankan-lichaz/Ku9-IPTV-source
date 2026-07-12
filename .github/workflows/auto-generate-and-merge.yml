@@ -1,3 +1,68 @@
+name: Generate table.txt and Merge IPTV by Province
+
+on:
+  schedule:
+    - cron: "0 18 * * *"   # 每天北京时间 02:00
+  workflow_dispatch:
+
+jobs:
+  auto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Clone target repo
+        run: |
+          git clone https://github.com/q1017673817/iptvz target_repo
+
+      - name: Generate table.txt (only 组播 files)
+        run: |
+          echo "生成 table.txt..."
+          rm -f table.txt
+          touch table.txt
+
+          cd target_repo
+
+          for file in 组播*.txt; do
+            ts=$(git log -1 --format=%ct -- "$file")
+            now=$(date +%s)
+            diff=$(( (now - ts) / 86400 ))
+
+            if [ "$diff" -lt 1 ]; then
+              human="yesterday"
+            elif [ "$diff" -lt 2 ]; then
+              human="2 days ago"
+            elif [ "$diff" -lt 3 ]; then
+              human="3 days ago"
+            elif [ "$diff" -lt 4 ]; then
+              human="4 days ago"
+            else
+              human="${diff} days ago"
+            fi
+
+            echo "$file" >> ../table.txt
+            echo "更新组播源" >> ../table.txt
+            echo "$human" >> ../table.txt
+            echo "" >> ../table.txt
+          done
+
+      - name: Filter files ≤4 days
+        run: |
+          rm -f filtered.txt
+          touch filtered.txt
+
+          awk '
+            NR%4==1 {name=$0}
+            NR%4==3 {
+              time=$0
+              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4) {
+                print name
+              }
+            }
+          ' table.txt > filtered.txt
+
       - name: Merge IPTV by Province
         run: |
           echo "生成按省分类的 merged_province.txt..."
@@ -9,12 +74,10 @@
           rm -f ../tmp_merge.txt
 
           while IFS= read -r file; do
-            # 去掉运营商字段，只保留省份
             province=$(echo "$file" | sed 's/组播_//; s/电信.txt//; s/联通.txt//; s/移动.txt//')
 
             while IFS= read -r url; do
               [ -z "$url" ] && continue
-              # 只写入省份 + URL，不再写入 carrier
               echo "$province|$url" >> ../tmp_merge.txt
             done < "$file"
 
@@ -22,8 +85,17 @@
 
           for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
             echo "${p}频道,#genre#" >> ../merged_province.txt
-            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url; do
+            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url carrier; do
               echo "${url}" >> ../merged_province.txt
             done
             echo "" >> ../merged_province.txt
           done
+
+      - name: Commit & Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add table.txt merged_province.txt
+          git commit -m "Auto generate table.txt & merge IPTV by province (single genre format)"
+          git push
