@@ -2,7 +2,7 @@ name: Generate table.txt and Merge IPTV by Province
 
 on:
   schedule:
-    - cron: "0 18 * * *"   # 每天北京时间 02:00
+    - cron: "0 18 * * *"   # 每天北京时间 02:00 自动运行
   workflow_dispatch:
 
 jobs:
@@ -63,35 +63,48 @@ jobs:
             }
           ' table.txt > filtered.txt
 
-      - name: Merge IPTV by Province
+      - name: Merge IPTV by Province (smart genre parsing)
         run: |
           echo "生成按省分类的 merged_province.txt..."
           rm -f merged_province.txt
           touch merged_province.txt
 
           cd target_repo
-
           rm -f ../tmp_merge.txt
 
           while IFS= read -r file; do
-            # 提取省名
-            province=$(echo "$file" | sed -E 's/组播_//; s/(电信|联通|移动).*//')
+            current_tag=""
+            current_province=""
 
-            # 提取完整标签：省名运营商-组播编号
-            tag=$(echo "$file" | sed -E 's/组播_//; s/.txt//')
+            while IFS= read -r line; do
 
-            while IFS= read -r url; do
-              [ -z "$url" ] && continue
-              echo "$province|$url|$tag" >> ../tmp_merge.txt
+              # 遇到 genre 行：提取标签
+              if echo "$line" | grep -q ",#genre#"; then
+                current_tag=$(echo "$line" | cut -d',' -f1)
+
+                # 提取省名（标签开头的中文部分）
+                current_province=$(echo "$current_tag" | sed -E 's/(电信|联通|移动).*//')
+
+                continue
+              fi
+
+              # 遇到 URL 行：写入临时文件
+              if echo "$line" | grep -q "^rtp://"; then
+                echo "$current_province|$line|$current_tag" >> ../tmp_merge.txt
+              fi
+
             done < "$file"
 
           done < ../filtered.txt
 
+          # 按省输出最终文件
           for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
             echo "${p}频道,#genre#" >> ../merged_province.txt
+
             grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url tag; do
               echo "${url}\$${tag}" >> ../merged_province.txt
             done
+
             echo "" >> ../merged_province.txt
           done
 
@@ -101,5 +114,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add table.txt merged_province.txt
-          git commit -m "Auto generate table.txt & merge IPTV by province (full tag version)"
+          git commit -m "Auto generate table.txt & merge IPTV by province (smart genre parsing)"
           git push
