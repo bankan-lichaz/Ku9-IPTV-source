@@ -105,9 +105,9 @@ jobs:
 
                 if echo "$url" | grep -q "^http"; then
                   if [ -n "$current_tag" ]; then
-                    echo "${name},${url}\$${current_tag}" >> ../tmp_merge.txt
+                    echo "${province}|${name},${url}\$${current_tag}" >> ../tmp_merge.txt
                   else
-                    echo "${name},${url}" >> ../tmp_merge.txt
+                    echo "${province}|${name},${url}" >> ../tmp_merge.txt
                   fi
                 fi
               fi
@@ -116,7 +116,16 @@ jobs:
 
           done < ../filtered.txt
 
-          mv ../tmp_merge.txt ../merged_province.txt
+          # 按省输出最终文件
+          for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
+            echo "${p}频道,#genre#" >> ../merged_province.txt
+
+            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov line; do
+              echo "$line" >> ../merged_province.txt
+            done
+
+            echo "" >> ../merged_province.txt
+          done
 
       - name: Commit & Push
         run: |
