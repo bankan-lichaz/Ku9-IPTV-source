@@ -88,13 +88,13 @@ jobs:
               # 匹配标签行：必须包含 -组播号,#genre#
               if echo "$line" | grep -q "\-组播[0-9]\+,#genre#"; then
                 current_tag=$(echo "$line" | sed 's/,#genre#//')
-                echo "$line" >> ../tmp_merge.txt
+                echo "${province}|${line}" >> ../tmp_merge.txt
                 continue
               fi
 
               # 匹配普通 genre 行（例如 北京频道,#genre#）
               if echo "$line" | grep -q ",#genre#$"; then
-                echo "$line" >> ../tmp_merge.txt
+                echo "${province}|${line}" >> ../tmp_merge.txt
                 continue
               fi
 
