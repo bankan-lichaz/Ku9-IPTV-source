@@ -1,0 +1,77 @@
+name: Generate table.txt from iptvz repo
+
+on:
+  schedule:
+    - cron: "0 18 * * *"   # 每天北京时间 02:00 自动执行
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Fetch file list from target repo
+        id: fetch
+        run: |
+          echo "获取目标仓库文件列表..."
+
+          curl -s \
+            https://api.github.com/repos/q1017673817/iptvz/contents \
+            > repo.json
+
+      - name: Generate table.txt
+        run: |
+          echo "生成 table.txt..."
+
+          rm -f table.txt
+          touch table.txt
+
+          jq -r '.[] | select(.name | endswith(".txt")) | .name' repo.json > files.txt
+
+          while IFS= read -r file; do
+            echo "处理 $file"
+
+            # 获取最后更新时间
+            updated=$(curl -s \
+              https://api.github.com/repos/q1017673817/iptvz/commits?path=$file\&per_page=1 \
+              | jq -r '.[0].commit.author.date')
+
+            # 转换为“几天前”
+            now=$(date -u +"%s")
+            file_time=$(date -u -d "$updated" +"%s")
+            diff=$(( (now - file_time) / 86400 ))
+
+            if [ "$diff" -lt 1 ]; then
+              human="yesterday"
+            elif [ "$diff" -lt 2 ]; then
+              human="2 days ago"
+            elif [ "$diff" -lt 3 ]; then
+              human="3 days ago"
+            elif [ "$diff" -lt 4 ]; then
+              human="4 days ago"
+            else
+              human="${diff} days ago"
+            fi
+
+            # 写入 table.txt（3 行一组）
+            echo "$file" >> table.txt
+            echo "更新组播源" >> table.txt
+            echo "$human" >> table.txt
+            echo "" >> table.txt
+
+          done < files.txt
+
+          echo "生成完成："
+          cat table.txt
+
+      - name: Commit & Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add table.txt
+          git commit -m "Auto update table.txt from iptvz"
+          git push
