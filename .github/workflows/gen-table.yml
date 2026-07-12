@@ -25,16 +25,14 @@ jobs:
 
           cd target_repo
 
-          # 遍历所有 txt 文件
-          for file in *.txt; do
+          # 只处理文件名中带“组播”的 txt 文件
+          for file in 组播*.txt; do
             echo "处理 $file"
 
-            # 获取最后修改时间（秒）
             ts=$(git log -1 --format=%ct -- "$file")
             now=$(date +%s)
             diff=$(( (now - ts) / 86400 ))
 
-            # 转换为人类可读格式
             if [ "$diff" -lt 1 ]; then
               human="yesterday"
             elif [ "$diff" -lt 2 ]; then
@@ -47,7 +45,6 @@ jobs:
               human="${diff} days ago"
             fi
 
-            # 写入 table.txt（3 行一组）
             echo "$file" >> ../table.txt
             echo "更新组播源" >> ../table.txt
             echo "$human" >> ../table.txt
@@ -60,5 +57,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add table.txt
-          git commit -m "Auto update table.txt (stable version)"
+          git commit -m "Auto update table.txt (only 组播 files)"
           git push
