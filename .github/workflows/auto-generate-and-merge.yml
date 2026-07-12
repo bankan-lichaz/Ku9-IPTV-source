@@ -57,9 +57,8 @@ jobs:
             NR%4==1 {name=$0}
             NR%4==3 {
               time=$0
-              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4) {
+              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4)
                 print name
-              }
             }
           ' table.txt > filtered.txt
 
