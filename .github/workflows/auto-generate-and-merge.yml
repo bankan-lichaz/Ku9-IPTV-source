@@ -55,7 +55,7 @@ jobs:
             }
           ' table.txt > filtered.txt
 
-      - name: Merge IPTV by Province
+      - name: Merge IPTV by Province (smart genre parsing)
         run: |
           rm -f merged_province.txt tmp_merge.txt
           touch merged_province.txt
@@ -67,10 +67,14 @@ jobs:
 
             while IFS= read -r line; do
 
-              # 匹配 genre 行（你的真实格式）
+              # 匹配 genre 行：例如 北京联通-组播1,#genre#
               if echo "$line" | grep -q "#genre#"; then
+                # 提取标签：北京联通-组播1
                 current_tag=$(echo "$line" | sed 's/,#genre#//')
+
+                # 提取省名：北京
                 current_province=$(echo "$current_tag" | sed -E 's/(电信|联通|移动).*//')
+
                 continue
               fi
 
@@ -83,7 +87,7 @@ jobs:
 
           done < ../filtered.txt
 
-          # 输出按省分类
+          # 按省输出最终文件
           for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
             echo "${p}频道,#genre#" >> ../merged_province.txt
 
