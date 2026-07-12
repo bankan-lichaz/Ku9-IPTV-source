@@ -85,11 +85,52 @@ jobs:
 
           for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
             echo "${p}频道,#genre#" >> ../merged_province.txt
-            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url carrier; do
+            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url; do
               echo "${url}" >> ../merged_province.txt
             done
             echo "" >> ../merged_province.txt
           done
+
+      - name: Post-process merged_province.txt (append group name & remove group headers)
+        run: |
+          echo "处理 merged_province.txt..."
+
+          tmp_out="merged_final.txt"
+          rm -f "$tmp_out"
+          touch "$tmp_out"
+
+          current_group=""
+
+          while IFS= read -r line; do
+
+            # 删除组播标题行，例如 “云南电信-组播1,#genre#”
+            if echo "$line" | grep -qE "组播[0-9]+,#genre#"; then
+              current_group=$(echo "$line" | sed 's/,#genre#//')
+              continue
+            fi
+
+            # 保留正常频道分类行，例如 “云南频道,#genre#”
+            if echo "$line" | grep -q "#genre#"; then
+              echo "$line" >> "$tmp_out"
+              continue
+            fi
+
+            # 空行保持
+            if [ -z "$line" ]; then
+              echo "" >> "$tmp_out"
+              continue
+            fi
+
+            # 普通频道行：追加 $组播名
+            if [ -n "$current_group" ]; then
+              echo "${line}\$${current_group}" >> "$tmp_out"
+            else
+              echo "$line" >> "$tmp_out"
+            fi
+
+          done < merged_province.txt
+
+          mv "$tmp_out" merged_province.txt
 
       - name: Commit & Push
         run: |
@@ -97,5 +138,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add table.txt merged_province.txt
-          git commit -m "Auto generate table.txt & merge IPTV by province (single genre format)"
+          git commit -m "Auto generate table.txt & merge IPTV by province (with group append)"
           git push
