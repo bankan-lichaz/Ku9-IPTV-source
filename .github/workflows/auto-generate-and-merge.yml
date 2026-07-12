@@ -1,0 +1,98 @@
+name: Generate table.txt and Merge IPTV (stable version)
+
+on:
+  schedule:
+    - cron: "0 18 * * *"   # 每天北京时间 02:00
+  workflow_dispatch:
+
+jobs:
+  auto:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout this repo
+        uses: actions/checkout@v4
+
+      - name: Clone target repo
+        run: |
+          git clone https://github.com/q1017673817/iptvz target_repo
+
+      - name: Generate table.txt (only 组播 files)
+        run: |
+          echo "生成 table.txt..."
+          rm -f table.txt
+          touch table.txt
+
+          cd target_repo
+
+          for file in 组播*.txt; do
+            echo "处理 $file"
+
+            ts=$(git log -1 --format=%ct -- "$file")
+            now=$(date +%s)
+            diff=$(( (now - ts) / 86400 ))
+
+            if [ "$diff" -lt 1 ]; then
+              human="yesterday"
+            elif [ "$diff" -lt 2 ]; then
+              human="2 days ago"
+            elif [ "$diff" -lt 3 ]; then
+              human="3 days ago"
+            elif [ "$diff" -lt 4 ]; then
+              human="4 days ago"
+            else
+              human="${diff} days ago"
+            fi
+
+            echo "$file" >> ../table.txt
+            echo "更新组播源" >> ../table.txt
+            echo "$human" >> ../table.txt
+            echo "" >> ../table.txt
+          done
+
+      - name: Filter files ≤4 days
+        run: |
+          echo "筛选更新时间 ≤4 天的文件..."
+          rm -f filtered.txt
+          touch filtered.txt
+
+          awk '
+            NR%4==1 {name=$0}
+            NR%4==3 {
+              time=$0
+              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4) {
+                print name
+              }
+            }
+          ' table.txt > filtered.txt
+
+          echo "筛选结果："
+          cat filtered.txt
+
+      - name: Merge IPTV files
+        run: |
+          echo "# IPTV 合并文件" > merged.txt
+          echo "# 更新时间 ≤ 4 天的源" >> merged.txt
+          echo "" >> merged.txt
+
+          cd target_repo
+
+          while IFS= read -r file; do
+            if [ -f "$file" ]; then
+              echo ">>> 合并 $file"
+              echo "# $file" >> ../merged.txt
+              cat "$file" >> ../merged.txt
+              echo "" >> ../merged.txt
+            else
+              echo "⚠ 找不到文件：$file"
+            fi
+          done < ../filtered.txt
+
+      - name: Commit & Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add table.txt merged.txt
+          git commit -m "Auto generate table.txt & merge IPTV (stable)"
+          git push
