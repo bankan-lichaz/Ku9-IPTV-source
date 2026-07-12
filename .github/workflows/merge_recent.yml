@@ -10,95 +10,80 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout main (for table.txt)
         uses: actions/checkout@v4
         with:
+          ref: main
+          path: main
+
+      - name: Checkout auto-output branch
+        uses: actions/checkout@v4
+        with:
+          ref: auto-output
+          path: work
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Read manual table from main root and download recent files
+      - name: Parse table.txt and download recent files
         run: |
-          mkdir -p remote/files
-          mkdir -p output
+          mkdir -p work/remote/files
+          mkdir -p work/output
 
-          table="table.txt"
+          table="main/table.txt"
 
-          # 逐行读取 table.txt
           awk '
-            NF==0 {next}
-            {print}
-          ' "$table" | while read line; do
+            {
+              if (NR % 3 == 1) filename=$0;
+              if (NR % 3 == 2) desc=$0;
+              if (NR % 3 == 0) {
+                time=$0;
 
-            # 文件名行
-            if [[ "$line" == 组播_* ]]; then
-              filename="$line"
-            fi
+                include=false;
 
-            # 更新时间行
-            if [[ "$line" == *"ago"* || "$line" == "yesterday" || "$line" == "last month" || "$line" == "last week" || "$line" == "last year" || "$line" == *"weeks ago"* || "$line" == *"months ago"* ]]; then
-              time="$line"
+                if (time ~ /hours ago/) include=true;
+                if (time == "yesterday") include=true;
+                if (time == "1 days ago") include=true;
+                if (time == "2 days ago") include=true;
+                if (time == "3 days ago") include=true;
 
-              include=false
+                if (time == "last month") include=false;
+                if (time == "last week") include=false;
+                if (time == "last year") include=false;
+                if (time ~ /weeks ago/) include=false;
+                if (time ~ /months ago/) include=false;
 
-              # 3 天内的情况
-              if [[ "$time" == *"hours ago"* ]]; then
-                include=true
-              elif [[ "$time" == "yesterday" ]]; then
-                include=true
-              elif [[ "$time" == "1 days ago" ]]; then
-                include=true
-              elif [[ "$time" == "2 days ago" ]]; then
-                include=true
-              elif [[ "$time" == "3 days ago" ]]; then
-                include=true
-              fi
-
-              # 超过 3 天的情况全部跳过
-              if [[ "$time" == "last month" ]]; then
-                include=false
-              elif [[ "$time" == "last week" ]]; then
-                include=false
-              elif [[ "$time" == "last year" ]]; then
-                include=false
-              elif [[ "$time" == *"weeks ago"* ]]; then
-                include=false
-              elif [[ "$time" == *"months ago"* ]]; then
-                include=false
-              fi
-
-              # 下载符合条件的文件
-              if [[ "$include" == true ]]; then
-                echo "包含: $filename ($time)"
-                curl -L "https://raw.githubusercontent.com/bankan-lichaz/Ku9-IPTV-source/main/$filename" \
-                  -o "remote/files/$filename"
-              else
-                echo "跳过: $filename ($time)"
-              fi
-            fi
-          done
+                if (include == true) {
+                  echo "包含: " filename " (" time ")";
+                  curl -L "https://raw.githubusercontent.com/q1017673817/iptvz/main/"$filename \
+                    -o "work/remote/files/$filename"
+                } else {
+                  echo "跳过: " filename " (" time ")";
+                }
+              }
+            }
+          ' "$table"
 
       - name: Merge selected files
         run: |
-          > output/recent.txt
+          > work/output/recent.txt
 
-          if ls remote/files/*.txt >/dev/null 2>&1; then
-            for f in remote/files/*.txt; do
-              echo "==== 来自文件: $(basename "$f") ====" >> output/recent.txt
-              cat "$f" >> output/recent.txt
-              echo "" >> output/recent.txt
+          if ls work/remote/files/*.txt >/dev/null 2>&1; then
+            for f in work/remote/files/*.txt; do
+              echo "==== 来自文件: $(basename "$f") ====" >> work/output/recent.txt
+              cat "$f" >> work/output/recent.txt
+              echo "" >> work/output/recent.txt
             done
           else
-            echo "根据 table.txt，没有符合条件的文件" >> output/recent.txt
+            echo "根据 table.txt，没有符合条件的文件" >> work/output/recent.txt
           fi
 
       - name: Push to auto-output branch
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          cd work
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-
-          git checkout -B auto-output
 
           git add output/recent.txt
 
@@ -106,6 +91,6 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update recent.txt based on manual table in main root"
+          git commit -m "Update recent.txt based on manual table"
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git
           git push -f origin auto-output
