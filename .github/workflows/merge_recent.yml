@@ -1,8 +1,8 @@
-name: Merge Remote Multicast TXT
+name: Merge Based on Manual Table in Main Root
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # 每 6 小时运行一次
+    - cron: "0 */6 * * *"
   workflow_dispatch:
 
 jobs:
@@ -10,40 +10,86 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout your repository
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: false
 
-      - name: Download target repo file list
+      - name: Read manual table from main root and download recent files
         run: |
-          mkdir remote
+          mkdir -p remote/files
+          mkdir -p output
 
-          # 下载目标仓库文件列表（API）
-          curl -L "https://api.github.com/repos/q1017673817/iptvz/contents" -o remote/list.json
+          table="table.txt"
 
-      - name: Download all txt files containing '组播'
-        run: |
-          mkdir remote/files
+          # 逐行读取 table.txt
+          awk '
+            NF==0 {next}
+            {print}
+          ' "$table" | while read line; do
 
-          # 解析 JSON，找出包含“组播”的 txt 文件
-          for url in $(jq -r '.[] | select(.name | contains("组播")) | select(.name | endswith(".txt")) | .download_url' remote/list.json); do
-            echo "Downloading: $url"
-            fname=$(basename "$url")
-            curl -L "$url" -o "remote/files/$fname"
+            # 文件名行
+            if [[ "$line" == 组播_* ]]; then
+              filename="$line"
+            fi
+
+            # 更新时间行
+            if [[ "$line" == *"ago"* || "$line" == "yesterday" || "$line" == "last month" || "$line" == "last week" || "$line" == "last year" || "$line" == *"weeks ago"* || "$line" == *"months ago"* ]]; then
+              time="$line"
+
+              include=false
+
+              # 3 天内的情况
+              if [[ "$time" == *"hours ago"* ]]; then
+                include=true
+              elif [[ "$time" == "yesterday" ]]; then
+                include=true
+              elif [[ "$time" == "1 days ago" ]]; then
+                include=true
+              elif [[ "$time" == "2 days ago" ]]; then
+                include=true
+              elif [[ "$time" == "3 days ago" ]]; then
+                include=true
+              fi
+
+              # 超过 3 天的情况全部跳过
+              if [[ "$time" == "last month" ]]; then
+                include=false
+              elif [[ "$time" == "last week" ]]; then
+                include=false
+              elif [[ "$time" == "last year" ]]; then
+                include=false
+              elif [[ "$time" == *"weeks ago"* ]]; then
+                include=false
+              elif [[ "$time" == *"months ago"* ]]; then
+                include=false
+              fi
+
+              # 下载符合条件的文件
+              if [[ "$include" == true ]]; then
+                echo "包含: $filename ($time)"
+                curl -L "https://raw.githubusercontent.com/bankan-lichaz/Ku9-IPTV-source/main/$filename" \
+                  -o "remote/files/$filename"
+              else
+                echo "跳过: $filename ($time)"
+              fi
+            fi
           done
 
-      - name: Merge downloaded files
+      - name: Merge selected files
         run: |
-          mkdir -p output
           > output/recent.txt
 
-          for f in remote/files/*.txt; do
-            echo "==== 来自文件: $f ====" >> output/recent.txt
-            cat "$f" >> output/recent.txt
-            echo "" >> output/recent.txt
-          done
+          if ls remote/files/*.txt >/dev/null 2>&1; then
+            for f in remote/files/*.txt; do
+              echo "==== 来自文件: $(basename "$f") ====" >> output/recent.txt
+              cat "$f" >> output/recent.txt
+              echo "" >> output/recent.txt
+            done
+          else
+            echo "根据 table.txt，没有符合条件的文件" >> output/recent.txt
+          fi
 
       - name: Push to auto-output branch
         env:
@@ -57,10 +103,9 @@ jobs:
           git add output/recent.txt
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
             exit 0
           fi
 
-          git commit -m "Update recent.txt from q1017673817/iptvz"
+          git commit -m "Update recent.txt based on manual table in main root"
           git remote set-url origin https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git
           git push -f origin auto-output
