@@ -1,0 +1,64 @@
+name: Auto Merge IPTV Files
+
+on:
+  schedule:
+    - cron: "0 18 * * *"   # 每天北京时间 02:00 执行（UTC 18:00）
+  workflow_dispatch:        # 手动触发
+
+jobs:
+  merge:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: Read table.txt and filter files
+        id: filter
+        run: |
+          echo "筛选更新时间 ≤ 4 天的文件..."
+
+          awk '
+            NR%3==1 {name=$0}
+            NR%3==0 {
+              time=$0
+              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4) {
+                print name
+              }
+            }
+          ' table.txt > filtered.txt
+
+          echo "结果如下："
+          cat filtered.txt
+
+      - name: Clone target repo
+        run: |
+          git clone https://github.com/q1017673817/iptvz target_repo
+
+      - name: Merge files
+        run: |
+          echo "# IPTV 合并文件" > merged.txt
+          echo "# 更新时间 ≤ 4 天的源" >> merged.txt
+          echo "" >> merged.txt
+
+          while IFS= read -r file; do
+            if [ -f "target_repo/$file" ]; then
+              echo ">>> 合并 $file"
+              echo "# $file" >> merged.txt
+              cat "target_repo/$file" >> merged.txt
+              echo "" >> merged.txt
+            else
+              echo "⚠ 找不到文件：$file"
+            fi
+          done < filtered.txt
+
+      - name: Commit & Push
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add merged.txt
+          git commit -m "Auto merge IPTV files (≤4 days)"
+          git push
