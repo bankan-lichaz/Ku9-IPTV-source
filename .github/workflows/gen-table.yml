@@ -13,14 +13,13 @@ jobs:
       - name: Checkout this repo
         uses: actions/checkout@v4
 
+      - name: Install jq
+        run: sudo apt-get update && sudo apt-get install -y jq
+
       - name: Fetch file list from target repo
-        id: fetch
         run: |
           echo "获取目标仓库文件列表..."
-
-          curl -s \
-            https://api.github.com/repos/q1017673817/iptvz/contents \
-            > repo.json
+          curl -s https://api.github.com/repos/q1017673817/iptvz/contents > repo.json
 
       - name: Generate table.txt
         run: |
@@ -34,12 +33,10 @@ jobs:
           while IFS= read -r file; do
             echo "处理 $file"
 
-            # 获取最后更新时间
             updated=$(curl -s \
-              https://api.github.com/repos/q1017673817/iptvz/commits?path=$file\&per_page=1 \
+              "https://api.github.com/repos/q1017673817/iptvz/commits?path=$file&per_page=1" \
               | jq -r '.[0].commit.author.date')
 
-            # 转换为“几天前”
             now=$(date -u +"%s")
             file_time=$(date -u -d "$updated" +"%s")
             diff=$(( (now - file_time) / 86400 ))
@@ -56,16 +53,12 @@ jobs:
               human="${diff} days ago"
             fi
 
-            # 写入 table.txt（3 行一组）
             echo "$file" >> table.txt
             echo "更新组播源" >> table.txt
             echo "$human" >> table.txt
             echo "" >> table.txt
 
           done < files.txt
-
-          echo "生成完成："
-          cat table.txt
 
       - name: Commit & Push
         run: |
