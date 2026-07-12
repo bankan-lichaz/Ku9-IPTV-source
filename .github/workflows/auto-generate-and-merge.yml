@@ -2,7 +2,7 @@ name: Generate table.txt and Merge IPTV by Province
 
 on:
   schedule:
-    - cron: "0 18 * * *"   # 每天北京时间 02:00
+    - cron: "0 18 * * *"
   workflow_dispatch:
 
 jobs:
@@ -74,21 +74,37 @@ jobs:
           rm -f ../tmp_merge.txt
 
           while IFS= read -r file; do
+            # 从文件名取省名
             province=$(echo "$file" | sed 's/组播_//; s/电信.txt//; s/联通.txt//; s/移动.txt//')
-            carrier=$(echo "$file" | sed 's/.*电信.*/电信/; s/.*联通.*/联通/; s/.*移动.*/移动/')
 
-            while IFS= read -r url; do
-              [ -z "$url" ] && continue
-              echo "$province|$url|$carrier" >> ../tmp_merge.txt
+            current_tag=""
+
+            while IFS= read -r line; do
+              [ -z "$line" ] && continue
+
+              # 匹配 genre 行：必须包含 -组播号
+              if echo "$line" | grep -q "\-组播[0-9]\+,#genre#"; then
+                current_tag=$(echo "$line" | sed 's/,#genre#//')
+                continue
+              fi
+
+              # 匹配 URL 行
+              if echo "$line" | grep -q "^rtp://"; then
+                echo "$province|$line|$current_tag" >> ../tmp_merge.txt
+              fi
+
             done < "$file"
 
           done < ../filtered.txt
 
+          # 按省输出最终文件
           for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
             echo "${p}频道,#genre#" >> ../merged_province.txt
-            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url carrier; do
-              echo "${url}\$${carrier}" >> ../merged_province.txt
+
+            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url tag; do
+              echo "${url}\$${tag}" >> ../merged_province.txt
             done
+
             echo "" >> ../merged_province.txt
           done
 
@@ -98,5 +114,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add table.txt merged_province.txt
-          git commit -m "Auto generate table.txt & merge IPTV by province (single genre format)"
+          git commit -m "Auto generate table.txt & merge IPTV by province (genre tag version)"
           git push
