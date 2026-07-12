@@ -9,19 +9,20 @@
           rm -f ../tmp_merge.txt
 
           while IFS= read -r file; do
+            # 去掉运营商字段，只保留省份
             province=$(echo "$file" | sed 's/组播_//; s/电信.txt//; s/联通.txt//; s/移动.txt//')
-            carrier=$(echo "$file" | sed 's/.*电信.*/电信/; s/.*联通.*/联通/; s/.*移动.*/移动/')
 
             while IFS= read -r url; do
               [ -z "$url" ] && continue
-              echo "$province|$url|$carrier" >> ../tmp_merge.txt
+              # 只写入省份 + URL，不再写入 carrier
+              echo "$province|$url" >> ../tmp_merge.txt
             done < "$file"
 
           done < ../filtered.txt
 
           for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
             echo "${p}频道,#genre#" >> ../merged_province.txt
-            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url carrier; do
+            grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url; do
               echo "${url}" >> ../merged_province.txt
             done
             echo "" >> ../merged_province.txt
