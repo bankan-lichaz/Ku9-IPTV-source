@@ -84,7 +84,7 @@ jobs:
           done < ../filtered.txt
 
           for p in $(cut -d '|' -f1 ../tmp_merge.txt | sort -u); do
-            echo "${p}频道,#genre#" >> ../merged_province.txt
+            echo "${p}组播,#genre#" >> ../merged_province.txt
             grep "^$p|" ../tmp_merge.txt | while IFS='|' read -r prov url; do
               echo "${url}" >> ../merged_province.txt
             done
