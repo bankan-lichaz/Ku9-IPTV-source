@@ -2,7 +2,7 @@ name: Generate table.txt and Merge IPTV by Province
 
 on:
   schedule:
-    - cron: "0 18 * * *"   # 每天北京时间 02:00
+    - cron: "0 0 * * *"   # 每天北京时间 08:00
   workflow_dispatch:
 
 jobs:
