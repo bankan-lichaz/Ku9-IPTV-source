@@ -142,7 +142,6 @@ jobs:
 
           declare -A source_keep
 
-          # 找出所有 CCTV-1综合 的行
           grep "^CCTV-1综合," "$input" > cctv1_list.txt || true
 
           if [ ! -s cctv1_list.txt ]; then
@@ -152,36 +151,39 @@ jobs:
             exit 0
           fi
 
-          # 找出所有源标识（$后面的部分）
           awk -F'\$' '{print $2}' cctv1_list.txt | sort -u > source_list.txt
 
           while read -r src; do
             echo "测试源：$src"
 
-            # 找到该源的第一条 CCTV-1综合 URL
             url=$(grep "\$${src}$" cctv1_list.txt | head -n 1 | cut -d',' -f2 | cut -d'$' -f1)
 
             echo "测速 URL: $url"
 
-            speed=$(curl -o /dev/null --max-time 5 --limit-rate 3M -w "%{speed_download}" "$url" 2>/dev/null || echo "0")
+            # ① 瞬时速度测试
+            speed1=$(curl -o /dev/null --max-time 5 --limit-rate 3M -w "%{speed_download}" "$url" 2>/dev/null || echo "0")
+            echo "瞬时速度：$speed1 bytes/s"
 
-            echo "测速结果：$speed bytes/s"
+            # ② 持续拉流测试（检测播几秒后是否掉速）
+            # 连续 5 秒速度低于 1MB/s 就判定为卡顿
+            curl --max-time 5 --speed-time 5 --speed-limit 1000000 -o /dev/null "$url"
+            sustain_status=$?   # 0=正常，28=卡顿或掉速
+
+            echo "持续拉流状态：$sustain_status"
 
             threshold=$((1024*1024))
 
-            if [ "${speed%.*}" -gt "$threshold" ]; then
-              echo "源 $src 速度合格 → 保留该源所有频道"
+            if [ "${speed1%.*}" -gt "$threshold" ] && [ "$sustain_status" -eq 0 ]; then
+              echo "源 $src 速度合格且持续稳定 → 保留该源所有频道"
               source_keep["$src"]=1
             else
-              echo "源 $src 速度不合格 → 删除该源所有频道"
+              echo "源 $src 不稳定或速度不足 → 删除该源所有频道"
               source_keep["$src"]=0
             fi
 
           done < source_list.txt
 
-          # 根据测速结果过滤整个文件
           while IFS= read -r line; do
-            # 如果没有 $，直接保留
             if ! echo "$line" | grep -q '\$'; then
               echo "$line" >> "$output"
               continue
