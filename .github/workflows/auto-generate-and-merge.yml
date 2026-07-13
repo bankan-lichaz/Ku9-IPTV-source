@@ -128,6 +128,9 @@ jobs:
 
           mv "$tmp_out" merged_province.txt
 
+      ###########################################################################
+      # ★★★ 新增步骤：测速并按源过滤 CCTV-1综合 ★★★
+      ###########################################################################
       - name: Speed test & filter CCTV-1综合 sources
         run: |
           echo "按源测速并过滤 CCTV-1综合..."
@@ -139,7 +142,14 @@ jobs:
 
           declare -A source_keep
 
-          grep "^CCTV-1综合," "$input" > cctv1_list.txt
+          grep "^CCTV-1综合," "$input" > cctv1_list.txt || true
+
+          if [ ! -s cctv1_list.txt ]; then
+            echo "没有找到 CCTV-1综合，跳过测速过滤步骤"
+            cp "$input" "$output"
+            mv "$output" merged_province.txt
+            exit 0
+          fi
 
           awk -F'\$' '{print $2}' cctv1_list.txt | sort -u > source_list.txt
 
@@ -150,7 +160,7 @@ jobs:
 
             echo "测速 URL: $url"
 
-            speed=$(curl -o /dev/null --max-time 5 --limit-rate 3M -w "%{speed_download}" "$url" 2>/dev/null)
+            speed=$(curl -o /dev/null --max-time 5 --limit-rate 3M -w "%{speed_download}" "$url" 2>/dev/null || echo "0")
 
             echo "测速结果：$speed bytes/s"
 
@@ -160,7 +170,7 @@ jobs:
               echo "源 $src 速度良好，保留"
               source_keep["$src"]=1
             else
-              echo "源 $src 速度不足，删除"
+              echo "源 $src 速度不足或测速失败，删除"
               source_keep["$src"]=0
             fi
 
@@ -187,5 +197,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add table.txt merged_province.txt
-          git commit -m "Auto generate table.txt & merge IPTV by province (with speed test filter)"
+          git commit -m "Auto generate table.txt & merge IPTV by province (with group append + speed test)"
           git push
