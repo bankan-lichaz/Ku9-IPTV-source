@@ -129,9 +129,9 @@ jobs:
           mv "$tmp_out" merged_province.txt
 
       ###########################################################################
-      # ★★★ 新增步骤：按 CCTV‑1综合 测速并删除同源所有频道 ★★★
+      # ★★★ 新增步骤：按 CCTV‑1综合 测速并删除同源所有频道（含播一会儿就卡的源） ★★★
       ###########################################################################
-      - name: Speed test & filter sources based on CCTV-1综合
+      - name: Speed test & filter unstable sources based on CCTV-1综合
         run: |
           echo "开始按 CCTV-1综合 测速并过滤源..."
 
@@ -142,6 +142,7 @@ jobs:
 
           declare -A source_keep
 
+          # 找出所有 CCTV-1综合 的行
           grep "^CCTV-1综合," "$input" > cctv1_list.txt || true
 
           if [ ! -s cctv1_list.txt ]; then
@@ -151,11 +152,13 @@ jobs:
             exit 0
           fi
 
+          # 找出所有源标识（$后面的部分）
           awk -F'\$' '{print $2}' cctv1_list.txt | sort -u > source_list.txt
 
           while read -r src; do
             echo "测试源：$src"
 
+            # 找到该源的第一条 CCTV-1综合 URL
             url=$(grep "\$${src}$" cctv1_list.txt | head -n 1 | cut -d',' -f2 | cut -d'$' -f1)
 
             echo "测速 URL: $url"
@@ -183,6 +186,7 @@ jobs:
 
           done < source_list.txt
 
+          # 根据测速结果过滤整个文件
           while IFS= read -r line; do
             if ! echo "$line" | grep -q '\$'; then
               echo "$line" >> "$output"
