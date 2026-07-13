@@ -129,11 +129,11 @@ jobs:
           mv "$tmp_out" merged_province.txt
 
       ###########################################################################
-      # ★★★ 新增步骤：测速并按源过滤 CCTV-1综合 ★★★
+      # ★★★ 新增步骤：按 CCTV‑1综合 测速并删除同源所有频道 ★★★
       ###########################################################################
-      - name: Speed test & filter CCTV-1综合 sources
+      - name: Speed test & filter sources based on CCTV-1综合
         run: |
-          echo "按源测速并过滤 CCTV-1综合..."
+          echo "开始按 CCTV-1综合 测速并过滤源..."
 
           input="merged_province.txt"
           output="merged_province_filtered.txt"
@@ -142,20 +142,23 @@ jobs:
 
           declare -A source_keep
 
+          # 找出所有 CCTV-1综合 的行
           grep "^CCTV-1综合," "$input" > cctv1_list.txt || true
 
           if [ ! -s cctv1_list.txt ]; then
-            echo "没有找到 CCTV-1综合，跳过测速过滤步骤"
+            echo "没有 CCTV-1综合，跳过测速"
             cp "$input" "$output"
             mv "$output" merged_province.txt
             exit 0
           fi
 
+          # 找出所有源标识（$后面的部分）
           awk -F'\$' '{print $2}' cctv1_list.txt | sort -u > source_list.txt
 
           while read -r src; do
             echo "测试源：$src"
 
+            # 找到该源的第一条 CCTV-1综合 URL
             url=$(grep "\$${src}$" cctv1_list.txt | head -n 1 | cut -d',' -f2 | cut -d'$' -f1)
 
             echo "测速 URL: $url"
@@ -167,22 +170,25 @@ jobs:
             threshold=$((1024*1024))
 
             if [ "${speed%.*}" -gt "$threshold" ]; then
-              echo "源 $src 速度良好，保留"
+              echo "源 $src 速度合格 → 保留该源所有频道"
               source_keep["$src"]=1
             else
-              echo "源 $src 速度不足或测速失败，删除"
+              echo "源 $src 速度不合格 → 删除该源所有频道"
               source_keep["$src"]=0
             fi
 
           done < source_list.txt
 
+          # 根据测速结果过滤整个文件
           while IFS= read -r line; do
-            if ! echo "$line" | grep -q "^CCTV-1综合,"; then
+            # 如果没有 $，直接保留
+            if ! echo "$line" | grep -q '\$'; then
               echo "$line" >> "$output"
               continue
             fi
 
             src=$(echo "$line" | awk -F'\$' '{print $2}')
+
             if [ "${source_keep[$src]}" = "1" ]; then
               echo "$line" >> "$output"
             fi
@@ -197,5 +203,5 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add table.txt merged_province.txt
-          git commit -m "Auto generate table.txt & merge IPTV by province (with group append + speed test)"
+          git commit -m "Auto generate table.txt & merge IPTV by province (with source speed filtering)"
           git push
