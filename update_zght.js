@@ -2,27 +2,28 @@ const fs = require("fs");
 const fetch = require("node-fetch");
 
 (async () => {
-  const url = "https://iptvs.pes.im";
+  const url = "https://iptvs.pes.im/";
 
   try {
     const json = await fetch(url).then(r => r.json());
 
-    // iptvs.pes.im 的真实数据结构是 storageData 数组
-    // 每个元素里有 resultCount，但真正的源在 json.sources
-    // 我们需要从 json.sources 提取 host:port
+    if (!json.results || !Array.isArray(json.results)) {
+      console.error("❌ JSON 中没有 results 字段，无法提取 IP:PORT");
+      process.exit(1);
+    }
 
-    const sources = json.sources || [];
-
-    const list = sources
-      .map(s => `${s.ip}:${s.port}`)
+    // 提取 host 字段（已经是 ip:port）
+    const list = json.results
+      .map(item => item.host)
       .filter(Boolean);
 
+    // 写入 ZGHT 文件
     fs.writeFileSync("ZGHT", list.join("\n"));
 
-    console.log("ZGHT updated, total:", list.length);
+    console.log("✅ ZGHT 更新成功，总计:", list.length, "条");
 
   } catch (e) {
-    console.error("Failed to update ZGHT:", e);
+    console.error("❌ 更新 ZGHT 失败:", e);
     process.exit(1);
   }
 })();
