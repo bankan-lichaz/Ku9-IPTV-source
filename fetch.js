@@ -7,17 +7,16 @@ const hosts = fs.readFileSync("ZGHT", "utf8")
   .map(s => s.trim())
   .filter(Boolean);
 
-// ⭐ 自定义 fetch 超时函数（3 秒）
+// ⭐ 真正可中断的 fetch（3 秒）
 function fetchWithTimeout(url, timeout = 3000) {
-  return Promise.race([
-    fetch(url),
-    new Promise((_, reject) =>
-      setTimeout(() => reject(new Error("timeout")), timeout)
-    )
-  ]);
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeout);
+
+  return fetch(url, { signal: controller.signal })
+    .finally(() => clearTimeout(id));
 }
 
-// ⭐ 频道映射表（与你 PHP 完全一致）
+// ⭐ 频道映射表（你的规则）
 const CHANNEL_MAP = [
   { reg: /兵器科技/i, norm: "CCTV兵器科技" },
   { reg: /风云音乐/i, norm: "CCTV风云音乐" },
@@ -143,8 +142,8 @@ function cctvNum(name) {
 
 (async () => {
   let channels = [];
-  let logs = [];     // ⭐ 每条 IP 的细节日志
-  let errors = [];   // ⭐ 错误列表
+  let logs = [];
+  let errors = [];
 
   console.log("开始抓取频道，共有源：", hosts.length);
 
@@ -175,9 +174,9 @@ function cctvNum(name) {
       logs.push(`✔ ${host} 成功，频道数量：${count}`);
 
     } catch (e) {
-      logs.push(`✖ ${host} 失败：${e.message}`);
+      logs.push(`✖ ${host} 失败：${e.name === "AbortError" ? "超时中断" : e.message}`);
       errors.push(`${host} 请求失败`);
-      continue; // ⭐ 自动跳到下一个 host
+      continue;
     }
   }
 
@@ -196,13 +195,10 @@ function cctvNum(name) {
     return a.name.localeCompare(b.name);
   });
 
-  // 输出频道
   let out = channels.map(ch => `${ch.name},${ch.url}`).join("\n");
 
-  // 输出日志
   out += "\n\n# Fetch Logs:\n" + logs.join("\n");
 
-  // 输出错误
   if (errors.length) {
     out += "\n\n# Errors:\n" + errors.join("\n");
   }
