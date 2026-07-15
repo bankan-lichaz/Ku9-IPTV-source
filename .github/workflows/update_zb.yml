@@ -1,10 +1,10 @@
-name: Update ZB from 辽宁卫视
+name: Update ZB (辽宁卫视)
 
 on:
   schedule:
-    - cron: "0 0 * * *"   # 每天 0 点执行
-    - cron: "0 12 * * *"  # 每天 12 点执行
-  workflow_dispatch:       # 手动执行
+    - cron: "0 0 * * *"     # 每天 0 点执行
+    - cron: "0 12 * * *"    # 每天 12 点执行
+  workflow_dispatch:         # 手动执行
 
 jobs:
   update:
@@ -34,9 +34,17 @@ jobs:
 
           echo "IPPORT=$ipport" >> $GITHUB_ENV
 
-      - name: Update ZB file
+      - name: Update only the FIRST line of ZB
         run: |
+          # 读取原 ZB 文件内容
+          old_content=$(cat ZB)
+
+          # 删除第一行
+          tail_content=$(echo "$old_content" | tail -n +2)
+
+          # 写入新的第一行 + 原来的其他行
           echo "1,${IPPORT}" > ZB
+          echo "$tail_content" >> ZB
 
       - name: Commit changes
         run: |
@@ -44,7 +52,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add ZB
-          git commit -m "Update ZB with 辽宁卫视 IP:PORT (${IPPORT})" || echo "No changes to commit"
+          git commit -m "Update ZB first line with 辽宁卫视 (${IPPORT})" || echo "No changes to commit"
 
       - name: Push changes
         run: |
