@@ -22,9 +22,9 @@ function fetchWithTimeout(url, timeout = 5000) {
       process.exit(1);
     }
 
-    // ⭐ 提取 host 字段（已经是 ip:port）
+    // ⭐ 在每行前加 http://
     const list = json.results
-      .map(item => item.host)
+      .map(item => "http://" + item.host)
       .filter(Boolean);
 
     fs.writeFileSync("ZGHT", list.join("\n"));
