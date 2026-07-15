@@ -2,8 +2,6 @@ name: IPTV SpeedTest
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: "0 */6 * * *"   # 每 6 小时自动测速一次
 
 jobs:
   test:
@@ -22,6 +20,10 @@ jobs:
       run: |
         npm init -y
         npm install node-fetch@2
+
+    - name: Download ipv4.txt from kakaxi-1/IPTV
+      run: |
+        curl -L "https://raw.githubusercontent.com/kakaxi-1/IPTV/refs/heads/main/ipv4.txt" -o ipv4.txt
 
     - name: Run SpeedTest
       run: |
