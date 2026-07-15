@@ -1,12 +1,12 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
 
-// ⭐ 真正可中断的 fetch（5 秒）
-function fetchWithTimeout(url, timeout = 5000) {
+// ⭐ 真正可中断的 fetch（3 秒）
+function fetchWithTimeout(url, timeout = 3000) {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeout);
 
-  return fetch(url, { signal: controller.signal })
+  return fetch(url, { signal: controller.signal, redirect: "follow" })
     .finally(() => clearTimeout(id));
 }
 
@@ -16,26 +16,25 @@ const lines = fs.readFileSync("ipv4.txt", "utf8")
   .map(s => s.trim())
   .filter(Boolean);
 
-// ⭐ 拉流测速函数（拉流 5 秒）
-async function testSpeed(url) {
+// ⭐ 只保留含有 608807420 的链接
+const targets = lines.filter(line => line.includes("608807420"));
+
+console.log("需要测试的数量：", targets.length);
+
+async function testUrl(url) {
   try {
-    const res = await fetchWithTimeout(url, 5000);
+    const res = await fetchWithTimeout(url, 3000);
 
-    if (!res.ok) return false;
+    // ⭐ 最终跳转后的 URL
+    const finalUrl = res.url || "";
 
-    const reader = res.body.getReader();
-    let total = 0;
-    const start = Date.now();
-
-    while (Date.now() - start < 5000) {
-      const chunk = await reader.read();
-      if (chunk.done) break;
-      total += chunk.value.length;
+    // ⭐ 判断是否含有 .m3u8
+    if (finalUrl.includes(".m3u8")) {
+      return true;
     }
 
-    const speedKB = total / 1024 / 5; // KB/s
+    return false;
 
-    return speedKB > 50; // ⭐ 速度阈值（可调整）
   } catch (e) {
     return false;
   }
@@ -44,25 +43,29 @@ async function testSpeed(url) {
 (async () => {
   let goodHosts = [];
 
-  for (const line of lines) {
+  for (const line of targets) {
     const [name, url] = line.split(",");
     if (!url) continue;
 
-    console.log("测速中：", url);
+    console.log("测试：", url);
 
-    const ok = await testSpeed(url);
+    const ok = await testUrl(url);
 
     if (ok) {
-      const m = url.match(/http:\/\/(.+?)\//);
+      // 提取域名/IP+端口：在 // 和 下一个 / 之间
+      const m = url.match(/^https?:\/\/([^/]+)/);
       if (m) {
         goodHosts.push(m[1]);
         console.log("✔ 合格：", m[1]);
+      } else {
+        console.log("⚠ 无法解析域名端口：", url);
       }
     } else {
       console.log("✖ 不合格：", url);
     }
   }
 
+  // 多个用 ; 分隔，输出为 RLMG
   fs.writeFileSync("RLMG", goodHosts.join(";"));
 
   console.log("完成！合格源数量：", goodHosts.length);
