@@ -1,17 +1,28 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
 
+// ⭐ 带超时的 fetch（避免卡住）
+function fetchWithTimeout(url, timeout = 5000) {
+  return Promise.race([
+    fetch(url),
+    new Promise((_, reject) =>
+      setTimeout(() => reject(new Error("timeout")), timeout)
+    )
+  ]);
+}
+
 (async () => {
   const url = "https://iptvs.pes.im/";
 
   try {
-    const json = await fetch(url, { timeout: 5000 }).then(r => r.json());
+    const json = await fetchWithTimeout(url, 5000).then(r => r.json());
 
     if (!json.results || !Array.isArray(json.results)) {
       console.error("❌ JSON 中没有 results 字段，无法提取 IP:PORT");
       process.exit(1);
     }
 
+    // ⭐ 提取 host 字段（已经是 ip:port）
     const list = json.results
       .map(item => item.host)
       .filter(Boolean);
