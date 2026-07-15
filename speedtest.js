@@ -1,8 +1,8 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
 
-// ⭐ 真正可中断的 fetch（5 秒）
-function fetchWithTimeout(url, timeout = 5000) {
+// ⭐ 真正可中断的 fetch（3 秒）
+function fetchWithTimeout(url, timeout = 3000) {
   const controller = new AbortController();
   const id = setTimeout(() => controller.abort(), timeout);
 
@@ -16,26 +16,30 @@ const lines = fs.readFileSync("ipv4.txt", "utf8")
   .map(s => s.trim())
   .filter(Boolean);
 
-// ⭐ 拉流测速函数（拉流 5 秒）
-async function testSpeed(url) {
+// ⭐ 只保留含有 608807420 的链接
+const targets = lines.filter(line => line.includes("608807420"));
+
+console.log("需要测试的数量：", targets.length);
+
+async function testUrl(url) {
   try {
-    const res = await fetchWithTimeout(url, 5000);
+    const res = await fetchWithTimeout(url, 3000);
 
     if (!res.ok) return false;
 
+    // 读取前 1KB 判断是否是 m3u8
     const reader = res.body.getReader();
-    let total = 0;
-    const start = Date.now();
+    const chunk = await reader.read();
 
-    while (Date.now() - start < 5000) {
-      const chunk = await reader.read();
-      if (chunk.done) break;
-      total += chunk.value.length;
-    }
+    if (chunk.done || !chunk.value) return false;
 
-    const speedKB = total / 1024 / 5; // KB/s
+    const text = Buffer.from(chunk.value).toString("utf8");
 
-    return speedKB > 50; // ⭐ 速度阈值（可调整）
+    // ⭐ 判断是否返回 m3u8
+    if (text.includes("#EXTM3U")) return true;
+
+    return false;
+
   } catch (e) {
     return false;
   }
@@ -44,13 +48,13 @@ async function testSpeed(url) {
 (async () => {
   let goodHosts = [];
 
-  for (const line of lines) {
+  for (const line of targets) {
     const [name, url] = line.split(",");
     if (!url) continue;
 
-    console.log("测速中：", url);
+    console.log("测试：", url);
 
-    const ok = await testSpeed(url);
+    const ok = await testUrl(url);
 
     if (ok) {
       const m = url.match(/http:\/\/(.+?)\//);
