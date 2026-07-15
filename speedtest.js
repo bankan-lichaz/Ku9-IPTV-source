@@ -21,16 +21,22 @@ const targets = lines.filter(line => line.includes("608807420"));
 
 console.log("需要测试的数量：", targets.length);
 
-async function testUrl(url) {
+// ⭐ 判断最终链接是否能播放（拉流 1 秒）
+async function canPlay(finalUrl) {
   try {
-    const res = await fetchWithTimeout(url, 3000);
+    const res = await fetchWithTimeout(finalUrl, 3000);
+    if (!res.ok) return false;
 
-    // ⭐ 最终跳转后的 URL
-    const finalUrl = res.url || "";
+    const reader = res.body.getReader();
+    const start = Date.now();
 
-    // ⭐ 判断是否含有 .m3u8
-    if (finalUrl.includes(".m3u8")) {
-      return true;
+    while (Date.now() - start < 1000) { // ⭐ 拉流 1 秒
+      const chunk = await reader.read();
+      if (chunk.done) break;
+
+      if (chunk.value && chunk.value.length > 0) {
+        return true; // ⭐ 只要读到数据就算能播放
+      }
     }
 
     return false;
@@ -49,23 +55,31 @@ async function testUrl(url) {
 
     console.log("测试：", url);
 
-    const ok = await testUrl(url);
+    try {
+      // ⭐ 第一步：访问原始 URL（允许跳转）
+      const res = await fetchWithTimeout(url, 3000);
+      const finalUrl = res.url || "";
 
-    if (ok) {
-      // 提取域名/IP+端口：在 // 和 下一个 / 之间
-      const m = url.match(/^https?:\/\/([^/]+)/);
-      if (m) {
-        goodHosts.push(m[1]);
-        console.log("✔ 合格：", m[1]);
+      console.log("最终跳转：", finalUrl);
+
+      // ⭐ 第二步：真正判断能不能播放
+      const ok = await canPlay(finalUrl);
+
+      if (ok) {
+        const m = url.match(/^https?:\/\/([^/]+)/);
+        if (m) {
+          goodHosts.push(m[1]);
+          console.log("✔ 合格：", m[1]);
+        }
       } else {
-        console.log("⚠ 无法解析域名端口：", url);
+        console.log("✖ 不合格：", url);
       }
-    } else {
-      console.log("✖ 不合格：", url);
+
+    } catch (e) {
+      console.log("✖ 错误：", url);
     }
   }
 
-  // 多个用 ; 分隔，输出为 RLMG
   fs.writeFileSync("RLMG", goodHosts.join(";"));
 
   console.log("完成！合格源数量：", goodHosts.length);
