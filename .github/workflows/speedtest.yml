@@ -1,7 +1,9 @@
-name: IPTV SpeedTest 608807420
+name: IPTV SpeedTest
 
 on:
   workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"   # 每 6 小时自动测速一次
 
 jobs:
   test:
@@ -21,10 +23,6 @@ jobs:
         npm init -y
         npm install node-fetch@2
 
-    - name: Download ipv4.txt from kakaxi-1/IPTV
-      run: |
-        curl -L "https://raw.githubusercontent.com/kakaxi-1/IPTV/refs/heads/main/ipv4.txt" -o ipv4.txt
-
     - name: Run SpeedTest
       run: |
         node speedtest.js
@@ -34,5 +32,5 @@ jobs:
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
         git add RLMG
-        git commit -m "Update RLMG 608807420 results"
+        git commit -m "Update RLMG speedtest results"
         git push
