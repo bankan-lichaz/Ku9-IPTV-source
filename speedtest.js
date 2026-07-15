@@ -1,43 +1,38 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
 
-// ⭐ 真正可中断的 fetch（3 秒）
-function fetchWithTimeout(url, timeout = 3000) {
-  const controller = new AbortController();
-  const id = setTimeout(() => controller.abort(), timeout);
-
-  return fetch(url, { signal: controller.signal })
-    .finally(() => clearTimeout(id));
-}
-
-// 读取 ipv4.txt（来自 kakaxi-1/IPTV）
+// 读取 ipv4.txt
 const lines = fs.readFileSync("ipv4.txt", "utf8")
   .split(/\r?\n/)
   .map(s => s.trim())
   .filter(Boolean);
 
-// ⭐ 只保留含有 608807420 的链接
-const targets = lines.filter(line => line.includes("608807420"));
-
-console.log("需要测试的数量：", targets.length);
-
-// ⭐ 测试是否能返回数据（不要求格式）
-async function testUrl(url) {
+// ⭐ 拉流测速函数（拉流 5 秒）
+async function testSpeed(url) {
   try {
-    const res = await fetchWithTimeout(url, 3000);
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 5000);
+
+    const res = await fetch(url, { signal: controller.signal });
+
+    clearTimeout(timeout);
 
     if (!res.ok) return false;
 
-    // 读一点点数据确认不是空响应
+    // 读取 5 秒数据
     const reader = res.body.getReader();
-    const chunk = await reader.read();
+    let total = 0;
+    const start = Date.now();
 
-    if (chunk.done || !chunk.value || chunk.value.length === 0) {
-      return false;
+    while (Date.now() - start < 5000) {
+      const chunk = await reader.read();
+      if (chunk.done) break;
+      total += chunk.value.length;
     }
 
-    return true;
+    const speedKB = total / 1024 / 5; // KB/s
 
+    return speedKB > 50; // ⭐ 速度阈值（你可以调整）
   } catch (e) {
     return false;
   }
@@ -46,29 +41,27 @@ async function testUrl(url) {
 (async () => {
   let goodHosts = [];
 
-  for (const line of targets) {
+  for (const line of lines) {
     const [name, url] = line.split(",");
     if (!url) continue;
 
-    console.log("测试：", url);
+    console.log("测速中：", url);
 
-    const ok = await testUrl(url);
+    const ok = await testSpeed(url);
 
     if (ok) {
-      // 提取域名/IP+端口：在 // 和 下一个 / 之间
-      const m = url.match(/^https?:\/\/([^/]+)/);
+      // 提取 IP:PORT
+      const m = url.match(/http:\/\/(.+?)\//);
       if (m) {
         goodHosts.push(m[1]);
         console.log("✔ 合格：", m[1]);
-      } else {
-        console.log("⚠ 无法解析域名端口：", url);
       }
     } else {
       console.log("✖ 不合格：", url);
     }
   }
 
-  // 多个用 ; 分隔，输出为 RLMG
+  // 输出 RLMG 文件
   fs.writeFileSync("RLMG", goodHosts.join(";"));
 
   console.log("完成！合格源数量：", goodHosts.length);
