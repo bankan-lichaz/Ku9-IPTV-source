@@ -1,0 +1,36 @@
+name: IPTV SpeedTest
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */6 * * *"   # 每 6 小时自动测速一次
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+
+    - name: Install dependencies
+      run: |
+        npm init -y
+        npm install node-fetch@2
+
+    - name: Run SpeedTest
+      run: |
+        node speedtest.js
+
+    - name: Commit RLMG
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add RLMG
+        git commit -m "Update RLMG speedtest results"
+        git push
