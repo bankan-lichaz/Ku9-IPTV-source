@@ -1,0 +1,51 @@
+name: Update ZB from 辽宁卫视
+
+on:
+  schedule:
+    - cron: "0 0 * * *"   # 每天 0 点执行
+    - cron: "0 12 * * *"  # 每天 12 点执行
+  workflow_dispatch:       # 手动执行
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Fetch 辽宁联通组播列表
+        run: |
+          curl -s -o ln.txt "https://raw.githubusercontent.com/q1017673817/iptvz/refs/heads/main/组播_辽宁联通.txt"
+
+      - name: Extract 辽宁卫视 IP:PORT
+        run: |
+          # 找到辽宁卫视那一行
+          line=$(grep "^辽宁卫视," ln.txt)
+
+          # 提取 URL
+          url=$(echo "$line" | cut -d',' -f2)
+
+          # 去掉 http://
+          url_no_http=${url#http://}
+
+          # 提取 ip:port（去掉后面的 /rtp/...）
+          ipport=$(echo "$url_no_http" | cut -d'/' -f1)
+
+          echo "IPPORT=$ipport" >> $GITHUB_ENV
+
+      - name: Update ZB file
+        run: |
+          echo "1,${IPPORT}" > ZB
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+
+          git add ZB
+          git commit -m "Update ZB with 辽宁卫视 IP:PORT (${IPPORT})" || echo "No changes to commit"
+
+      - name: Push changes
+        run: |
+          git push
