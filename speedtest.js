@@ -10,7 +10,7 @@ function fetchWithTimeout(url, timeout = 3000) {
     .finally(() => clearTimeout(id));
 }
 
-// 读取 ipv4.txt
+// 读取 ipv4.txt（来自 kakaxi-1/IPTV）
 const lines = fs.readFileSync("ipv4.txt", "utf8")
   .split(/\r?\n/)
   .map(s => s.trim())
@@ -21,14 +21,14 @@ const targets = lines.filter(line => line.includes("608807420"));
 
 console.log("需要测试的数量：", targets.length);
 
+// ⭐ 测试是否能返回数据（不要求格式）
 async function testUrl(url) {
   try {
     const res = await fetchWithTimeout(url, 3000);
 
-    // 只要 HTTP 状态正常，就认为能拉流
     if (!res.ok) return false;
 
-    // 读一点点数据，确认不是空响应
+    // 读一点点数据确认不是空响应
     const reader = res.body.getReader();
     const chunk = await reader.read();
 
@@ -37,6 +37,7 @@ async function testUrl(url) {
     }
 
     return true;
+
   } catch (e) {
     return false;
   }
