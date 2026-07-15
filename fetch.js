@@ -143,14 +143,21 @@ function cctvNum(name) {
 
 (async () => {
   let channels = [];
-  let errors = [];
+  let logs = [];     // ⭐ 每条 IP 的细节日志
+  let errors = [];   // ⭐ 错误列表
+
+  console.log("开始抓取频道，共有源：", hosts.length);
 
   for (const host of hosts) {
     const url = `http://${host}/iptv/live/1000.json?key=txiptv`;
 
+    console.log(`⏳ 正在请求：${host}`);
+
     try {
       const json = await fetchWithTimeout(url, 3000).then(r => r.json());
       const list = json.data || json;
+
+      let count = 0;
 
       for (const item of list) {
         if (!item.name || !item.chid) continue;
@@ -162,9 +169,13 @@ function cctvNum(name) {
           `http://${host}/tsfile/live/${chid}_1.m3u8?key=txiptv&playlive=1`;
 
         channels.push({ name, url: playUrl });
+        count++;
       }
 
+      logs.push(`✔ ${host} 成功，频道数量：${count}`);
+
     } catch (e) {
+      logs.push(`✖ ${host} 失败：${e.message}`);
       errors.push(`${host} 请求失败`);
       continue; // ⭐ 自动跳到下一个 host
     }
@@ -185,12 +196,18 @@ function cctvNum(name) {
     return a.name.localeCompare(b.name);
   });
 
-  // 输出
+  // 输出频道
   let out = channels.map(ch => `${ch.name},${ch.url}`).join("\n");
 
+  // 输出日志
+  out += "\n\n# Fetch Logs:\n" + logs.join("\n");
+
+  // 输出错误
   if (errors.length) {
     out += "\n\n# Errors:\n" + errors.join("\n");
   }
 
   fs.writeFileSync("result.txt", out);
+
+  console.log("完成！总频道数：", channels.length);
 })();
