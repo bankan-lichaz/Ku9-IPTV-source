@@ -23,13 +23,16 @@ function fetchWithTimeout(url, timeout = 5000) {
     }
 
     // ⭐ 在每行前加 http://
-    const list = json.results
+    let list = json.results
       .map(item => "http://" + item.host)
       .filter(Boolean);
 
+    // ⭐ 最多输出 200 行
+    list = list.slice(0, 200);
+
     fs.writeFileSync("ZGHT", list.join("\n"));
 
-    console.log("✅ ZGHT 更新成功，总计:", list.length, "条");
+    console.log("✅ ZGHT 更新成功，输出:", list.length, "条");
 
   } catch (e) {
     console.error("❌ 更新 ZGHT 失败:", e);
