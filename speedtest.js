@@ -1,6 +1,15 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
 
+// ⭐ 真正可中断的 fetch（5 秒）
+function fetchWithTimeout(url, timeout = 5000) {
+  const controller = new AbortController();
+  const id = setTimeout(() => controller.abort(), timeout);
+
+  return fetch(url, { signal: controller.signal })
+    .finally(() => clearTimeout(id));
+}
+
 // 读取 ipv4.txt
 const lines = fs.readFileSync("ipv4.txt", "utf8")
   .split(/\r?\n/)
@@ -10,16 +19,10 @@ const lines = fs.readFileSync("ipv4.txt", "utf8")
 // ⭐ 拉流测速函数（拉流 5 秒）
 async function testSpeed(url) {
   try {
-    const controller = new AbortController();
-    const timeout = setTimeout(() => controller.abort(), 5000);
-
-    const res = await fetch(url, { signal: controller.signal });
-
-    clearTimeout(timeout);
+    const res = await fetchWithTimeout(url, 5000);
 
     if (!res.ok) return false;
 
-    // 读取 5 秒数据
     const reader = res.body.getReader();
     let total = 0;
     const start = Date.now();
@@ -32,7 +35,7 @@ async function testSpeed(url) {
 
     const speedKB = total / 1024 / 5; // KB/s
 
-    return speedKB > 50; // ⭐ 速度阈值（你可以调整）
+    return speedKB > 50; // ⭐ 速度阈值（可调整）
   } catch (e) {
     return false;
   }
@@ -50,7 +53,6 @@ async function testSpeed(url) {
     const ok = await testSpeed(url);
 
     if (ok) {
-      // 提取 IP:PORT
       const m = url.match(/http:\/\/(.+?)\//);
       if (m) {
         goodHosts.push(m[1]);
@@ -61,7 +63,6 @@ async function testSpeed(url) {
     }
   }
 
-  // 输出 RLMG 文件
   fs.writeFileSync("RLMG", goodHosts.join(";"));
 
   console.log("完成！合格源数量：", goodHosts.length);
