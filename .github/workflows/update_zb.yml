@@ -1,4 +1,4 @@
-name: Update ZB (辽宁卫视)
+name: Update ZB (辽宁卫视多源)
 
 on:
   schedule:
@@ -18,32 +18,35 @@ jobs:
         run: |
           curl -s -o ln.txt "https://raw.githubusercontent.com/q1017673817/iptvz/refs/heads/main/组播_辽宁联通.txt"
 
-      - name: Extract 辽宁卫视 IP:PORT
+      - name: Extract ALL 辽宁卫视 IP:PORT
         run: |
-          # 找到辽宁卫视那一行
-          line=$(grep "^辽宁卫视," ln.txt)
+          # 找出所有辽宁卫视行
+          lines=$(grep "^辽宁卫视," ln.txt)
 
-          # 提取 URL
-          url=$(echo "$line" | cut -d',' -f2)
+          ipports=""
 
-          # 去掉 http://
-          url_no_http=${url#http://}
+          # 遍历每一行
+          while IFS= read -r line; do
+            url=$(echo "$line" | cut -d',' -f2)
+            url_no_http=${url#http://}
+            ipport=$(echo "$url_no_http" | cut -d'/' -f1)
 
-          # 提取 ip:port（去掉后面的 /rtp/...）
-          ipport=$(echo "$url_no_http" | cut -d'/' -f1)
+            # 累加结果
+            if [ -z "$ipports" ]; then
+              ipports="$ipport"
+            else
+              ipports="$ipports,$ipport"
+            fi
+          done <<< "$lines"
 
-          echo "IPPORT=$ipport" >> $GITHUB_ENV
+          echo "IPPORTS=$ipports" >> $GITHUB_ENV
 
-      - name: Update only the FIRST line of ZB
+      - name: Update only FIRST line of ZB
         run: |
-          # 读取原 ZB 文件内容
           old_content=$(cat ZB)
-
-          # 删除第一行
           tail_content=$(echo "$old_content" | tail -n +2)
 
-          # 写入新的第一行 + 原来的其他行
-          echo "1,${IPPORT}" > ZB
+          echo "1,${IPPORTS}" > ZB
           echo "$tail_content" >> ZB
 
       - name: Commit changes
@@ -52,7 +55,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add ZB
-          git commit -m "Update ZB first line with 辽宁卫视 (${IPPORT})" || echo "No changes to commit"
+          git commit -m "Update ZB first line with 辽宁卫视 sources (${IPPORTS})" || echo "No changes to commit"
 
       - name: Push changes
         run: |
