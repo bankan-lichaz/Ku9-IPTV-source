@@ -7,7 +7,7 @@ import os
 import time
 from urllib.parse import urljoin
 
-URL_FILE = "https://raw.githubusercontent.com/kakaxi-1/zubo/main/ip_urls.txt"
+URL_FILE = "https://raw.githubusercontent.com/bankan-lichaz/Ku9-IPTV-source/refs/heads/main/ZGHT"
 
 CHANNEL_CATEGORIES = {
     "央视频道": [
@@ -280,7 +280,7 @@ async def main():
         beijing_now = datetime.datetime.now(
             datetime.timezone(datetime.timedelta(hours=8))
         ).strftime("%Y-%m-%d %H:%M:%S")
-        disclaimer_url = "http://kakaxi.indevs.in/LOGO/Disclaimer.mp4"
+        disclaimer_url = ""
 
         with open("itvlist.txt", 'w', encoding='utf-8') as f:
             f.write(f"更新时间: {beijing_now}（北京时间）\n\n")
