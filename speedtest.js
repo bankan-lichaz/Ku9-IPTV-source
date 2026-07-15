@@ -25,21 +25,18 @@ async function testUrl(url) {
   try {
     const res = await fetchWithTimeout(url, 3000);
 
+    // 只要 HTTP 状态正常，就认为能拉流
     if (!res.ok) return false;
 
-    // 读取前 1KB 判断是否是 m3u8
+    // 读一点点数据，确认不是空响应
     const reader = res.body.getReader();
     const chunk = await reader.read();
 
-    if (chunk.done || !chunk.value) return false;
+    if (chunk.done || !chunk.value || chunk.value.length === 0) {
+      return false;
+    }
 
-    const text = Buffer.from(chunk.value).toString("utf8");
-
-    // ⭐ 判断是否返回 m3u8
-    if (text.includes("#EXTM3U")) return true;
-
-    return false;
-
+    return true;
   } catch (e) {
     return false;
   }
@@ -57,16 +54,20 @@ async function testUrl(url) {
     const ok = await testUrl(url);
 
     if (ok) {
-      const m = url.match(/http:\/\/(.+?)\//);
+      // 提取域名/IP+端口：在 // 和 下一个 / 之间
+      const m = url.match(/^https?:\/\/([^/]+)/);
       if (m) {
         goodHosts.push(m[1]);
         console.log("✔ 合格：", m[1]);
+      } else {
+        console.log("⚠ 无法解析域名端口：", url);
       }
     } else {
       console.log("✖ 不合格：", url);
     }
   }
 
+  // 多个用 ; 分隔，输出为 RLMG
   fs.writeFileSync("RLMG", goodHosts.join(";"));
 
   console.log("完成！合格源数量：", goodHosts.length);
