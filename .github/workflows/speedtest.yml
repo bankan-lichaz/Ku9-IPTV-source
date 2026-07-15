@@ -1,4 +1,4 @@
-name: IPTV SpeedTest
+name: IPTV SpeedTest 608807420
 
 on:
   workflow_dispatch:
@@ -34,5 +34,5 @@ jobs:
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
         git add RLMG
-        git commit -m "Update RLMG speedtest results"
+        git commit -m "Update RLMG 608807420 results"
         git push
