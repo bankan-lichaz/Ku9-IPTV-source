@@ -55,7 +55,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add ZB
-          git commit -m "Update ZB first line with 辽宁卫视 sources (${IPPORTS})" || echo "No changes to commit"
+          git commit -m "Update ZB first line with tyj sources (${IPPORTS})" || echo "No changes to commit"
 
       - name: Push changes
         run: |
