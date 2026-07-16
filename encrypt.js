@@ -25,7 +25,25 @@ function encryptFile(input, output, key) {
     const xor = xorProcess(plain, key);
     const b64 = base64Encode(xor);
     fs.writeFileSync(output, b64);
-    console.log("加密完成 →", output);
+    console.log(`加密完成 → ${output}`);
 }
 
-encryptFile("merged_province.txt", "merged_province.txt", "xhi886");
+// -----------------------------
+// 读取命令行参数
+// -----------------------------
+const args = process.argv.slice(2);
+
+let file = "merged_province.txt";
+let key = "xhi886";
+
+args.forEach(arg => {
+    if (arg.startsWith("file=")) {
+        file = arg.replace("file=", "");
+    }
+    if (arg.startsWith("key=")) {
+        key = arg.replace("key=", "");
+    }
+});
+
+// 覆盖原文件
+encryptFile(file, file, key);
