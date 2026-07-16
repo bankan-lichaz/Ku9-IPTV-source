@@ -31,6 +31,10 @@ jobs:
           python ITVlist.py
           echo "=== Finished ITVlist.py ==="
 
+      - name: Encrypt merged_province.txt
+        run: |
+          node encrypt.js file=itvlist.txt
+
       - name: Commit and push results
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
