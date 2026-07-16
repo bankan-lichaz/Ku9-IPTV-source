@@ -30,32 +30,6 @@ jobs:
           echo "=== Starting ITVlist.py ==="
           python ITVlist.py
           echo "=== Finished ITVlist.py ==="
-
-      - name: Encrypt itvlist.txt (Base64 with key prefix)
-        run: |
-          echo "开始加密 itvlist.txt..."
-
-          key="test"
-          input="itvlist.txt"
-          output="itvlist_encrypted.txt"
-
-          rm -f "$output"
-          touch "$output"
-
-          # ⭐ 去掉 Windows 换行符（关键）
-          clean_content=$(cat "$input" | tr -d '\r')
-
-          # 将 key + 内容 → Base64
-          combined=$(printf "%s%s" "$key" "$clean_content")
-          encoded=$(printf "%s" "$combined" | base64)
-
-          # 写入加密后的文件
-          printf "%s" "$encoded" > "$output"
-
-          # 用加密后的文件替换原文件
-          mv "$output" itvlist.txt
-
-          echo "加密完成，输出为 Base64（带 key 前缀）"
           
       - name: Commit and push results
         run: |
