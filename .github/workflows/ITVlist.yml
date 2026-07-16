@@ -31,35 +31,6 @@ jobs:
           python ITVlist.py
           echo "=== Finished ITVlist.py ==="
 
-      - name: Encrypt itvlist.txt (exact same as encrypt.html)
-        run: |
-          echo "开始加密 itvlist.txt..."
-
-          node - << 'EOF'
-          const fs = require("fs");
-
-          const key = "test";
-          const content = fs.readFileSync("itvlist.txt", "utf8");
-
-          // ⭐ 完全复刻网页 encrypt.html 的加密逻辑（逐字节一致）
-          const encoder = new TextEncoder();
-          const bytes = encoder.encode(key + content);
-
-          let binary = "";
-          for (let i = 0; i < bytes.length; i++) {
-            binary += String.fromCharCode(bytes[i]);
-          }
-
-          // ⭐ 使用浏览器 btoa 的等价实现（必须用 binary）
-          const encoded = Buffer.from(binary, "latin1").toString("base64");
-
-          // ⭐ 写入单行密文（没有换行）
-          fs.writeFileSync("itvlist.txt", encoded, { encoding: "utf8" });
-          EOF
-
-          echo "加密完成（与网页加密器完全一致）"
-
-
       - name: Commit and push results
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
