@@ -31,62 +31,84 @@ jobs:
           python ITVlist.py
           echo "=== Finished ITVlist.py ==="
           
-      - name: Speed test CCTV1 (5-second real download) and filter fastest sources
+      - name: Install ffmpeg
         run: |
-          echo "=== 开始 5 秒真实拉流测速 CCTV1 ==="
+          sudo apt-get update
+          sudo apt-get install -y ffmpeg
+
+      - name: Select real HD CCTV1 sources (bitrate + resolution + 5s download)
+        run: |
+          echo "=== 开始真实高清筛选 CCTV1 ==="
 
           input="itvlist.txt"
           tmp_cctv1="cctv1_all.txt"
-          tmp_speed="cctv1_speed.txt"
+          tmp_info="cctv1_info.txt"
           output="itvlist_filtered.txt"
 
-          rm -f "$tmp_cctv1" "$tmp_speed" "$output"
-          touch "$tmp_cctv1" "$tmp_speed" "$output"
+          rm -f "$tmp_cctv1" "$tmp_info" "$output"
+          touch "$tmp_cctv1" "$tmp_info" "$output"
 
           # ① 提取所有 CCTV1 行
           grep "^CCTV1," "$input" > "$tmp_cctv1"
 
           if [ ! -s "$tmp_cctv1" ]; then
-            echo "没有 CCTV1，跳过测速"
+            echo "没有 CCTV1，跳过筛选"
             cp "$input" "$output"
             mv "$output" itvlist.txt
             exit 0
           fi
 
-          # ② 对每条 CCTV1 进行 5 秒真实拉流测速
+          # ② 对每条 CCTV1 执行 ffprobe + 5 秒拉流
           while IFS= read -r line; do
             url=$(echo "$line" | cut -d',' -f2)
             host=$(echo "$url" | sed -E 's#https?://([^/:]+).*#\1#')
 
-            echo "测速：$url"
+            echo "分析：$url"
 
+            # ffprobe 获取真实分辨率和码率
+            info=$(ffprobe -v quiet -print_format json -show_streams "$url" 2>/dev/null)
+
+            width=$(echo "$info" | jq -r '.streams[0].width // 0')
+            height=$(echo "$info" | jq -r '.streams[0].height // 0')
+            bitrate=$(echo "$info" | jq -r '.streams[0].bit_rate // 0')
+            codec=$(echo "$info" | jq -r '.streams[0].codec_name // "unknown"')
+
+            echo "分辨率：${width}x${height}"
+            echo "码率：$bitrate"
+            echo "编码：$codec"
+
+            # ③ 5 秒真实拉流
             tmpfile="/tmp/test_${host}.bin"
             rm -f "$tmpfile"
 
-            # 拉流 5 秒
             curl -o "$tmpfile" --max-time 5 "$url" 2>/dev/null || true
-
             bytes=$(stat -c%s "$tmpfile" 2>/dev/null || echo "0")
 
-            echo "下载字节数：$bytes"
+            echo "5 秒下载量：$bytes"
 
-            echo "$bytes $host $url" >> "$tmp_speed"
+            echo "$bytes $bitrate $width $height $codec $host $url" >> "$tmp_info"
 
           done < "$tmp_cctv1"
 
-          # ③ 选出下载量最大的 3 条（最稳定）
-          top3=$(sort -nr "$tmp_speed" | head -n 3)
+          # ④ 选出真正高清的源（分辨率 + 码率 + 下载量）
+          # 高清标准：1080p + 码率 >= 4Mbps + 下载量 >= 1MB
+          awk '$3>=1920 && $4>=1080 && $2>=4000000 && $1>=1000000' "$tmp_info" | sort -nr > top_hd.txt
 
-          echo "=== 最稳定的 3 条源（按 5 秒下载量排序） ==="
-          echo "$top3"
+          # 如果高清源不足 3 条，则按下载量补齐
+          if [ $(wc -l < top_hd.txt) -lt 3 ]; then
+            sort -nr "$tmp_info" | head -n 3 > top_hd.txt
+          fi
 
-          # ④ 提取这 3 条源的服务器 host
-          echo "$top3" | awk '{print $2}' | sort -u > keep_hosts.txt
+          echo "=== 最高清的 3 条源 ==="
+          cat top_hd.txt
+
+          # ⑤ 提取 host
+          awk '{print $6}' top_hd.txt | sort -u > keep_hosts.txt
 
           echo "=== 保留的服务器 ==="
           cat keep_hosts.txt
 
-          # ⑤ 根据服务器 host 保留所有频道
+          # ⑥ 保留所有来自这些服务器的频道
           while IFS= read -r line; do
             url=$(echo "$line" | cut -d',' -f2)
             host=$(echo "$url" | sed -E 's#https?://([^/:]+).*#\1#')
@@ -98,7 +120,8 @@ jobs:
 
           mv "$output" itvlist.txt
 
-          echo "=== 处理完成：已根据 5 秒真实拉流最快的 3 条 CCTV1 源过滤 itvlist.txt ==="
+          echo "=== 处理完成：已筛选真正高清的 CCTV1 源 ==="
+
 
 
       - name: Commit and push results
