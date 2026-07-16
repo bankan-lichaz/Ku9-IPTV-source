@@ -31,6 +31,38 @@ jobs:
           python ITVlist.py
           echo "=== Finished ITVlist.py ==="
 
+      - name: Encrypt itvlist.txt (same logic as encrypt.html)
+        run: |
+          echo "开始加密 itvlist.txt..."
+
+          key="test"
+          input="itvlist.txt"
+          output="itvlist_encrypted.txt"
+
+          rm -f "$output"
+          touch "$output"
+
+          # 读取文件内容（保持 UTF‑8）
+          content=$(cat "$input")
+
+          # ⭐ 使用 iconv 强制按 UTF‑8 编码成字节序列（网页逻辑）
+          utf8_bytes=$(printf "%s%s" "$key" "$content" | iconv -t UTF-8)
+
+          # ⭐ 把字节序列转换成网页的 btoa 需要的“binary string”
+          binary=""
+          while IFS= read -r -n1 char; do
+            binary="$binary$(printf "%b" "$char")"
+          done <<< "$utf8_bytes"
+
+          # ⭐ 用 base64 编码（等价于网页的 btoa）
+          encoded=$(printf "%s" "$binary" | base64)
+
+          printf "%s" "$encoded" > "$output"
+
+          mv "$output" itvlist.txt
+
+          echo "加密完成（完全等同 encrypt.html 的加密方式）"
+
       - name: Commit and push results
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
