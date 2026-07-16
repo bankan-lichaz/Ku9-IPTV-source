@@ -42,23 +42,24 @@ jobs:
           rm -f "$output"
           touch "$output"
 
-          # ⭐ 去掉 UTF‑8 BOM（关键）
-          clean_content=$(sed '1s/^\xEF\xBB\xBF//' "$input")
+          # ⭐ 去掉 BOM
+          clean=$(sed '1s/^\xEF\xBB\xBF//' "$input")
 
-          # ⭐ 去掉 Windows 换行符（可选但推荐）
-          clean_content=$(printf "%s" "$clean_content" | tr -d '\r')
+          # ⭐ 去掉所有换行（关键）
+          one_line=$(printf "%s" "$clean" | tr -d '\n' | tr -d '\r')
 
-          # 将 key + 内容 → Base64
-          combined=$(printf "%s%s" "$key" "$clean_content")
+          # ⭐ 拼接 key + 内容
+          combined=$(printf "%s%s" "$key" "$one_line")
+
+          # ⭐ Base64
           encoded=$(printf "%s" "$combined" | base64)
 
-          # 写入加密后的文件
           printf "%s" "$encoded" > "$output"
 
-          # 用加密后的文件替换原文件
           mv "$output" itvlist.txt
 
-          echo "加密完成，输出为 Base64（带 key 前缀）"
+          echo "加密完成"
+
 
       - name: Commit and push results
         run: |
