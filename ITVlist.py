@@ -197,6 +197,39 @@ async def fetch_json(session, url, semaphore):
         except:
             return []
 
+async def fetch_streamer(session, base_url, semaphore):
+    """
+    访问 /streamer/list 接口
+    返回格式：[(name, url), ...]
+    """
+    async with semaphore:
+        url = base_url.replace("/iptv/live/1000.json?key=txiptv", "/streamer/list")
+        url = url.replace("/iptv/live/1001.json?key=txiptv", "/streamer/list")
+
+        try:
+            async with session.get(url, timeout=2) as resp:
+                data = await resp.json()
+
+                if not isinstance(data, list):
+                    return []
+
+                results = []
+                for item in data:
+                    name = item.get("name", "").strip()
+                    key = item.get("key", "").strip()
+                    if not name or not key:
+                        continue
+
+                    full_url = f"{base_url.split('/iptv/')[0]}/hls/{key}/index.m3u8"
+
+                    results.append((name, full_url))
+
+                return results
+
+        except:
+            return []
+
+
 async def measure_speed(session, url, semaphore):
     async with semaphore:
         start = time.time()
@@ -241,13 +274,24 @@ async def main():
         for u in valid_urls:
             print(f"  - {u}")
 
-        print("📥 开始抓取节目单 JSON...")
-        tasks = [fetch_json(session, u, semaphore) for u in valid_urls]
+        print("📥 开始抓取节目单 JSON + Streamer...")
+        
         results = []
-        fetched = await asyncio.gather(*tasks)
-        for sublist in fetched:
-            results.extend(sublist)
-        print(f"📺 抓到频道总数: {len(results)} 条")
+        for u in valid_urls:
+            json_result = await fetch_json(session, u, semaphore)
+        
+            if json_result:  # JSON 成功
+                results.extend(json_result)
+                continue
+        
+            # JSON 失败 → 尝试 Streamer 接口
+            streamer_result = await fetch_streamer(session, u, semaphore)
+            if streamer_result:
+                print(f"🔄 {u} 使用 Streamer 接口成功，共 {len(streamer_result)} 条")
+                results.extend(streamer_result)
+            else:
+                print(f"❌ {u} JSON 和 Streamer 都失败")
+
 
         final_results = [(name, url, 0) for name, url in results]
 
