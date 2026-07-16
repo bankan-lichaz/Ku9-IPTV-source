@@ -231,32 +231,55 @@ async def fetch_streamer(session, base_url, semaphore):
 
 
 async def measure_speed(session, url, semaphore):
+    """
+    更快、更准的 IPTV 测速：
+    - 使用 GET（HEAD 不可靠）
+    - 只下载前 32KB
+    - 超时缩短到 0.8 秒
+    """
     async with semaphore:
         start = time.time()
+
         try:
-            async with session.head(url, timeout=2) as resp:  # =======================频道测速用时
-                if resp.status == 200:
-                    return int((time.time() - start) * 1000)
-                else:
+            async with session.get(url, timeout=0.8) as resp:
+                if resp.status != 200:
                     return 999999
+
+                # 只读前 32KB
+                await resp.content.read(32768)
+
+                return int((time.time() - start) * 1000)
+
         except:
             return 999999
 
+
 def is_valid_stream(url):
+    """
+    更严格的过滤规则，减少无效测速
+    """
     if url.startswith(("rtp://", "udp://", "rtsp://")):
         return False
     if "239." in url:
         return False
-    if url.startswith(("http://16.", "http://10.", "http://192.168.")):
+    if url.startswith(("http://10.", "http://192.168.", "http://127.")):
         return False
     if "/paiptv/" in url or "/00/SNM/" in url or "/00/CHANNEL" in url:
         return False
-    valid_ext = (".m3u8", ".ts", ".flv", ".mp4", ".mkv")
-    return url.startswith("http") and any(ext in url for ext in valid_ext)
+
+    # 必须是 m3u8 或 ts
+    if not (url.endswith(".m3u8") or ".m3u8?" in url or ".ts" in url):
+        return False
+
+    return True
+
 
 async def main():
     print("🚀 开始运行 ITVlist 脚本")
-    semaphore = asyncio.Semaphore(150)  # ==============================================并发限制
+    import multiprocessing
+        CPU = multiprocessing.cpu_count()
+
+        semaphore = asyncio.Semaphore(80 + CPU * 20)
 
     urls = load_urls()
     
@@ -309,7 +332,7 @@ async def main():
             for (name, url, _), speed in zip(final_results, speeds)
         ]
 
-        final_results.sort(key=lambda x: x[2])
+        final_results.sort(key=lambda x: (x[2], x[0]))
 
         itv_dict = {cat: [] for cat in CHANNEL_CATEGORIES}
         for name, url, speed in final_results:
