@@ -42,8 +42,11 @@ jobs:
           rm -f "$output"
           touch "$output"
 
+          # ⭐ 去掉 Windows 换行符（关键）
+          clean_content=$(cat "$input" | tr -d '\r')
+
           # 将 key + 内容 → Base64
-          combined=$(printf "%s%s" "$key" "$(cat "$input")")
+          combined=$(printf "%s%s" "$key" "$clean_content")
           encoded=$(printf "%s" "$combined" | base64)
 
           # 写入加密后的文件
