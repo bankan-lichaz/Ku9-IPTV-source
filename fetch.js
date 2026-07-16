@@ -149,7 +149,7 @@ function cctvNum(name) {
   console.log("开始抓取频道，共有源：", hosts.length);
 
   for (const host of hosts) {
-    const url = `http://${host}/iptv/live/1000.json?key=txiptv`;
+    const url = `${host}/iptv/live/1000.json?key=txiptv`;
 
     console.log(`⏳ 正在请求：${host}`);
 
