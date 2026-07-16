@@ -18,6 +18,11 @@ function fetchWithTimeout(url, timeout = 3000) {
 
 // ⭐ 频道映射表（你的规则）
 const CHANNEL_MAP = [
+  //特殊情况
+  { reg: /^CCTV[-\s]*少儿$/i, norm: "CCTV14少儿" },
+  { reg: /^CCTV[-\s]*新闻$/i, norm: "CCTV13新闻" },
+
+  //央视付费频道
   { reg: /兵器科技/i, norm: "CCTV兵器科技" },
   { reg: /风云音乐/i, norm: "CCTV风云音乐" },
   { reg: /第一剧场/i, norm: "CCTV第一剧场" },
