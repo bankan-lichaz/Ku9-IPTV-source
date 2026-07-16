@@ -201,6 +201,11 @@ jobs:
 
           mv "$output" merged_province.txt
 
+      - name: Encrypt merged_province.txt
+        run: |
+          echo "开始加密 merged_province.txt..."
+          node encrypt.js
+
       - name: Commit & Push
         run: |
           git config --global user.name "github-actions"
