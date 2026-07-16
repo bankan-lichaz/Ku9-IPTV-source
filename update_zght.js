@@ -28,7 +28,7 @@ function fetchWithTimeout(url, timeout = 5000) {
       .filter(Boolean);
 
     // ⭐ 最多输出 200 行
-    list = list.slice(0, 200);
+    // list = list.slice(0, 200);
 
     fs.writeFileSync("ZGHT", list.join("\n"));
 
