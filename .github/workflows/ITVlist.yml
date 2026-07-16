@@ -41,19 +41,19 @@ jobs:
           const key = "test";
           const content = fs.readFileSync("itvlist.txt", "utf8");
 
-          // 完全复刻网页 encrypt.html 的加密逻辑
+          // ⭐ 完全复刻网页 encrypt.html 的加密逻辑（逐字节一致）
           const encoder = new TextEncoder();
           const bytes = encoder.encode(key + content);
 
           let binary = "";
-          for (const b of bytes) {
-            binary += String.fromCharCode(b);
+          for (let i = 0; i < bytes.length; i++) {
+            binary += String.fromCharCode(bytes[i]);
           }
 
-          // ⭐ btoa 的等价实现（单行 Base64）
-          const encoded = Buffer.from(binary, "binary").toString("base64");
+          // ⭐ 使用浏览器 btoa 的等价实现（必须用 binary）
+          const encoded = Buffer.from(binary, "latin1").toString("base64");
 
-          // ⭐ 写入单行，没有换行，没有 BOM
+          // ⭐ 写入单行密文（没有换行）
           fs.writeFileSync("itvlist.txt", encoded, { encoding: "utf8" });
           EOF
 
