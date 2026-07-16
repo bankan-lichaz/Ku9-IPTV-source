@@ -31,17 +31,17 @@ jobs:
           python ITVlist.py
           echo "=== Finished ITVlist.py ==="
 
-      - name: Encrypt itvlist.txt (single-line, same as web encryptor)
+      - name: Encrypt itvlist.txt (exact same as encrypt.html)
         run: |
           echo "开始加密 itvlist.txt..."
 
           node - << 'EOF'
           const fs = require("fs");
 
-          const key = "test";                         // 你网页里用的那个 key
+          const key = "test";
           const content = fs.readFileSync("itvlist.txt", "utf8");
 
-          // 完全模拟网页：TextEncoder + Base64
+          // 完全复刻网页 encrypt.html 的加密逻辑
           const encoder = new TextEncoder();
           const bytes = encoder.encode(key + content);
 
@@ -50,14 +50,14 @@ jobs:
             binary += String.fromCharCode(b);
           }
 
+          // ⭐ btoa 的等价实现（单行 Base64）
           const encoded = Buffer.from(binary, "binary").toString("base64");
 
-          // ⭐ 只写一行，没有换行，没有空格
-          fs.writeFileSync("itvlist.txt", encoded.trim(), { encoding: "utf8" });
+          // ⭐ 写入单行，没有换行，没有 BOM
+          fs.writeFileSync("itvlist.txt", encoded, { encoding: "utf8" });
           EOF
 
-          echo "加密完成（单行 Base64）"
-
+          echo "加密完成（与网页加密器完全一致）"
 
 
       - name: Commit and push results
