@@ -31,39 +31,33 @@ jobs:
           python ITVlist.py
           echo "=== Finished ITVlist.py ==="
 
-      - name: Encrypt itvlist.txt (same logic as encrypt.html)
+      - name: Encrypt itvlist.txt (single-line, same as web encryptor)
         run: |
           echo "开始加密 itvlist.txt..."
 
-          key="test"
-          input="itvlist.txt"
-          output="itvlist_encrypted.txt"
-
-          # 读取原文
-          content=$(cat "$input")
-
-          # ⭐ 使用 Node.js 执行网页同款加密逻辑
           node - << 'EOF'
           const fs = require("fs");
 
-          const key = "test";
+          const key = "test";                         // 你网页里用的那个 key
           const content = fs.readFileSync("itvlist.txt", "utf8");
 
-          // 完全复刻 encrypt.html 的逻辑
+          // 完全模拟网页：TextEncoder + Base64
           const encoder = new TextEncoder();
           const bytes = encoder.encode(key + content);
 
           let binary = "";
-          bytes.forEach(b => binary += String.fromCharCode(b));
+          for (const b of bytes) {
+            binary += String.fromCharCode(b);
+          }
 
           const encoded = Buffer.from(binary, "binary").toString("base64");
 
-          fs.writeFileSync("itvlist_encrypted.txt", encoded);
+          // ⭐ 只写一行，没有换行，没有空格
+          fs.writeFileSync("itvlist.txt", encoded.trim(), { encoding: "utf8" });
           EOF
 
-          mv itvlist_encrypted.txt itvlist.txt
+          echo "加密完成（单行 Base64）"
 
-          echo "加密完成（与 encrypt.html 完全一致）"
 
 
       - name: Commit and push results
