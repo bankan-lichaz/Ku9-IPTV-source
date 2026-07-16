@@ -36,7 +36,7 @@ function fetchWithTimeout(url, timeout = 5000) {
     // ⭐ 取中开头50行
     list = list.slice(21, 50);
 
-    fs.writeFileSync("ZGHT", list.join("\n"));
+    fs.writeFileSync("ZGHT1", list.join("\n"));
 
     console.log("✅ ZGHT 更新成功，输出:", list.length, "条");
 
