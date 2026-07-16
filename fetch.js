@@ -166,7 +166,7 @@ function cctvNum(name) {
         const chid = item.chid.toString().padStart(4, "0");
 
         const playUrl =
-          `http://${host}/tsfile/live/${chid}_1.m3u8?key=txiptv&playlive=1`;
+          `${host}/tsfile/live/${chid}_1.m3u8?key=txiptv&playlive=1`;
 
         channels.push({ name, url: playUrl });
         count++;
