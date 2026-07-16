@@ -31,6 +31,10 @@ jobs:
           python ITVlist.py
           echo "=== Finished ITVlist.py ==="
 
+      - name: Remove first line of itvlist.txt
+        run: |
+          sed -i '1d' itvlist.txt
+
       - name: Encrypt itvlist.txt (Base64 with key prefix)
         run: |
           echo "开始加密 itvlist.txt..."
@@ -42,16 +46,7 @@ jobs:
           rm -f "$output"
           touch "$output"
 
-          # ⭐ 去掉 BOM
-          clean=$(sed '1s/^\xEF\xBB\xBF//' "$input")
-
-          # ⭐ 去掉所有换行（关键）
-          one_line=$(printf "%s" "$clean" | tr -d '\n' | tr -d '\r')
-
-          # ⭐ 拼接 key + 内容
-          combined=$(printf "%s%s" "$key" "$one_line")
-
-          # ⭐ Base64
+          combined=$(printf "%s%s" "$key" "$(cat "$input")")
           encoded=$(printf "%s" "$combined" | base64)
 
           printf "%s" "$encoded" > "$output"
