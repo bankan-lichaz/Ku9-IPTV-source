@@ -2,8 +2,7 @@ name: Update ZB (辽宁卫视多源)
 
 on:
   schedule:
-    - cron: "0 0 * * *"     # 每天 0 点执行
-    - cron: "0 12 * * *"    # 每天 12 点执行
+    - cron: "0 */6 * * *"     # 每6小时执行
   workflow_dispatch:         # 手动执行
 
 jobs:
