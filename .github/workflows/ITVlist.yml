@@ -35,7 +35,7 @@ jobs:
         run: |
           echo "开始加密 itvlist.txt..."
 
-          key="easy"
+          key="test"
           input="itvlist.txt"
           output="itvlist_encrypted.txt"
 
