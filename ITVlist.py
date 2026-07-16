@@ -280,12 +280,12 @@ async def main():
         beijing_now = datetime.datetime.now(
             datetime.timezone(datetime.timedelta(hours=8))
         ).strftime("%Y-%m-%d %H:%M:%S")
-        disclaimer_url = ""
+        disclaimer_url = "https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist720p.m3u8"
 
         with open("itvlist.txt", 'w', encoding='utf-8') as f:
             f.write(f"更新时间: {beijing_now}（北京时间）\n\n")
             f.write("更新时间,#genre#\n")
-            f.write(f"{beijing_now},{disclaimer_url}\n\n")
+            f.write(f"更新时间：{beijing_now},{disclaimer_url}\n\n")
 
             for cat in CHANNEL_CATEGORIES:
                 f.write(f"{cat},#genre#\n")
