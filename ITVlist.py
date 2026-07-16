@@ -1,3 +1,4 @@
+import multiprocessing
 import asyncio
 import aiohttp
 import re
@@ -254,10 +255,8 @@ async def measure_speed(session, url, semaphore):
             return 999999
 
 
+
 def is_valid_stream(url):
-    """
-    更严格的过滤规则，减少无效测速
-    """
     if url.startswith(("rtp://", "udp://", "rtsp://")):
         return False
     if "239." in url:
@@ -274,12 +273,13 @@ def is_valid_stream(url):
     return True
 
 
+
 async def main():
     print("🚀 开始运行 ITVlist 脚本")
-    import multiprocessing
-        CPU = multiprocessing.cpu_count()
 
-        semaphore = asyncio.Semaphore(80 + CPU * 20)
+CPU = multiprocessing.cpu_count()
+semaphore = asyncio.Semaphore(80 + CPU * 20)
+
 
     urls = load_urls()
     
@@ -332,7 +332,7 @@ async def main():
             for (name, url, _), speed in zip(final_results, speeds)
         ]
 
-        final_results.sort(key=lambda x: (x[2], x[0]))
+final_results.sort(key=lambda x: (x[2], x[0]))
 
         itv_dict = {cat: [] for cat in CHANNEL_CATEGORIES}
         for name, url, speed in final_results:
