@@ -33,8 +33,8 @@ function fetchWithTimeout(url, timeout = 5000) {
     // ⭐ 最多输出最后 20 行
     //list = list.slice(-20);
 
-    // ⭐ 取中开头100行
-    list = list.slice(0, 100);
+    // ⭐ 取中开头50行
+    list = list.slice(0, 50);
 
     fs.writeFileSync("ZGHT", list.join("\n"));
 
