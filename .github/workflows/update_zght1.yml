@@ -25,12 +25,12 @@ jobs:
 
     - name: Update ZGHT from iptvs.pes.im
       run: |
-        node update_zght.js
+        node update_zght1.js
 
-    - name: Commit ZGHT
+    - name: Commit ZGHT1
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
         git add ZGHT1
-        git commit -m "Update ZGHT from iptvs.pes.im"
+        git commit -m "Update ZGHT1 from iptvs.pes.im"
         git push
