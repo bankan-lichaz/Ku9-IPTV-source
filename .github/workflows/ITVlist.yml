@@ -39,29 +39,32 @@ jobs:
           input="itvlist.txt"
           output="itvlist_encrypted.txt"
 
-          rm -f "$output"
-          touch "$output"
-
-          # 读取文件内容（保持 UTF‑8）
+          # 读取原文
           content=$(cat "$input")
 
-          # ⭐ 使用 iconv 强制按 UTF‑8 编码成字节序列（网页逻辑）
-          utf8_bytes=$(printf "%s%s" "$key" "$content" | iconv -t UTF-8)
+          # ⭐ 使用 Node.js 执行网页同款加密逻辑
+          node - << 'EOF'
+          const fs = require("fs");
 
-          # ⭐ 把字节序列转换成网页的 btoa 需要的“binary string”
-          binary=""
-          while IFS= read -r -n1 char; do
-            binary="$binary$(printf "%b" "$char")"
-          done <<< "$utf8_bytes"
+          const key = "test";
+          const content = fs.readFileSync("itvlist.txt", "utf8");
 
-          # ⭐ 用 base64 编码（等价于网页的 btoa）
-          encoded=$(printf "%s" "$binary" | base64)
+          // 完全复刻 encrypt.html 的逻辑
+          const encoder = new TextEncoder();
+          const bytes = encoder.encode(key + content);
 
-          printf "%s" "$encoded" > "$output"
+          let binary = "";
+          bytes.forEach(b => binary += String.fromCharCode(b));
 
-          mv "$output" itvlist.txt
+          const encoded = Buffer.from(binary, "binary").toString("base64");
 
-          echo "加密完成（完全等同 encrypt.html 的加密方式）"
+          fs.writeFileSync("itvlist_encrypted.txt", encoded);
+          EOF
+
+          mv itvlist_encrypted.txt itvlist.txt
+
+          echo "加密完成（与 encrypt.html 完全一致）"
+
 
       - name: Commit and push results
         run: |
