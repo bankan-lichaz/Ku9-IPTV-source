@@ -120,7 +120,6 @@ const CHANNEL_MAP = [
   { reg: /西藏卫视/i, norm: "西藏卫视" },
 ];
 
-
 function normalize(name) {
   let clean = name.replace(/\s+/g, "").replace(/高清|HD|标清|SD/ig, "");
   for (const r of CHANNEL_MAP) {
@@ -141,6 +140,64 @@ function cctvNum(name) {
   return m ? parseInt(m[1]) : null;
 }
 
+async function tryJsonApi(host) {
+  const url = `${host}/iptv/live/1000.json?key=txiptv`;
+
+  try {
+    const json = await fetchWithTimeout(url, 3000).then(r => r.json());
+    const list = json.data || json;
+
+    let found = [];
+
+    for (const item of list) {
+      if (!item.name || !item.chid) continue;
+
+      const name = normalize(item.name);
+      const chid = item.chid.toString().padStart(4, "0");
+
+      const playUrl =
+        `${host}/tsfile/live/${chid}_1.m3u8?key=txiptv&playlive=1`;
+
+      found.push({ name, url: playUrl });
+    }
+
+    return { ok: true, list: found, log: `✔ ${host} JSON接口成功，频道数量：${found.length}` };
+
+  } catch (e) {
+    return { ok: false, log: `✖ ${host} JSON接口失败：${e.name === "AbortError" ? "超时中断" : e.message}` };
+  }
+}
+
+async function tryStreamerApi(host) {
+  const url = `${host}/streamer/list`;
+
+  try {
+    const json = await fetchWithTimeout(url, 3000).then(r => r.json());
+
+    if (!Array.isArray(json)) {
+      return { ok: false, log: `✖ ${host} Streamer接口返回非数组` };
+    }
+
+    let found = [];
+
+    for (const d of json) {
+      const name = normalize(d.name || "");
+      const key = (d.key || "").trim();
+
+      if (!name || !key) continue;
+
+      const playUrl = `${host}/hls/${key}/index.m3u8`;
+
+      found.push({ name, url: playUrl });
+    }
+
+    return { ok: true, list: found, log: `✔ ${host} Streamer接口成功，频道数量：${found.length}` };
+
+  } catch (e) {
+    return { ok: false, log: `✖ ${host} Streamer接口失败：${e.name === "AbortError" ? "超时中断" : e.message}` };
+  }
+}
+
 (async () => {
   let channels = [];
   let logs = [];
@@ -149,36 +206,28 @@ function cctvNum(name) {
   console.log("开始抓取频道，共有源：", hosts.length);
 
   for (const host of hosts) {
-    const url = `${host}/iptv/live/1000.json?key=txiptv`;
-
     console.log(`⏳ 正在请求：${host}`);
 
-    try {
-      const json = await fetchWithTimeout(url, 3000).then(r => r.json());
-      const list = json.data || json;
+    // ① 先尝试 JSON API
+    let r1 = await tryJsonApi(host);
+    logs.push(r1.log);
 
-      let count = 0;
-
-      for (const item of list) {
-        if (!item.name || !item.chid) continue;
-
-        const name = normalize(item.name);
-        const chid = item.chid.toString().padStart(4, "0");
-
-        const playUrl =
-          `${host}/tsfile/live/${chid}_1.m3u8?key=txiptv&playlive=1`;
-
-        channels.push({ name, url: playUrl });
-        count++;
-      }
-
-      logs.push(`✔ ${host} 成功，频道数量：${count}`);
-
-    } catch (e) {
-      logs.push(`✖ ${host} 失败：${e.name === "AbortError" ? "超时中断" : e.message}`);
-      errors.push(`${host} 请求失败`);
+    if (r1.ok) {
+      channels.push(...r1.list);
       continue;
     }
+
+    // ② JSON 失败 → 尝试 streamer/list
+    let r2 = await tryStreamerApi(host);
+    logs.push(r2.log);
+
+    if (r2.ok) {
+      channels.push(...r2.list);
+      continue;
+    }
+
+    // 两种都失败
+    errors.push(`${host} 请求失败`);
   }
 
   // 排序
