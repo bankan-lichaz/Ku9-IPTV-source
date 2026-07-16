@@ -285,7 +285,7 @@ async def main():
         with open("itvlist.txt", 'w', encoding='utf-8') as f:
             f.write(f"更新时间: {beijing_now}（北京时间）\n\n")
             f.write("更新时间,#genre#\n")
-            f.write(f"{beijing_now},{disclaimer_url}\n\n")
+            f.write(f"更新时间:{beijing_now},{disclaimer_url}\n\n")
 
             for cat in CHANNEL_CATEGORIES:
                 f.write(f"{cat},#genre#\n")
