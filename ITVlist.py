@@ -7,7 +7,7 @@ import os
 import time
 from urllib.parse import urljoin
 
-URL_FILE = "https://raw.githubusercontent.com/bankan-lichaz/Ku9-IPTV-source/refs/heads/main/ZGHT1"
+URL_FILE = "https://raw.githubusercontent.com/bankan-lichaz/Ku9-IPTV-source/refs/heads/main/ZGHT"
 
 CHANNEL_CATEGORIES = {
     "央视频道": [
