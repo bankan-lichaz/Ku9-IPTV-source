@@ -1,4 +1,4 @@
-name: Update ZGHT Only
+name: Update ZGHT1 Only
 
 on:
   workflow_dispatch:
