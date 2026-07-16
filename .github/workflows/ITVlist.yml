@@ -31,9 +31,9 @@ jobs:
           python ITVlist.py
           echo "=== Finished ITVlist.py ==="
           
-      - name: Speed test CCTV1 and filter fastest sources
+      - name: Speed test CCTV1 (5-second real download) and filter fastest sources
         run: |
-          echo "=== 开始测速 CCTV1 ==="
+          echo "=== 开始 5 秒真实拉流测速 CCTV1 ==="
 
           input="itvlist.txt"
           tmp_cctv1="cctv1_all.txt"
@@ -53,24 +53,31 @@ jobs:
             exit 0
           fi
 
-          # ② 对每条 CCTV1 进行测速
+          # ② 对每条 CCTV1 进行 5 秒真实拉流测速
           while IFS= read -r line; do
             url=$(echo "$line" | cut -d',' -f2)
             host=$(echo "$url" | sed -E 's#https?://([^/:]+).*#\1#')
 
             echo "测速：$url"
 
-            speed=$(curl -o /dev/null --max-time 5 -w "%{speed_download}" "$url" 2>/dev/null || echo "0")
-            speed_int=${speed%.*}
+            tmpfile="/tmp/test_${host}.bin"
+            rm -f "$tmpfile"
 
-            echo "$speed_int $host $url" >> "$tmp_speed"
+            # 拉流 5 秒
+            curl -o "$tmpfile" --max-time 5 "$url" 2>/dev/null || true
+
+            bytes=$(stat -c%s "$tmpfile" 2>/dev/null || echo "0")
+
+            echo "下载字节数：$bytes"
+
+            echo "$bytes $host $url" >> "$tmp_speed"
 
           done < "$tmp_cctv1"
 
-          # ③ 选出最快的 3 条
+          # ③ 选出下载量最大的 3 条（最稳定）
           top3=$(sort -nr "$tmp_speed" | head -n 3)
 
-          echo "=== 最快的 3 条源 ==="
+          echo "=== 最稳定的 3 条源（按 5 秒下载量排序） ==="
           echo "$top3"
 
           # ④ 提取这 3 条源的服务器 host
@@ -91,7 +98,7 @@ jobs:
 
           mv "$output" itvlist.txt
 
-          echo "=== 处理完成，已根据最快 3 条 CCTV1 源过滤 itvlist.txt ==="
+          echo "=== 处理完成：已根据 5 秒真实拉流最快的 3 条 CCTV1 源过滤 itvlist.txt ==="
 
 
       - name: Commit and push results
