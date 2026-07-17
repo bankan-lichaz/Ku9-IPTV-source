@@ -34,4 +34,19 @@ jobs:
             git commit -m "Update ZGHT1 from iptvs.pes.im"
             git push
           fi
+    - name: Cleanup commits older than 10 days
+      run: |
+        git fetch --all
+    
+        OLD_COMMIT=$(git rev-list -n 1 --before="10 days ago" main)
+    
+        if [ -z "$OLD_COMMIT" ]; then
+          echo "No commits older than 10 days"
+          exit 0
+        fi
+    
+        git reset --soft $OLD_COMMIT
+        git commit -m "Cleanup: keep commits from last 10 days"
+        git push --force
+
 
