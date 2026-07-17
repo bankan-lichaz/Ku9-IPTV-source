@@ -18,11 +18,6 @@ jobs:
       with:
         node-version: 18
 
-    - name: Install dependencies
-      run: |
-        npm init -y
-        npm install node-fetch@2
-
     - name: Update ZGHT from iptvs.pes.im
       run: |
         node update_zght1.js
