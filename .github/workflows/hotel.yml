@@ -20,7 +20,6 @@ jobs:
 
     - name: Install dependencies
       run: |
-        npm init -y
         npm install node-fetch@2
 
     - name: Run IPTV Fetcher
@@ -35,6 +34,11 @@ jobs:
       run: |
         git config --global user.name "github-actions"
         git config --global user.email "github-actions@github.com"
-        git add result.txt
-        git commit -m "Update IPTV list"
-        git push
+
+        if git diff --quiet result.txt; then
+            echo "No changes in result.txt"
+        else
+            git add result.txt
+            git commit -m "Update result.txt"
+            git push
+        fi
