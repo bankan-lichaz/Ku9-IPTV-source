@@ -39,6 +39,6 @@ jobs:
             echo "No changes in result.txt"
         else
             git add result.txt
-            git commit -m "Update result.txt"
+            git commit -m "Auto Update list"
             git push
         fi
