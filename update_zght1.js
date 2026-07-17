@@ -1,8 +1,7 @@
 const fs = require("fs");
-const fetch = require("node-fetch");
 
-// ⭐ 带超时的 fetch（避免卡住）
-function fetchWithTimeout(url, timeout = 5000) {
+// ⭐ Node18 自带 fetch，不需要 node-fetch
+async function fetchWithTimeout(url, timeout = 5000) {
   return Promise.race([
     fetch(url),
     new Promise((_, reject) =>
@@ -22,18 +21,11 @@ function fetchWithTimeout(url, timeout = 5000) {
       process.exit(1);
     }
 
-    // ⭐ 在每行前加 http://
     let list = json.results
       .map(item => "http://" + item.host)
       .filter(Boolean);
 
-    // ⭐ 最多输出 200 行
-    // list = list.slice(0, 200);
-    
-    // ⭐ 最多输出最后 20 行
-    //list = list.slice(-20);
-
-    // ⭐ 取中开头50行
+    // ⭐ 取中间开头 50 行（你原来的逻辑）
     list = list.slice(21, 50);
 
     fs.writeFileSync("ZGHT1", list.join("\n"));
