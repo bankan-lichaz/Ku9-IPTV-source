@@ -1,0 +1,44 @@
+name: Run ITVlist1 Script
+
+on:
+  schedule:
+    - cron: "0 10,22 * * *"
+  workflow_dispatch:
+
+jobs:
+  run-itvlist1:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install aiohttp requests
+
+      - name: Run ITVlist1 script
+        run: |
+          echo "=== Starting ITVlist1.py ==="
+          python ITVlist1.py
+          echo "=== Finished ITVlist1.py ==="
+
+      - name: Encrypt merged_province1.txt
+        run: |
+          node encrypt.js file=itvlist1.txt
+
+      - name: Commit and push results
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add itvlist1.txt
+          git commit -m "自定更新： itvlist1.txt" || echo "No changes"
+          git push --force
