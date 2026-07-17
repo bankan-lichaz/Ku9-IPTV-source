@@ -25,8 +25,8 @@ async function fetchWithTimeout(url, timeout = 5000) {
       .map(item => "http://" + item.host)
       .filter(Boolean);
 
-    // ⭐ 取中间开头 50 行（你原来的逻辑）
-    list = list.slice(21, 50);
+    // ⭐ 取中间开头 21-50 行（你原来的逻辑）
+    // list = list.slice(21, 50);
 
     fs.writeFileSync("ZGHT1", list.join("\n"));
 
