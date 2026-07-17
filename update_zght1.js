@@ -38,10 +38,10 @@ function fetchWithTimeout(url, timeout = 5000) {
 
     fs.writeFileSync("ZGHT1", list.join("\n"));
 
-    console.log("✅ ZGHT 更新成功，输出:", list.length, "条");
+    console.log("✅ ZGHT1 更新成功，输出:", list.length, "条");
 
   } catch (e) {
-    console.error("❌ 更新 ZGHT 失败:", e);
+    console.error("❌ 更新 ZGHT1 失败:", e);
     process.exit(1);
   }
 })();
