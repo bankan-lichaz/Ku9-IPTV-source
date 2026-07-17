@@ -24,8 +24,14 @@ jobs:
 
     - name: Commit ZGHT1
       run: |
-        git config --global user.name "github-actions"
-        git config --global user.email "github-actions@github.com"
-        git add ZGHT1
-        git commit -m "Update ZGHT1 from iptvs.pes.im"
-        git push
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+      
+          if git diff --quiet ZGHT1; then
+            echo "No changes in ZGHT1"
+          else
+            git add ZGHT1
+            git commit -m "Update ZGHT1 from iptvs.pes.im"
+            git push
+          fi
+
