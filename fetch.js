@@ -1,8 +1,8 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
 
-// 读取 ZGHT 文件
-const hosts = fs.readFileSync("ZGHT", "utf8")
+// 读取 ZGHT2 文件
+const hosts = fs.readFileSync("ZGHT2", "utf8")
   .split(/\r?\n/)
   .map(s => s.trim())
   .filter(Boolean);
