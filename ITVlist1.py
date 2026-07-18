@@ -363,14 +363,12 @@ async def main():
             # 取前 10 个最快的 CCTV1
             top10_cctv1 = cctv1_list[:10]
 
-            # 提取服务器地址（去掉 /hls/...）
-         def extract_server(url):
-            parts = url.split("/")
             # parts[0] = "http:"
             # parts[1] = ""
             # parts[2] = "IP:端口"
+        def extract_server(url):
+            parts = url.split("/")
             return f"{parts[0]}//{parts[2]}"
-
 
             # 写入 ZGHT2 文件
             with open("ZGHT2", "w", encoding="utf-8") as f:
