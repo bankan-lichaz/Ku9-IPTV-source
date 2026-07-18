@@ -346,34 +346,24 @@ async def main():
         # ============================
 
         # 提取所有规范化后的 CCTV1 频道源
-        cctv1_list = [
-            (name, url, speed)
-            for (name, url, speed) in final_results
-            if name == "CCTV1"
-        ]
+        print("🚀 开始生成 ZGHT2.txt（最快的 CCTV1 前 10 个）")
 
-        print(f"📡 找到规范化后的 CCTV1 频道源 {len(cctv1_list)} 条")
+        # 过滤出 CCTV1 的所有结果
+        cctv1_list = [item for item in final_results if item[0] == "CCTV1"]
 
-        if not cctv1_list:
-            print("❌ 未找到 CCTV1，无法生成 ZGHT2")
-        else:
-            # 按速度排序
-            cctv1_list.sort(key=lambda x: x[2])
+        # 按速度排序（你的 final_results 已经排序过，但这里再保险）
+        cctv1_list.sort(key=lambda x: x[2])
 
-            # 取前 10 个最快的 CCTV1
-            top10_cctv1 = cctv1_list[:10]
+        # 取前 10 个
+        top10 = cctv1_list[:10]
 
-            # parts[0] = "http:"
-            # parts[1] = ""
-            # parts[2] = "IP:端口"
+        # 写入文件
+        with open("ZGHT2.txt", "w", encoding="utf-8") as f:
+            for name, url, speed in top10:
+                f.write(url + "\n")
 
-            # 写入 ZGHT2 文件
-            with open("ZGHT2", "w", encoding="utf-8") as f:
-                for (_, url, speed) in top10_cctv1:
-                    server = extract_server(url)
-                    f.write(f"{server}\n")
+        print("🎉 ZGHT2.txt 已生成完成！（CCTV1 最快前 10 个）")
 
-            print("🎉 ZGHT2 已生成完成！（基于规范化后的 CCTV1 频道测速）")
 
 if __name__ == "__main__":
     asyncio.run(main())
