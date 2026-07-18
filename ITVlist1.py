@@ -364,9 +364,13 @@ async def main():
             top10_cctv1 = cctv1_list[:10]
 
             # 提取服务器地址（去掉 /hls/...）
-            def extract_server(url):
-                # 例如 http://1.2.3.4:8080/hls/cctv1/index.m3u8 → http://1.2.3.4:8080
-                return url.split("/hls/")[0]
+         def extract_server(url):
+            parts = url.split("/")
+            # parts[0] = "http:"
+            # parts[1] = ""
+            # parts[2] = "IP:端口"
+            return f"{parts[0]}//{parts[2]}"
+
 
             # 写入 ZGHT2 文件
             with open("ZGHT2", "w", encoding="utf-8") as f:
