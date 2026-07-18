@@ -233,14 +233,24 @@ async def fetch_streamer(session, base_url, semaphore):
 async def measure_speed(session, url, semaphore):
     async with semaphore:
         start = time.time()
+
         try:
-            async with session.head(url, timeout=2) as resp:  # =======================频道测速用时
-                if resp.status == 200:
-                    return int((time.time() - start) * 1000)
-                else:
+            # 只下载前 200KB，不浪费流量
+            headers = {"Range": "bytes=0-200000"}
+
+            async with session.get(url, headers=headers, timeout=3) as resp:
+                if resp.status not in (200, 206):
                     return 999999
+
+                # 读取少量数据
+                await resp.content.read(200000)
+
+                # 计算真实下载速度
+                return int((time.time() - start) * 1000)
+
         except:
             return 999999
+
 
 def is_valid_stream(url):
     if url.startswith(("rtp://", "udp://", "rtsp://")):
