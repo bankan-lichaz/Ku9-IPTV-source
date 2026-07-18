@@ -40,5 +40,6 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add itvlist1.txt
+          git add ZGHT2
           git commit -m "自定更新： itvlist1.txt" || echo "No changes"
           git push --force
