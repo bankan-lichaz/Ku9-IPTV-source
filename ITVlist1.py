@@ -344,25 +344,42 @@ async def main():
         # ============================
         # 基于规范化后的 CCTV1 频道测速生成 ZGHT2
         # ============================
-
-        # 提取所有规范化后的 CCTV1 频道源
+        # 过滤出 CCTV1 的所有结果
         print("🚀 开始生成 ZGHT2.txt（最快的 CCTV1 前 10 个）")
 
         # 过滤出 CCTV1 的所有结果
         cctv1_list = [item for item in final_results if item[0] == "CCTV1"]
 
-        # 按速度排序（你的 final_results 已经排序过，但这里再保险）
+        # 按速度排序
         cctv1_list.sort(key=lambda x: x[2])
 
         # 取前 10 个
         top10 = cctv1_list[:10]
 
+        def extract_base(url):
+            """
+            从完整 URL 提取 http://IP:端口
+            例如：
+            http://123.45.67.89:80/hls/cctv1/index.m3u8
+            → http://123.45.67.89:80
+            """
+            try:
+                # 去掉 http://
+                no_http = url.split("//", 1)[1]
+                # 取 IP:端口
+                ip_port = no_http.split("/", 1)[0]
+                return "http://" + ip_port
+            except:
+                return url  # 如果解析失败就原样返回
+
         # 写入文件
         with open("ZGHT2.txt", "w", encoding="utf-8") as f:
             for name, url, speed in top10:
-                f.write(url + "\n")
+                base = extract_base(url)
+                f.write(base + "\n")
 
-        print("🎉 ZGHT2.txt 已生成完成！（CCTV1 最快前 10 个）")
+        print("🎉 ZGHT2.txt 已生成完成！（格式：http://IP:端口）")
+
 
 
 if __name__ == "__main__":
