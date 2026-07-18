@@ -233,24 +233,14 @@ async def fetch_streamer(session, base_url, semaphore):
 async def measure_speed(session, url, semaphore):
     async with semaphore:
         start = time.time()
-
         try:
-            # 只下载前 200KB，不浪费流量
-            headers = {"Range": "bytes=0-200000"}
-
-            async with session.get(url, headers=headers, timeout=3) as resp:
-                if resp.status not in (200, 206):
+            async with session.head(url, timeout=2) as resp:  # =======================频道测速用时
+                if resp.status == 200:
+                    return int((time.time() - start) * 1000)
+                else:
                     return 999999
-
-                # 读取少量数据
-                await resp.content.read(200000)
-
-                # 计算真实下载速度
-                return int((time.time() - start) * 1000)
-
         except:
             return 999999
-
 
 def is_valid_stream(url):
     if url.startswith(("rtp://", "udp://", "rtsp://")):
@@ -311,61 +301,15 @@ async def main():
             if is_valid_stream(url)
         ]
 
-        print("🚀 开始构建服务器频道表（按服务器分组）")
+        print("🚀 开始测速频道源...")
+        speed_tasks = [measure_speed(session, url, semaphore) for (_, url, _) in final_results]
+        speeds = await asyncio.gather(*speed_tasks)
+        final_results = [
+            (name, url, speed)
+            for (name, url, _), speed in zip(final_results, speeds)
+        ]
 
-        # 按服务器分组频道
-        server_dict = {}  # key = base_url (http://ip:port), value = list of (name, url)
-
-        for name, url in results:
-            try:
-                no_http = url.split("//", 1)[1]
-                ip_port = no_http.split("/", 1)[0]
-                base_url = "http://" + ip_port
-            except:
-                continue
-
-            if base_url not in server_dict:
-                server_dict[base_url] = []
-
-            server_dict[base_url].append((name, url))
-
-        print(f"📡 共发现 {len(server_dict)} 个服务器")
-
-        print("⚡ 开始测速（只测 CCTV1，提高速度与准确度）")
-
-        speed_results = {}
-
-        for base_url, channels in server_dict.items():
-            # 找这个服务器的 CCTV1
-            cctv1_url = None
-            for name, url in channels:
-                if name == "CCTV1":
-                    cctv1_url = url
-                    break
-
-            # 没有 CCTV1 → 标记为慢
-            if not cctv1_url:
-                speed_results[base_url] = 999999
-                continue
-
-            # 真实测速：下载前 200KB（更准确）
-            speed = await measure_speed(session, cctv1_url, semaphore)
-            speed_results[base_url] = speed
-
-        print("📊 测速完成，开始为所有频道继承服务器速度")
-
-        # 把服务器速度赋值给所有频道
-        final_results = []
-        for base_url, channels in server_dict.items():
-            speed = speed_results.get(base_url, 999999)
-            for name, url in channels:
-                final_results.append((name, url, speed))
-
-        # 排序（速度从快到慢）
         final_results.sort(key=lambda x: x[2])
-
-        print("🏁 频道测速继承完成")
-
 
         itv_dict = {cat: [] for cat in CHANNEL_CATEGORIES}
         for name, url, speed in final_results:
