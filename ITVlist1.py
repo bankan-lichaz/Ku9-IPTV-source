@@ -366,8 +366,6 @@ async def main():
             # parts[0] = "http:"
             # parts[1] = ""
             # parts[2] = "IP:端口"
-         def extract_server(url):
-            parts = url.split("/")
 
             # 写入 ZGHT2 文件
             with open("ZGHT2", "w", encoding="utf-8") as f:
