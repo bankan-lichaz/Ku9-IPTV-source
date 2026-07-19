@@ -393,6 +393,24 @@ async def main():
         # 过滤出 CCTV1 的所有结果
         print("🚀 开始生成 ZGHT2（最快的 CCTV1 前 10 个）")
         
+        # 过滤出 CCTV1 的所有结果
+        cctv1_list = [item for item in final_results if item[0] == "CCTV1"]
+        
+        # 按速度排序
+        cctv1_list.sort(key=lambda x: x[2])
+        
+        # 取前 10 个
+        top10 = cctv1_list[:10]
+        
+        def extract_base(url):
+            """从完整 URL 提取 http://IP:端口"""
+            try:
+                no_http = url.split("//", 1)[1]
+                ip_port = no_http.split("/", 1)[0]
+                return "http://" + ip_port
+            except:
+                return url
+        
         # 新生成的前10个源
         new_list = [extract_base(url) for (_, url, _) in top10]
         
@@ -403,7 +421,7 @@ async def main():
         
         valid_old = []
         async with aiohttp.ClientSession() as session:
-            tasks = [check_old_source(session, base) for base in old_list]
+            tasks = [check_old_source(session, base, timeout=3) for base in old_list]
             results = await asyncio.gather(*tasks)
         
             for base, ok in zip(old_list, results):
