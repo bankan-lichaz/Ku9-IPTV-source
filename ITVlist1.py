@@ -390,18 +390,13 @@ async def main():
         # ============================
         # 基于规范化后的 CCTV1 频道测速生成 ZGHT2
         # ============================
-        # 过滤出 CCTV1 的所有结果
         print("🚀 开始生成 ZGHT2（最快的 CCTV1 前 10 个）")
-        
+
         # 过滤出 CCTV1 的所有结果
         cctv1_list = [item for item in final_results if item[0] == "CCTV1"]
-        
-        # 按速度排序
         cctv1_list.sort(key=lambda x: x[2])
-        
-        # 取前 10 个
         top10 = cctv1_list[:10]
-        
+
         def extract_base(url):
             """从完整 URL 提取 http://IP:端口"""
             try:
@@ -410,35 +405,80 @@ async def main():
                 return "http://" + ip_port
             except:
                 return url
-        
-        # 新生成的前10个源
+
+        # 新生成的前10个源（提取 base）
         new_list = [extract_base(url) for (_, url, _) in top10]
-        
+
         # 加载旧 ZGHT2（从 GitHub）
         old_list = load_old_zght2()
-        
+
         print("⏳ 开始验证旧 ZGHT2 是否有效（3 秒 timeout，高精度）")
-        
+
+        async def triple_check_source(session, base, timeout=3):
+            """统一的三重验证（旧源、新源都用它）"""
+            json_url = f"{base}/iptv/live/1000.json?key=txiptv"
+            streamer_url = f"{base}/streamer/list"
+            test_m3u8 = f"{base}/tsfile/live/0001_1.m3u8"
+
+            try:
+                async with session.get(json_url, timeout=timeout) as r:
+                    if r.status == 200:
+                        return True
+            except:
+                pass
+
+            try:
+                async with session.get(streamer_url, timeout=timeout) as r:
+                    if r.status == 200:
+                        data = await r.json()
+                        if isinstance(data, list) and len(data) > 0:
+                            return True
+            except:
+                pass
+
+            try:
+                async with session.head(test_m3u8, timeout=timeout) as r:
+                    if r.status == 200:
+                        return True
+            except:
+                pass
+
+            return False
+
         valid_old = []
+        valid_new = []
+
         async with aiohttp.ClientSession() as session:
-            tasks = [check_old_source(session, base, timeout=3) for base in old_list]
-            results = await asyncio.gather(*tasks)
-        
-            for base, ok in zip(old_list, results):
+            # 验证旧源
+            old_tasks = [triple_check_source(session, base, timeout=3) for base in old_list]
+            old_results = await asyncio.gather(*old_tasks)
+
+            for base, ok in zip(old_list, old_results):
                 if ok:
                     valid_old.append(base)
                 else:
-                    print(f"❌ 失效源已移除：{base}")
-        
+                    print(f"❌ 旧源失效：{base}")
+
+            # 验证新源（CCTV1 前 10）
+            print("⏳ 开始验证新增的 CCTV1 前 10 源（同样三重验证）")
+            new_tasks = [triple_check_source(session, base, timeout=3) for base in new_list]
+            new_results = await asyncio.gather(*new_tasks)
+
+            for base, ok in zip(new_list, new_results):
+                if ok:
+                    valid_new.append(base)
+                else:
+                    print(f"❌ 新源失效：{base}")
+
         # 合并 + 去重（保持顺序）
-        merged = list(dict.fromkeys(valid_old + new_list))
-        
+        merged = list(dict.fromkeys(valid_old + valid_new))
+
         # 写回 ZGHT2
         with open("ZGHT2", "w", encoding="utf-8") as f:
             for item in merged:
                 f.write(item + "\n")
-        
-        print(f"🎉 ZGHT2 已更新：旧源有效 {len(valid_old)} 条，新源 {len(new_list)} 条，合并后 {len(merged)} 条")
+
+        print(f"🎉 ZGHT2 已更新：旧源有效 {len(valid_old)} 条，新源有效 {len(valid_new)} 条，合并后 {len(merged)} 条")
 
 
 if __name__ == "__main__":
