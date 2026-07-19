@@ -321,20 +321,20 @@ async def main():
         # ============================================================
         # 2) 快速预探测（减少 70% 无效 URL）
         # ============================================================
-      async def quick_probe(url):
-          try:
-              async with session.get(url, timeout=0.8) as r:
-                  if r.status != 200:
-                      return False
-        
-                  # 不解析 JSON，只检查是否是 JSON 格式
-                  ct = r.headers.get("Content-Type", "")
-                  if "json" in ct.lower():
-                      return True
-        
-                  return False
-          except:
-              return False
+async def quick_probe(url):
+    try:
+        async with session.get(url, timeout=0.8) as r:
+            if r.status != 200:
+                return False
+
+            # 不解析 JSON，只检查是否是 JSON 格式
+            ct = r.headers.get("Content-Type", "")
+            if "json" in ct.lower():
+                return True
+
+            return False
+    except:
+        return False
 
         print("⚡ 快速预探测中（0.5 秒超时）...")
         probe_tasks = [quick_probe(u) for u in all_urls]
