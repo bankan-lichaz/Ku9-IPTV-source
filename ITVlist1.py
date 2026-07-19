@@ -267,6 +267,38 @@ def is_valid_stream(url):
         return False
     valid_ext = (".m3u8", ".ts", ".flv", ".mp4", ".mkv")
     return url.startswith("http") and any(ext in url for ext in valid_ext)
+    
+async def check_old_source(session, base, timeout=3):
+    """三层验证旧 ZGHT2 是否有效（最高精度）"""
+
+    json_url = f"{base}/iptv/live/1000.json?key=txiptv"
+    streamer_url = f"{base}/streamer/list"
+    test_m3u8 = f"{base}/tsfile/live/0001_1.m3u8"
+
+    try:
+        async with session.get(json_url, timeout=timeout) as r:
+            if r.status == 200:
+                return True
+    except:
+        pass
+
+    try:
+        async with session.get(streamer_url, timeout=timeout) as r:
+            if r.status == 200:
+                data = await r.json()
+                if isinstance(data, list) and len(data) > 0:
+                    return True
+    except:
+        pass
+
+    try:
+        async with session.head(test_m3u8, timeout=timeout) as r:
+            if r.status == 200:
+                return True
+    except:
+        pass
+
+    return False
 
 async def main():
     print("🚀 开始运行 ITVlist1 脚本")
@@ -361,39 +393,35 @@ async def main():
         # 过滤出 CCTV1 的所有结果
         print("🚀 开始生成 ZGHT2（最快的 CCTV1 前 10 个）")
         
-        # 过滤出 CCTV1 的所有结果
-        cctv1_list = [item for item in final_results if item[0] == "CCTV1"]
-        
-        # 按速度排序
-        cctv1_list.sort(key=lambda x: x[2])
-        
-        # 取前 10 个
-        top10 = cctv1_list[:10]
-        
-        def extract_base(url):
-            """从完整 URL 提取 http://IP:端口"""
-            try:
-                no_http = url.split("//", 1)[1]
-                ip_port = no_http.split("/", 1)[0]
-                return "http://" + ip_port
-            except:
-                return url
-        
         # 新生成的前10个源
         new_list = [extract_base(url) for (_, url, _) in top10]
         
         # 加载旧 ZGHT2（从 GitHub）
         old_list = load_old_zght2()
         
+        print("⏳ 开始验证旧 ZGHT2 是否有效（3 秒 timeout，高精度）")
+        
+        valid_old = []
+        async with aiohttp.ClientSession() as session:
+            tasks = [check_old_source(session, base) for base in old_list]
+            results = await asyncio.gather(*tasks)
+        
+            for base, ok in zip(old_list, results):
+                if ok:
+                    valid_old.append(base)
+                else:
+                    print(f"❌ 失效源已移除：{base}")
+        
         # 合并 + 去重（保持顺序）
-        merged = list(dict.fromkeys(old_list + new_list))
+        merged = list(dict.fromkeys(valid_old + new_list))
         
         # 写回 ZGHT2
         with open("ZGHT2", "w", encoding="utf-8") as f:
             for item in merged:
                 f.write(item + "\n")
         
-        print(f"🎉 ZGHT2 已更新：旧源 {len(old_list)} 条，新源 {len(new_list)} 条，合并后 {len(merged)} 条")
+        print(f"🎉 ZGHT2 已更新：旧源有效 {len(valid_old)} 条，新源 {len(new_list)} 条，合并后 {len(merged)} 条")
+
 
 if __name__ == "__main__":
     asyncio.run(main())
