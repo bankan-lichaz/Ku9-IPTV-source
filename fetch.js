@@ -7,6 +7,18 @@ const hosts = fs.readFileSync("ZGHT2", "utf8")
   .map(s => s.trim())
   .filter(Boolean);
 
+// ⭐ 抓取ip:port
+function extractHostPort(url) {
+  try {
+    const u = new URL(url);
+    // 有端口就返回 host:port，没有端口就返回 host
+    return u.port ? `${u.hostname}:${u.port}` : u.hostname;
+  } catch (e) {
+    return "";
+  }
+}
+
+
 // ⭐ 真正可中断的 fetch（3 秒）
 function fetchWithTimeout(url, timeout = 3000) {
   const controller = new AbortController();
@@ -250,7 +262,14 @@ async function tryStreamerApi(host) {
     return a.name.localeCompare(b.name);
   });
 
-  let out = channels.map(ch => `${ch.name},${ch.url}`).join("\n");
+  // let out = channels.map(ch => `${ch.name},${ch.url}`).join("\n");
+
+  // ⭐ 在每行末尾追加 $host:port
+  let out = channels.map(ch => {
+    const hostPort = extractHostPort(ch.url);
+    return `${ch.name},${ch.url}$${hostPort}`;
+  }).join("\n");
+
 
   out += "\n\n# Fetch Logs:\n" + logs.join("\n");
 
