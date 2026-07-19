@@ -9,6 +9,9 @@ from urllib.parse import urljoin
 
 URL_FILE = "https://raw.githubusercontent.com/bankan-lichaz/Ku9-IPTV-source/refs/heads/main/ZGHT1"
 
+//追加
+ZGHT2_URL = "https://raw.githubusercontent.com/bankan-lichaz/Ku9-IPTV-source/refs/heads/main/ZGHT2"
+
 CHANNEL_CATEGORIES = {
     "央视频道": [
         "CCTV1", "CCTV2", "CCTV3", "CCTV4", "CCTV4欧洲", "CCTV4美洲", "CCTV5", "CCTV5+", "CCTV6", "CCTV7",
@@ -140,6 +143,18 @@ def load_urls():
     except Exception as e:
         print(f"❌ 下载 {URL_FILE} 失败: {e}")
         exit()
+
+def load_old_zght2():
+    """从 GitHub 加载旧 ZGHT2"""
+    try:
+        resp = requests.get(ZGHT2_URL, timeout=5)
+        resp.raise_for_status()
+        lines = [line.strip() for line in resp.text.splitlines() if line.strip()]
+        print(f"📡 已加载旧 ZGHT2：{len(lines)} 条")
+        return lines
+    except Exception as e:
+        print(f"❌ 加载旧 ZGHT2 失败：{e}")
+        return []
 
 async def generate_urls(url):
     modified_urls = []
@@ -346,34 +361,40 @@ async def main():
         # ============================
         # 过滤出 CCTV1 的所有结果
         print("🚀 开始生成 ZGHT2（最快的 CCTV1 前 10 个）")
-
+        
         # 过滤出 CCTV1 的所有结果
         cctv1_list = [item for item in final_results if item[0] == "CCTV1"]
-
+        
         # 按速度排序
         cctv1_list.sort(key=lambda x: x[2])
-
+        
         # 取前 10 个
         top10 = cctv1_list[:10]
-
+        
         def extract_base(url):
-            """
-            从完整 URL 提取 http://IP:端口
-            """
+            """从完整 URL 提取 http://IP:端口"""
             try:
                 no_http = url.split("//", 1)[1]
                 ip_port = no_http.split("/", 1)[0]
                 return "http://" + ip_port
             except:
                 return url
-
-        # 写入无扩展名文件 ZGHT2
+        
+        # 新生成的前10个源
+        new_list = [extract_base(url) for (_, url, _) in top10]
+        
+        # 加载旧 ZGHT2（从 GitHub）
+        old_list = load_old_zght2()
+        
+        # 合并 + 去重（保持顺序）
+        merged = list(dict.fromkeys(old_list + new_list))
+        
+        # 写回 ZGHT2
         with open("ZGHT2", "w", encoding="utf-8") as f:
-            for name, url, speed in top10:
-                base = extract_base(url)
-                f.write(base + "\n")
-
-        print("🎉 ZGHT2 已生成完成！（格式：http://IP:端口）")
+            for item in merged:
+                f.write(item + "\n")
+        
+        print(f"🎉 ZGHT2 已更新：旧源 {len(old_list)} 条，新源 {len(new_list)} 条，合并后 {len(merged)} 条")
 
 if __name__ == "__main__":
     asyncio.run(main())
