@@ -9,7 +9,6 @@ from urllib.parse import urljoin
 
 URL_FILE = "https://raw.githubusercontent.com/bankan-lichaz/Ku9-IPTV-source/refs/heads/main/ZGHT1"
 
-//追加
 ZGHT2_URL = "https://raw.githubusercontent.com/bankan-lichaz/Ku9-IPTV-source/refs/heads/main/ZGHT2"
 
 CHANNEL_CATEGORIES = {
