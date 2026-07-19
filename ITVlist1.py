@@ -301,62 +301,94 @@ async def check_old_source(session, base, timeout=3):
     return False
 
 async def main():
-    print("🚀 开始运行 ITVlist1 脚本")
-    semaphore = asyncio.Semaphore(150)  # ==============================================并发限制
+    print("🚀 开始运行 ITVlist1 极速版")
+    semaphore = asyncio.Semaphore(600)  # 并发大幅提升
 
     urls = load_urls()
-    
+
     async with aiohttp.ClientSession() as session:
+
+        # ============================================================
+        # 1) 生成所有 JSON 地址
+        # ============================================================
         all_urls = []
         for url in urls:
             modified_urls = await generate_urls(url)
             all_urls.extend(modified_urls)
+
         print(f"🔍 生成待扫描 URL 共: {len(all_urls)} 个")
 
-        print("⏳ 开始检测可用 JSON API...")
-        tasks = [check_url(session, u, semaphore) for u in all_urls]
-        valid_urls = [r for r in await asyncio.gather(*tasks) if r]
-        print(f"✅ 可用 JSON 地址: {len(valid_urls)} 个")
-        for u in valid_urls:
-            print(f"  - {u}")
+        # ============================================================
+        # 2) 快速预探测（减少 70% 无效 URL）
+        # ============================================================
+        async def quick_probe(url):
+            try:
+                async with session.head(url, timeout=0.5) as r:
+                    return r.status == 200
+            except:
+                return False
 
-        print("📥 开始抓取节目单 JSON + Streamer...")
-        
-        results = []
-        for u in valid_urls:
-            json_result = await fetch_json(session, u, semaphore)
-        
-            if json_result:  # JSON 成功
-                results.extend(json_result)
-                continue
-        
-            # JSON 失败 → 尝试 Streamer 接口
-            streamer_result = await fetch_streamer(session, u, semaphore)
+        print("⚡ 快速预探测中（0.5 秒超时）...")
+        probe_tasks = [quick_probe(u) for u in all_urls]
+        probe_results = await asyncio.gather(*probe_tasks)
+
+        candidate_urls = [u for u, ok in zip(all_urls, probe_results) if ok]
+        print(f"⚡ 预探测后剩余可疑 JSON 地址: {len(candidate_urls)} 个")
+
+        # ============================================================
+        # 3) JSON + streamer 并行扫描
+        # ============================================================
+        async def scan_source(url):
+            json_task = fetch_json(session, url, semaphore)
+            streamer_task = fetch_streamer(session, url, semaphore)
+
+            json_result, streamer_result = await asyncio.gather(json_task, streamer_task)
+
+            if json_result:
+                return json_result
             if streamer_result:
-                print(f"🔄 {u} 使用 Streamer 接口成功，共 {len(streamer_result)} 条")
-                results.extend(streamer_result)
-            else:
-                print(f"❌ {u} JSON 和 Streamer 都失败")
+                print(f"🔄 {url} 使用 Streamer 接口成功，共 {len(streamer_result)} 条")
+                return streamer_result
 
+            return []
 
+        print("📥 开始并发抓取节目单 JSON + Streamer...")
+        scan_tasks = [scan_source(u) for u in candidate_urls]
+        scan_results = await asyncio.gather(*scan_tasks)
+
+        results = []
+        for r in scan_results:
+            results.extend(r)
+
+        # ============================================================
+        # 4) 过滤非法源
+        # ============================================================
         final_results = [(name, url, 0) for name, url in results]
+        final_results = [(n, u, s) for (n, u, s) in final_results if is_valid_stream(u)]
 
-        final_results = [
-            (name, url, speed)
-            for name, url, speed in final_results
-            if is_valid_stream(url)
-        ]
+        # ============================================================
+        # 5) 并发测速（0.5 秒超时）
+        # ============================================================
+        print("🚀 开始测速频道源（0.5 秒超时）...")
+        async def fast_speed(url):
+            try:
+                start = time.time()
+                async with session.head(url, timeout=0.5) as r:
+                    if r.status == 200:
+                        return int((time.time() - start) * 1000)
+            except:
+                pass
+            return 999999
 
-        print("🚀 开始测速频道源...")
-        speed_tasks = [measure_speed(session, url, semaphore) for (_, url, _) in final_results]
+        speed_tasks = [fast_speed(url) for (_, url, _) in final_results]
         speeds = await asyncio.gather(*speed_tasks)
-        final_results = [
-            (name, url, speed)
-            for (name, url, _), speed in zip(final_results, speeds)
-        ]
 
+        final_results = [(name, url, speed) for (name, url, _), speed in zip(final_results, speeds)]
         final_results.sort(key=lambda x: x[2])
 
+        # ============================================================
+        # 6) 分类写入 itvlist1.txt
+        # ============================================================
         itv_dict = {cat: [] for cat in CHANNEL_CATEGORIES}
         for name, url, speed in final_results:
             for cat, channels in CHANNEL_CATEGORIES.items():
@@ -364,12 +396,10 @@ async def main():
                     itv_dict[cat].append((name, url, speed))
                     break
 
-        for cat in CHANNEL_CATEGORIES:
-            print(f"📦 分类《{cat}》找到 {len(itv_dict[cat])} 条频道")
-
         beijing_now = datetime.datetime.now(
             datetime.timezone(datetime.timedelta(hours=8))
         ).strftime("%Y-%m-%d %H:%M:%S")
+
         disclaimer_url = "https://aegis-cloudfront-1.tubi.video/bb1fc6ad-9948-42ea-aaf3-20acfcdeecac/playlist720p.m3u8"
 
         with open("itvlist1.txt", 'w', encoding='utf-8') as f:
@@ -380,25 +410,22 @@ async def main():
             for cat in CHANNEL_CATEGORIES:
                 f.write(f"{cat},#genre#\n")
                 for ch in CHANNEL_CATEGORIES[cat]:
-                    ch_items = [x for x in itv_dict[cat] if x[0] == ch]
-                    ch_items = ch_items[:RESULTS_PER_CHANNEL]
+                    ch_items = [x for x in itv_dict[cat] if x[0] == ch][:RESULTS_PER_CHANNEL]
                     for item in ch_items:
                         f.write(f"{item[0]},{item[1]}\n")
 
         print("🎉 itvlist1.txt 已生成完成！")
 
-        # ============================
-        # 基于规范化后的 CCTV1 频道测速生成 ZGHT2
-        # ============================
+        # ============================================================
+        # 7) 生成 ZGHT2（含三重验证）
+        # ============================================================
         print("🚀 开始生成 ZGHT2（最快的 CCTV1 前 10 个）")
 
-        # 过滤出 CCTV1 的所有结果
         cctv1_list = [item for item in final_results if item[0] == "CCTV1"]
         cctv1_list.sort(key=lambda x: x[2])
         top10 = cctv1_list[:10]
 
         def extract_base(url):
-            """从完整 URL 提取 http://IP:端口"""
             try:
                 no_http = url.split("//", 1)[1]
                 ip_port = no_http.split("/", 1)[0]
@@ -406,16 +433,10 @@ async def main():
             except:
                 return url
 
-        # 新生成的前10个源（提取 base）
         new_list = [extract_base(url) for (_, url, _) in top10]
-
-        # 加载旧 ZGHT2（从 GitHub）
         old_list = load_old_zght2()
 
-        print("⏳ 开始验证旧 ZGHT2 是否有效（3 秒 timeout，高精度）")
-
         async def triple_check_source(session, base, timeout=3):
-            """统一的三重验证（旧源、新源都用它）"""
             json_url = f"{base}/iptv/live/1000.json?key=txiptv"
             streamer_url = f"{base}/streamer/list"
             test_m3u8 = f"{base}/tsfile/live/0001_1.m3u8"
@@ -448,9 +469,8 @@ async def main():
         valid_old = []
         valid_new = []
 
-        async with aiohttp.ClientSession() as session:
-            # 验证旧源
-            old_tasks = [triple_check_source(session, base, timeout=3) for base in old_list]
+        async with aiohttp.ClientSession() as session2:
+            old_tasks = [triple_check_source(session2, base) for base in old_list]
             old_results = await asyncio.gather(*old_tasks)
 
             for base, ok in zip(old_list, old_results):
@@ -459,9 +479,7 @@ async def main():
                 else:
                     print(f"❌ 旧源失效：{base}")
 
-            # 验证新源（CCTV1 前 10）
-            print("⏳ 开始验证新增的 CCTV1 前 10 源（同样三重验证）")
-            new_tasks = [triple_check_source(session, base, timeout=3) for base in new_list]
+            new_tasks = [triple_check_source(session2, base) for base in new_list]
             new_results = await asyncio.gather(*new_tasks)
 
             for base, ok in zip(new_list, new_results):
@@ -470,16 +488,13 @@ async def main():
                 else:
                     print(f"❌ 新源失效：{base}")
 
-        # 合并 + 去重（保持顺序）
         merged = list(dict.fromkeys(valid_old + valid_new))
 
-        # 写回 ZGHT2
         with open("ZGHT2", "w", encoding="utf-8") as f:
             for item in merged:
                 f.write(item + "\n")
 
-        print(f"🎉 ZGHT2 已更新：旧源有效 {len(valid_old)} 条，新源有效 {len(valid_new)} 条，合并后 {len(merged)} 条")
-
+        print(f"🎉 ZGHT2 已更新：旧源有效 {len(valid_old)} 条，新源有效 {len(valid_new)} 条，合并后 {len(merged)} 条")         
 
 if __name__ == "__main__":
     asyncio.run(main())
