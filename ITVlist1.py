@@ -301,12 +301,19 @@ async def check_old_source(session, base, timeout=3):
     return False
 
 async def main():
-    print("🚀 开始运行 ITVlist1 极速版")
-    semaphore = asyncio.Semaphore(600)  # 并发大幅提升
+    print("🚀 开始运行 ITVlist1 极速修复版")
 
-    urls = load_urls()
+    # IPTV 服务器必须带 UA 和 Accept，否则很多会拒绝访问
+    async with aiohttp.ClientSession(
+        headers={
+            "User-Agent": "Mozilla/5.0",
+            "Accept": "application/json"
+        }
+    ) as session:
 
-    async with aiohttp.ClientSession() as session:
+        semaphore = asyncio.Semaphore(600)  # 高并发
+
+        urls = load_urls()
 
         # ============================================================
         # 1) 生成所有 JSON 地址
@@ -319,29 +326,25 @@ async def main():
         print(f"🔍 生成待扫描 URL 共: {len(all_urls)} 个")
 
         # ============================================================
-        # 2) 快速预探测（减少 70% 无效 URL）
+        # 2) 快速预探测（必须用 GET，不能用 HEAD）
         # ============================================================
-async def quick_probe(url):
-    try:
-        async with session.get(url, timeout=0.8) as r:
-            if r.status != 200:
+        async def quick_probe(url):
+            try:
+                async with session.get(url, timeout=2) as r:
+                    return r.status == 200
+            except:
                 return False
 
-            # 不解析 JSON，只检查是否是 JSON 格式
-            ct = r.headers.get("Content-Type", "")
-            if "json" in ct.lower():
-                return True
-
-            return False
-    except:
-        return False
-
-        print("⚡ 快速预探测中（0.5 秒超时）...")
+        print("⚡ 快速预探测中（2 秒超时）...")
         probe_tasks = [quick_probe(u) for u in all_urls]
         probe_results = await asyncio.gather(*probe_tasks)
 
         candidate_urls = [u for u, ok in zip(all_urls, probe_results) if ok]
         print(f"⚡ 预探测后剩余可疑 JSON 地址: {len(candidate_urls)} 个")
+
+        if not candidate_urls:
+            print("❌ 预探测后没有任何可疑 JSON 地址，停止运行")
+            return
 
         # ============================================================
         # 3) JSON + streamer 并行扫描
@@ -375,13 +378,14 @@ async def quick_probe(url):
         final_results = [(n, u, s) for (n, u, s) in final_results if is_valid_stream(u)]
 
         # ============================================================
-        # 5) 并发测速（0.5 秒超时）
+        # 5) 并发测速（必须用 GET，不能用 HEAD）
         # ============================================================
         print("🚀 开始测速频道源（0.5 秒超时）...")
+
         async def fast_speed(url):
             try:
                 start = time.time()
-                async with session.head(url, timeout=0.5) as r:
+                async with session.get(url, timeout=0.5) as r:
                     if r.status == 200:
                         return int((time.time() - start) * 1000)
             except:
@@ -466,7 +470,7 @@ async def quick_probe(url):
                 pass
 
             try:
-                async with session.head(test_m3u8, timeout=timeout) as r:
+                async with session.get(test_m3u8, timeout=timeout) as r:
                     if r.status == 200:
                         return True
             except:
@@ -477,7 +481,13 @@ async def quick_probe(url):
         valid_old = []
         valid_new = []
 
-        async with aiohttp.ClientSession() as session2:
+        async with aiohttp.ClientSession(
+            headers={
+                "User-Agent": "Mozilla/5.0",
+                "Accept": "application/json"
+            }
+        ) as session2:
+
             old_tasks = [triple_check_source(session2, base) for base in old_list]
             old_results = await asyncio.gather(*old_tasks)
 
@@ -502,7 +512,7 @@ async def quick_probe(url):
             for item in merged:
                 f.write(item + "\n")
 
-        print(f"🎉 ZGHT2 已更新：旧源有效 {len(valid_old)} 条，新源有效 {len(valid_new)} 条，合并后 {len(merged)} 条")         
+        print(f"🎉 ZGHT2 已更新：旧源有效 {len(valid_old)} 条，新源有效 {len(valid_new)} 条，合并后 {len(merged)} 条")    
 
 if __name__ == "__main__":
     asyncio.run(main())
