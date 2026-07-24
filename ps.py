@@ -20,14 +20,14 @@ def scan_single_ip(ip, port, timeout=0.3):
         result = sock.connect_ex((ip, port))
         sock.close()
         if result == 0:
-            return ip
+            return f"{ip}:{port}"
     except:
         pass
     return None
 
 def scan_all():
     ip_list = expand_ip_range(START_IP, END_IP)
-    open_ips = []
+    open_targets = []
 
     print(f"总扫描 IP 数量：{len(ip_list)}")
 
@@ -39,26 +39,31 @@ def scan_all():
             try:
                 result = future.result()
                 if result:
-                    open_ips.append(result)
-                    print(f"开放：{result}:{PORT}")
+                    open_targets.append(result)
+                    print(f"开放：{result}")
             except:
                 pass
 
-            # 输出进度
             if i % 200 == 0:
                 print(f"进度：{i}/{len(ip_list)}")
 
-    return open_ips
+    return open_targets
 
-def update_zb_file(open_ips):
+def update_zb_file(open_targets):
+    """
+    第一行格式：
+    5,116.2.160.23:4010,116.2.161.44:4010,116.2.170.88:4010,
+    如果没有开放端口，则不修改文件
+    """
     try:
         with open(ZB_FILE, "r", encoding="utf-8") as f:
             lines = f.readlines()
     except FileNotFoundError:
         lines = ["5,\n"]
 
-    if open_ips:
-        new_first_line = "5," + "|".join(open_ips) + "\n"
+    if open_targets:
+        # 末尾保留一个逗号
+        new_first_line = "5," + ",".join(open_targets) + ",\n"
         lines[0] = new_first_line
 
         with open(ZB_FILE, "w", encoding="utf-8") as f:
@@ -70,5 +75,5 @@ def update_zb_file(open_ips):
 
 if __name__ == "__main__":
     print("开始扫描端口 4010 ...")
-    open_ips = scan_all()
-    update_zb_file(open_ips)
+    open_targets = scan_all()
+    update_zb_file(open_targets)
