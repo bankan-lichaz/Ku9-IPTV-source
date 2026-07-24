@@ -1,0 +1,35 @@
+name: Update ZB
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # 每 6 小时运行一次
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install ipaddress
+
+      - name: Run scanner
+        run: |
+          python ps.py
+
+      - name: Commit changes
+        run: |
+          git config --global user.name "github-actions"
+          git config --global user.email "github-actions@github.com"
+          git add ZB
+          git commit -m "Update ZB from scanner" || echo "No changes"
+          git push
