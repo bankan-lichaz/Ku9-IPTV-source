@@ -64,7 +64,7 @@ def update_zb_file(open_targets):
 
     if open_targets:
         # 不加末尾逗号
-        new_first_line = "5," + ",".join(open_targets) + "\n"
+        new_first_line = "1," + ",".join(open_targets) + "\n"
         lines[0] = new_first_line
 
         with open(ZB_FILE, "w", encoding="utf-8") as f:
