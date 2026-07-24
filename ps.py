@@ -52,8 +52,9 @@ def scan_all():
 def update_zb_file(open_targets):
     """
     第一行格式：
-    5,116.2.160.23:4010,116.2.161.44:4010,116.2.170.88:4010,
-    如果没有开放端口，则不修改文件
+    5,IP:PORT,IP:PORT,IP:PORT
+    如果只有一个：5,IP:PORT
+    如果没有开放端口：保持原样
     """
     try:
         with open(ZB_FILE, "r", encoding="utf-8") as f:
@@ -62,8 +63,8 @@ def update_zb_file(open_targets):
         lines = ["5,\n"]
 
     if open_targets:
-        # 末尾保留一个逗号
-        new_first_line = "5," + ",".join(open_targets) + ",\n"
+        # 不加末尾逗号
+        new_first_line = "5," + ",".join(open_targets) + "\n"
         lines[0] = new_first_line
 
         with open(ZB_FILE, "w", encoding="utf-8") as f:
