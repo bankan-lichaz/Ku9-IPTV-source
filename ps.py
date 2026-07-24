@@ -1,7 +1,8 @@
 import socket
 import ipaddress
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
-ZB_FILE = "ZB"  # 你的 ZB 文件名，可改成 zb.txt 或其他
+ZB_FILE = "ZB"
 
 START_IP = "116.2.160.1"
 END_IP = "116.2.180.255"
@@ -12,7 +13,7 @@ def expand_ip_range(start_ip, end_ip):
     end = ipaddress.IPv4Address(end_ip)
     return [str(ipaddress.IPv4Address(ip)) for ip in range(int(start), int(end) + 1)]
 
-def scan_single_ip(ip, port, timeout=1):
+def scan_single_ip(ip, port, timeout=0.3):
     try:
         sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         sock.settimeout(timeout)
@@ -28,24 +29,33 @@ def scan_all():
     ip_list = expand_ip_range(START_IP, END_IP)
     open_ips = []
 
-    for ip in ip_list:
-        result = scan_single_ip(ip, PORT)
-        if result:
-            open_ips.append(result)
+    print(f"总扫描 IP 数量：{len(ip_list)}")
+
+    with ThreadPoolExecutor(max_workers=1000) as executor:
+        futures = {executor.submit(scan_single_ip, ip, PORT): ip for ip in ip_list}
+
+        for i, future in enumerate(as_completed(futures)):
+            ip = futures[future]
+            try:
+                result = future.result()
+                if result:
+                    open_ips.append(result)
+                    print(f"开放：{result}:{PORT}")
+            except:
+                pass
+
+            # 输出进度
+            if i % 200 == 0:
+                print(f"进度：{i}/{len(ip_list)}")
 
     return open_ips
 
 def update_zb_file(open_ips):
-    """
-    写入 ZB 文件第一行：
-    格式：5,IP1|IP2|IP3
-    如果 open_ips 为空，则不修改文件
-    """
     try:
         with open(ZB_FILE, "r", encoding="utf-8") as f:
             lines = f.readlines()
     except FileNotFoundError:
-        lines = ["5,\n"]  # 如果文件不存在，创建一个默认第一行
+        lines = ["5,\n"]
 
     if open_ips:
         new_first_line = "5," + "|".join(open_ips) + "\n"
