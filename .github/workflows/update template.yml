@@ -1,4 +1,4 @@
-name: Update fwc.m3u
+name: Update template.m3u
 
 on:
   schedule:
