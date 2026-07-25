@@ -21,11 +21,11 @@ jobs:
           # 替换域名
           sed -i "s/izihao.cn:7123/mg000/g" template.m3u
 
-          # 转换为 txt（其实就是复制内容）
-          cp template.m3u template.txt
+          # ⭐ 真正转换为 txt：提取所有非 # 开头的行（即真实链接）
+          grep -v "^#" template.m3u > template.txt
 
-          # 如果你想最终文件名叫 template（无后缀）
-          cp template.m3u zubo/template
+          # 如果你要最终文件名叫 template（无后缀）
+          cp template.txt zubo/template
 
       - name: Commit and push
         run: |
