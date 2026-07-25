@@ -13,17 +13,24 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Download template
+      - name: Download and convert template
         run: |
+          # 下载 m3u
           curl -L http://izihao.cn:7123/ -o template.m3u
 
-          # ⭐ 模板替换成 mg000
+          # 替换域名
           sed -i "s/izihao.cn:7123/mg000/g" template.m3u
+
+          # 转换为 txt（其实就是复制内容）
+          cp template.m3u template.txt
+
+          # 如果你想最终文件名叫 template（无后缀）
+          cp template.m3u zubo/template
 
       - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add .
-          git commit -m "Auto update m3u files" || echo "No changes to commit"
+          git add zubo/template
+          git commit -m "Auto update template files" || echo "No changes to commit"
           git push
