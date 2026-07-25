@@ -21,10 +21,20 @@ jobs:
           # 替换域名
           sed -i "s/izihao.cn:7123/mg000/g" template.m3u
 
-          # ⭐ 真正转换为 txt：提取所有非 # 开头的行（即真实链接）
-          grep -v "^#" template.m3u > template.txt
+          # ⭐ 解析频道名 + 链接，输出为 txt
+          awk -F',' '
+            /^#EXTINF/ {
+              # 提取频道名（逗号后面的部分）
+              name=$2
+            }
+            /^[^#]/ {
+              # 当前行是链接
+              url=$0
+              print name "," url
+            }
+          ' template.m3u > template.txt
 
-          # 如果你要最终文件名叫 template（无后缀）
+          # 如果你需要无后缀文件
           cp template.txt zubo/template
 
       - name: Commit and push
