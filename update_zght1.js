@@ -23,7 +23,8 @@ async function fetchWithTimeout(url, timeout = 5000) {
 
     let list = json.results
       .map(item => "http://" + item.host)
-      .filter(Boolean);
+      .filter(Boolean)
+      .filter(line => !line.includes("219.137"));   // ⭐ 去除含 219.137 的行
 
     // ⭐ 取中间开头 21-50 行（你原来的逻辑）
     // list = list.slice(21, 50);
