@@ -22,7 +22,7 @@ async function fetchWithTimeout(url, timeout = 5000) {
     }
     
     // const blockList = ["219.137", "220.122"];
-    const blockList = ["219.137"];
+    const blockList = ["219.137", "221.232"];
     let list = json.results
       .map(item => "http://" + item.host)
       .filter(Boolean)
