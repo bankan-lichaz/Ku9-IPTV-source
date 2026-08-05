@@ -52,27 +52,27 @@ def scan_all():
 def update_zb_file(open_targets):
     """
     第一行格式：
-    5,IP:PORT,IP:PORT,IP:PORT
-    如果只有一个：5,IP:PORT
-    如果没有开放端口：保持原样
+    1,IP:PORT,IP:PORT
+    如果没有开放端口：lines[0] 清空
     """
     try:
         with open(ZB_FILE, "r", encoding="utf-8") as f:
             lines = f.readlines()
     except FileNotFoundError:
-        lines = ["5,\n"]
+        lines = ["\n"]  # 文件不存在时创建一个空行
 
     if open_targets:
-        # 不加末尾逗号
+        # 有开放端口 → 写入 1,IP:PORT...
         new_first_line = "1," + ",".join(open_targets) + "\n"
         lines[0] = new_first_line
-
-        with open(ZB_FILE, "w", encoding="utf-8") as f:
-            f.writelines(lines)
-
         print("ZB 文件已更新：", new_first_line.strip())
     else:
-        print("未扫描到开放端口，ZB 文件保持不变")
+        # ⭐ 没有开放端口 → 第一行清空
+        lines[0] = "\n"
+        print("未扫描到开放端口，已清空 ZB 第一行")
+
+    with open(ZB_FILE, "w", encoding="utf-8") as f:
+        f.writelines(lines)
 
 if __name__ == "__main__":
     print("开始扫描端口 4010 ...")
