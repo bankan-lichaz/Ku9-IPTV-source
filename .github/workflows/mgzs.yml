@@ -24,6 +24,10 @@ jobs:
       - name: Run Speed Test
         run: python mgzs.py
 
+      - name: Encrypt MGZS
+        run: |
+          node encrypt.js file=MGZS
+
       - name: Commit MGZS
         run: |
           git config user.name "MGZS Bot"
