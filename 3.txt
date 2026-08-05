@@ -1,0 +1,7 @@
+CCTV1综合,http://wfenf.x3322.net:7788/608807420
+CCTV5体育,http://wfenf.x3322.net:7788/641886683
+CCTV5+体育赛事,http://wfenf.x3322.net:7788/641886773
+CCTV6电影,http://wfenf.x3322.net:7788/624878396
+CCTV8电视剧,http://wfenf.x3322.net:7788/624878356
+CCTV13新闻,http://wfenf.x3322.net:7788/608807423
+辽宁卫视,http://wfenf.x3322.net:7788/630291707
