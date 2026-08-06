@@ -1,0 +1,41 @@
+name: MGZS Auto Build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 */12 * * *"
+
+jobs:
+  build-mgpd:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Install Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Speed Test
+        run: python mbst.py
+
+      - name: Encrypt MBST
+        run: |
+          node encrypt.js file=MBST
+
+      - name: Commit MBST
+        run: |
+          git config user.name "MBST Bot"
+          git config user.email "bot@example.com"
+          if git diff --quiet MBST; then
+            echo "No changes in MBST"
+          else
+            git add MBST
+            git commit -m "Auto update MBST"
+            git push
+          fi
