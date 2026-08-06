@@ -1,4 +1,4 @@
-name: MGZS Auto Build
+name: MBST Auto Build
 
 on:
   workflow_dispatch:
