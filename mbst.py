@@ -92,10 +92,11 @@ def process_channel(index, line):
 
     playable = check_m3u8_playable(final_url)
     if not playable:
-        print(f"  ❌ {name}：final_url 不可播放\n")
-        return None
+        print(f"  ⚠ {name}：final_url 不可播放，但仍写入\n")
+    else:
+        print(f"  ✔ {name}：可播放：{final_url}\n")
 
-    print(f"  ✔ {name}：可播放：{final_url}\n")
+    # ⭐ 无论是否可播放，都写入
     return index, name, final_url
 
 
