@@ -132,7 +132,7 @@ def main():
         for _, name, final_url in results:
             f.write(f"{name},{final_url}\n")
 
-    print(f"\nMBST 文件已生成：{mgzs_file}")
+    print(f"\nMBST 文件已生成：{mbst_file}")
     print(f"有效频道数量：{len(results)}")
 
 
