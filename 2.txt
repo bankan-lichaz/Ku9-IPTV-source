@@ -1,4 +1,1 @@
-睛彩竞技,http://rihou.cc:555/tv/[mg]睛彩竞技
-睛彩篮球,http://rihou.cc:555/tv/[mg]睛彩篮球
-睛彩青少,http://rihou.cc:555/tv/[mg]睛彩青少
-睛彩广场舞,http://rihou.cc:555/tv/[mg]睛彩广场
+CCTV1,http://45.192.97.170:8880/play/1.m3u8
