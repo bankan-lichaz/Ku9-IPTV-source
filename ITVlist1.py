@@ -197,7 +197,7 @@ async def fetch_json(session, url, semaphore):
                     chidRaw = item.get('chid')
                     chid = str(chidRaw).zfill(4)
                     srcid = item.get('srcid')
-                    urlx = f"{url}/tsfile/live/{chid}_{srcid}.m3u8?key=txiptv&playlive=1"
+                    urlx = f"{url.split('/iptv/')[0]}/tsfile/live/{chid}_{srcid}.m3u8?key=txiptv&playlive=1"
                     if not name or not chidRaw or not srcid or not urlx or ',' in urlx:
                         continue
 
