@@ -194,12 +194,12 @@ async def fetch_json(session, url, semaphore):
                 results = []
                 for item in data.get('data', []):
                     name = item.get('name')
-                    urlx = item.get('url')
-                    if not name or not urlx or ',' in urlx:
+                    chidRaw = item.get('chid')
+                    chid = str(chidRaw).zfill(4)
+                    srcid = item.get('srcid')
+                    urlx = f"{url}/tsfile/live/{chid}_{srcid}.m3u8?key=txiptv&playlive=1"
+                    if not name or not chidRaw or not srcid or not urlx or ',' in urlx:
                         continue
-
-                    if not urlx.startswith("http"):
-                        urlx = urljoin(url, urlx)
 
                     for std_name, aliases in CHANNEL_MAPPING.items():
                         if name in aliases:
