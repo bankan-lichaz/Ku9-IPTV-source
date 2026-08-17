@@ -171,9 +171,10 @@ async function tryJsonApi(host) {
 
       const name = normalize(item.name);
       const chid = item.chid.toString().padStart(4, "0");
+      const srcid = item.srcid;
 
       const playUrl =
-        `${host}/tsfile/live/${chid}_1.m3u8?key=txiptv&playlive=1`;
+        `${host}/tsfile/live/${chid}_${srcid}.m3u8?key=txiptv&playlive=1`;
 
       found.push({ name, url: playUrl });
     }
