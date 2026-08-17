@@ -72,7 +72,7 @@ yesterday
 
 组播_广东移动.txt
 更新组播源
-340 days ago
+341 days ago
 
 组播_广东联通.txt
 更新组播源
@@ -80,7 +80,7 @@ yesterday
 
 组播_广西电信.txt
 更新组播源
-44 days ago
+45 days ago
 
 组播_新疆电信.txt
 更新组播源
@@ -116,7 +116,7 @@ yesterday
 
 组播_海南电信.txt
 更新组播源
-101 days ago
+102 days ago
 
 组播_海南联通.txt
 更新组播源
@@ -124,11 +124,11 @@ yesterday
 
 组播_湖北电信.txt
 更新组播源
-3 days ago
+yesterday
 
 组播_湖北联通.txt
 更新组播源
-295 days ago
+296 days ago
 
 组播_湖南电信.txt
 更新组播源
@@ -136,7 +136,7 @@ yesterday
 
 组播_甘肃电信.txt
 更新组播源
-177 days ago
+178 days ago
 
 组播_福建电信.txt
 更新组播源
@@ -144,11 +144,11 @@ yesterday
 
 组播_福建联通.txt
 更新组播源
-yesterday
+2 days ago
 
 组播_贵州电信.txt
 更新组播源
-2 days ago
+3 days ago
 
 组播_辽宁联通.txt
 更新组播源
@@ -164,7 +164,7 @@ yesterday
 
 组播_陕西电信.txt
 更新组播源
-68 days ago
+69 days ago
 
 组播_青海电信.txt
 更新组播源
