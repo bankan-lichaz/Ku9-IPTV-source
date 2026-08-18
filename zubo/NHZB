@@ -1,54 +1,62 @@
-MBS,http://mg000gx01
-6ABC,http://mg000gx02
-8カンテレ,http://mg000gx03
-ytv,http://mg000gx04
-7TVO大阪,http://mg000gx05
-NHK G,http://mg000gx06
-SUN,http://mg000gx07
-NHK BSP4K,http://mg000bs01
-BS0テレ,http://mg000bs02
-ABS朝日,http://mg000bs03
-BS-TBS,http://mg000bs04
-BSテレ東,http://mg000bs05
-BSフジ,http://mg000bs06
-WOWOWシネマ,http://mg000bs07
-BS10 PREMIUM,http://mg000bs08
-NHK BS,http://mg000bs11
-WOWOWプライム,http://mg000bs12
-Green Channel,http://mg000bs14
-ANIMAX,http://mg000bs15
-Jsports1,http://mg000bs18
-Jsports2,http://mg000bs19
-WOWOWライフ,http://mg000bs20
-Jsports3,http://mg000bs21
-Jsports4,http://mg000bs22
-日本映画専門チャンネル,http://mg000bs23
-Disney Channel,http://mg000bs24
-釣り,http://mg000bs25
-S,http://mg000bs26
-スカイA,http://mg000cs01
-0テレジータス,http://mg000cs02
-Golf Network,http://mg000cs03
-日本映画専門チャンネル広告,http://mg000cs04
-ホームドラム　チャンネル,http://mg000cs05
-Music Japan,http://mg000cs06
-Kids Station,http://mg000cs07
-Discovery,http://mg000cs08
-History,http://mg000cs09
-National Geographic,http://mg000cs10
-TBS News,http://mg000cs11
-旅TABI Channel,http://mg000cs12
-歌謠ポップス チャンネル,http://mg000cs13
-mムービープラス,http://mg000cs14
-BBC News,http://mg000cs15
-CNN,http://mg000cs16
-GAORA Sports,http://mg000cs17
-MTV,http://mg000cs18
-lala TV,http://mg000cs19
-ファミリー劇場,http://mg000cs20
-MondoTV,http://mg000cs21
-衛星劇場,http://mg000cs22
-DisneyJr.,http://mg000cs23
-animal planet,http://mg000cs24
-CN,http://mg000cs25
-フジテレビNEXT,http://mg000cs26
+NHK G,https://mg000hdgd01
+NHK E,https://mg000hdgd02
+NTV,https://mg000hdgd03
+TV Asahi,https://mg000hdgd06
+TBS,https://mg000hdgd04
+TV Tokyo,https://mg000hdgd07
+Fuji TV,https://mg000hdgd05
+Tokyo MX1,https://mg000hdgd08
+MBS,https://mg000gx01
+6ABC,https://mg000gx02
+8カンテレ,https://mg000gx03
+ytv,https://mg000gx04
+7TVO大阪,https://mg000gx05
+NHK G,https://mg000gx06
+SUN,https://mg000gx07
+NHK BSP4K,https://mg000bs01
+BS0テレ,https://mg000bs02
+ABS朝日,https://mg000bs03
+BS-TBS,https://mg000bs04
+BSテレ東,https://mg000bs05
+BSフジ,https://mg000bs06
+WOWOWシネマ,https://mg000bs07
+BS10 PREMIUM,https://mg000bs08
+NHK BS,https://mg000bs11
+WOWOWプライム,https://mg000bs12
+Green Channel,https://mg000bs14
+ANIMAX,https://mg000bs15
+Jsports1,https://mg000bs18
+Jsports2,https://mg000bs19
+WOWOWライフ,https://mg000bs20
+Jsports3,https://mg000bs21
+Jsports4,https://mg000bs22
+日本映画専門チャンネル,https://mg000bs23
+Disney Channel,https://mg000bs24
+釣り,https://mg000bs25
+S,https://mg000bs26
+スカイA,https://mg000cs01
+0テレジータス,https://mg000cs02
+Golf Network,https://mg000cs03
+日本映画専門チャンネル広告,https://mg000cs04
+ホームドラム　チャンネル,https://mg000cs05
+Music Japan,https://mg000cs06
+Kids Station,https://mg000cs07
+Discovery,https://mg000cs08
+History,https://mg000cs09
+National Geographic,https://mg000cs10
+TBS News,https://mg000cs11
+旅TABI Channel,https://mg000cs12
+歌謠ポップス チャンネル,https://mg000cs13
+mムービープラス,https://mg000cs14
+BBC News,https://mg000cs15
+CNN,https://mg000cs16
+GAORA Sports,https://mg000cs17
+MTV,https://mg000cs18
+lala TV,https://mg000cs19
+ファミリー劇場,https://mg000cs20
+MondoTV,https://mg000cs21
+衛星劇場,https://mg000cs22
+DisneyJr.,https://mg000cs23
+animal planet,https://mg000cs24
+CN,https://mg000cs25
+フジテレビNEXT,https://mg000cs26
