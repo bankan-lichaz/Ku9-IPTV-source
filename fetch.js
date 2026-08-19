@@ -33,6 +33,11 @@ const CHANNEL_MAP = [
   //特殊情况
   { reg: /^CCTV[-\s]*少儿$/i, norm: "CCTV14少儿" },
   { reg: /^CCTV[-\s]*新闻$/i, norm: "CCTV13新闻" },
+  { reg: /^CCTV[-\s]*NEWS$/i, norm: "CCTV13新闻" },
+  { reg: /^中国教育[- ]?1(?![\dA-Za-z]).*$/i, norm: "CETV1" },
+  { reg: /^中国教育[- ]?2(?![\dA-Za-z]).*$/i, norm: "CETV2" },
+  { reg: /^中国教育[- ]?3(?![\dA-Za-z]).*$/i, norm: "CETV3" },
+  { reg: /^中国教育[- ]?4(?![\dA-Za-z]).*$/i, norm: "CETV4" },
 
   //央视付费频道
   { reg: /兵器科技/i, norm: "CCTV兵器科技" },
