@@ -32,7 +32,10 @@ jobs:
       uses: actions/setup-python@v5
       with:
         python-version: '3.11'
-        cache: 'pip'
+        # cache: 'pip' 
+        #当 cache: 'pip'（或 cache: 'conda'）被打开时，
+        #setup-python 会自动去寻找 锁定文件（requirements.txt, pyproject.toml, Pipfile.lock, poetry.lock 等）来计算缓存的 hash。
+        # 如果找不到，就会抛出上面的错误。
         
     - name: Install dependencies
       run: |
