@@ -38,6 +38,7 @@ const CHANNEL_MAP = [
   { reg: /旅游卫视/i, norm: "海南卫视" },
   { reg: /大湾区/i, norm: "大湾区卫视" },
   { reg: /福建卫视/i, norm: "东南卫视" },
+  { reg: /上海卫视/i, norm: "东方卫视" },
   { reg: /CGTN英语/i, norm: "CGTN" },
   { reg: /^CCTV[-\s]*少儿$/i, norm: "CCTV14少儿" },
   { reg: /^CCTV[-\s]*新闻$/i, norm: "CCTV13新闻" },
