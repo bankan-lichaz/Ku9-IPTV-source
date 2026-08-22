@@ -31,6 +31,7 @@ function fetchWithTimeout(url, timeout = 3000) {
 // ⭐ 频道映射表（你的规则）
 const CHANNEL_MAP = [
   //特殊情况
+  { reg: /凤凰卫视/i, norm: "凤凰中文" },
   { reg: /凤凰.*中文/i, norm: "凤凰中文" },
   { reg: /凤凰.*资讯/i, norm: "凤凰资讯" },
   { reg: /四川妇女儿童/i, norm: "四川妇儿" },
