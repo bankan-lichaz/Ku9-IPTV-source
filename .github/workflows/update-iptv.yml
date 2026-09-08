@@ -39,6 +39,85 @@ jobs:
           python scripts/process_iptv.py
 
       # 4️⃣ 提交并推送更新后的 JXZB.txt（若无变化则跳过）
+
+      ###########################################################################
+      # ★★★ 新增步骤：按 CCTV‑1综合 测速并删除同源所有频道（稳定版） ★★★
+      ###########################################################################
+      - name: Speed test & filter unstable sources based on CCTV-1综合
+        run: |
+          echo "开始按 CCTV-1综合 测速并过滤源..."
+
+          input="JXZB.txt"
+          output="JXZB_filtered.txt"
+          rm -f "$output"
+          touch "$output"
+
+          declare -A source_keep
+
+          grep "^CCTV-1综合," "$input" > cctv1_list.txt || true
+
+          if [ ! -s cctv1_list.txt ]; then
+            echo "没有 CCTV-1综合，跳过测速"
+            cp "$input" "$output"
+            mv "$output" JXZB.txt
+            exit 0
+          fi
+
+          awk -F'\$' '{print $2}' cctv1_list.txt | sort -u > source_list.txt
+
+          while read -r src; do
+            echo "测试源：$src"
+
+            url=$(grep "\$${src}$" cctv1_list.txt | head -n 1 | cut -d',' -f2 | cut -d'$' -f1)
+
+            echo "测速 URL: $url"
+
+            # ① 瞬时速度测试（不会失败）
+            speed1=$(curl -o /dev/null --max-time 5 -w "%{speed_download}" "$url" 2>/dev/null || echo "0")
+            echo "瞬时速度：$speed1 bytes/s"
+
+            # ② 持续拉流测试（不会 exit 28）
+            tmpfile="/tmp/test_${src}.bin"
+            rm -f "$tmpfile"
+
+            curl -o "$tmpfile" --max-time 5 "$url" 2>/dev/null || true
+
+            bytes=$(stat -c%s "$tmpfile" 2>/dev/null || echo "0")
+            echo "持续拉流 5 秒下载字节数：$bytes"
+
+            threshold=$((1024*1024))  # 1MB
+
+            if [ "${speed1%.*}" -gt "$threshold" ] && [ "$bytes" -gt "$threshold" ]; then
+              echo "源 $src 速度合格且持续稳定 → 保留该源所有频道"
+              source_keep["$src"]=1
+            else
+              echo "源 $src 不稳定或速度不足 → 删除该源所有频道"
+              source_keep["$src"]=0
+            fi
+
+          done < source_list.txt
+
+          while IFS= read -r line; do
+            if ! echo "$line" | grep -q '\$'; then
+              echo "$line" >> "$output"
+              continue
+            fi
+
+            src=$(echo "$line" | awk -F'\$' '{print $2}')
+
+            if [ "${source_keep[$src]}" = "1" ]; then
+              echo "$line" >> "$output"
+            fi
+
+          done < "$input"
+
+          mv "$output" JXZB.txt
+
+      - name: Encrypt JXZB.txt
+        run: |
+          echo "开始加密 JXZB.txt..."
+          node encrypt.js
+      
       - name: 提交更改
         run: |
           git config user.name "github-actions[bot]"
