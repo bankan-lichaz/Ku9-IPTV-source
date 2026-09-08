@@ -131,4 +131,4 @@ jobs:
 
           git add JXZB.txt
           git commit -m "chore: 更新组播源 $(date +%Y-%m-%d)"
-          git push origin HEAD:${{ github.event.repository.default_branch }}
+          git push
