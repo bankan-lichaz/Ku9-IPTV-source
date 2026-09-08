@@ -16,7 +16,7 @@ import requests
 # 你给定的原始文件地址（可随时修改）
 SOURCE_URL = (
     "https://raw.githubusercontent.com/Wind5170/IPTV/"
-    "c9871285ca010815afdc807879d66752cfc0b59d/output/zubo.txt"
+    "c9871285ca010815afdc807879d66752cfc0b59d/output/zubo_all.txt"
 )
 OUTPUT_FILE = "JXZB.txt"  # 相对于仓库根目录
 # ----------------------------------------
