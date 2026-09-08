@@ -1,4 +1,4 @@
-name: Update ZB (辽宁卫视多源)
+name: Update ZB1 (辽宁卫视多源)
 
 on:
   schedule:
@@ -15,7 +15,7 @@ jobs:
 
       - name: Fetch 辽宁联通组播列表
         run: |
-          curl -s -o ln.txt "https://raw.githubusercontent.com/q1017673817/iptvz/refs/heads/main/组播_辽宁联通.txt"
+          curl -s -o ln.txt "https://raw.githubusercontent.com/Wind5170/IPTV/refs/heads/main/output/all/辽宁联通.txt"
 
       - name: Extract ALL 辽宁卫视 IP:PORT
         run: |
@@ -40,20 +40,20 @@ jobs:
 
           echo "IPPORTS=$ipports" >> $GITHUB_ENV
 
-      - name: Update only FIRST line of ZB
+      - name: Update only FIRST line of ZB1
         run: |
-          old_content=$(cat ZB)
+          old_content=$(cat ZB1)
           tail_content=$(echo "$old_content" | tail -n +2)
 
-          echo "1,${IPPORTS}" > ZB
-          echo "$tail_content" >> ZB
+          echo "4,${IPPORTS}" > ZB1
+          echo "$tail_content" >> ZB1
 
       - name: Commit changes
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git add ZB
+          git add ZB1
           git commit -m "Update ZB first line with tyj sources (${IPPORTS})" || echo "No changes to commit"
 
       - name: Push changes
