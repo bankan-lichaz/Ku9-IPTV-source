@@ -75,6 +75,6 @@ def update_ht_file(open_targets):
         f.writelines(lines)
 
 if __name__ == "__main__":
-    print("开始扫描端口 4010 ...")
+    print("开始扫描端口 9001 ...")
     open_targets = scan_all()
     update_ht_file(open_targets)
