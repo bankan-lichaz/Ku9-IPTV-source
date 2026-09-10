@@ -19,6 +19,11 @@ START_IP3 = "60.187.244.1"
 END_IP3 = "60.187.244.255"
 PORT3 = 9901
 
+# 新增第四段扫描配置
+START_IP4 = "39.150.102.1"
+END_IP4 = "39.150.102.255"
+PORT4 = 19901
+
 def expand_ip_range(start_ip, end_ip):
     start = ipaddress.IPv4Address(start_ip)
     end = ipaddress.IPv4Address(end_ip)
@@ -143,6 +148,34 @@ def update_ht_file_third(open_targets):
     with open(HT_FILE, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
+# 新增：HT文件第四行更新函数，逻辑与第三行更新完全对齐
+def update_ht_file_forth(open_targets):
+    """
+    第二行格式：
+    67,IP:PORT,IP:PORT
+    如果没有开放端口：lines[3] 清空
+    """
+    try:
+        with open(HT_FILE, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n", "\n","\n","\n"]  # 文件不存在时创建四行空行
+
+    # 确保文件至少有4行，避免索引越界
+    while len(lines) < 4:
+        lines.append("\n")
+
+    if open_targets:
+        new_forth_line = "67," + ",".join(open_targets) + "\n"
+        lines[3] = new_forth_line
+        print("HT 文件第四行已更新：", new_forth_line.strip())
+    else:
+        lines[3] = "\n"
+        print("第四段未扫描到开放端口，已清空 HT 第四行")
+
+    with open(HT_FILE, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
 if __name__ == "__main__":
     # 原有第一段扫描逻辑完全保留，无任何修改
     print("开始扫描端口 9001 ...")  
@@ -158,3 +191,8 @@ if __name__ == "__main__":
     print(f"\n开始扫描第三段 {START_IP3}-{END_IP3} 端口 {PORT3} ...")
     open_targets3 = scan_all(START_IP3, END_IP3, PORT3)
     update_ht_file_third(open_targets3)
+
+    # 新增第四段扫描逻辑
+    print(f"\n开始扫描第四段 {START_IP4}-{END_IP4} 端口 {PORT4} ...")
+    open_targets4 = scan_all(START_IP4, END_IP4, PORT4)
+    update_ht_file_forth(open_targets4)
