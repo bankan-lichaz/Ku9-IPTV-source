@@ -5,8 +5,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 HT_FILE = "HT"
 
 # 原有第一段扫描配置（完全保留，未修改）
-START_IP = "139.214.181.1"
-END_IP = "139.214.181.255"
+START_IP = "139.214.177.1"
+END_IP = "139.214.183.255"
 PORT = 9901
 
 # 新增第二段扫描配置
