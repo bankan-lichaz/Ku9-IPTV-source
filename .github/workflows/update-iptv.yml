@@ -123,12 +123,17 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
+          git add JXZB.txt
+          
           # 检查是否有实际变动，避免空提交
           if git diff --quiet JXZB.txt; then
             echo "📂 JXZB.txt 无变化，跳过提交"
             exit 0
+          else
+            git commit -m "chore: 更新组播源 $(date +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
           fi
 
-          git add JXZB.txt
-          git commit -m "chore: 更新组播源 $(date +%Y-%m-%d)"
-          git push
+
+
