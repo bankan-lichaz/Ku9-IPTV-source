@@ -122,7 +122,7 @@ def update_ht_file_second(open_targets):
         f.writelines(lines)
 
 # 新增:WSJK文件第一行更新函数
-def update_ht_file_wsjk_first(open_targets2):
+def update_ht_file_wsjk_first(open_targets):
     """
     第一行格式：
     68,IP:PORT,IP:PORT
@@ -136,7 +136,7 @@ def update_ht_file_wsjk_first(open_targets2):
 
     if open_targets:
         # 有开放端口 → 写入 68,IP:PORT...
-        new_first_line = "68," + ",".join(open_targets2) + "\n"
+        new_first_line = "68," + ",".join(open_targets) + "\n"
         lines[0] = new_first_line
         print("WSJK 文件已更新：", new_first_line.strip())
     else:
