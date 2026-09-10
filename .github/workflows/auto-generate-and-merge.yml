@@ -214,6 +214,8 @@ jobs:
           if git diff --quiet table.txt; then
             echo "No changes in table.txt"
           else
+            git fetch origin
+            git rebase origin/main
             git add table.txt merged_province.txt
             git commit -m "Auto generate table.txt & merge IPTV by province (with source speed filtering)"
             git push
