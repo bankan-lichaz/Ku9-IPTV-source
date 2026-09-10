@@ -10,9 +10,9 @@ END_IP = "139.214.181.255"
 PORT = 9901
 
 # 新增第二段扫描配置
-START_IP2 = "123.175.209.1"
-END_IP2 = "123.175.209.255"
-PORT2 = 9003
+START_IP2 = "39.150.102.1"
+END_IP2 = "39.150.102.255"
+PORT2 = 19901
 
 # 新增第三段扫描配置
 START_IP3 = "60.187.244.1"
@@ -20,9 +20,9 @@ END_IP3 = "60.187.244.255"
 PORT3 = 9901
 
 # 新增第四段扫描配置
-START_IP4 = "39.150.102.1"
-END_IP4 = "39.150.102.255"
-PORT4 = 19901
+START_IP4 = "123.175.209.1"
+END_IP4 = "123.175.209.255"
+PORT4 = 9003
 
 def expand_ip_range(start_ip, end_ip):
     start = ipaddress.IPv4Address(start_ip)
