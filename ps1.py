@@ -14,7 +14,7 @@ START_IP2 = "123.175.209.1"
 END_IP2 = "123.175.209.255"
 PORT2 = 9003
 
-# 新增第二段扫描配置
+# 新增第三段扫描配置
 START_IP3 = "60.187.244.1"
 END_IP3 = "60.187.244.255"
 PORT3 = 9901
@@ -155,6 +155,6 @@ if __name__ == "__main__":
     update_ht_file_second(open_targets2)
 
     # 新增第二段扫描逻辑
-    print(f"\n开始扫描第二段 {START_IP3}-{END_IP3} 端口 {PORT3} ...")
+    print(f"\n开始扫描第三段 {START_IP3}-{END_IP3} 端口 {PORT3} ...")
     open_targets3 = scan_all(START_IP3, END_IP3, PORT3)
     update_ht_file_third(open_targets3)
