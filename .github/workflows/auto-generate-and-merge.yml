@@ -206,12 +206,16 @@ jobs:
           echo "开始加密 merged_province.txt..."
           node encrypt.js
 
+      - name: Clean up target_repo
+        run: |
+          [ -d target_repo ] && rm -rf target_repo || echo "target_repo not found"
+
       - name: Commit & Push
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
       
-          git add -A
+          git add table.txt merged_province.txt
           
           if git diff --cached --quiet; then
             echo "No changes to commit"
