@@ -3,16 +3,17 @@ import ipaddress
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 HT_FILE = "HT"
+HT_FILE_WSJK= "WSJK"
 
 # 原有第一段扫描配置（完全保留，未修改）
-START_IP = "139.214.177.1"
-END_IP = "139.214.183.255"
-PORT = 9901
+START_IP = "39.150.102.1"
+END_IP = "39.150.102.255"
+PORT = 19901
 
 # 新增第二段扫描配置
-START_IP2 = "39.150.102.1"
-END_IP2 = "39.150.102.255"
-PORT2 = 19901
+START_IP2 = "139.214.177.1"
+END_IP2 = "139.214.183.255"
+PORT2 = 9901
 
 # 新增第三段扫描配置
 START_IP3 = "60.187.244.1"
@@ -120,6 +121,32 @@ def update_ht_file_second(open_targets):
     with open(HT_FILE, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
+# 新增:WSJK文件第一行更新函数
+def update_ht_file_wsjk_first(open_targets2):
+    """
+    第一行格式：
+    68,IP:PORT,IP:PORT
+    如果没有开放端口：lines[0] 清空
+    """
+    try:
+        with open(HT_FILE_WSJK, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n"]  # 文件不存在时创建一个空行
+
+    if open_targets:
+        # 有开放端口 → 写入 68,IP:PORT...
+        new_first_line = "68," + ",".join(open_targets) + "\n"
+        lines[0] = new_first_line
+        print("WSJK 文件已更新：", new_first_line.strip())
+    else:
+        # ⭐ 没有开放端口 → 第一行清空
+        lines[0] = "\n"
+        print("未扫描到开放端口，已清空 WSJK 第一行")
+
+    with open(HT_FILE_WSJK, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
 # 新增：HT文件第三行更新函数，逻辑与第二行更新完全对齐
 def update_ht_file_third(open_targets):
     """
@@ -186,6 +213,7 @@ if __name__ == "__main__":
     print(f"\n开始扫描第二段 {START_IP2}-{END_IP2} 端口 {PORT2} ...")
     open_targets2 = scan_all(START_IP2, END_IP2, PORT2)
     update_ht_file_second(open_targets2)
+    update_ht_file_wsjk_first(open_targets2)
 
     # 新增第三段扫描逻辑
     print(f"\n开始扫描第三段 {START_IP3}-{END_IP3} 端口 {PORT3} ...")
