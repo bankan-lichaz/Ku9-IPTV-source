@@ -211,8 +211,8 @@ jobs:
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          if git diff --quiet table.txt; then
-            echo "No changes in table.txt"
+          if git diff --quiet merged_province.txt; then
+            echo "No changes in merged_province.txt"
           else
             git add table.txt merged_province.txt
             git commit -m "Auto generate table.txt & merge IPTV by province (with source speed filtering)"
