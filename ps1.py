@@ -205,7 +205,7 @@ def update_ht_file_forth(open_targets):
 
 if __name__ == "__main__":
     # 原有第一段扫描逻辑完全保留，无任何修改
-    print("开始扫描端口 9001 ...")  
+    print(f"\n开始扫描第一段 {START_IP}-{END_IP} 端口 {PORT} ...")   
     open_targets = scan_all()
     update_ht_file(open_targets)
 
