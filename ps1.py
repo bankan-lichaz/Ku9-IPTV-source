@@ -4,9 +4,15 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 HT_FILE = "HT"
 
+# 原有第一段扫描配置（完全保留，未修改）
 START_IP = "139.214.181.1"
 END_IP = "139.214.181.255"
 PORT = 9901
+
+# 新增第二段扫描配置
+START_IP2 = "123.175.209.1"
+END_IP2 = "123.175.209.255"
+PORT2 = 9003
 
 def expand_ip_range(start_ip, end_ip):
     start = ipaddress.IPv4Address(start_ip)
@@ -25,14 +31,15 @@ def scan_single_ip(ip, port, timeout=0.3):
         pass
     return None
 
-def scan_all():
-    ip_list = expand_ip_range(START_IP, END_IP)
+# 原有scan_all函数仅增加默认参数，原有调用逻辑完全不变，功能完全一致
+def scan_all(start_ip=START_IP, end_ip=END_IP, port=PORT):
+    ip_list = expand_ip_range(start_ip, end_ip)
     open_targets = []
 
     print(f"总扫描 IP 数量：{len(ip_list)}")
 
     with ThreadPoolExecutor(max_workers=1000) as executor:
-        futures = {executor.submit(scan_single_ip, ip, PORT): ip for ip in ip_list}
+        futures = {executor.submit(scan_single_ip, ip, port): ip for ip in ip_list}
 
         for i, future in enumerate(as_completed(futures)):
             ip = futures[future]
@@ -49,6 +56,7 @@ def scan_all():
 
     return open_targets
 
+# 原有HT文件第一行更新函数完全保留，未修改任何逻辑
 def update_ht_file(open_targets):
     """
     第一行格式：
@@ -62,7 +70,7 @@ def update_ht_file(open_targets):
         lines = ["\n"]  # 文件不存在时创建一个空行
 
     if open_targets:
-        # 有开放端口 → 写入 1,IP:PORT...
+        # 有开放端口 → 写入 64,IP:PORT...
         new_first_line = "64," + ",".join(open_targets) + "\n"
         lines[0] = new_first_line
         print("HT 文件已更新：", new_first_line.strip())
@@ -74,7 +82,41 @@ def update_ht_file(open_targets):
     with open(HT_FILE, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
+# 新增：HT文件第二行更新函数，逻辑与第一行更新完全对齐
+def update_ht_file_second(open_targets):
+    """
+    第二行格式：
+    65,IP:PORT,IP:PORT
+    如果没有开放端口：lines[1] 清空
+    """
+    try:
+        with open(HT_FILE, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n", "\n"]  # 文件不存在时创建两行空行
+
+    # 确保文件至少有2行，避免索引越界
+    while len(lines) < 2:
+        lines.append("\n")
+
+    if open_targets:
+        new_second_line = "65," + ",".join(open_targets) + "\n"
+        lines[1] = new_second_line
+        print("HT 文件第二行已更新：", new_second_line.strip())
+    else:
+        lines[1] = "\n"
+        print("第二段未扫描到开放端口，已清空 HT 第二行")
+
+    with open(HT_FILE, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
 if __name__ == "__main__":
-    print("开始扫描端口 9001 ...")
+    # 原有第一段扫描逻辑完全保留，无任何修改
+    print("开始扫描端口 9001 ...")  
     open_targets = scan_all()
     update_ht_file(open_targets)
+
+    # 新增第二段扫描逻辑
+    print(f"\n开始扫描第二段 {START_IP2}-{END_IP2} 端口 {PORT2} ...")
+    open_targets2 = scan_all(START_IP2, END_IP2, PORT2)
+    update_ht_file_second(open_targets2)
