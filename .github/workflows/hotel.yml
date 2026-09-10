@@ -40,5 +40,6 @@ jobs:
         else
             git add result.txt
             git commit -m "Auto Update list"
+            git pull --rebase origin main
             git push
         fi
