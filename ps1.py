@@ -22,7 +22,7 @@ PORT3 = 9901
 
 # 新增第四段扫描配置
 START_IP4 = "123.175.209.1"
-END_IP4 = "123.175.209.255"
+END_IP4 = "123.175.210.255"
 PORT4 = 9003
 
 def expand_ip_range(start_ip, end_ip):
