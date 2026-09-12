@@ -1,4 +1,4 @@
-name: Update ZB (辽宁卫视多源)
+name: Update ZZ (辽宁卫视多源)
 
 on:
   schedule:
@@ -40,46 +40,46 @@ jobs:
 
           echo "IPPORTS=$ipports" >> $GITHUB_ENV
 
-      #- name: Update only FIRST line of ZB
+      #- name: Update only FIRST line of ZZ
       #  run: |
-      #    old_content=$(cat ZB)
+      #    old_content=$(cat ZZ)
       #    tail_content=$(echo "$old_content" | tail -n +2)
 
-      #    echo "4,${IPPORTS}" > ZB
-      #    echo "$tail_content" >> ZB
+      #    echo "4,${IPPORTS}" > ZZ
+      #    echo "$tail_content" >> ZZ
 
       # 更新第N行内容
       # 保留前N-1行：first_line=$(echo "$old_content" | head -n $((N-1)))
       # 追加第N+1行及以后：tail_content=$(echo "$old_content" | tail -n +$((N+1)))
       
-      - name: Update only SECOND line of ZB # 步骤名也可以对应改下
+      - name: Update only SECOND line of ZZ # 步骤名也可以对应改下
         run: |
-          old_content=$(cat ZB)
+          old_content=$(cat ZZ)
           # 新增：提取原文件的第一行，保留下来
           first_line=$(echo "$old_content" | head -n 1)
           tail_content=$(echo "$old_content" | tail -n +2)
       
           # 先写原第一行到文件（会清空原文件）
-          echo "$first_line" > ZB
+          echo "$first_line" > ZZ
           # 再写新内容，此时就会出现在第二行
-          echo "4,${IPPORTS}" >> ZB
+          echo "4,${IPPORTS}" >> ZZ
           # 最后追加原文件第2行及以后的内容
-          echo "$tail_content" >> ZB
+          echo "$tail_content" >> ZZ
 
-      # - name: Update only SECOND line of ZB # 直接覆盖第二行的原有内容 简洁 不容易出错
+      # - name: Update only SECOND line of ZZ # 直接覆盖第二行的原有内容 简洁 不容易出错
       #  run: |
           # 2s/.*/替换内容/ 表示把第2行的所有内容替换成新值
-      #    sed -i '2s/.*/4,'"${IPPORTS}"'/' ZB
+      #    sed -i '2s/.*/4,'"${IPPORTS}"'/' ZZ
           # 2i 表示在第二行前面插入内容，-i 表示直接修改原文件
-      #    sed -i "2i\\4,${IPPORTS}" ZB1
+      #    sed -i "2i\\4,${IPPORTS}" ZZ1
 
       - name: Commit changes
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git add ZB
-          git commit -m "Update ZB first line with tyj sources (${IPPORTS})" || echo "No changes to commit"
+          git add ZZ
+          git commit -m "Update ZZ first line with tyj sources (${IPPORTS})" || echo "No changes to commit"
 
       - name: Push changes
         run: |
