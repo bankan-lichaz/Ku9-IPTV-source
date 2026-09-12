@@ -79,7 +79,7 @@ jobs:
           git config --global user.email "github-actions@github.com"
 
           git add ZZ
-          git commit -m "Update ZZ first line with tyj sources (${IPPORTS})" || echo "No changes to commit"
+          git commit -m "Update ZZ Second line with tyj sources (${IPPORTS})" || echo "No changes to commit"
 
       - name: Push changes
         run: |
