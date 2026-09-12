@@ -57,13 +57,13 @@ jobs:
           old_content=$(cat ZZ)
           # 新增：提取原文件的第一行，保留下来
           first_line=$(echo "$old_content" | head -n 1)
-          tail_content=$(echo "$old_content" | tail -n +2)
+          tail_content=$(echo "$old_content" | tail -n +3)
       
           # 先写原第一行到文件（会清空原文件）
           echo "$first_line" > ZZ
           # 再写新内容，此时就会出现在第二行
           echo "4,${IPPORTS}" >> ZZ
-          # 最后追加原文件第2行及以后的内容
+          # 最后追加原文件第3行及以后的内容
           echo "$tail_content" >> ZZ
 
       # - name: Update only SECOND line of ZZ # 直接覆盖第二行的原有内容 简洁 不容易出错
