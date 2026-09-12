@@ -70,6 +70,8 @@ jobs:
       #  run: |
           # 2s/.*/替换内容/ 表示把第2行的所有内容替换成新值
       #    sed -i '2s/.*/4,'"${IPPORTS}"'/' ZB
+          # 2i 表示在第二行前面插入内容，-i 表示直接修改原文件
+      #    sed -i "2i\\4,${IPPORTS}" ZB1
 
       - name: Commit changes
         run: |
