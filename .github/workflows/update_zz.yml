@@ -47,7 +47,11 @@ jobs:
           # 更新环境变量，后续步骤自动使用过滤后的有效列表
           echo "IPPORTS=${valid_ipports}" >> $GITHUB_ENV
           # 打印扫描结果摘要
-          valid_count=$(echo "$valid_ipports" | tr ',' '\n' | grep -c .)
+          valid_count=$(echo "$valid_ipports" | tr ',' '\n' | wc -l)
+          if [ "$valid_count" -eq 0 ] || [ -z "$valid_ipports" ]; then
+            echo "⚠️ No valid IPs found after scanning"
+            exit 0
+          fi
           echo "✅ 扫描完成，共保留 ${valid_count} 个有效IP:PORT"
         env:
           # 可自定义参数，按需调整
