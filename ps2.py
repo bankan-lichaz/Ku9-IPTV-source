@@ -47,8 +47,8 @@ def scan_single_port(ipport: str, timeout: int) -> str | None:
 def main():
     # 读取配置：优先读命令行参数，其次读环境变量
     input_ipports = sys.argv[1] if len(sys.argv) > 1 else os.environ.get('IPPORTS', '')
-    scan_timeout = int(os.environ.get('SCAN_TIMEOUT', 2))  # 默认超时2秒
-    max_threads = int(os.environ.get('MAX_WORKERS', 20))   # 默认20线程并发
+    scan_timeout = int(os.environ.get('SCAN_TIMEOUT', 2))
+    max_threads = int(os.environ.get('MAX_WORKERS', 20))
     
     # 空输入直接返回空
     if not input_ipports.strip():
@@ -67,8 +67,9 @@ def main():
             if res:
                 valid_list.append(res)
     
-    # 输出逗号分隔的有效列表
+    # 输出逗号分隔的有效列表（即使为空也正常返回）
     print(','.join(valid_list))
+    sys.exit(0)  # Always exit successfully
 
 if __name__ == "__main__":
     main()
