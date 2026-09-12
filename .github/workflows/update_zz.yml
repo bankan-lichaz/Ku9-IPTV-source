@@ -15,7 +15,7 @@ jobs:
 
       - name: Fetch 辽宁联通组播列表
         run: |
-          curl -s -o ln.txt "https://raw.githubusercontent.com/Wind5170/IPTV/refs/heads/main/output/all/辽宁联通.txt"
+          curl -s -o ln.txt "https://raw.githubusercontent.com/q1017673817/iptvz/refs/heads/main/组播_辽宁联通.txt"
 
       - name: Extract ALL 辽宁卫视 IP:PORT
         run: |
