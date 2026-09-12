@@ -1,4 +1,4 @@
-name: Update ZB
+name: Update ZZ
 
 on:
   schedule:
@@ -30,6 +30,6 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add ZB
-          git commit -m "Update ZB from scanner" || echo "No changes"
+          git add ZZ
+          git commit -m "Update ZZ from scanner" || echo "No changes"
           git push
