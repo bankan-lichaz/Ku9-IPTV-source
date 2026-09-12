@@ -17,10 +17,14 @@ jobs:
         run: |
           # curl: 用于获取远程 URL 内容的命令行工具。
           # -s 或 --silent: 静默模式，不显示下载进度或错误信息，可选，但推荐用于脚本。
+          # -o filename = Save to a specific file
+          # -O = Save with the original remote filename
+          # No -o flag = Print to stdout (terminal/log)
           # >> ln.txt: 将输出内容 追加 到 ln.txt 文件中，如果文件不存在，则会自动创建。
           # 注意：单个 > 是覆盖写入，>> 才是追加。
           curl -s -o ln.txt "https://raw.githubusercontent.com/Wind5170/IPTV/refs/heads/main/output/all/辽宁联通.txt"
-          curl -s https://raw.githubusercontent.com/q1017673817/iptvz/refs/heads/main/组播_辽宁联通.txt >> ln.txt
+          # 追加另一个文件
+          # curl -s https://raw.githubusercontent.com/q1017673817/iptvz/refs/heads/main/组播_辽宁联通.txt >> ln.txt
 
       - name: Extract ALL 辽宁卫视 IP:PORT
         run: |
