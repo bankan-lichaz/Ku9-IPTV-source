@@ -1,4 +1,4 @@
-name: Update ZB1 (辽宁卫视多源)
+name: Update ZB (辽宁卫视多源)
 
 on:
   schedule:
@@ -40,43 +40,43 @@ jobs:
 
           echo "IPPORTS=$ipports" >> $GITHUB_ENV
 
-      #- name: Update only FIRST line of ZB1
+      #- name: Update only FIRST line of ZB
       #  run: |
-      #    old_content=$(cat ZB1)
+      #    old_content=$(cat ZB)
       #    tail_content=$(echo "$old_content" | tail -n +2)
 
-      #    echo "4,${IPPORTS}" > ZB1
-      #    echo "$tail_content" >> ZB1
+      #    echo "4,${IPPORTS}" > ZB
+      #    echo "$tail_content" >> ZB
 
       # 更新第N行内容
       # 保留前N-1行：first_line=$(echo "$old_content" | head -n $((N-1)))
       # 追加第N+1行及以后：tail_content=$(echo "$old_content" | tail -n +$((N+1)))
       
-      - name: Update only SECOND line of ZB1 # 步骤名也可以对应改下
+      - name: Update only SECOND line of ZB # 步骤名也可以对应改下
         run: |
-          old_content=$(cat ZB1)
+          old_content=$(cat ZB)
           # 新增：提取原文件的第一行，保留下来
           first_line=$(echo "$old_content" | head -n 1)
           tail_content=$(echo "$old_content" | tail -n +2)
       
           # 先写原第一行到文件（会清空原文件）
-          echo "$first_line" > ZB1
+          echo "$first_line" > ZB
           # 再写新内容，此时就会出现在第二行
-          echo "4,${IPPORTS}" >> ZB1
+          echo "4,${IPPORTS}" >> ZB
           # 最后追加原文件第2行及以后的内容
-          echo "$tail_content" >> ZB1
+          echo "$tail_content" >> ZB
 
-      # - name: Update only SECOND line of ZB1 # 直接覆盖第二行的原有内容 简洁 不容易出错
+      # - name: Update only SECOND line of ZB # 直接覆盖第二行的原有内容 简洁 不容易出错
       #  run: |
           # 2s/.*/替换内容/ 表示把第2行的所有内容替换成新值
-      #    sed -i '2s/.*/4,'"${IPPORTS}"'/' ZB1
+      #    sed -i '2s/.*/4,'"${IPPORTS}"'/' ZB
 
       - name: Commit changes
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
 
-          git add ZB1
+          git add ZB
           git commit -m "Update ZB first line with tyj sources (${IPPORTS})" || echo "No changes to commit"
 
       - name: Push changes
