@@ -43,7 +43,7 @@ jobs:
       - name: Run scanner
         run: |
           # 调用扫描脚本，传入原始IPPORTS，获取过滤后的有效列表
-          valid_ipports=$(python3 port_scanner.py "$IPPORTS")
+          valid_ipports=$(python3 ps2.py "$IPPORTS")
           # 更新环境变量，后续步骤自动使用过滤后的有效列表
           echo "IPPORTS=${valid_ipports}" >> $GITHUB_ENV
           # 打印扫描结果摘要
