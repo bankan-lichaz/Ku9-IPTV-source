@@ -3,6 +3,7 @@ import ipaddress
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 ZB_FILE = "ZB"
+ZB_FILE1 = "ZB1"
 
 # 原有第一段扫描配置（完全保留，未修改）
 START_IP = "116.2.160.1"
@@ -64,17 +65,17 @@ def update_zb_file(open_targets):
     如果没有开放端口：lines[0] 清空
     """
     try:
-        with open(ZB_FILE, "r", encoding="utf-8") as f:
+        with open(ZB_FILE1, "r", encoding="utf-8") as f:
             lines = f.readlines()
     except FileNotFoundError:
         lines = ["\n"]  # 文件不存在时创建一个空行
 
     if open_targets:
         # 有开放端口 → 写入 64,IP:PORT...
-    #    new_first_line = "71," + ",".join(open_targets) + "\n"
-        new_first_line = "\n"
+        new_first_line = "71," + ",".join(open_targets) + "\n"
+    #    new_first_line = "\n"
         lines[0] = new_first_line
-        print("ZB 文件已更新：", new_first_line.strip())
+        print("ZB1 文件已更新：", new_first_line.strip())
     else:
         # ⭐ 没有开放端口 → 第一行清空
         lines[0] = "\n"
