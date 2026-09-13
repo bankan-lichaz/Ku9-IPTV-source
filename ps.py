@@ -114,10 +114,9 @@ if __name__ == "__main__":
     # 原有第一段扫描逻辑完全保留，无任何修改
     print(f"\n开始扫描第一段 {START_IP}-{END_IP} 端口 {PORT} ...")   
     open_targets = scan_all()
-    update_ZB_file(open_targets)
+    update_zb_file(open_targets)
 
     # 新增第二段扫描逻辑
     print(f"\n开始扫描第二段 {START_IP2}-{END_IP2} 端口 {PORT2} ...")
     open_targets2 = scan_all(START_IP2, END_IP2, PORT2)
-    update_ZB_file_second(open_targets2)
-    update_ZB_file_wsjk_first(open_targets2)
+    update_zb_file_second(open_targets2)
