@@ -81,7 +81,7 @@ def update_zb_file(open_targets):
         lines[0] = "\n"
         print("未扫描到开放端口，已清空 ZB 第一行")
 
-    with open(ZB_FILE, "w", encoding="utf-8") as f:
+    with open(ZB_FILE1, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
 # 新增：ZB文件第二行更新函数，逻辑与第一行更新完全对齐
