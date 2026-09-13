@@ -82,8 +82,8 @@ jobs:
           old_content=$(cat ZZ)
           tail_content=$(echo "$old_content" | tail -n +2)
 
-      #    echo "4,${IPPORTS}" > ZZ
-      #    echo "$tail_content" >> ZZ
+          echo "4,${IPPORTS}" > ZZ
+          echo "$tail_content" >> ZZ
 
       # 更新第N行内容
       # 保留前N-1行：first_line=$(echo "$old_content" | head -n $((N-1)))
