@@ -71,7 +71,8 @@ def update_zb_file(open_targets):
 
     if open_targets:
         # 有开放端口 → 写入 64,IP:PORT...
-        new_first_line = "71," + ",".join(open_targets) + "\n"
+    #    new_first_line = "71," + ",".join(open_targets) + "\n"
+        new_first_line = ["\n"]
         lines[0] = new_first_line
         print("ZB 文件已更新：", new_first_line.strip())
     else:
