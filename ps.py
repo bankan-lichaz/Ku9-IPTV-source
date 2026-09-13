@@ -2,8 +2,8 @@ import socket
 import ipaddress
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
-ZB_FILE = "ZB"
-ZB_FILE1 = "ZB1"
+ZB_FILE_1 = "ZB1"
+ZB_FILE_2 = "ZB2"
 
 # 原有第一段扫描配置（完全保留，未修改）
 START_IP = "116.2.160.1"
@@ -65,7 +65,7 @@ def update_zb_file(open_targets):
     如果没有开放端口：lines[0] 清空
     """
     try:
-        with open(ZB_FILE1, "r", encoding="utf-8") as f:
+        with open(ZB_FILE_1, "r", encoding="utf-8") as f:
             lines = f.readlines()
     except FileNotFoundError:
         lines = ["\n"]  # 文件不存在时创建一个空行
@@ -79,37 +79,34 @@ def update_zb_file(open_targets):
     else:
         # ⭐ 没有开放端口 → 第一行清空
         lines[0] = "\n"
-        print("未扫描到开放端口，已清空 ZB 第一行")
+        print("未扫描到开放端口，已清空 ZB1 第一行")
 
-    with open(ZB_FILE1, "w", encoding="utf-8") as f:
+    with open(ZB_FILE_1, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
 # 新增：ZB文件第二行更新函数，逻辑与第一行更新完全对齐
 def update_zb_file_second(open_targets):
     """
-    第二行格式：
-    65,IP:PORT,IP:PORT
+    第一行格式：
+    13,IP:PORT,IP:PORT
     如果没有开放端口：lines[1] 清空
     """
     try:
-        with open(ZB_FILE, "r", encoding="utf-8") as f:
+        with open(ZB_FILE_2, "r", encoding="utf-8") as f:
             lines = f.readlines()
     except FileNotFoundError:
-        lines = ["\n", "\n"]  # 文件不存在时创建两行空行
+        lines = ["\n"]  # 文件不存在时创建一个空行
 
-    # 确保文件至少有2行，避免索引越界
-    while len(lines) < 2:
-        lines.append("\n")
 
     if open_targets:
-        new_second_line = "13," + ",".join(open_targets) + "\n"
-        lines[1] = new_second_line
-        print("ZB 文件第二行已更新：", new_second_line.strip())
+        new_first_line = "13," + ",".join(open_targets) + "\n"
+        lines[0] = new_first_line
+        print("ZB 文件第一行已更新：", new_first_line.strip())
     else:
-        lines[1] = "\n"
-        print("第二段未扫描到开放端口，已清空 ZB 第二行")
+        lines[0] = "\n"
+        print("第二段未扫描到开放端口，已清空 ZB 第一行")
 
-    with open(ZB_FILE, "w", encoding="utf-8") as f:
+    with open(ZB_FILE_2, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
 if __name__ == "__main__":
