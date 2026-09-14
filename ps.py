@@ -1,5 +1,6 @@
 import socket
 import ipaddress
+import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from requests.exceptions import RequestException
 
