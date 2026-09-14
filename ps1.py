@@ -261,4 +261,4 @@ if __name__ == "__main__":
     # 新增第五段扫描逻辑
     print(f"\n开始扫描第四段 {START_IP5}-{END_IP5} 端口 {PORT5} ...")
     open_targets5 = scan_all(START_IP5, END_IP5, PORT5)
-    update_ht_file_fifth(open_targets4)
+    update_ht_file_fifth(open_targets5)
