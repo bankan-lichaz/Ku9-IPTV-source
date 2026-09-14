@@ -30,6 +30,6 @@ jobs:
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add ZB1 ZB2
+          git add ZB1 ZB2 ZB3
           git commit -m "Update ZB from scanner" || echo "No changes"
           git push
