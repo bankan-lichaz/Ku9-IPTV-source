@@ -160,6 +160,121 @@ def scan_all(start_ip=START_IP, end_ip=END_IP, port=PORT, ip_segments=None):
 
     return open_targets
 
+# 过滤 open_targets结果 删除无效结果
+def filter_valid_udpxy(
+    open_targets,
+    result_format="str",  # 输入结果格式：str=原始结果是"IP:PORT"字符串，dict=原始结果是包含ip/port的字典
+    ip_key="ip",          # result_format为dict时，IP对应的字典键名
+    port_key="port",      # result_format为dict时，端口对应的字典键名
+    path="/status",       # 要访问的接口路径，默认/status
+    use_https=False,      # 是否用HTTPS访问，默认HTTP
+    timeout=5,            # 单次请求超时时间，单位秒
+    max_workers=100,      # 并发线程数，默认100，避免触发目标限流
+    ignore_case=True,     # 匹配udpxy时是否忽略大小写
+    deduplicate=True,     # 是否按IP:端口去重，避免重复请求
+    debug=False           # 是否打印请求失败的调试信息
+):
+    """
+    校验扫描结果中IP:端口的/status接口是否包含udpxy，返回合格的目标列表
+    返回格式和输入open_targets完全一致，保留原始所有字段
+    """
+    # 空输入直接返回
+    if not open_targets:
+        print("输入的开放目标列表为空，无需校验")
+        return []
+    
+    # -------------------------- 第一步：解析输入结果，提取IP:Port对 --------------------------
+    parsed_pairs = []  # 存储 (原始结果项, IP, 端口) 元组，保留原始结果不丢失
+    seen = set()       # 用于去重
+    
+    for item in open_targets:
+        # 解析IP和端口
+        if result_format == "str":
+            # 兼容IPv4/IPv6：从右往左找最后一个冒号拆分端口，避免IPv6的多冒号解析错误
+            last_colon = item.rfind(":")
+            if last_colon == -1:
+                if debug: print(f"跳过格式错误条目：{item}，无法解析端口")
+                continue
+            ip = item[:last_colon]
+            port_str = item[last_colon+1:]
+            if not port_str.isdigit():
+                if debug: print(f"跳过端口非法条目：{item}")
+                continue
+            port = int(port_str)
+        
+        elif result_format == "dict":
+            ip = item.get(ip_key, "")
+            port = item.get(port_key, "")
+            if not ip or not port:
+                if debug: print(f"跳过缺少IP/端口的字典条目：{item}")
+                continue
+            port = int(port)
+        
+        else:
+            raise ValueError(f"不支持的result_format：{result_format}，可选值为'str'或'dict'")
+        
+        # 去重逻辑
+        if deduplicate:
+            pair_key = (ip, port)
+            if pair_key in seen:
+                if debug: print(f"跳过重复条目：{ip}:{port}")
+                continue
+            seen.add(pair_key)
+        
+        parsed_pairs.append( (item, ip, port) )
+    
+    total = len(parsed_pairs)
+    if total == 0:
+        print("解析后无有效待校验条目")
+        return []
+    
+    print(f"共有 {total} 个IP:端口需要校验是否包含udpxy...")
+    valid_results = []
+
+    # -------------------------- 第二步：并发校验单个目标 --------------------------
+    def check_single(item, ip, port):
+        """校验单个IP:端口是否符合要求，符合返回原始结果，否则返回None"""
+        url = f"{'https' if use_https else 'http'}://{ip}:{port}{path}"
+        try:
+            resp = requests.get(url, timeout=timeout)
+            # 只处理200响应
+            if resp.status_code != 200:
+                return None
+            # 自动识别响应编码，避免中文乱码
+            resp.encoding = resp.apparent_encoding
+            content = resp.text
+            # 匹配udpxy
+            target = "udpxy"
+            if ignore_case:
+                content = content.lower()
+                target = target.lower()
+            if target in content:
+                return item
+        except Exception as e:
+            if debug:
+                print(f"校验 {url} 失败：{type(e).__name__}: {str(e)}")
+        return None
+
+    # -------------------------- 第三步：并发执行，收集结果 --------------------------
+    max_workers = min(max_workers, total)  # 避免任务少时开过多线程浪费资源
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {
+            executor.submit(check_single, item, ip, port): (item, ip, port)
+            for (item, ip, port) in parsed_pairs
+        }
+        completed = 0
+        for future in as_completed(futures):
+            res = future.result()
+            if res is not None:
+                valid_results.append(res)
+            completed += 1
+            # 进度提示，和scan_all风格一致
+            if completed % 100 == 0 or completed == total:
+                print(f"校验进度：{completed}/{total}，已找到 {len(valid_results)} 个合格目标")
+    
+    print(f"校验完成，共 {len(valid_results)}/{total} 个目标符合要求（/status接口包含udpxy）")
+    return valid_results
+
 # 原有ZB文件第一行更新函数完全保留，未修改任何逻辑
 def update_zb_file(open_targets):
     """
@@ -344,7 +459,8 @@ if __name__ == "__main__":
     open_targets5 = scan_all(ip_segments=[
     (START_IP5a, END_IP5a, PORT5a),
     (START_IP5b, END_IP5b, PORT5b)
-    ])                         
+    ])
+    open_targets5 = filter_valid_udpxy(open_targets5)
     update_zb_file_fifth(open_targets5)
 
     # 新增第六段扫描逻辑
