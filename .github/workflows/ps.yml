@@ -21,6 +21,7 @@ jobs:
       - name: Install dependencies
         run: |
           pip install ipaddress
+          pip install requests
 
       - name: Run scanner
         run: |
