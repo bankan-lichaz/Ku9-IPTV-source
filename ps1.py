@@ -25,6 +25,11 @@ START_IP4 = "123.175.209.1"
 END_IP4 = "123.175.210.255"
 PORT4 = 9003
 
+# 新增第五段扫描配置
+START_IP5 = "101.66.193.1"
+END_IP5 = "101.66.199.255"
+PORT5 = 9901
+
 def expand_ip_range(start_ip, end_ip):
     start = ipaddress.IPv4Address(start_ip)
     end = ipaddress.IPv4Address(end_ip)
@@ -150,7 +155,7 @@ def update_ht_file_wsjk_first(open_targets):
 # 新增：HT文件第三行更新函数，逻辑与第二行更新完全对齐
 def update_ht_file_third(open_targets):
     """
-    第二行格式：
+    第三行格式：
     66,IP:PORT,IP:PORT
     如果没有开放端口：lines[2] 清空
     """
@@ -178,7 +183,7 @@ def update_ht_file_third(open_targets):
 # 新增：HT文件第四行更新函数，逻辑与第三行更新完全对齐
 def update_ht_file_forth(open_targets):
     """
-    第二行格式：
+    第四行格式：
     67,IP:PORT,IP:PORT
     如果没有开放端口：lines[3] 清空
     """
@@ -194,6 +199,34 @@ def update_ht_file_forth(open_targets):
 
     if open_targets:
         new_forth_line = "67," + ",".join(open_targets) + "\n"
+        lines[3] = new_forth_line
+        print("HT 文件第四行已更新：", new_forth_line.strip())
+    else:
+        lines[3] = "\n"
+        print("第四段未扫描到开放端口，已清空 HT 第四行")
+
+    with open(HT_FILE, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
+# 新增：HT文件第五行更新函数，逻辑与第四行更新完全对齐
+def update_ht_file_fifth(open_targets):
+    """
+    第五行格式：
+    72,IP:PORT,IP:PORT
+    如果没有开放端口：lines[3] 清空
+    """
+    try:
+        with open(HT_FILE, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n", "\n","\n","\n","\n"]  # 文件不存在时创建五行空行
+
+    # 确保文件至少有4行，避免索引越界
+    while len(lines) < 5:
+        lines.append("\n")
+
+    if open_targets:
+        new_forth_line = "72," + ",".join(open_targets) + "\n"
         lines[3] = new_forth_line
         print("HT 文件第四行已更新：", new_forth_line.strip())
     else:
@@ -224,3 +257,8 @@ if __name__ == "__main__":
     print(f"\n开始扫描第四段 {START_IP4}-{END_IP4} 端口 {PORT4} ...")
     open_targets4 = scan_all(START_IP4, END_IP4, PORT4)
     update_ht_file_forth(open_targets4)
+
+    # 新增第五段扫描逻辑
+    print(f"\n开始扫描第四段 {START_IP5}-{END_IP5} 端口 {PORT5} ...")
+    open_targets5 = scan_all(START_IP5, END_IP5, PORT5)
+    update_ht_file_fifth(open_targets4)
