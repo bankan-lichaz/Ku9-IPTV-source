@@ -426,7 +426,6 @@ if __name__ == "__main__":
     (START_IP5a, END_IP5a, PORT5a),
     (START_IP5b, END_IP5b, PORT5b)
     ])
-    open_targets5 = filter_valid_targets(open_targets5)
     update_zb_file_fifth(open_targets5)
 
     # 新增第六段扫描逻辑
