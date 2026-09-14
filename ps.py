@@ -247,7 +247,7 @@ def update_zb_file_forth(open_targets):
 
 if __name__ == "__main__":
     # 原有第一段扫描逻辑完全保留，无任何修改
-    print(f"\n开始扫描第一段 {START_IP}-{END_IP} 端口 {PORT} ...")   
+    print(f"\n开始扫描第一段 {START_IP}-{END_IP} 端口 {PORT}, {START_IP1b}-{END_IP1b} 端口 {PORT1b} ...")   
     open_targets = scan_all(ip_segments=[
     (START_IP, END_IP, PORT),
     (START_IP1b, END_IP1b, PORT1b)
