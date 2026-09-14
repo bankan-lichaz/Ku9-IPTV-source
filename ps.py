@@ -1,7 +1,7 @@
 import socket
 import ipaddress
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from typing import List, Union, Dict, Any
+from requests.exceptions import RequestException
 
 ZB_FILE_1 = "ZB1"
 ZB_FILE_2 = "ZB2"
@@ -162,150 +162,83 @@ def scan_all(start_ip=START_IP, end_ip=END_IP, port=PORT, ip_segments=None):
     return open_targets
 
 # 过滤 open_targets结果 删除无效结果
-def filter_valid_status(
-    open_targets: List[Union[str, Dict[str, Any]]],
-    # 输入格式兼容参数
-    result_format: str = "str",  # 输入结果类型：str=原始是"IP:PORT"字符串，dict=原始是包含ip/port的字典
-    ip_key: str = "ip",          # dict格式时IP对应的字段名
-    port_key: str = "port",      # dict格式时端口对应的字段名
-    # 请求配置参数
-    path: str = "/status",       # 要访问的接口路径
-    use_https: bool = False,     # 是否用HTTPS访问
-    timeout: int = 5,            # 单次请求超时时间（秒）
-    max_workers: int = 100,      # 并发线程数，避免触发目标限流
-    # 过滤规则参数
-    exclude_json: Dict[str, str] = {"detail": "Not Found"},  # 匹配到这个JSON就过滤删除
-    ignore_case: bool = False,   # 匹配JSON时是否忽略大小写
-    exclude_on_error: bool = False, # 请求失败（超时/连接错误等）是否也过滤，默认保留
-    # 功能开关
-    deduplicate: bool = True,    # 是否按IP:端口去重，避免重复请求
-    debug: bool = False          # 是否打印过滤原因的调试信息
-) -> List[Union[str, Dict[str, Any]]]:
+def filter_valid_targets(open_targets, max_workers=50, timeout=5, retries=1, scheme="http", verify=False, print_progress=True):
     """
-    过滤scan_all返回的结果：仅保留访问/status接口响应不等于{"detail":"Not Found"}的目标
-    返回格式和输入open_targets完全一致，保留原始所有字段
+    过滤scan_all返回的开放目标，保留访问/status接口不返回Not Found的目标
+    :param open_targets: scan_all返回的开放目标列表，每个元素支持两种格式：
+        1. "ip:port" 格式的字符串（比如 "192.168.1.1:8080"）
+        2. 包含ip、port字段的字典（比如 {"ip": "192.168.1.1", "port": 8080}）
+    :param max_workers: 并发请求线程数，默认50（根据自身网络和目标承受能力调整）
+    :param timeout: 单次请求超时时间（秒），默认5
+    :param retries: 请求失败重试次数，默认1（避免网络波动误判）
+    :param scheme: 请求协议，默认http，若目标用https可改为"https"
+    :param verify: 是否验证SSL证书，默认False，https场景下需要验证可设为True
+    :param print_progress: 是否打印处理进度，默认True
+    :return: 过滤后的合格目标列表
     """
-    # 空输入直接返回
     if not open_targets:
-        print("输入的开放目标列表为空，无需过滤")
         return []
+    
+    valid_targets = []
+    total = len(open_targets)
+    # 默认请求头，避免被服务器拦截默认的python-requests请求
+    default_headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+    }
 
-    # -------------------------- 第一步：解析输入结果，提取IP:Port对，保留原始条目 --------------------------
-    parsed_pairs = []  # 存储 (原始结果项, IP, 端口) 元组，保证返回和输入格式完全一致
-    seen = set()       # 用于去重
-
-    for item in open_targets:
-        # 解析IP和端口
-        if result_format == "str":
-            # 兼容IPv4/IPv6：从右往左找最后一个冒号拆分端口，避免IPv6多冒号解析错误
-            last_colon = item.rfind(":")
-            if last_colon == -1:
-                if debug: print(f"跳过格式错误条目：{item}，无法解析端口")
-                continue
-            ip = item[:last_colon]
-            port_str = item[last_colon+1:]
-            if not port_str.isdigit():
-                if debug: print(f"跳过端口非法条目：{item}")
-                continue
-            port = int(port_str)
-        
-        elif result_format == "dict":
-            ip = item.get(ip_key, "")
-            port = item.get(port_key, "")
+    def check_target(target):
+        """单个目标校验逻辑"""
+        # 兼容解析目标格式
+        if isinstance(target, str):
+            parts = target.split(":")
+            if len(parts) != 2:
+                return None
+            ip, port = parts[0], parts[1]
+        elif isinstance(target, dict):
+            ip = target.get("ip")
+            port = target.get("port")
             if not ip or not port:
-                if debug: print(f"跳过缺少IP/端口的字典条目：{item}")
-                continue
-            port = int(port)
-        
+                return None
         else:
-            raise ValueError(f"不支持的result_format：{result_format}，可选值为'str'或'dict'")
+            return None
         
-        # 去重逻辑
-        if deduplicate:
-            pair_key = (ip, port)
-            if pair_key in seen:
-                if debug: print(f"跳过重复条目：{ip}:{port}")
-                continue
-            seen.add(pair_key)
+        url = f"{scheme}://{ip}:{port}/status"
         
-        parsed_pairs.append( (item, ip, port) )
-    
-    total = len(parsed_pairs)
-    if total == 0:
-        print("解析后无有效待校验条目")
-        return []
-    
-    print(f"共有 {total} 个IP:端口需要校验/status接口...")
-    valid_results = []
-
-    # -------------------------- 辅助函数：构造URL，自动兼容IPv6 --------------------------
-    def build_url(ip: str, port: int) -> str:
-        scheme = "https" if use_https else "http"
-        # IPv6地址需要加方括号包裹，避免URL解析错误
-        if ":" in ip:
-            return f"{scheme}://[{ip}]:{port}{path}"
-        else:
-            return f"{scheme}://{ip}:{port}{path}"
-
-    # -------------------------- 第二步：单个目标校验逻辑 --------------------------
-    def check_single(item: Union[str, Dict], ip: str, port: int):
-        url = build_url(ip, port)
-        try:
-            resp = requests.get(url, timeout=timeout)
-            # 尝试解析为JSON
+        # 重试逻辑
+        for _ in range(retries + 1):
             try:
-                resp.encoding = resp.apparent_encoding
-                resp_json = resp.json()
-            except requests.exceptions.JSONDecodeError:
-                # 响应不是合法JSON，保留
-                return item
-            
-            # 处理大小写匹配
-            target_json = exclude_json.copy()
-            current_json = resp_json.copy()
-            if ignore_case:
-                # 键和值都转小写比较
-                target_json = {k.lower(): v.lower() if isinstance(v, str) else v for k, v in target_json.items()}
-                current_json = {k.lower(): v.lower() if isinstance(v, str) else v for k, v in current_json.items()}
-            
-            # 精确匹配到要排除的JSON，过滤掉
-            if current_json == target_json:
-                if debug:
-                    print(f"过滤 {url}：响应匹配到排除规则 {exclude_json}")
+                response = requests.get(
+                    url, 
+                    timeout=timeout, 
+                    verify=verify,
+                    headers=default_headers
+                )
+                # 判断响应内容是否不含Not Found（区分大小写，不需要区分可以改成.lower()后判断）
+                if b"Not Found" not in response.content:
+                    return target
+                # 包含Not Found直接判定为不合格，不需要重试
                 return None
-        
-        except Exception as e:
-            # 请求异常处理
-            if exclude_on_error:
-                if debug:
-                    print(f"过滤 {url}：请求失败 {type(e).__name__}: {str(e)}")
-                return None
-            else:
-                # 默认保留请求失败的目标
-                return item
-        
-        # 其他所有情况都保留
-        return item
+            except RequestException:
+                # 请求失败继续重试
+                continue
+        # 重试都失败判定为不合格
+        return None
 
-    # -------------------------- 第三步：并发执行，收集结果 --------------------------
-    max_workers = min(max_workers, total)  # 避免任务少时开过多线程浪费资源
+    # 多线程并发校验
     with ThreadPoolExecutor(max_workers=max_workers) as executor:
-        futures = {
-            executor.submit(check_single, item, ip, port): (item, ip, port)
-            for (item, ip, port) in parsed_pairs
-        }
-        completed = 0
-        for future in as_completed(futures):
-            res = future.result()
-            if res is not None:
-                valid_results.append(res)
-            completed += 1
-            # 进度提示，和scan_all风格一致
-            if completed % 100 == 0 or completed == total:
-                print(f"校验进度：{completed}/{total}，剩余合格目标 {len(valid_results)} 个")
+        futures = {executor.submit(check_target, target): target for target in open_targets}
+        
+        for i, future in enumerate(as_completed(futures)):
+            result = future.result()
+            if result:
+                valid_targets.append(result)
+                if print_progress:
+                    print(f"合格目标：{result}")
+            
+            if print_progress and i % 200 == 0:
+                print(f"过滤进度：{i}/{total}，当前合格数：{len(valid_targets)}")
     
-    print(f"过滤完成，共保留 {len(valid_results)}/{total} 个合格目标")
-    return valid_results
+    return valid_targets
 
 # 原有ZB文件第一行更新函数完全保留，未修改任何逻辑
 def update_zb_file(open_targets):
@@ -492,7 +425,7 @@ if __name__ == "__main__":
     (START_IP5a, END_IP5a, PORT5a),
     (START_IP5b, END_IP5b, PORT5b)
     ])
-    open_targets5 = filter_valid_status(open_targets5)
+    open_targets5 = filter_valid_targets(open_targets5)
     update_zb_file_fifth(open_targets5)
 
     # 新增第六段扫描逻辑
