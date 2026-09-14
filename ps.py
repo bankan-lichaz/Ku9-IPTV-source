@@ -4,6 +4,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 ZB_FILE_1 = "ZB1"
 ZB_FILE_2 = "ZB2"
+ZB_FILE_3 = "ZB3"
 
 # 原有第一段扫描配置（完全保留，未修改）
 START_IP = "116.2.160.1"
@@ -14,6 +15,11 @@ PORT = 4010
 START_IP2 = "220.167.170.1"
 END_IP2 = "220.167.170.255"
 PORT2 = 4000
+
+# 新增第三段扫描配置
+START_IP3 = "112.192.72.1"
+END_IP3 = "112.192.73.255"
+PORT3 = 8484
 
 def expand_ip_range(start_ip, end_ip):
     start = ipaddress.IPv4Address(start_ip)
@@ -101,12 +107,37 @@ def update_zb_file_second(open_targets):
     if open_targets:
         new_first_line = "13," + ",".join(open_targets) + "\n"
         lines[0] = new_first_line
-        print("ZB 文件第一行已更新：", new_first_line.strip())
+        print("ZB2 文件第一行已更新：", new_first_line.strip())
     else:
         lines[0] = "\n"
-        print("第二段未扫描到开放端口，已清空 ZB 第一行")
+        print("第二段未扫描到开放端口，已清空 ZB2 第一行")
 
     with open(ZB_FILE_2, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
+# 新增：ZB文件第一行更新函数，逻辑与第一行更新完全对齐
+def update_zb_file_third(open_targets):
+    """
+    第一行格式：
+    40,IP:PORT,IP:PORT
+    如果没有开放端口：lines[1] 清空
+    """
+    try:
+        with open(ZB_FILE_3, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n"]  # 文件不存在时创建一个空行
+
+
+    if open_targets:
+        new_first_line = "40," + ",".join(open_targets) + "\n"
+        lines[0] = new_first_line
+        print("ZB3 文件第一行已更新：", new_first_line.strip())
+    else:
+        lines[0] = "\n"
+        print("第三段未扫描到开放端口，已清空 ZB3 第一行")
+
+    with open(ZB_FILE_3, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
 if __name__ == "__main__":
@@ -119,3 +150,8 @@ if __name__ == "__main__":
     print(f"\n开始扫描第二段 {START_IP2}-{END_IP2} 端口 {PORT2} ...")
     open_targets2 = scan_all(START_IP2, END_IP2, PORT2)
     update_zb_file_second(open_targets2)
+
+    # 新增第三段扫描逻辑
+    print(f"\n开始扫描第三段 {START_IP3}-{END_IP3} 端口 {PORT3} ...")
+    open_targets3 = scan_all(START_IP3, END_IP3, PORT3)
+    update_zb_file_third(open_targets3)
