@@ -8,9 +8,13 @@ ZB_FILE_3 = "ZB3"
 ZB_FILE_4 = "ZB4"
 
 # 原有第一段扫描配置（完全保留，未修改）
-START_IP = "116.2.160.1"
-END_IP = "116.2.180.255"
-PORT = 4010
+START_IP1a = "116.2.160.1"
+END_IP1a = "116.2.180.255"
+PORT1a = 4010
+
+START_IP1b = "123.191.12.1"
+END_IP1b = "123.191.12.255"
+PORT1b = 1111
 
 # 新增第二段扫描配置
 START_IP2 = "220.167.170.1"
@@ -244,7 +248,10 @@ def update_zb_file_forth(open_targets):
 if __name__ == "__main__":
     # 原有第一段扫描逻辑完全保留，无任何修改
     print(f"\n开始扫描第一段 {START_IP}-{END_IP} 端口 {PORT} ...")   
-    open_targets = scan_all()
+    open_targets = scan_all(ip_segments=[
+    (START_IP1a, END_IP1a, PORT1a),
+    (START_IP1b, END_IP1b, PORT1b)
+    ])
     update_zb_file(open_targets)
 
     # 新增第二段扫描逻辑
