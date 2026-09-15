@@ -505,7 +505,7 @@ if __name__ == "__main__":
     ])
     open_targets5 = get_verified_rtp_targets(
         open_targets5,
-        target_rtp_stream_addr="239.3.1.116:8000"
+        target_rtp_stream_addr=239.3.1.116:8000
     )
     update_zb_file_fifth(open_targets5)
 
