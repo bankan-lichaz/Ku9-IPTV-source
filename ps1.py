@@ -26,9 +26,9 @@ END_IP4 = "123.175.210.255"
 PORT4 = 9003
 
 # 新增第五段扫描配置
-START_IP5 = "101.66.193.1"
-END_IP5 = "101.66.199.255"
-PORT5 = 9901
+START_IP5 = "114.242.62.1"
+END_IP5 = "114.242.62.255"
+PORT5 = 888
 
 def expand_ip_range(start_ip, end_ip):
     start = ipaddress.IPv4Address(start_ip)
@@ -212,7 +212,7 @@ def update_ht_file_forth(open_targets):
 def update_ht_file_fifth(open_targets):
     """
     第五行格式：
-    72,IP:PORT,IP:PORT
+    74,IP:PORT,IP:PORT
     如果没有开放端口：lines[3] 清空
     """
     try:
@@ -226,7 +226,7 @@ def update_ht_file_fifth(open_targets):
         lines.append("\n")
 
     if open_targets:
-        new_fifth_line = "72," + ",".join(open_targets) + "\n"
+        new_fifth_line = "74," + ",".join(open_targets) + "\n"
         lines[4] = new_fifth_line
         print("HT 文件第五行已更新：", new_fifth_line.strip())
     else:
