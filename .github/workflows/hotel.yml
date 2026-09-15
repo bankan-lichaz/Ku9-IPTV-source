@@ -26,7 +26,7 @@ jobs:
       run: |
         node fetch.js
 
-    - name: Encrypt merged_province.txt
+    - name: Encrypt result.txt
       run: |
         node encrypt.js file=result.txt
 
