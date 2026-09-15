@@ -31,7 +31,7 @@ jobs:
           python ITVlist1.py
           echo "=== Finished ITVlist1.py ==="
 
-      - name: Encrypt merged_province1.txt
+      - name: Encrypt itvlist1.txt
         run: |
           node encrypt.js file=itvlist1.txt
 
