@@ -26,6 +26,12 @@ jobs:
         run: |
           python ps1.py
 
+      - name: Encrypt HT WSJK
+        run: |
+          echo "开始加密 HT WSJK..."
+          node encrypt.js file=HT
+          node encrypt.js file=WSJK
+          
       - name: Commit changes
         run: |
           git config --global user.name "github-actions"
