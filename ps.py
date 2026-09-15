@@ -48,6 +48,10 @@ START_IP5b = "221.220.130.1"
 END_IP5b = "221.220.132.255"
 PORT5b = 8012
 
+START_IP5c = "114.254.30.1"
+END_IP5c = "114.254.40.255"
+PORT5c = 8888
+
 # 新增第六段扫描配置
 START_IP6 = "112.109.206.1"
 END_IP6 = "112.109.206.255"
@@ -241,6 +245,77 @@ def filter_valid_targets(open_targets, max_workers=50, timeout=5, retries=1, sch
     
     return valid_targets
 
+# 测速筛选 获取有效结果
+def get_verified_rtp_targets(
+    open_targets: list,  # 直接传scan_all返回的open_targets
+    target_rtp_stream_addr: str,  # 你指定的新参数，比如"239.3.1.116:8000"
+    max_workers: int = 100,  # 测速阶段线程数，可根据机器性能调整
+    speed_threshold_mbps: float = 2.0,  # 速度合格阈值（单位Mbps），低于则判定不合格
+    request_timeout: int = 5,  # 单次请求超时时间（秒），超时直接判定不合格
+    use_https: bool = False  # 是否用HTTPS访问，默认HTTP
+) -> list:
+    """
+    对scan_all返回的开放ip:port列表做RTP接口验证+测速，返回合格的ip:port列表
+    """
+    if not open_targets:
+        print("输入的open_targets为空，直接返回空列表")
+        return []
+    
+    print(f"\n开始对 {len(open_targets)} 个开放目标做RTP接口测速验证...")
+    qualified_targets = []
+    total = len(open_targets)
+    protocol = "https" if use_https else "http"
+
+    def _verify_single(target: str) -> str | None:
+        """单个目标验证逻辑，合格返回原target，不合格返回None"""
+        # 拼接符合要求的URL，比如 http://192.168.1.10:554/rtp/239.3.1.116:8000
+        url = f"{protocol}://{target}/rtp/{target_rtp_stream_addr}"
+        try:
+            start_time = time.time()
+            # 开启流式读取，用于测实际下载速度
+            resp = requests.get(url, timeout=request_timeout, stream=True)
+            if resp.status_code != 200:
+                return None
+            
+            # 读取1秒内的数据计算实际下载速度
+            downloaded_bytes = 0
+            end_time = start_time + 1.0  # 测速时长1秒，可调整
+            for chunk in resp.iter_content(chunk_size=1024):
+                if time.time() >= end_time:
+                    break
+                downloaded_bytes += len(chunk)
+            
+            # 字节转Mbps：1字节=8比特，1Mbps=1e6比特/秒
+            elapsed = time.time() - start_time
+            if elapsed <= 0:
+                return None
+            speed_mbps = (downloaded_bytes * 8) / (elapsed * 1e6)
+            
+            # 速度达标才返回合格
+            if speed_mbps >= speed_threshold_mbps:
+                return target
+        except Exception:
+            # 任何异常（超时、连接失败、404/500等）都判定为不合格
+            pass
+        return None
+
+    # 多线程批量验证，和原scan_all的并发逻辑一致
+    with ThreadPoolExecutor(max_workers=max_workers) as executor:
+        futures = {executor.submit(_verify_single, target): target for target in open_targets}
+        
+        for i, future in enumerate(as_completed(futures)):
+            result = future.result()
+            if result:
+                qualified_targets.append(result)
+                print(f"验证合格：{result}")
+            
+            # 进度打印风格和原scan_all完全统一
+            if (i + 1) % 200 == 0:
+                print(f"验证进度：{i+1}/{total}，当前合格数：{len(qualified_targets)}")
+
+    print(f"验证完成，共 {len(qualified_targets)}/{total} 个目标合格")
+    return qualified_targets
+
 # 原有ZB文件第一行更新函数完全保留，未修改任何逻辑
 def update_zb_file(open_targets):
     """
@@ -424,8 +499,13 @@ if __name__ == "__main__":
     print(f"\n开始扫描第五段 {START_IP5a}-{END_IP5a} 端口 {PORT5a}, {START_IP5b}-{END_IP5b} 端口 {PORT5b} ...")
     open_targets5 = scan_all(ip_segments=[
     (START_IP5a, END_IP5a, PORT5a),
-    (START_IP5b, END_IP5b, PORT5b)
+    (START_IP5b, END_IP5b, PORT5b),
+    (START_IP5c, END_IP5c, PORT5c)
     ])
+    open_targets5 = get_verified_rtp_targets(
+        open_targets,
+        target_rtp_stream_addr="239.3.1.116:8000"
+    )
     update_zb_file_fifth(open_targets5)
 
     # 新增第六段扫描逻辑
