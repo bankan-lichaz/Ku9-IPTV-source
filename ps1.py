@@ -226,12 +226,12 @@ def update_ht_file_fifth(open_targets):
         lines.append("\n")
 
     if open_targets:
-        new_forth_line = "72," + ",".join(open_targets) + "\n"
-        lines[3] = new_forth_line
-        print("HT 文件第四行已更新：", new_forth_line.strip())
+        new_fifth_line = "72," + ",".join(open_targets) + "\n"
+        lines[4] = new_fifth_line
+        print("HT 文件第五行已更新：", new_fifth_line.strip())
     else:
-        lines[3] = "\n"
-        print("第四段未扫描到开放端口，已清空 HT 第四行")
+        lines[4] = "\n"
+        print("第五段未扫描到开放端口，已清空 HT 第四行")
 
     with open(HT_FILE, "w", encoding="utf-8") as f:
         f.writelines(lines)
@@ -259,6 +259,6 @@ if __name__ == "__main__":
     update_ht_file_forth(open_targets4)
 
     # 新增第五段扫描逻辑
-    print(f"\n开始扫描第四段 {START_IP5}-{END_IP5} 端口 {PORT5} ...")
+    print(f"\n开始扫描第五段 {START_IP5}-{END_IP5} 端口 {PORT5} ...")
     open_targets5 = scan_all(START_IP5, END_IP5, PORT5)
     update_ht_file_fifth(open_targets5)
