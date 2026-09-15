@@ -30,10 +30,13 @@ jobs:
       - name: Encrypt ZBs
         run: |
           echo "开始加密 ZBs..."
+          node encrypt.js file=ZZ
           node encrypt.js file=ZB1
+          node encrypt.js file=ZB2
           node encrypt.js file=ZB3
           node encrypt.js file=ZB4
           node encrypt.js file=ZB5
+          node encrypt.js file=ZB6
 
       - name: Commit changes
         run: |
