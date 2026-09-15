@@ -503,7 +503,7 @@ if __name__ == "__main__":
     (START_IP5c, END_IP5c, PORT5c)
     ])
     open_targets5 = get_verified_rtp_targets(
-        open_targets,
+        open_targets5,
         target_rtp_stream_addr="239.3.1.116:8000"
     )
     update_zb_file_fifth(open_targets5)
