@@ -250,7 +250,7 @@ def get_verified_rtp_targets(
     open_targets: list,  # 直接传scan_all返回的open_targets
     target_rtp_stream_addr: str,  # 你指定的新参数，比如"239.3.1.116:8000"
     max_workers: int = 100,  # 测速阶段线程数，可根据机器性能调整
-    speed_threshold_mbps: float = 2.0,  # 速度合格阈值（单位Mbps），低于则判定不合格
+    speed_threshold_mbps: float = 1.0,  # 速度合格阈值（单位Mbps），低于则判定不合格
     request_timeout: int = 5,  # 单次请求超时时间（秒），超时直接判定不合格
     use_https: bool = False  # 是否用HTTPS访问，默认HTTP
 ) -> list:
