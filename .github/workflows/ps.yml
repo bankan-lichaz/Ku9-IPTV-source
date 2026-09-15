@@ -27,6 +27,14 @@ jobs:
         run: |
           python ps.py
 
+      - name: Encrypt ZBs
+        run: |
+          echo "开始加密 ZBs..."
+          node encrypt.js file=ZB1
+          node encrypt.js file=ZB3
+          node encrypt.js file=ZB4
+          node encrypt.js file=ZB5
+
       - name: Commit changes
         run: |
           git config --global user.name "github-actions"
