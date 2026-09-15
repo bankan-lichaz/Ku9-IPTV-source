@@ -271,6 +271,8 @@ def get_verified_rtp_targets(
         """单个目标验证逻辑，合格返回原target，不合格返回None"""
         # 拼接符合要求的URL，比如 http://192.168.1.10:554/rtp/239.3.1.116:8000
         url = f"{protocol}://{target}/rtp/{target_rtp_stream_addr}"
+        # 如果target是(ip, port)元组，改成这行：
+        #url = f"{protocol}://{target[0]}:{target[1]}/rtp/{target_rtp_stream_addr}"
         try:
             start_time = time.time()
             # 开启流式读取，用于测实际下载速度
