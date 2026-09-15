@@ -351,7 +351,7 @@ def update_zb_file(open_targets):
 def update_zb_file_zero(open_targets):
     """
     第一行格式：
-    4,IP:PORT,IP:PORT
+    1,IP:PORT,IP:PORT
     如果没有开放端口：lines[0] 清空
     """
     try:
@@ -362,7 +362,7 @@ def update_zb_file_zero(open_targets):
 
     if open_targets:
         # 有开放端口 → 写入 64,IP:PORT...
-        new_first_line = "71," + ",".join(open_targets) + "\n"
+        new_first_line = "1," + ",".join(open_targets) + "\n"
     #    new_first_line = "\n"
         lines[0] = new_first_line
         print("ZZ 文件已更新：", new_first_line.strip())
