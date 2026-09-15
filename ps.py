@@ -5,6 +5,7 @@ import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from requests.exceptions import RequestException
 
+ZB_FILE_0 = "ZZ"
 ZB_FILE_1 = "ZB1"
 ZB_FILE_2 = "ZB2"
 ZB_FILE_3 = "ZB3"
@@ -346,6 +347,33 @@ def update_zb_file(open_targets):
     with open(ZB_FILE_1, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
+# 原有ZZ文件第一行更新函数完全保留，未修改任何逻辑
+def update_zb_file_zero(open_targets):
+    """
+    第一行格式：
+    4,IP:PORT,IP:PORT
+    如果没有开放端口：lines[0] 清空
+    """
+    try:
+        with open(ZB_FILE_0, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n"]  # 文件不存在时创建一个空行
+
+    if open_targets:
+        # 有开放端口 → 写入 64,IP:PORT...
+        new_first_line = "71," + ",".join(open_targets) + "\n"
+    #    new_first_line = "\n"
+        lines[0] = new_first_line
+        print("ZZ 文件已更新：", new_first_line.strip())
+    else:
+        # ⭐ 没有开放端口 → 第一行清空
+        lines[0] = "\n"
+        print("未扫描到开放端口，已清空 ZZ 第一行")
+
+    with open(ZB_FILE_0, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
 # 新增：ZB2文件第一行更新函数，逻辑与第一行更新完全对齐
 def update_zb_file_second(open_targets):
     """
@@ -479,6 +507,7 @@ if __name__ == "__main__":
     (START_IP1b, END_IP1b, PORT1b)
     ])
     update_zb_file(open_targets)
+    update_zb_file_zero(open_targets)
 
     # 新增第二段扫描逻辑
     print(f"\n开始扫描第二段 {START_IP2}-{END_IP2} 端口 {PORT2} ...")
