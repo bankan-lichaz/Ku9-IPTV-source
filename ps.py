@@ -518,7 +518,7 @@ def update_zb_file_sixth(open_targets):
 def update_zb_file_seventh(open_targets):
     """
     第一行格式：
-    17,IP:PORT,IP:PORT
+    21,IP:PORT,IP:PORT
     如果没有开放端口：lines[1] 清空
     """
     try:
@@ -529,7 +529,7 @@ def update_zb_file_seventh(open_targets):
 
 
     if open_targets:
-        new_first_line = "17," + ",".join(open_targets) + "\n"
+        new_first_line = "21," + ",".join(open_targets) + "\n"
         lines[0] = new_first_line
         print("ZB7 文件第一行已更新：", new_first_line.strip())
     else:
