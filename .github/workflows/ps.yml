@@ -37,6 +37,7 @@ jobs:
           node encrypt.js file=ZB4
           node encrypt.js file=ZB5
           node encrypt.js file=ZB6
+          node encrypt.js file=ZB7
           node encrypt.js file=ZB
 
       - name: Commit changes
