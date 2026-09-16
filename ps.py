@@ -542,13 +542,13 @@ def update_zb_file_seventh(open_targets):
 # -------------------------- 新增合并函数 --------------------------
 def merge_zb_files(custom_separators=None):
     """
-    合并所有ZB_FILE_1~6到ZB_FILE，每个文件上方插入独立自定义分隔符
+    合并所有ZB_FILE_1~7到ZB_FILE，每个文件上方插入独立自定义分隔符
     :param custom_separators: 自定义分隔符列表，按顺序对应：
-        [ZB_FILE_1上方的分隔符, ZB_FILE_1和2之间的分隔符, ZB_FILE_2和3之间的分隔符, ..., ZB_FILE_6下方的分隔符]
-        6个文件对应7个位置的分隔符，长度随意，内容完全自由，支持空字符串（表示不加分隔符）
+        [ZB_FILE_1上方的分隔符, ZB_FILE_1和2之间的分隔符, ZB_FILE_2和3之间的分隔符, ..., ZB_FILE_7下方的分隔符]
+        7个文件对应8个位置的分隔符，长度随意，内容完全自由，支持空字符串（表示不加分隔符）
     """
     # 要合并的文件列表，按你需要的顺序排列即可
-    target_files = [ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6]
+    target_files = [ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6, ZB_FILE_7]
     
     # 处理自定义分隔符，没传的话用默认示例，你可以直接改
     if custom_separators is None:
@@ -558,7 +558,8 @@ def merge_zb_files(custom_separators=None):
             "0,ZB3\n",
             "0,ZB4\n",
             "0,ZB5\n",
-            "0,ZB6",
+            "0,ZB6\n",
+            "0,ZB7\n",
             ""
         ]
     
