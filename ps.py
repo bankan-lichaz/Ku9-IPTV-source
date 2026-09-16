@@ -694,6 +694,10 @@ if __name__ == "__main__":
     # 新增第八段扫描逻辑
     print(f"\n开始扫描第八段 {START_IP8}-{END_IP8} 端口 {PORT8} ...")
     open_targets8 = scan_all(START_IP8, END_IP8, PORT8)
+    open_targets8 = get_verified_rtp_targets(
+        open_targets8,
+        target_rtp_stream_addr="239.200.200.15:8856"
+    )
     update_zb_file_eighth(open_targets8)
 
     # 新增ZB合并逻辑
