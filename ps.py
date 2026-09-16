@@ -12,6 +12,7 @@ ZB_FILE_3 = "ZB3"
 ZB_FILE_4 = "ZB4"
 ZB_FILE_5 = "ZB5"
 ZB_FILE_6 = "ZB6"
+ZB_FILE = "ZB"  # 合并后的输出文件
 
 # 原有第一段扫描配置（完全保留，未修改）
 START_IP = "116.2.160.1"
@@ -499,6 +500,67 @@ def update_zb_file_sixth(open_targets):
     with open(ZB_FILE_6, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
+# -------------------------- 新增合并函数 --------------------------
+def merge_zb_files(custom_separators=None):
+    """
+    合并所有ZB_FILE_0~6到ZB_FILE，每个文件上方插入独立自定义分隔符
+    :param custom_separators: 自定义分隔符列表，按顺序对应：
+        [ZB_FILE_0上方的分隔符, ZB_FILE_0和1之间的分隔符, ZB_FILE_1和2之间的分隔符, ..., ZB_FILE_6下方的分隔符]
+        7个文件对应8个位置的分隔符，长度随意，内容完全自由，支持空字符串（表示不加分隔符）
+    """
+    # 要合并的文件列表，按你需要的顺序排列即可
+    target_files = [ZB_FILE_0, ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6]
+    
+    # 处理自定义分隔符，没传的话用默认示例，你可以直接改
+    if custom_separators is None:
+        custom_separators = [
+            "0,ZZ\n",
+            "0,ZB1\n",
+            "0,ZB2\n",
+            "0,ZB3\n",
+            "0,ZB4\n",
+            "0,ZB5\n",
+            "0,ZB6",
+            ""
+        ]
+    
+    # 自动补全分隔符长度，不够的补空，多的截断，避免报错
+    required_sep_len = len(target_files) + 1
+    if len(custom_separators) < required_sep_len:
+        custom_separators += [""] * (required_sep_len - len(custom_separators))
+    else:
+        custom_separators = custom_separators[:required_sep_len]
+
+    merged_content = ""
+    for idx, file_path in enumerate(target_files):
+        # 先插入当前文件上方的分隔符
+        merged_content += custom_separators[idx]
+
+        # 读取文件内容，自动跳过不存在的文件
+        try:
+            with open(file_path, "r", encoding="utf-8") as f:
+                file_content = f.read()
+            merged_content += file_content
+            # 自动补换行，避免内容和下一个分隔符粘连
+            if not file_content.endswith("\n"):
+                merged_content += "\n"
+            print(f"✅ 成功读取文件：{file_path}")
+        except FileNotFoundError:
+            print(f"⚠️ 文件 {file_path} 不存在，已跳过该文件内容")
+            # 如果希望文件不存在也保留分隔符，删掉下面的continue即可
+            continue
+        except Exception as e:
+            print(f"❌ 读取文件 {file_path} 失败：{str(e)}，已跳过")
+            continue
+
+    # 写入合并后的文件
+    try:
+        with open(ZB_FILE, "w", encoding="utf-8") as f:
+            f.write(merged_content)
+        print(f"✅ 合并完成，已保存到 {ZB_FILE}")
+    except Exception as e:
+        print(f"❌ 写入合并文件失败：{str(e)}")
+
 if __name__ == "__main__":
     # 原有第一段扫描逻辑完全保留，无任何修改
     print(f"\n开始扫描第一段 {START_IP}-{END_IP} 端口 {PORT}, {START_IP1b}-{END_IP1b} 端口 {PORT1b} ...")   
@@ -544,3 +606,8 @@ if __name__ == "__main__":
     print(f"\n开始扫描第六段 {START_IP6}-{END_IP6} 端口 {PORT6} ...")
     open_targets6 = scan_all(START_IP6, END_IP6, PORT6)
     update_zb_file_sixth(open_targets6)
+
+    # 新增ZB合并逻辑
+    print(f"\n开始合成ZB文件...")
+    merge_zb_files()
+    
