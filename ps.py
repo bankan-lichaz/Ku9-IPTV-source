@@ -561,7 +561,7 @@ def update_zb_file_eighth(open_targets):
     if open_targets:
         new_first_line = "75," + ",".join(open_targets) + "\n"
         lines[0] = new_first_line
-        print("ZB6 文件第一行已更新：", new_first_line.strip())
+        print("ZB8 文件第一行已更新：", new_first_line.strip())
     else:
         lines[0] = "\n"
         print("第八段未扫描到开放端口，已清空 ZB8 第一行")
