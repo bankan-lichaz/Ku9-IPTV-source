@@ -649,11 +649,15 @@ if __name__ == "__main__":
     # 新增第七段扫描逻辑
     print(f"\n开始扫描第七段 {START_IP7a}-{END_IP7a} 端口 {PORT7a}, {START_IP7b}-{END_IP7b} 端口 {PORT7b}, {START_IP7c}-{END_IP7c} 端口 {PORT7c} ...")
     open_targets7 = scan_all(ip_segments=[
-    (START_IP7a, END_IP7a, PORT5a),
-    (START_IP7b, END_IP7b, PORT5b),
-    (START_IP7c, END_IP7c, PORT5c)
+    (START_IP7a, END_IP7a, PORT7a),
+    (START_IP7b, END_IP7b, PORT7b),
+    (START_IP7c, END_IP7c, PORT7c)
     ])
-    update_zb_file_seventh(open_targets6)
+    open_targets7 = get_verified_rtp_targets(
+        open_targets7,
+        target_rtp_stream_addr="238.1.79.42:4448"
+    )
+    update_zb_file_seventh(open_targets7)
 
     # 新增ZB合并逻辑
     print(f"\n开始合成ZB文件...")
