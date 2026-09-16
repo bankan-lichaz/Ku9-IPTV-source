@@ -12,6 +12,7 @@ ZB_FILE_3 = "ZB3"
 ZB_FILE_4 = "ZB4"
 ZB_FILE_5 = "ZB5"
 ZB_FILE_6 = "ZB6"
+ZB_FILE_7 = "ZB7"
 ZB_FILE = "ZB"  # 合并后的输出文件
 
 # 原有第一段扫描配置（完全保留，未修改）
@@ -59,6 +60,19 @@ PORT5c = 8888
 START_IP6 = "112.109.206.1"
 END_IP6 = "112.109.206.255"
 PORT6 = 9999
+
+# 新增第七段扫描配置
+START_IP7a = "124.112.187.1"
+END_IP7a = "124.112.190.255"
+PORT7a = 4022
+
+START_IP7b = "124.112.240.1"
+END_IP7b = "124.112.241.255"
+PORT7b = 4022
+
+START_IP7c = "183.162.102.1"
+END_IP7c = "183.162.106.255"
+PORT7c = 8888
 
 
 def expand_ip_range(start_ip, end_ip):
@@ -500,6 +514,31 @@ def update_zb_file_sixth(open_targets):
     with open(ZB_FILE_6, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
+# 新增：ZB7文件第一行更新函数，逻辑与第一行更新完全对齐
+def update_zb_file_seventh(open_targets):
+    """
+    第一行格式：
+    17,IP:PORT,IP:PORT
+    如果没有开放端口：lines[1] 清空
+    """
+    try:
+        with open(ZB_FILE_7, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n"]  # 文件不存在时创建一个空行
+
+
+    if open_targets:
+        new_first_line = "17," + ",".join(open_targets) + "\n"
+        lines[0] = new_first_line
+        print("ZB7 文件第一行已更新：", new_first_line.strip())
+    else:
+        lines[0] = "\n"
+        print("第七段未扫描到开放端口，已清空 ZB7 第一行")
+
+    with open(ZB_FILE_7, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
 # -------------------------- 新增合并函数 --------------------------
 def merge_zb_files(custom_separators=None):
     """
@@ -589,7 +628,7 @@ if __name__ == "__main__":
     update_zb_file_forth(open_targets4)
 
     # 新增第五段扫描逻辑
-    print(f"\n开始扫描第五段 {START_IP5a}-{END_IP5a} 端口 {PORT5a}, {START_IP5b}-{END_IP5b} 端口 {PORT5b} ...")
+    print(f"\n开始扫描第五段 {START_IP5a}-{END_IP5a} 端口 {PORT5a}, {START_IP5b}-{END_IP5b} 端口 {PORT5b}, {START_IP5c}-{END_IP5c} 端口 {PORT5c} ...")
     open_targets5 = scan_all(ip_segments=[
     (START_IP5a, END_IP5a, PORT5a),
     (START_IP5b, END_IP5b, PORT5b),
@@ -605,6 +644,15 @@ if __name__ == "__main__":
     print(f"\n开始扫描第六段 {START_IP6}-{END_IP6} 端口 {PORT6} ...")
     open_targets6 = scan_all(START_IP6, END_IP6, PORT6)
     update_zb_file_sixth(open_targets6)
+
+    # 新增第七段扫描逻辑
+    print(f"\n开始扫描第七段 {START_IP7a}-{END_IP7a} 端口 {PORT7a}, {START_IP7b}-{END_IP7b} 端口 {PORT7b}, {START_IP7c}-{END_IP7c} 端口 {PORT7c} ...")
+    open_targets7 = scan_all(ip_segments=[
+    (START_IP7a, END_IP7a, PORT5a),
+    (START_IP7b, END_IP7b, PORT5b),
+    (START_IP7c, END_IP7c, PORT5c)
+    ])
+    update_zb_file_seventh(open_targets6)
 
     # 新增ZB合并逻辑
     print(f"\n开始合成ZB文件...")
