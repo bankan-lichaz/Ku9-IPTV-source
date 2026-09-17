@@ -137,7 +137,7 @@ jobs:
           echo "📄 综合文件 ${{ env.OUTPUT_FILE }} 生成完成，内容预览："
           # cat "${{ env.OUTPUT_FILE }}"
 
-      - name: 处理JXYM：添加组播头行并去重
+      - name: 处理"${{ env.OUTPUT_FILE }}"：添加组播头行并去重
         run: |
           # 设置UTF-8编码，避免中文截取乱码
           export LC_ALL=C.UTF-8
@@ -186,7 +186,7 @@ jobs:
           echo "✅ 处理完成，最终 ${{ env.OUTPUT_FILE }} 内容预览："
           # cat "$input_file"
 
-      - name: Encrypt ZBs
+      - name: Encrypt "${{ env.OUTPUT_FILE }}"
         run: |
           echo "开始加密 ${{ env.OUTPUT_FILE }}..."
           node encrypt.js file="${{ env.OUTPUT_FILE }}"
