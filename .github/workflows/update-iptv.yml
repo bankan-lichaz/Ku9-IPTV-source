@@ -134,21 +134,44 @@ jobs:
           node encrypt.js file=JXZB.txt
           node encrypt.js file=JXINI
       
+      # - name: 提交更改
+      #  run: |
+      #    git config user.name "github-actions[bot]"
+      #    git config user.email "github-actions[bot]@users.noreply.github.com"
+   
+          # 检查是否有实际变动，避免空提交
+       #   if git diff --quiet JXZB.txt; then
+       #     echo "📂 JXZB.txt 无变化，跳过提交"
+       #     exit 0
+       #   else
+       #     git add JXZB.txt JXINI
+       #     git commit -m "chore: 更新组播源 $(date +%Y-%m-%d)"
+       #     git pull --rebase origin main
+       #     git push
+       #   fi
+
       - name: 提交更改
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-   
-          # 检查是否有实际变动，避免空提交
-          if git diff --quiet JXZB.txt; then
-            echo "📂 JXZB.txt 无变化，跳过提交"
+
+          # 检测两个目标文件的变动（支持新增、修改、删除，兼容未跟踪的新文件）
+          changed_files=$(git status --porcelain | awk '{print \$2}' | grep -E '^(JXZB\.txt|JXINI)$')
+
+          if [ -z "$changed_files" ]; then
+            echo "📂 JXZB.txt 和 JXINI 均无变化，跳过提交"
             exit 0
           else
+            echo "✅ 检测到变动文件：$(echo $changed_files | tr ' ' '\n')"
+            # 只提交变动的两个文件，不提交无关文件
             git add JXZB.txt JXINI
             git commit -m "chore: 更新组播源 $(date +%Y-%m-%d)"
             git pull --rebase origin main
             git push
           fi
+
+
+
 
 
 
