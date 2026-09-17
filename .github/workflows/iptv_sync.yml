@@ -1,0 +1,132 @@
+name: 同步IPTV组播源并生成综合文件
+
+# 触发条件：可手动触发，也可改成定时触发（比如每天凌晨跑，取消注释下面的schedule）
+on:
+  workflow_dispatch: # 允许手动在GitHub页面触发
+  # schedule:
+  #   - cron: '0 0 * * *' # 每天UTC时间0点（北京时间8点）自动运行
+
+# 推送代码需要写权限
+permissions:
+  contents: write
+
+# 可自定义配置项
+env:
+  # 上游源仓库配置
+  UPSTREAM_OWNER: Wind5170
+  UPSTREAM_REPO: IPTV
+  UPSTREAM_PATH: ip # 目标文件所在的上游目录路径
+  # 输出文件配置
+  OUTPUT_FILE: JXIP # 你需要的综合文件名，可自定义
+  # 当前仓库分支配置（如果不是main分支请修改）
+  TARGET_BRANCH: main
+
+jobs:
+  sync-and-generate:
+    runs-on: ubuntu-latest
+    steps:
+      # 检出当前仓库代码
+      - name: 检出当前仓库
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          ref: ${{ env.TARGET_BRANCH }}
+
+      # 安装依赖（解析JSON用jq，ubuntu默认不带）
+      - name: 安装依赖
+        run: sudo apt-get update && sudo apt-get install -y jq
+
+      # 获取上游目录下所有符合要求的文件列表
+      - name: 获取目标文件列表
+        id: list_files
+        run: |
+          api_url="https://api.github.com/repos/${{ env.UPSTREAM_OWNER }}/${{ env.UPSTREAM_REPO }}/contents/${{ env.UPSTREAM_PATH }}"
+          # 调用GitHub API获取目录内容，用GITHUB_TOKEN避免限流
+          response=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "$api_url")
+          
+          # 检查API请求是否成功
+          if echo "$response" | jq -e '.message' > /dev/null; then
+            echo "❌ 请求上游仓库失败：$(echo "$response" | jq -r '.message')"
+            exit 1
+          fi
+
+          # 筛选出后缀为_ip_precise.txt的文件，提取文件名和下载地址
+          echo "files<<EOF" >> $GITHUB_OUTPUT
+          echo "$response" | jq -r '.[] | select(.type == "file" and .name | endswith("_ip_precise.txt")) | .name' >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+          
+          echo "urls<<EOF" >> $GITHUB_OUTPUT
+          echo "$response" | jq -r '.[] | select(.type == "file" and .name | endswith("_ip_precise.txt")) | .download_url' >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
+
+      # 生成综合文件
+      - name: 生成综合文件
+        run: |
+          # 初始化输出文件（覆盖旧内容，每次重新生成）
+          > "${{ env.OUTPUT_FILE }}"
+          
+          # 把文件名和下载地址转为数组
+          mapfile -t filenames <<< "${{ steps.list_files.outputs.files }}"
+          mapfile -t urls <<< "${{ steps.list_files.outputs.urls }}"
+
+          # 校验文件名和地址数量一致
+          if [ ${#filenames[@]} -ne ${#urls[@]} ]; then
+            echo "❌ 文件名和下载地址数量不匹配，请检查上游目录结构"
+            exit 1
+          fi
+
+          echo "📂 共找到 $(( ${#filenames[@]} )) 个目标文件，开始处理..."
+          
+          # 遍历每个文件处理
+          for i in "${!filenames[@]}"; do
+            filename="${filenames[$i]}"
+            url="${urls[$i]}"
+            echo "👉 正在处理：$filename"
+            
+            # 1. 提取文件名前缀（去掉_ip_precise.txt后缀）
+            prefix="${filename%_ip_precise.txt}"
+            
+            # 2. 下载文件内容到临时文件
+            tmp_file=$(mktemp)
+            if ! curl -sL "$url" -o "$tmp_file"; then
+              echo "⚠️ 下载 $filename 失败，跳过"
+              rm -f "$tmp_file"
+              continue
+            fi
+
+            # 3. 提取地址:端口：跳过#开头的注释行、空行，取每行第一个字段
+            # 如果需要去重，在paste前加sort -u即可：awk ... | sort -u | paste ...
+            addresses=$(awk '/^[^#]/ && NF > 0 {print \$1}' "$tmp_file" | paste -sd, -)
+            
+            # 清理临时文件
+            rm -f "$tmp_file"
+
+            # 4. 写入综合文件
+            if [ -n "$addresses" ]; then
+              echo "${prefix},${addresses}" >> "${{ env.OUTPUT_FILE }}"
+              echo "✅ $filename 处理完成，共提取 $(echo "$addresses" | tr ',' '\n' | wc -l) 个地址"
+            else
+              echo "⚠️ $filename 未提取到有效地址，跳过"
+            fi
+          done
+
+          echo "📄 综合文件 ${{ env.OUTPUT_FILE }} 生成完成，内容预览："
+          cat "${{ env.OUTPUT_FILE }}"
+
+      # 提交变更到当前仓库
+      - name: 提交更改
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # 检测输出文件是否有变动
+          if git diff --quiet "${{ env.OUTPUT_FILE }}"; then
+            echo "📂 ${{ env.OUTPUT_FILE }} 无变化，跳过提交"
+            exit 0
+          else
+            echo "✅ 检测到文件更新，准备提交"
+            git add "${{ env.OUTPUT_FILE }}"
+            git commit -m "chore: 更新IPTV综合文件 $(date +%Y-%m-%d)"
+            git pull --rebase origin ${{ env.TARGET_BRANCH }}
+            git push origin HEAD:${{ env.TARGET_BRANCH }}
+          fi
