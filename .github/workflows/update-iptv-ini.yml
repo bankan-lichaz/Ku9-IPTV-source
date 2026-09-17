@@ -38,7 +38,7 @@ jobs:
         run: |
           python scripts/process_iptv_ini.py
 
-      - name: Encrypt JXZB.txt
+      - name: Encrypt JXINI
         run: |
           echo "开始加密 JXINI..."
           node encrypt.js file=JXINI
@@ -50,7 +50,7 @@ jobs:
    
           # 检查是否有实际变动，避免空提交
           if git diff --quiet JXINI; then
-            echo "📂 JXZB 无变化，跳过提交"
+            echo "📂 JXINI 无变化，跳过提交"
             exit 0
           else
             git add JXINI
