@@ -115,9 +115,13 @@ jobs:
             fi
 
             # 3. 提取地址:端口：跳过#开头的注释行、空行，取每行第一个字段
-            # 如果需要去重，在paste前加sort -u即可：awk ... | sort -u | paste ...
-            addresses=$(awk '/^[^#]/ && NF > 0 {print \$1}' "$tmp_file" | paste -sd, -)
-            
+            addresses=$(
+              awk '
+                /^[[:space:]]*#/ { next }
+                NF > 0 { print $1 }
+              ' "$tmp_file" | paste -sd, -
+            )
+
             # 清理临时文件
             rm -f "$tmp_file"
 
