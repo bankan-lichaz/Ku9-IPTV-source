@@ -111,6 +111,8 @@ jobs:
 
           done < "$input"
 
+          grep "^CCTV-卫生健康," "$output" > JXZB_filtered.txt || true
+
           mv "$output" JXINI
 
       - name: Encrypt JXINI
