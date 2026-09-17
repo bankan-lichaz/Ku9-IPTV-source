@@ -186,6 +186,11 @@ jobs:
           echo "✅ 处理完成，最终JXIP内容预览："
           cat "$input_file"
 
+      - name: Encrypt ZBs
+        run: |
+          echo "开始加密 JXIP..."
+          node encrypt.js file="${{ env.OUTPUT_FILE }}"
+
       # 提交变更到当前仓库
       - name: 提交更改
         run: |
