@@ -17,7 +17,7 @@ env:
   UPSTREAM_REPO: IPTV
   UPSTREAM_PATH: ip # 目标文件所在的上游目录路径
   # 输出文件配置
-  OUTPUT_FILE: JXIP # 你需要的综合文件名，可自定义
+  OUTPUT_FILE: JXYM # 你需要的综合文件名，可自定义
   # 当前仓库分支配置（如果不是main分支请修改）
   TARGET_BRANCH: main
 
