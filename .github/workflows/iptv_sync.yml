@@ -137,6 +137,54 @@ jobs:
           echo "📄 综合文件 ${{ env.OUTPUT_FILE }} 生成完成，内容预览："
           cat "${{ env.OUTPUT_FILE }}"
 
+      - name: 处理JXIP：添加组播头行并去重
+        run: |
+          # 设置UTF-8编码，避免中文截取乱码
+          export LC_ALL=C.UTF-8
+          input_file="${{ env.OUTPUT_FILE }}"
+          tmp_file=$(mktemp)
+          # 关联数组记录已出现的组播头，实现去重
+          declare -A seen_headers
+
+          # 空文件直接跳过
+          if [ ! -f "$input_file" ] || [ ! -s "$input_file" ]; then
+            echo "⚠️ $input_file 不存在或为空，跳过处理"
+            exit 0
+          fi
+
+          echo "📝 开始处理 $input_file，添加组播头行并去重..."
+          
+          # 逐行处理原JXIP内容
+          while IFS= read -r line || [ -n "$line" ]; do
+            # 跳过原文件中的空行
+            if [ -z "$line" ]; then
+              continue
+            fi
+
+            # 提取当前行前两个中文字符（比如「四川电信」取「四川」）
+            first_two=$(echo "$line" | awk '{print substr(\$0,1,2)}')
+            # 生成组播头行
+            header="0,${first_two}组播"
+
+            # 头行未出现过则写入，否则跳过（实现头行去重）
+            if [ -z "${seen_headers[$header]}" ]; then
+              echo "$header" >> "$tmp_file"
+              seen_headers[$header]=1
+              echo "➕ 新增头行：$header"
+            else
+              echo "⏭️ 跳过重复头行：$header"
+            fi
+
+            # 原内容行全部保留，不做去重
+            echo "$line" >> "$tmp_file"
+          done < "$input_file"
+
+          # 用处理后的文件覆盖原JXIP
+          mv "$tmp_file" "$input_file"
+
+          echo "✅ 处理完成，最终JXIP内容预览："
+          cat "$input_file"
+
       # 提交变更到当前仓库
       - name: 提交更改
         run: |
