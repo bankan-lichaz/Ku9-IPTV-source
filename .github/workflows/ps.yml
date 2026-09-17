@@ -38,12 +38,13 @@ jobs:
           node encrypt.js file=ZB5
           node encrypt.js file=ZB6
           node encrypt.js file=ZB7
+          node encrypt.js file=ZB8
           node encrypt.js file=ZB
 
       - name: Commit changes
         run: |
           git config --global user.name "github-actions"
           git config --global user.email "github-actions@github.com"
-          git add ZZ ZB
+          git add ZZ ZB2 ZB
           git commit -m "Update ZBs from scanner" || echo "No changes"
           git push
