@@ -154,7 +154,7 @@ jobs:
 
           echo "📝 开始处理 $input_file，添加组播头行并去重..."
           
-          # 逐行处理原JXIP内容
+          # 逐行处理原文件内容
           while IFS= read -r line || [ -n "$line" ]; do
             # 跳过原文件中的空行
             if [ -z "$line" ]; then
@@ -180,7 +180,7 @@ jobs:
             echo "$line" >> "$tmp_file"
           done < "$input_file"
 
-          # 用处理后的文件覆盖原JXIP
+          # 用处理后的文件覆盖原文件
           mv "$tmp_file" "$input_file"
 
           echo "✅ 处理完成，最终 ${{ env.OUTPUT_FILE }} 内容预览："
