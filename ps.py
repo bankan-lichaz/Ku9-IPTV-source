@@ -57,6 +57,11 @@ START_IP5c = "114.254.30.1"
 END_IP5c = "114.254.40.255"
 PORT5c = 8888
 
+# 新增第五-1段扫描配置
+START_IP5_1a = "115.171.216.1"
+END_IP5_1a = "115.171.216.255"
+PORT5_1a = 4000
+
 # 新增第六段扫描配置
 START_IP6 = "112.109.206.1"
 END_IP6 = "112.109.206.255"
@@ -480,7 +485,7 @@ def update_zb_file_fifth(open_targets):
         with open(ZB_FILE_5, "r", encoding="utf-8") as f:
             lines = f.readlines()
     except FileNotFoundError:
-        lines = ["\n"]  # 文件不存在时创建一个空行
+        lines = ["\n","\n"]  # 文件不存在时创建两个空行
 
 
     if open_targets:
@@ -493,6 +498,31 @@ def update_zb_file_fifth(open_targets):
 
     with open(ZB_FILE_5, "w", encoding="utf-8") as f:
         f.writelines(lines)
+
+def update_zb_file_fifth_1(open_targets):
+    """
+    第二行格式：
+    29,IP:PORT,IP:PORT
+    如果没有开放端口：lines[1] 清空
+    """
+    try:
+        with open(ZB_FILE_5, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n","\n"]  # 文件不存在时创建两个空行
+
+
+    if open_targets:
+        new_second_line = "29," + ",".join(open_targets) + "\n"
+        lines[1] = new_second_line
+        print("ZB5 文件第二行已更新：", new_second_line.strip())
+    else:
+        lines[1] = "\n"
+        print("第五段未扫描到开放端口，已清空 ZB5 第二行")
+
+    with open(ZB_FILE_5, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
 
 # 新增：ZB6文件第一行更新函数，逻辑与第一行更新完全对齐
 def update_zb_file_sixth(open_targets):
@@ -672,6 +702,15 @@ if __name__ == "__main__":
         target_rtp_stream_addr="239.3.1.116:8000"
     )
     update_zb_file_fifth(open_targets5)
+
+    # 新增第五-1段扫描逻辑
+    print(f"\n开始扫描第五-1段 {START_IP5_1a}-{END_IP5_1a} 端口 {PORT5_1a} ...")
+    open_targets5_1 = scan_all(START_IP5_1a, END_IP5_1a, PORT5_1a)
+    open_targets5_1 = get_verified_rtp_targets(
+        open_targets5_1,
+        target_rtp_stream_addr="225.1.8.22:8002"
+    )
+    update_zb_file_fifth_1(open_targets5_1)
 
     # 新增第六段扫描逻辑
     print(f"\n开始扫描第六段 {START_IP6}-{END_IP6} 端口 {PORT6} ...")
