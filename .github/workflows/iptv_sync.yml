@@ -188,7 +188,7 @@ jobs:
 
       - name: Encrypt ZBs
         run: |
-          echo "开始加密 JXIP..."
+          echo "开始加密 ${{ env.OUTPUT_FILE }}..."
           node encrypt.js file="${{ env.OUTPUT_FILE }}"
 
       # 提交变更到当前仓库
