@@ -156,8 +156,10 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
           # 检测两个目标文件的变动（支持新增、修改、删除，兼容未跟踪的新文件）
-          changed_files=$(git status --porcelain | awk '{print \$2}' | grep -E '^(JXZB\.txt|JXINI)$')
-
+          # changed_files=$(git status --porcelain | awk '{print \$2}' | grep -E '^(JXZB\.txt|JXINI)$')               
+          changed_files=$(git status --porcelain |
+                      awk '{print $2}' |
+                      grep -E '^(JXZB\.txt|JXINI)$' || true)
           if [ -z "$changed_files" ]; then
             echo "📂 JXZB.txt 和 JXINI 均无变化，跳过提交"
             exit 0
