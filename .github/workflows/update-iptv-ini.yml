@@ -41,7 +41,8 @@ jobs:
       ###########################################################################
       # ★★★ 新增步骤：按 CCTV‑1综合 测速并删除同源所有频道（稳定版） ★★★
       ###########################################################################
-      - name: Speed test & filter unstable sources based on CCTV-1综合
+      # - name: Speed test & filter unstable sources based on CCTV-1综合
+      - name: Speed test & filter unstable sources based on CCTV-卫生健康
         run: |
           # echo "开始按 CCTV-1综合 测速并过滤源..."
           echo "开始按 CCTV-卫生健康 测速并过滤源..."
@@ -111,7 +112,7 @@ jobs:
 
           done < "$input"
 
-          grep "^CCTV-卫生健康," "$output" > JXZB_filtered.txt || true
+          grep "^CCTV-卫生健康," "$output" > "$output" || true
 
           mv "$output" JXINI
 
