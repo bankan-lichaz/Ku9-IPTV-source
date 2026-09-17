@@ -579,19 +579,19 @@ def merge_zb_files(custom_separators=None):
         8个文件对应9个位置的分隔符，长度随意，内容完全自由，支持空字符串（表示不加分隔符）
     """
     # 要合并的文件列表，按你需要的顺序排列即可
-    target_files = [ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6, ZB_FILE_7, ZB_FILE_8]
-    
+    # target_files = [ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6, ZB_FILE_7, ZB_FILE_8]
+    target_files = [ZB_FILE_2]
     # 处理自定义分隔符，没传的话用默认示例，你可以直接改
     if custom_separators is None:
         custom_separators = [
-            "0,ZB1\n",
+           # "0,ZB1\n",
             "0,ZB2\n",
-            "0,ZB3\n",
-            "0,ZB4\n",
-            "0,ZB5\n",
-            "0,ZB6\n",
-            "0,ZB7\n",
-            "0,ZB8\n",    
+           # "0,ZB3\n",
+           # "0,ZB4\n",
+           # "0,ZB5\n",
+           # "0,ZB6\n",
+           # "0,ZB7\n",
+           # "0,ZB8\n",    
             ""
         ]
     
