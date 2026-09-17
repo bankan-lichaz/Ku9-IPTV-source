@@ -59,7 +59,7 @@ jobs:
           if [ ! -s cctv1_list.txt ]; then
             echo "没有 CCTV-1综合，跳过测速"
             cp "$input" "$output"
-            mv "$output" JXZB.txt
+            mv "$output" JXINI
             exit 0
           fi
 
