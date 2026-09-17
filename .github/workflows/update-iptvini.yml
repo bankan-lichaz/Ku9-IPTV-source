@@ -1,0 +1,60 @@
+name: 每日更新IPTVINI组播源
+
+on:
+  # 每天 UTC 0:00 运行（对应北京时间早上 8:00）
+  schedule:
+    - cron: '0 0 * * *'
+  # 允许手动在 Actions 页面触发
+  workflow_dispatch:
+
+# 让工作流拥有往仓库推送内容的权限
+permissions:
+  contents: write
+
+jobs:
+  update-iptv:
+    runs-on: ubuntu-latest
+    steps:
+      # 1️⃣ 检出仓库代码
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          persist-credentials: true   # 后续 push 需要保持凭据
+
+      # 2️⃣ 安装 Python 并获取依赖（requests）
+      - name: 设置 Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'   # 使用最新的 3.x 版本
+
+      - name: 安装依赖
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      # 3️⃣ 运行处理脚本
+      - name: 运行 IPTV 处理脚本
+        run: |
+          python scripts/process_iptv_ini.py
+
+      - name: Encrypt JXZB.txt
+        run: |
+          echo "开始加密 JXINI..."
+          node encrypt.js file=JXINI
+      
+      - name: 提交更改
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+   
+          # 检查是否有实际变动，避免空提交
+          if git diff --quiet JXINI; then
+            echo "📂 JXZB 无变化，跳过提交"
+            exit 0
+          else
+            git add JXINI
+            git commit -m "chore: 更新组播源 $(date +%Y-%m-%d)"
+            git pull --rebase origin main
+            git push
+          fi
