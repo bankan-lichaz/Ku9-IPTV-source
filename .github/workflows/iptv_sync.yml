@@ -162,7 +162,8 @@ jobs:
             fi
 
             # 提取当前行前两个中文字符（比如「四川电信」取「四川」）
-            first_two=$(echo "$line" | awk '{print substr(\$0,1,2)}')
+            first_two=$(awk '{print substr($0, 1, 2)}' <<< "$line")
+
             # 生成组播头行
             header="0,${first_two}组播"
 
