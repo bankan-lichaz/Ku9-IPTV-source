@@ -41,24 +41,44 @@ jobs:
         id: list_files
         run: |
           api_url="https://api.github.com/repos/${{ env.UPSTREAM_OWNER }}/${{ env.UPSTREAM_REPO }}/contents/${{ env.UPSTREAM_PATH }}"
-          # 调用GitHub API获取目录内容，用GITHUB_TOKEN避免限流
-          response=$(curl -s -H "Authorization: token ${{ secrets.GITHUB_TOKEN }}" "$api_url")
-          
-          # 检查API请求是否成功
-          if echo "$response" | jq -e '.message' > /dev/null; then
-            echo "❌ 请求上游仓库失败：$(echo "$response" | jq -r '.message')"
+
+          # 请求失败时直接退出，并保留错误信息
+          if ! response=$(curl --fail-with-body -sSL \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "$api_url"); then
+            echo "❌ 请求上游仓库失败"
+            echo "$response"
             exit 1
           fi
 
-          # 筛选出后缀为_ip_precise.txt的文件，提取文件名和下载地址
-          echo "files<<EOF" >> $GITHUB_OUTPUT
-          echo "$response" | jq -r '.[] | select(.type == "file" and .name | endswith("_ip_precise.txt")) | .name' >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
-          
-          echo "urls<<EOF" >> $GITHUB_OUTPUT
-          echo "$response" | jq -r '.[] | select(.type == "file" and .name | endswith("_ip_precise.txt")) | .download_url' >> $GITHUB_OUTPUT
-          echo "EOF" >> $GITHUB_OUTPUT
+          # 目录接口成功时返回数组；API 错误时通常返回包含 message 的对象
+          response_type=$(jq -r 'type' <<< "$response")
+          if [[ "$response_type" != "array" ]]; then
+            echo "❌ 上游 API 返回了非目录列表数据："
+            echo "$response" | jq .
+            exit 1
+          fi
 
+          # 先生成匹配文件的 JSON，避免文件名和 URL 使用不同过滤逻辑
+          files_json=$(echo "$response" | jq -c '
+            [
+              .[]
+              | select(
+                  .type == "file"
+                  and (.name | endswith("_ip_precise.txt"))
+                )
+            ]
+          ')
+
+          echo "files<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$files_json" | jq -r '.[].name' >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+
+          echo "urls<<EOF" >> "$GITHUB_OUTPUT"
+          echo "$files_json" | jq -r '.[].download_url' >> "$GITHUB_OUTPUT"
+          echo "EOF" >> "$GITHUB_OUTPUT"
+          
       # 生成综合文件
       - name: 生成综合文件
         run: |
