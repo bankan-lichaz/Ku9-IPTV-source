@@ -111,7 +111,7 @@ jobs:
 
           done < "$input"
 
-          mv "$output" JXZBINI
+          mv "$output" JXINI
 
       - name: Encrypt JXINI
         run: |
