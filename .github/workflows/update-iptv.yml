@@ -115,10 +115,24 @@ jobs:
 
           mv "$output" JXZB.txt
 
+      - name: 筛选CCTV-卫生健康频道并输出到新文件
+        run: |
+          # 规则说明和之前完全一致：
+          # 1. ^ 匹配行首，避免误匹配中间包含关键词的其他频道
+          # 2. 如果频道名后紧跟逗号（比如你的示例结构），可改成 '/^CCTV-卫生健康,/!d' 匹配更精准
+          # 3. 如果行首可能有空格缩进，改成 '/^\s*CCTV-卫生健康/!d' 即可兼容
+          # ✅ 核心改动：去掉-i参数，加>重定向到目标文件，不会修改原JXZB.txt
+          #  sed -i '/^CCTV-卫生健康/!d' JXZB.txt
+          sed '/^CCTV-卫生健康,/!d' JXZB.txt > JXINI
+
+          # 👉 如果你的文件里频道名是「CCTV卫生健康」（无短横线，和你的示例第一行写法一致），把上面命令改成：
+          # sed '/^CCTV卫生健康/!d' JXZB.txt > JXINI
+
       - name: Encrypt JXZB.txt
         run: |
           echo "开始加密 JXZB.txt..."
           node encrypt.js file=JXZB.txt
+          node encrypt.js file=JXINI
       
       - name: 提交更改
         run: |
@@ -130,7 +144,7 @@ jobs:
             echo "📂 JXZB.txt 无变化，跳过提交"
             exit 0
           else
-            git add JXZB.txt
+            git add JXZB.txt JXINI
             git commit -m "chore: 更新组播源 $(date +%Y-%m-%d)"
             git pull --rebase origin main
             git push
