@@ -1,4 +1,4 @@
-name: 每日更新IPTVINI组播源
+name: 每日更新IPTV-INI组播源
 
 on:
   # 每天 UTC 0:00 运行（对应北京时间早上 8:00）
