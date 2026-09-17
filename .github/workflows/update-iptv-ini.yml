@@ -111,11 +111,19 @@ jobs:
             fi
 
           done < "$input"
-
-          grep "^CCTV-卫生健康," "$output" > "$output" || true
-
+          
           mv "$output" JXINI
 
+      # 核心筛选逻辑，仅保留行首为「CCTV-卫生健康,」的行，直接覆盖原文件
+      - name: 筛选CCTV-卫生健康频道
+        run: |
+          # 规则说明：
+          # 1. ^ 表示匹配行首，避免误匹配到中间包含关键词的其他频道
+          # 2. 如果你的文件里频道名后紧跟逗号（比如你给的示例结构），可以把规则改成 '/^CCTV-卫生健康,/!d' 匹配更精准
+          # 3. 如果行首可能有空格缩进，改成 '/^\s*CCTV-卫生健康/!d' 即可兼容
+          
+          sed -i '/^CCTV-卫生健康,/!d' JXINI
+          
       - name: Encrypt JXINI
         run: |
           echo "开始加密 JXINI..."
