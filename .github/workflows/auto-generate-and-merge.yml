@@ -15,7 +15,8 @@ jobs:
 
       - name: Clone target repo
         run: |
-          git clone https://github.com/q1017673817/iptvz target_repo
+          # git clone https://github.com/q1017673817/iptvz target_repo
+          git clone https://github.com/alantang1977/iptvz target_repo
 
       - name: Generate table.txt (only 组播 files)
         run: |
