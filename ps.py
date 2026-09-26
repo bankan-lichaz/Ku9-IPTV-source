@@ -82,9 +82,13 @@ END_IP7c = "183.162.106.255"
 PORT7c = 8888
 
 # 新增第八段扫描配置
-START_IP8 = "106.57.0.1"
-END_IP8 = "106.59.3.255"
-PORT8 = 55555
+START_IP8a = "112.115.45.1"
+END_IP8a = "112.115.55.255"
+PORT8a = 4915
+
+START_IP8b = "106.57.0.1"
+END_IP8b = "106.59.3.255"
+PORT8b = 55555
 
 # 新增第九段扫描配置
 START_IP9a = "113.58.30.1"
@@ -766,8 +770,11 @@ if __name__ == "__main__":
     update_zb_file_seventh(open_targets7)
 
     # 新增第八段扫描逻辑
-    print(f"\n开始扫描第八段 {START_IP8}-{END_IP8} 端口 {PORT8} ...")
-    open_targets8 = scan_all(START_IP8, END_IP8, PORT8)
+    print(f"\n开始扫描第八段 {START_IP8a}-{END_IP8a} 端口 {PORT8a}, {START_IP8b}-{END_IP8b} 端口 {PORT8b} ...")
+    open_targets8 = scan_all(ip_segments=[
+    (START_IP8a, END_IP8a, PORT8a),
+    (START_IP8b, END_IP8b, PORT8b)
+    ])
     open_targets8 = get_verified_rtp_targets(
         open_targets8,
         target_rtp_stream_addr="239.200.200.15:8856"
