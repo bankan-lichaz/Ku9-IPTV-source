@@ -4,12 +4,14 @@
 """
 处理 IPTV 组播源：
 - 从固定远程 URL 下载原始 zubo.txt
+- 清理原始文件每行的$分辨率后缀（如\$1080p、\$4K等）
 - 按照题目要求进行分组去重 & 频道格式转换
 - 把结果写入仓库根目录的 LCP.txt
 """
 
 import sys
 import os
+import re
 import requests
 
 # ----------------- 配置区 -----------------
@@ -35,6 +37,20 @@ def fetch_remote_content(url: str) -> str:
     except requests.RequestException as e:
         print(f"❌ 下载远程文件失败：{e}")
         sys.exit(1)
+
+
+def clean_original_content(content: str) -> str:
+    """
+    清理原始文件每行的$后缀（如\$1080p、\$4K等）
+    规则：删除每行中第一个$及其后面的所有内容（默认只处理行内后缀，不影响后续生成的$分组名）
+    如果需要只删除【行尾】的$后缀，可以把正则改成 re.sub(r'(\$[^\n]*)$', '', line)
+    """
+    cleaned_lines = []
+    for line in content.splitlines():
+        # 替换第一个$及其后面的内容，再删掉行尾多余空格
+        cleaned = re.sub(r'\$[^\n]*', '', line).rstrip()
+        cleaned_lines.append(cleaned)
+    return '\n'.join(cleaned_lines)
 
 
 def process_iptv_content(content: str) -> list[str]:
@@ -88,10 +104,14 @@ def main() -> None:
     # 1. 下载原始内容
     raw_content = fetch_remote_content(SOURCE_URL)
 
-    # 2. 处理内容
-    processed = process_iptv_content(raw_content)
+    # 2. 新增：清理原始内容的$分辨率后缀
+    print("\n🧹 正在清理原始文件的$分辨率后缀...")
+    cleaned_content = clean_original_content(raw_content)
 
-    # 3. 写入结果文件（相对仓库根目录）
+    # 3. 处理内容（用清理后的内容传入，不会影响后续生成的$分组名）
+    processed = process_iptv_content(cleaned_content)
+
+    # 4. 写入结果文件（相对仓库根目录）
     try:
         with open(OUTPUT_FILE, "w", encoding="utf-8") as f:
             f.write("\n".join(processed))
