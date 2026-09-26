@@ -54,7 +54,8 @@ jobs:
             echo "" >> ../table.txt
           done
 
-      - name: Filter files ≤4 days
+      # - name: Filter files ≤4 days
+      - name: Filter files ≤30 days
         run: |
           rm -f filtered.txt
           touch filtered.txt
@@ -63,7 +64,8 @@ jobs:
             NR%4==1 {name=$0}
             NR%4==3 {
               time=$0
-              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4) {
+              # if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4) {
+              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 30) {
                 print name
               }
             }
