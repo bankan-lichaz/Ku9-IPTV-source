@@ -55,7 +55,7 @@ jobs:
           done
 
       # - name: Filter files ≤4 days
-      - name: Filter files ≤130 days
+      - name: Filter files ≤7 days
         run: |
           rm -f filtered.txt
           touch filtered.txt
@@ -65,7 +65,7 @@ jobs:
             NR%4==3 {
               time=$0
               # if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4) {
-              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 130) {
+              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 7) {
                 print name
               }
             }
@@ -139,10 +139,10 @@ jobs:
       ###########################################################################
       # ★★★ 新增步骤：按 CCTV‑1综合 测速并删除同源所有频道（稳定版） ★★★
       ###########################################################################
-      - name: Speed test & filter unstable sources based on CCTV-7 国防军事
+      - name: Speed test & filter unstable sources based on CCTV-3 综艺
         run: |
           # echo "开始按 CCTV-1综合 测速并过滤源..."
-          echo "开始按 CCTV-7 国防军事 测速并过滤源..."
+          echo "开始按 CCTV-3 综艺 测速并过滤源..."
 
           input="merged_province.txt"
           output="merged_province_filtered.txt"
@@ -152,11 +152,11 @@ jobs:
           declare -A source_keep
 
           # grep "^CCTV-1综合," "$input" > cctv1_list.txt || true
-          grep "^CCTV-7 国防军事," "$input" > cctv1_list.txt || true
+          grep "^CCTV-3 综艺," "$input" > cctv1_list.txt || true
 
           if [ ! -s cctv1_list.txt ]; then
             # echo "没有 CCTV-1综合，跳过测速"
-            echo "没有 CCTV-7 国防军事，跳过测速"
+            echo "没有 CCTV-3 综艺，跳过测速"
             cp "$input" "$output"
             mv "$output" merged_province.txt
             exit 0
