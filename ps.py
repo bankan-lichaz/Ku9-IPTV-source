@@ -16,6 +16,7 @@ ZB_FILE_7 = "ZB7"
 ZB_FILE_8 = "ZB8"
 ZB_FILE_9 = "ZB9"
 ZB_FILE_10 = "ZB10"
+ZB_FILE_11 = "ZB11"
 ZB_FILE = "ZB"  # 合并后的输出文件
 
 # 原有第一段扫描配置（完全保留，未修改）
@@ -117,6 +118,24 @@ PORT10c = 8003
 START_IP10_1a = "110.178.140.1"
 END_IP10_1a = "110.178.150.255"
 PORT10_1a = 8188
+
+# 新增第十一段扫描配置
+START_IP11a = "116.114.135.1"
+END_IP11a = "116.114.145.255"
+PORT11a = 8686
+
+START_IP11b = "219.159.28.1"
+END_IP11b = "219.159.28.255"
+PORT11b = 8188
+
+START_IP11c = "124.67.65.1"
+END_IP11c = "124.67.70.255"
+PORT11c = 4022
+
+# 新增第十一-1段扫描配置
+START_IP11_1a = "1.181.135.1"
+END_IP11_1a = "1.181.140.255"
+PORT11_1a = 8888
 
 def expand_ip_range(start_ip, end_ip):
     start = ipaddress.IPv4Address(start_ip)
@@ -706,16 +725,65 @@ def update_zb_file_tenth_1(open_targets):
     with open(ZB_FILE_10, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
+# 新增：ZB11文件第一行更新函数，逻辑与第一行更新完全对齐
+def update_zb_file_eleventh(open_targets):
+    """
+    第一行格式：
+    88,IP:PORT,IP:PORT
+    如果没有开放端口：lines[1] 清空
+    """
+    try:
+        with open(ZB_FILE_11, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n","\n"]  # 文件不存在时创建两个空行
+
+
+    if open_targets:
+        new_first_line = "88," + ",".join(open_targets) + "\n"
+        lines[0] = new_first_line
+        print("ZB11 文件第一行已更新：", new_first_line.strip())
+    else:
+        lines[0] = "\n"
+        print("第十一段未扫描到开放端口，已清空 ZB11 第一行")
+
+    with open(ZB_FILE_11, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
+def update_zb_file_eleventh_1(open_targets):
+    """
+    第二行格式：
+    87,IP:PORT,IP:PORT
+    如果没有开放端口：lines[1] 清空
+    """
+    try:
+        with open(ZB_FILE_11, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n","\n"]  # 文件不存在时创建两个空行
+
+
+    if open_targets:
+        new_second_line = "87," + ",".join(open_targets) + "\n"
+        lines[1] = new_second_line
+        print("ZB11 文件第二行已更新：", new_second_line.strip())
+    else:
+        lines[1] = "\n"
+        print("第十一-1段未扫描到开放端口，已清空 ZB11 第二行")
+
+    with open(ZB_FILE_11, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
 # -------------------------- 新增合并函数 --------------------------
 def merge_zb_files(custom_separators=None):
     """
-    合并所有ZB_FILE_1~10到ZB_FILE，每个文件上方插入独立自定义分隔符
+    合并所有ZB_FILE_1~11到ZB_FILE，每个文件上方插入独立自定义分隔符
     :param custom_separators: 自定义分隔符列表，按顺序对应：
-        [ZB_FILE_1上方的分隔符, ZB_FILE_1和2之间的分隔符, ZB_FILE_2和3之间的分隔符, ..., ZB_FILE_10下方的分隔符]
-        10个文件对应11个位置的分隔符，长度随意，内容完全自由，支持空字符串（表示不加分隔符）
+        [ZB_FILE_1上方的分隔符, ZB_FILE_1和2之间的分隔符, ZB_FILE_2和3之间的分隔符, ..., ZB_FILE_11下方的分隔符]
+        11个文件对应12个位置的分隔符，长度随意，内容完全自由，支持空字符串（表示不加分隔符）
     """
     # 要合并的文件列表，按你需要的顺序排列即可
-    target_files = [ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6, ZB_FILE_7, ZB_FILE_8, ZB_FILE_9, ZB_FILE_10]
+    target_files = [ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6, ZB_FILE_7, ZB_FILE_8, ZB_FILE_9, ZB_FILE_10, ZB_FILE_11]
     # target_files = [ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5]
     # 处理自定义分隔符，没传的话用默认示例，你可以直接改
     if custom_separators is None:
@@ -730,6 +798,7 @@ def merge_zb_files(custom_separators=None):
             "0,ZB8\n", 
             "0,ZB9\n",
             "0,ZB10\n",
+            "0,ZB11\n",
             ""
         ]
     
@@ -876,13 +945,35 @@ if __name__ == "__main__":
     update_zb_file_tenth(open_targets10)
 
     # 新增第十-1段扫描逻辑
-    print(f"\n开始扫描第五-1段 {START_IP10_1a}-{END_IP10_1a} 端口 {PORT10_1a} ...")
+    print(f"\n开始扫描第十-1段 {START_IP10_1a}-{END_IP10_1a} 端口 {PORT10_1a} ...")
     open_targets10_1 = scan_all(START_IP10_1a, END_IP10_1a, PORT10_1a)
     open_targets10_1 = get_verified_rtp_targets(
         open_targets10_1,
         target_rtp_stream_addr="239.1.1.4:8004"
     )
     update_zb_file_tenth_1(open_targets10_1)
+
+    # 新增第十一段扫描逻辑
+    print(f"\n开始扫描第十一段 {START_IP11a}-{END_IP11a} 端口 {PORT11a}, {START_IP11b}-{END_IP11b} 端口 {PORT11b}, {START_IP11c}-{END_IP11c} 端口 {PORT11c} ...")
+    open_targets11 = scan_all(ip_segments=[
+    (START_IP11a, END_IP11a, PORT11a),
+    (START_IP11b, END_IP11b, PORT11b),
+    (START_IP11c, END_IP11c, PORT11c)
+    ])
+    open_targets11 = get_verified_rtp_targets(
+        open_targets11,
+        target_rtp_stream_addr="239.125.2.65:4120"
+    )
+    update_zb_file_eleventh(open_targets11)
+
+    # 新增第十一-1段扫描逻辑
+    print(f"\n开始扫描第十一-1段 {START_IP11_1a}-{END_IP11_1a} 端口 {PORT11_1a} ...")
+    open_targets11_1 = scan_all(START_IP11_1a, END_IP11_1a, PORT11_1a)
+    open_targets11_1 = get_verified_rtp_targets(
+        open_targets11_1,
+        target_rtp_stream_addr="239.29.0.116:5000"
+    )
+    update_zb_file_eleventh_1(open_targets10_1)
 
     # 新增ZB合并逻辑
     print(f"\n开始合成ZB文件...")
