@@ -55,7 +55,7 @@ jobs:
           done
 
       # - name: Filter files ≤4 days
-      - name: Filter files ≤30 days
+      - name: Filter files ≤130 days
         run: |
           rm -f filtered.txt
           touch filtered.txt
@@ -65,7 +65,7 @@ jobs:
             NR%4==3 {
               time=$0
               # if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 4) {
-              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 30) {
+              if (time ~ /hours ago/ || time ~ /yesterday/ || time ~ /days ago/ && time+0 <= 130) {
                 print name
               }
             }
