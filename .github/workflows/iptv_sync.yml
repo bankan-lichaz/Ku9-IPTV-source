@@ -3,8 +3,8 @@ name: 同步IPTV组播源并生成综合文件
 # 触发条件：可手动触发，也可改成定时触发（比如每天凌晨跑，取消注释下面的schedule）
 on:
   workflow_dispatch: # 允许手动在GitHub页面触发
-  # schedule:
-  #   - cron: '0 0 * * *' # 每天UTC时间0点（北京时间8点）自动运行
+  schedule:
+    - cron: '0 0 * * *' # 每天UTC时间0点（北京时间8点）自动运行
 
 # 推送代码需要写权限
 permissions:
