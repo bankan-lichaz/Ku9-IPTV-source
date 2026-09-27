@@ -112,6 +112,11 @@ START_IP9b = "113.58.6.1"
 END_IP9b = "113.58.8.255"
 PORT9b = 8188
 
+# 新增第九-1段扫描配置
+START_IP9_1a = "112.66.95.1"
+END_IP9_1a = "112.66.105.255"
+PORT9_1a = 4022
+
 # 新增第十段扫描配置
 START_IP10a = "183.184.40.1"
 END_IP10a = "183.184.45.255"
@@ -682,13 +687,13 @@ def update_zb_file_nineth(open_targets):
     """
     第一行格式：
     84,IP:PORT,IP:PORT
-    如果没有开放端口：lines[1] 清空
+    如果没有开放端口：lines[0] 清空
     """
     try:
         with open(ZB_FILE_9, "r", encoding="utf-8") as f:
             lines = f.readlines()
     except FileNotFoundError:
-        lines = ["\n"]  # 文件不存在时创建一个空行
+        lines = ["\n","\n"]  # 文件不存在时创建两个空行
 
 
     if open_targets:
@@ -698,6 +703,30 @@ def update_zb_file_nineth(open_targets):
     else:
         lines[0] = "\n"
         print("第九段未扫描到开放端口，已清空 ZB9 第一行")
+
+    with open(ZB_FILE_9, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
+def update_zb_file_nineth_1(open_targets):
+    """
+    第二行格式：
+    83,IP:PORT,IP:PORT
+    如果没有开放端口：lines[1] 清空
+    """
+    try:
+        with open(ZB_FILE_9, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n","\n"]  # 文件不存在时创建两个空行
+
+
+    if open_targets:
+        new_second_line = "83," + ",".join(open_targets) + "\n"
+        lines[1] = new_second_line
+        print("ZB9 文件第二行已更新：", new_second_line.strip())
+    else:
+        lines[1] = "\n"
+        print("第九-1段未扫描到开放端口，已清空 ZB9 第二行")
 
     with open(ZB_FILE_9, "w", encoding="utf-8") as f:
         f.writelines(lines)
@@ -1037,6 +1066,15 @@ if __name__ == "__main__":
     )
     update_zb_file_nineth(open_targets9)
 
+    # 新增第九-1段扫描逻辑
+    print(f"\n开始扫描第九-1段 {START_IP9_1a}-{END_IP9_1a} 端口 {PORT9_1a} ...")
+    open_targets9_1 = scan_all(START_IP9_1a, END_IP9_1a, PORT9_1a)
+    open_targets9_1 = get_verified_rtp_targets(
+        open_targets9_1,
+        target_rtp_stream_addr="239.253.64.121:5140"
+    )
+    update_zb_file_nineth_1(open_targets9_1)
+    
     # 新增第十段扫描逻辑
     print(f"\n开始扫描第十段 {START_IP10a}-{END_IP10a} 端口 {PORT10a}, {START_IP10b}-{END_IP10b} 端口 {PORT10b}, {START_IP10c}-{END_IP10c} 端口 {PORT10c} ...")
     open_targets10 = scan_all(ip_segments=[
