@@ -19,6 +19,7 @@ ZB_FILE_10 = "ZB10"
 ZB_FILE_11 = "ZB11"
 ZB_FILE_12 = "ZB12"
 ZB_FILE_13 = "ZB13"
+ZB_FILE_14 = "ZB14"
 ZB_FILE = "ZB"  # 合并后的输出文件
 
 # 原有第一段扫描配置（完全保留，未修改）
@@ -152,10 +153,15 @@ START_IP12a = "113.221.55.1"
 END_IP12a = "113.221.65.255"
 PORT12a = 4000
 
-# 新增第十二段扫描配置
+# 新增第十三段扫描配置
 START_IP13a = "124.226.130.1"
 END_IP13a = "124.226.135.255"
 PORT13a = 19090
+
+# 新增第十四段扫描配置
+START_IP14a = "36.49.45.1"
+END_IP14a = "36.49.55.255"
+PORT14a = 8800
 
 def expand_ip_range(start_ip, end_ip):
     start = ipaddress.IPv4Address(start_ip)
@@ -844,16 +850,41 @@ def update_zb_file_thirteenth(open_targets):
     with open(ZB_FILE_13, "w", encoding="utf-8") as f:
         f.writelines(lines)
 
+# 新增：ZB14文件第一行更新函数，逻辑与第一行更新完全对齐
+def update_zb_file_fourteenth(open_targets):
+    """
+    第一行格式：
+    89,IP:PORT,IP:PORT
+    如果没有开放端口：lines[0] 清空
+    """
+    try:
+        with open(ZB_FILE_14, "r", encoding="utf-8") as f:
+            lines = f.readlines()
+    except FileNotFoundError:
+        lines = ["\n"]  # 文件不存在时创建一个空行
+
+
+    if open_targets:
+        new_first_line = "89," + ",".join(open_targets) + "\n"
+        lines[0] = new_first_line
+        print("ZB14 文件第一行已更新：", new_first_line.strip())
+    else:
+        lines[0] = "\n"
+        print("第十四段未扫描到开放端口，已清空 ZB14 第一行")
+
+    with open(ZB_FILE_14, "w", encoding="utf-8") as f:
+        f.writelines(lines)
+
 # -------------------------- 新增合并函数 --------------------------
 def merge_zb_files(custom_separators=None):
     """
-    合并所有ZB_FILE_1~13到ZB_FILE，每个文件上方插入独立自定义分隔符
+    合并所有ZB_FILE_1~14到ZB_FILE，每个文件上方插入独立自定义分隔符
     :param custom_separators: 自定义分隔符列表，按顺序对应：
-        [ZB_FILE_1上方的分隔符, ZB_FILE_1和2之间的分隔符, ZB_FILE_2和3之间的分隔符, ..., ZB_FILE_13下方的分隔符]
-        13个文件对应14个位置的分隔符，长度随意，内容完全自由，支持空字符串（表示不加分隔符）
+        [ZB_FILE_1上方的分隔符, ZB_FILE_1和2之间的分隔符, ZB_FILE_2和3之间的分隔符, ..., ZB_FILE_14下方的分隔符]
+        14个文件对应15个位置的分隔符，长度随意，内容完全自由，支持空字符串（表示不加分隔符）
     """
     # 要合并的文件列表，按你需要的顺序排列即可
-    target_files = [ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6, ZB_FILE_7, ZB_FILE_8, ZB_FILE_9, ZB_FILE_10, ZB_FILE_11, ZB_FILE_12, ZB_FILE_13]
+    target_files = [ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6, ZB_FILE_7, ZB_FILE_8, ZB_FILE_9, ZB_FILE_10, ZB_FILE_11, ZB_FILE_12, ZB_FILE_13, ZB_FILE_14]
     # target_files = [ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5]
     # 处理自定义分隔符，没传的话用默认示例，你可以直接改
     if custom_separators is None:
@@ -871,6 +902,7 @@ def merge_zb_files(custom_separators=None):
             "0,ZB11\n",
             "0,ZB12\n",
             "0,ZB13\n",
+            "0,ZB14\n",
             ""
         ]
     
@@ -1066,6 +1098,15 @@ if __name__ == "__main__":
         target_rtp_stream_addr="239.81.0.250:4056"
     )
     update_zb_file_thirteenth(open_targets13)
+
+    # 新增第十四段扫描逻辑
+    print(f"\n开始扫描第十四段 {START_IP14a}-{END_IP14a} 端口 {PORT14a} ...")
+    open_targets14 = scan_all(START_IP14a, END_IP14a, PORT14a)
+    open_targets14 = get_verified_rtp_targets(
+        open_targets14,
+        target_rtp_stream_addr="239.37.0.232:5540"
+    )
+    update_zb_file_fourteenth(open_targets14)
 
     # 新增ZB合并逻辑
     print(f"\n开始合成ZB文件...")
