@@ -790,9 +790,9 @@ def update_zb_file_eleventh_1(open_targets):
 
 def update_zb_file_twelvth(open_targets):
     """
-    第二行格式：
+    第一行格式：
     16,IP:PORT,IP:PORT
-    如果没有开放端口：lines[1] 清空
+    如果没有开放端口：lines[0] 清空
     """
     try:
         with open(ZB_FILE_12, "r", encoding="utf-8") as f:
@@ -804,7 +804,7 @@ def update_zb_file_twelvth(open_targets):
     if open_targets:
         new_first_line = "16," + ",".join(open_targets) + "\n"
         lines[0] = new_first_line
-        print("ZB12 文件第二行已更新：", new_first_line.strip())
+        print("ZB12 文件第一行已更新：", new_first_line.strip())
     else:
         lines[0] = "\n"
         print("第十二段未扫描到开放端口，已清空 ZB12 第一行")
@@ -821,7 +821,7 @@ def merge_zb_files(custom_separators=None):
         12个文件对应13个位置的分隔符，长度随意，内容完全自由，支持空字符串（表示不加分隔符）
     """
     # 要合并的文件列表，按你需要的顺序排列即可
-    target_files = [ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6, ZB_FILE_7, ZB_FILE_8, ZB_FILE_9, ZB_FILE_10, ZB_FILE_11]
+    target_files = [ZB_FILE_1, ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5, ZB_FILE_6, ZB_FILE_7, ZB_FILE_8, ZB_FILE_9, ZB_FILE_10, ZB_FILE_11, ZB_FILE_12]
     # target_files = [ZB_FILE_2, ZB_FILE_3, ZB_FILE_4, ZB_FILE_5]
     # 处理自定义分隔符，没传的话用默认示例，你可以直接改
     if custom_separators is None:
