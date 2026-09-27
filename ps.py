@@ -83,6 +83,14 @@ START_IP7c = "183.162.102.1"
 END_IP7c = "183.162.106.255"
 PORT7c = 8888
 
+START_IP7d = "60.168.235.1"
+END_IP7d = "60.168.240.255"
+PORT7d = 6688
+
+START_IP7e = "114.97.210.1"
+END_IP7e = "114.97.220.255"
+PORT7e = 8888
+
 # 新增第八段扫描配置
 START_IP8a = "112.115.45.1"
 END_IP8a = "112.115.55.255"
@@ -895,11 +903,13 @@ if __name__ == "__main__":
     update_zb_file_sixth(open_targets6)
 
     # 新增第七段扫描逻辑
-    print(f"\n开始扫描第七段 {START_IP7a}-{END_IP7a} 端口 {PORT7a}, {START_IP7b}-{END_IP7b} 端口 {PORT7b}, {START_IP7c}-{END_IP7c} 端口 {PORT7c} ...")
+    print(f"\n开始扫描第七段 {START_IP7a}-{END_IP7a} 端口 {PORT7a}, {START_IP7b}-{END_IP7b} 端口 {PORT7b}, {START_IP7c}-{END_IP7c} 端口 {PORT7c}, {START_IP7d}-{END_IP7d} 端口 {PORT7d}, {START_IP7e}-{END_IP7e} 端口 {PORT7e} ...")
     open_targets7 = scan_all(ip_segments=[
     (START_IP7a, END_IP7a, PORT7a),
     (START_IP7b, END_IP7b, PORT7b),
-    (START_IP7c, END_IP7c, PORT7c)
+    (START_IP7c, END_IP7c, PORT7c),
+    (START_IP7d, END_IP7d, PORT7d),
+    (START_IP7e, END_IP7e, PORT7e)
     ])
     open_targets7 = get_verified_rtp_targets(
         open_targets7,
