@@ -820,7 +820,7 @@ def update_zb_file_twelvth(open_targets):
         f.writelines(lines)
 
 # 新增：ZB13文件第一行更新函数，逻辑与第一行更新完全对齐
-def update_zb_file_thriteenth(open_targets):
+def update_zb_file_thirteenth(open_targets):
     """
     第一行格式：
     81,IP:PORT,IP:PORT
