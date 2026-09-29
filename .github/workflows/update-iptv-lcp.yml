@@ -1,9 +1,9 @@
 name: 每日更新IPTV-LCP组播源
 
 on:
-  # 每天 UTC 0:00 运行（对应北京时间早上 8:00）
+  # 每6小时运行一次
   schedule:
-    - cron: '0 16 * * *'
+    - cron: '0 */6 * * *'
   # 允许手动在 Actions 页面触发
   workflow_dispatch:
 
