@@ -19,7 +19,7 @@ jobs:
           curl -L http://izihao.cn:7123/ -o template.m3u
 
           # 替换域名
-          sed -i "s/izihao.cn:7123/mg000/g" template.m3u
+          sed -i "s/izihao.cn:7123\//mg000/g" template.m3u
 
           # ⭐ 解析频道名 + 链接，输出为 txt
           awk -F',' '
