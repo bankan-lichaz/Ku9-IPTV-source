@@ -17,7 +17,6 @@ import requests
 # ----------------- 配置区 -----------------
 # 你给定的原始文件地址（可随时修改）
 SOURCE_URL = (
-    //"https://raw.githubusercontent.com/lxxcp/iptvz/refs/heads/main/zubo.txt"
     "https://raw.githubusercontent.com/mnmn435/pptv/refs/heads/main/zubo.txt"
 )
 OUTPUT_FILE = "LCP.txt"  # 相对于仓库根目录
