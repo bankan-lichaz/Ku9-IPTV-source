@@ -72,7 +72,7 @@ jobs:
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
           # 添加所有需要提交的文件（原模板+新增的两个拆分文件）
-          git add zubo/template template1 template2
+          git add zubo/template zubo/template1 zubo/template2
           # 无变更时跳过提交
           git commit -m "Auto update template files" || echo "No changes to commit"
           git push
