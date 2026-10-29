@@ -1,5 +1,4 @@
 name: Update template.m3u
-
 on:
   schedule:
     - cron: "0 */12 * * *"
@@ -21,49 +20,59 @@ jobs:
           # 替换域名
           sed -i "s/izihao.cn:7123\//mg000/g" template.m3u
 
-          # ⭐ 拆分m3u：最后一个group-title="纪实"的下一行及之前为template1.m3u，剩余为template2.m3u
-          awk '
-          /#EXTINF/ && /group-title="纪实"/ { last_jishi_line = NR }
-          { all_lines[NR] = $0 }
-          END {
-            split_line = last_jishi_line + 1
-            # 兼容未找到"纪实"分组的场景，全部归为template1
-            if (split_line < 1) split_line = NR
-            for (i = 1; i <= NR; i++) {
-              if (i <= split_line) {
-                print all_lines[i] > "template1.m3u"
-              } else {
-                print all_lines[i] > "template2.m3u"
-              }
+          # 解析频道名 + 链接，输出为 txt
+          awk -F',' '
+            /^#EXTINF/ {
+              # 提取频道名（逗号后面的部分）
+              name=\$2
             }
-          }
-          ' template.m3u
+            /^[^#]/ {
+              # 当前行是链接
+              url=\$0
+              print name "," url
+            }
+          ' template.m3u > template.txt
 
-          # 转换template1.m3u为template1.txt，首行加指定genre标记
-          echo "咪咕频道,#genre#" > template1.txt
-          awk -F',' '
-            /^#EXTINF/ { channel_name=\$2 }
-            /^[^#]/ { print channel_name "," \$0 }
-          ' template1.m3u >> template1.txt
+          # 创建zubo目录（避免目录不存在报错）
+          mkdir -p zubo
+          # 生成无后缀模板文件（保留原有逻辑）
+          cp template.txt zubo/template
 
-          # 转换template2.m3u为template2.txt，首行加指定genre标记
-          echo "咪咕体育,#genre#" > template2.txt
-          awk -F',' '
-            /^#EXTINF/ { channel_name=\$2 }
-            /^[^#]/ { print channel_name "," \$0 }
-          ' template2.m3u >> template2.txt
+          # ========== 新增：拆分模板文件逻辑 ==========
+          # 校验是否存在梨园频道，不存在则直接报错退出
+          if ! grep -q "梨园频道" template.txt; then
+            echo "错误：未在template.txt中找到梨园频道，无法拆分模板"
+            exit 1
+          fi
 
-          # 复制到目标目录
-          cp template1.txt zubo/template1
-          cp template2.txt zubo/template2
+          # 生成template1：第一行到【包含】梨园频道的行为止
+          awk -F',' '{
+            print > "template1_raw.txt"
+            # 遇到第一个梨园频道就停止写入
+            if (\$0 ~ /梨园频道/) {exit}
+          }' template.txt
+          # 给template1添加首行表头
+          echo "咪咕频道,#genre#" > template1
+          cat template1_raw.txt >> template1
 
-          # 可选：清理临时文件，保持环境整洁
-          rm -f template.m3u template1.m3u template2.m3u template1.txt template2.txt
+          # 生成template2：梨园频道下一行到最后一行为止
+          # 先获取梨园频道所在的行号
+          linyuan_line=$(awk -F',' '/梨园频道/{print NR; exit}' template.txt)
+          # 截取梨园行之后的所有内容
+          awk "NR>$linyuan_line" template.txt > template2_raw.txt
+          # 给template2添加首行表头
+          echo "咪咕体育,#genre#" > template2
+          cat template2_raw.txt >> template2
+
+          # 清理临时文件
+          rm -f template1_raw.txt template2_raw.txt
 
       - name: Commit and push
         run: |
           git config user.name "github-actions"
           git config user.email "github-actions@github.com"
-          git add zubo/template1 zubo/template2
-          git commit -m "Auto update template1 and template2 files" || echo "No changes to commit"
+          # 添加所有需要提交的文件（原模板+新增的两个拆分文件）
+          git add zubo/template template1 template2
+          # 无变更时跳过提交
+          git commit -m "Auto update template files" || echo "No changes to commit"
           git push
