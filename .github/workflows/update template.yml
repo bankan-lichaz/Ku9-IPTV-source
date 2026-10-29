@@ -67,6 +67,9 @@ jobs:
           # 清理临时文件
           rm -f template1_raw.txt template2_raw.txt
 
+          cp template1 zubo/template1
+          cp template2 zubo/template2
+
       - name: Commit and push
         run: |
           git config user.name "github-actions"
