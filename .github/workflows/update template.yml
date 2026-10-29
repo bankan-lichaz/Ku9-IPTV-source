@@ -24,11 +24,11 @@ jobs:
           awk -F',' '
             /^#EXTINF/ {
               # 提取频道名（逗号后面的部分）
-              name=\$2
+              name=$2
             }
             /^[^#]/ {
               # 当前行是链接
-              url=\$0
+              url=$0
               print name "," url
             }
           ' template.m3u > template.txt
@@ -49,7 +49,7 @@ jobs:
           awk -F',' '{
             print > "template1_raw.txt"
             # 遇到第一个梨园频道就停止写入
-            if (\$0 ~ /梨园频道/) {exit}
+            if ($0 ~ /梨园频道/) {exit}
           }' template.txt
           # 给template1添加首行表头
           echo "咪咕频道,#genre#" > template1
