@@ -52,8 +52,8 @@ jobs:
             if ($0 ~ /梨园频道/) {exit}
           }' template.txt
           # 给template1添加首行表头
-          echo "咪咕频道,#genre#" > template1
-          cat template1_raw.txt >> template1
+          # echo "咪咕频道,#genre#" > template1
+          # cat template1_raw.txt >> template1
 
           # 生成template2：梨园频道下一行到最后一行为止
           # 先获取梨园频道所在的行号
@@ -61,14 +61,14 @@ jobs:
           # 截取梨园行之后的所有内容
           awk "NR>$linyuan_line" template.txt > template2_raw.txt
           # 给template2添加首行表头
-          echo "咪咕体育,#genre#" > template2
-          cat template2_raw.txt >> template2
+          # echo "咪咕体育,#genre#" > template2
+          # cat template2_raw.txt >> template2
+
+          cp template1_raw.txt zubo/template1
+          cp template2_raw.txt zubo/template2
 
           # 清理临时文件
           rm -f template1_raw.txt template2_raw.txt
-
-          cp template1 zubo/template1
-          cp template2 zubo/template2
 
       - name: Commit and push
         run: |
