@@ -1,4 +1,4 @@
-name: Update template1 & template2
+name: Update template.m3u
 
 on:
   schedule:
@@ -13,7 +13,7 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Download, split and convert templates
+      - name: Download and convert template
         run: |
           # 下载 m3u
           curl -L http://izihao.cn:7123/ -o template.m3u
