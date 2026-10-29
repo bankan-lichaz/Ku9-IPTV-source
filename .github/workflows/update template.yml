@@ -1,0 +1,69 @@
+name: Update template1 & template2
+
+on:
+  schedule:
+    - cron: "0 */12 * * *"
+  workflow_dispatch:
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Download, split and convert templates
+        run: |
+          # 下载 m3u
+          curl -L http://izihao.cn:7123/ -o template.m3u
+
+          # 替换域名
+          sed -i "s/izihao.cn:7123\//mg000/g" template.m3u
+
+          # ⭐ 拆分m3u：最后一个group-title="纪实"的下一行及之前为template1.m3u，剩余为template2.m3u
+          awk '
+          /#EXTINF/ && /group-title="纪实"/ { last_jishi_line = NR }
+          { all_lines[NR] = \$0 }
+          END {
+            split_line = last_jishi_line + 1
+            # 兼容未找到"纪实"分组的场景，全部归为template1
+            if (split_line < 1) split_line = NR
+            for (i = 1; i <= NR; i++) {
+              if (i <= split_line) {
+                print all_lines[i] > "template1.m3u"
+              } else {
+                print all_lines[i] > "template2.m3u"
+              }
+            }
+          }
+          ' template.m3u
+
+          # 转换template1.m3u为template1.txt，首行加指定genre标记
+          echo "咪咕频道,#genre#" > template1.txt
+          awk -F',' '
+            /^#EXTINF/ { channel_name=\$2 }
+            /^[^#]/ { print channel_name "," \$0 }
+          ' template1.m3u >> template1.txt
+
+          # 转换template2.m3u为template2.txt，首行加指定genre标记
+          echo "咪咕体育,#genre#" > template2.txt
+          awk -F',' '
+            /^#EXTINF/ { channel_name=\$2 }
+            /^[^#]/ { print channel_name "," \$0 }
+          ' template2.m3u >> template2.txt
+
+          # 复制到目标目录
+          cp template1.txt zubo/template1
+          cp template2.txt zubo/template2
+
+          # 可选：清理临时文件，保持环境整洁
+          rm -f template.m3u template1.m3u template2.m3u template1.txt template2.txt
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add zubo/template1 zubo/template2
+          git commit -m "Auto update template1 and template2 files" || echo "No changes to commit"
+          git push
