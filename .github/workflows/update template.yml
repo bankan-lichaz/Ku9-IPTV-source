@@ -24,7 +24,7 @@ jobs:
           # ⭐ 拆分m3u：最后一个group-title="纪实"的下一行及之前为template1.m3u，剩余为template2.m3u
           awk '
           /#EXTINF/ && /group-title="纪实"/ { last_jishi_line = NR }
-          { all_lines[NR] = \$0 }
+          { all_lines[NR] = $0 }
           END {
             split_line = last_jishi_line + 1
             # 兼容未找到"纪实"分组的场景，全部归为template1
