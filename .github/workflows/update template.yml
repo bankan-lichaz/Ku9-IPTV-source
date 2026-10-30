@@ -52,7 +52,7 @@ jobs:
             if ($0 ~ /梨园频道/) {exit}
           }' template.txt
           # 给template1添加首行表头
-          # echo "咪咕频道,#genre#" > template1
+          # echo "mgpd,#genre#" > template1
           # cat template1_raw.txt >> template1
 
           # 生成template2：梨园频道下一行到最后一行为止
@@ -61,7 +61,7 @@ jobs:
           # 截取梨园行之后的所有内容
           awk "NR>$linyuan_line" template.txt > template2_raw.txt
           # 给template2添加首行表头
-          # echo "咪咕体育,#genre#" > template2
+          # echo "mgty,#genre#" > template2
           # cat template2_raw.txt >> template2
 
           cp template1_raw.txt zubo/template1
