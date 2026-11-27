@@ -64,8 +64,8 @@ jobs:
           # echo "mgty,#genre#" > template2
           # cat template2_raw.txt >> template2
 
-          sed -i "s/$/|User-Agent=mg001/g" template1_raw.txt
-          sed -i "s/$/|User-Agent=mg001/g" template2_raw.txt
+          # sed -i "s/$/|User-Agent=mg001/g" template1_raw.txt
+          # sed -i "s/$/|User-Agent=mg001/g" template2_raw.txt
 
           cp template1_raw.txt zubo/template1
           cp template2_raw.txt zubo/template2
