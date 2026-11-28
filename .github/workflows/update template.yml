@@ -39,25 +39,25 @@ jobs:
           cp template.txt zubo/template
 
           # ========== 新增：拆分模板文件逻辑 ==========
-          # 校验是否存在环球旅游，不存在则直接报错退出
-          if ! grep -q "环球旅游" template.txt; then
-            echo "错误：未在template.txt中找到环球旅游，无法拆分模板"
+          # 校验是否存在梨园频道，不存在则直接报错退出
+          if ! grep -q "梨园频道" template.txt; then
+            echo "错误：未在template.txt中找到梨园频道，无法拆分模板"
             exit 1
           fi
 
-          # 生成template1：第一行到【包含】环球旅游的行为止
+          # 生成template1：第一行到【包含】梨园频道的行为止
           awk -F',' '{
             print > "template1_raw.txt"
-            # 遇到第一个环球旅游就停止写入
-            if ($0 ~ /环球旅游/) {exit}
+            # 遇到第一个梨园频道就停止写入
+            if ($0 ~ /梨园频道/) {exit}
           }' template.txt
           # 给template1添加首行表头
           # echo "mgpd,#genre#" > template1
           # cat template1_raw.txt >> template1
 
-          # 生成template2：环球旅游下一行到最后一行为止
-          # 先获取环球旅游所在的行号
-          linyuan_line=$(awk -F',' '/环球旅游/{print NR; exit}' template.txt)
+          # 生成template2：梨园频道下一行到最后一行为止
+          # 先获取梨园频道所在的行号
+          linyuan_line=$(awk -F',' '/梨园频道/{print NR; exit}' template.txt)
           # 截取梨园行之后的所有内容
           awk "NR>$linyuan_line" template.txt > template2_raw.txt
           # 给template2添加首行表头
